@@ -11564,7 +11564,7 @@ var effects = [
 ];
 
 class CookingData {
-    constructor(recipes, data, names, ctags, effects) {
+    constructor() {
 
         this.recipes = recipes;
         this.data = data;
@@ -11599,27 +11599,6 @@ class CookingData {
         return this.data[this.inames[name]];
     }
     
-    static async init() {
-        //let data, names, ctags, effects;
-        //if(typeof process == 'object') {
-        //recipes = JSON.parse(fs.readFileSync('./cook_recipes.json','utf-8'));
-        //data = JSON.parse(fs.readFileSync('./cook_items.json','utf-8'));
-        //names = JSON.parse(fs.readFileSync('./names.json','utf-8'));
-        //ctags = JSON.parse(fs.readFileSync('./cook_tags.json','utf-8'));
-        //effects = JSON.parse(fs.readFileSync('./cook_effects.json','utf-8'));
-        /*
-        } else {
-            recipes = await $json("./cook_recipes.json");
-            data = await $json('./cook_items.json');
-            names = await $json('./names.json');
-            ctags = await $json('./cook_tags.json');
-            effects = await $json('./cook_effects.json');
-
-        }*/
-        let c = new CookingData(recipes, data, names, ctags, effects);
-        return c;
-    }
-
     create_recipe_list() {
         let id = 0;
         for(const rec of this.recipes) {
@@ -11710,12 +11689,7 @@ class CookingData {
     cook(items, verbose = false) {
         let r = this.find_recipe(items, verbose);
         if(!r) {
-            console.log("recipe not found");
-            const hp = items.map(item => this.item(item))
-                  .filter(item => item.effect == 'LifeMaxUp')
-                  .map(item => item.hp)
-                  .reduce((acc, t0) => { return acc + t0; }, 0);
-            return dubious_food( hp / 2 );
+            r = {name: "Dubious Food"};
         }
         let hp = 0;
         let time = 0;
@@ -11783,7 +11757,9 @@ class CookingData {
             return rock_hard_food( unique(items).length );
         }
         if(r.name == "Dubious Food") {
-            console.log("recipe is dubious");
+            if(verbose) {
+                console.log("recipe is dubious");
+            }
             let hps = items.map(item => this.item(item))
                 .map(item => {
                     let val = item.hp;
@@ -11797,8 +11773,10 @@ class CookingData {
             if(hps > 0) {
                 hp = hps / 2;
             }
-            console.log(items.map(item => this.item(item))
-                        .map(item => [item.name,item.hp]));
+            if(verbose) {
+                console.log(items.map(item => this.item(item))
+                            .map(item => [item.name,item.hp]));
+            }
             return dubious_food( hp );
         }
         if(r.name == "Fairy Tonic") {
@@ -11832,6 +11810,7 @@ class CookingData {
             effect_level_name: potency_level,
             effect_level: effect_level,
             effect: effect,
+            hearts: hp / 2,
         };
 
         const effects = ["MovingSpeed", "AttackUp", "ResistCold", "ResistHot",
@@ -11852,6 +11831,7 @@ class CookingData {
             delete out.effect_level;
             delete out.effect_level_name;
             delete out.hp;
+            delete out.hearts;
             out.hearts_extra = Math.floor(out.potency / 4);
         }
         if(out.effect == 'GutsRecover') {
@@ -11896,9 +11876,8 @@ class CookingData {
                 "LifeMaxUp": "Hearty Elixir",
             };
             out.name = elixirs[ out.effect ];
-            delete out.hp;
+            delete out.hp; // Not certain about this
         }
-        out.hearts = hp / 2;
 
         return out;
     }
