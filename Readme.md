@@ -38,6 +38,12 @@ let r0 = {
 console.log(JSON.stringify(r) === JSON.stringify(r0))
 ```
 
+Development
+-----------
+This uses [rollup](https://rollupjs.org/guide/en/) to combine `index.js` with the json data files into a single module
+called `bundle.js`. If you are not modifying the code or data files, you should be able to use `bundle.js` directly.
+The name of this will change once it gets pushed into a npm module.
+
 Bugs
 ----
 Yes there are likely bugs, we are poking at a black box; please report them.
