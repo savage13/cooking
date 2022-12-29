@@ -1,0 +1,549 @@
+
+//import fs from "fs";
+import recipes from './cook_recipes.json' assert { 'type': 'json' };
+import data from './cook_items.json' assert { 'type': 'json' };
+import names from './names.json' assert { 'type': 'json' };
+import ctags from './cook_tags.json' assert { 'type': 'json' };
+import effects from './cook_effects.json' assert { 'type': 'json' };
+
+async function $json(filename) {
+    const res = await fetch(filename);
+    return res.json();
+}
+
+export class CookingData {
+    constructor(recipes, data, names, ctags, effects) {
+
+        this.recipes = recipes;
+        this.data = data;
+        this.names = names;
+        this.ctags = ctags;
+        this.effects = effects;
+        this.inames = {};
+        this.all_recipe = [];
+        this.reduce_tags();
+        this.set_proper_names();
+        this.create_recipe_list();
+        this.threshold = {
+            "AttackUp": [5, 7],
+            "DefenseUp": [5, 7],
+            "ResistCold": [6, 999],
+            "ResistHot": [6, 999],
+            "ResistElectric": [4, 6],
+            "Fireproof": [7, 999],
+            "MovingSpeed": [5, 7],
+            "Quietness": [6, 9],
+            "LifeMaxUp": [999,999],
+            "GutsRecover": [999,999],
+            "ExGutsMaxUp": [999,999],
+            'None': [999,999],
+        }
+    }
+
+    items() {
+        return Object.keys(this.inames);
+    }
+    item(name) {
+        return this.data[this.inames[name]];
+    }
+    
+    static async init() {
+        //let data, names, ctags, effects;
+        //if(typeof process == 'object') {
+        //recipes = JSON.parse(fs.readFileSync('./cook_recipes.json','utf-8'));
+        //data = JSON.parse(fs.readFileSync('./cook_items.json','utf-8'));
+        //names = JSON.parse(fs.readFileSync('./names.json','utf-8'));
+        //ctags = JSON.parse(fs.readFileSync('./cook_tags.json','utf-8'));
+        //effects = JSON.parse(fs.readFileSync('./cook_effects.json','utf-8'));
+        /*
+        } else {
+            recipes = await $json("./cook_recipes.json");
+            data = await $json('./cook_items.json');
+            names = await $json('./names.json');
+            ctags = await $json('./cook_tags.json');
+            effects = await $json('./cook_effects.json');
+
+        }*/
+        let c = new CookingData(recipes, data, names, ctags, effects);
+        return c;
+    }
+
+    create_recipe_list() {
+        let id = 0;
+        for(const rec of this.recipes) {
+            const r = new Recipe(rec.name, rec.actors, rec.tags, id);
+            this.all_recipe.push(r);
+            id += 1;
+        }
+    }
+    reduce_tags() {
+        // Reduce tags in Items
+        for(const key of Object.keys(this.data)) {
+            let row = this.data[key];
+            row.tags = inter(row.tags, this.ctags);
+            if(row.tags.length > 1) {
+                console.error('Item has more than 1 cook tag', row.name, key);
+                process.exit(1);
+            }
+            if(row.tags.length == 0) {
+                row.tags = "";
+            } else {
+                row.tags = row.tags[0];
+            }
+            if(row.effect == '' || row.effect == 'None') {
+                row.effect = undefined;
+            }
+        }
+    }
+    set_proper_names() {
+        // Convert from UI Name to Internal Name
+        const prefer = {
+            "Hearty Radish": "Item_PlantGet_B",
+            "Big Hearty Radish": "Item_PlantGet_C",
+            "Endura Carrot": "Item_PlantGet_Q",
+            "Swift Carrot": "Item_PlantGet_M",
+            "Silent Princess": "Item_PlantGet_J",
+        };
+
+        Object.keys(this.names).forEach(key => {
+            if(key in this.data) {
+                this.inames[ this.names[key] ] = key;
+            }
+        });
+        Object.keys(prefer).forEach(key => {
+            if(key in this.inames) {
+                this.inames[key] = prefer[key];
+            }
+        });
+    }
+    item_tags(items) {
+        return items.map(key => this.data[key].tags);
+    }
+    items_names(items) {
+        let iname = items.map(item => this.inames[item]);
+        for(let i = 0; i < iname.length; i++) {
+            if(!iname[i]) {
+                console.log("Unknown item", items[i]);
+            }
+        }
+        return iname;
+    }
+    find_recipe(items, verbose = false) {
+        // Get internal names
+        let iname = this.items_names(items);
+        let tags_t = iname.map(key => this.data[key].tags);
+        let N = 125;
+        let i = N;
+        for(const recipe of this.all_recipe.slice(N)) {
+            if(verbose) {
+                console.log("---------------------------------------------------");
+            }
+            if(recipe.matches(iname, tags_t, true, verbose)) {
+                return recipe;
+            }
+            i += 1;
+        }
+        i = 0;
+        for(const recipe of this.all_recipe.slice(0, N)) {
+            if(verbose) {
+                console.log("---------------------------------------------------");
+            }
+            if(recipe.matches(iname, tags_t, false, verbose)) {
+                return recipe;
+            }
+            i += 1;
+        }
+        return undefined;
+    }
+    get_effect(name) {
+        return this.effects.find(ef => ef.type == name);
+    }
+
+    cook(items, verbose = false) {
+        let r = this.find_recipe(items, verbose);
+        if(!r) {
+            console.log("recipe not found");
+            const hp = items.map(item => this.item(item))
+                  .filter(item => item.effect == 'LifeMaxUp')
+                  .map(item => item.hp)
+                  .reduce((acc, t0) => { return acc + t0; }, 0);
+            return dubious_food( hp / 2 );
+        }
+        let hp = 0;
+        let time = 0;
+        let potency = 0;
+        let effect = [];
+        for(const item of items) {
+            const val = this.data[this.inames[item]];
+            //console.log(val);
+            if(val.effect) {
+                const eff = this.get_effect(val.effect);
+                if(verbose) {
+                    console.log('effect', val.effect, eff.base_time);
+                }
+                time += eff.base_time;
+            }
+
+            if(verbose) {
+                console.log('item,hp,potency,time',val.hp, val.potency, val.time/30, item, inames[item])
+            }
+            time += (val.time / 30) ;
+            potency += val.potency;
+            hp += val.hp;
+            if(val.effect) {
+                effect.push( val.effect );
+            }
+            //console.log(time, potency, effect);
+        }
+        effect = unique(effect);
+        if(effect.length == 1) {
+            effect = effect[0];
+        } else {
+            effect = 'None';
+        }
+        if(verbose) {
+            console.log('time boosts', unique(items)
+                        .map(item => this.data[this.inames[item]].time_boost)
+                        .filter(isFinite));
+        }
+        let time_boost = unique(items)
+            .map(item => this.data[this.inames[item]].time_boost)
+            .filter(isFinite)
+            .reduce((acc, t0) => { return acc + t0; }, 0);
+        if(verbose) {
+            console.log('hp boosts', unique(items)
+                        .map(item => this.data[this.inames[item]].hp_boost)
+                        .filter(isFinite));
+        }
+        let hp_boost = unique(items)
+            .map(item => this.data[this.inames[item]].hp_boost)
+            .filter(isFinite)
+            .reduce((acc, t0) => { return acc + t0; }, 0);
+        if(verbose) {
+            console.log('time boost', time, '+', time_boost);
+            console.log('hp boost', hp, '+', hp_boost/2);
+        }
+        time += time_boost;
+        hp += hp_boost/2;
+
+        // Documentation needed here
+        if(items.includes("Fairy") && ["Elixir","Fairy Tonic"].includes(r.name)) {
+            hp -= 3*2;
+        }
+
+        if(r.name == "Rock-Hard Food") {
+            return rock_hard_food( unique(items).length );
+        }
+        if(r.name == "Dubious Food") {
+            console.log("recipe is dubious");
+            let hps = items.map(item => this.item(item))
+                .map(item => {
+                    let val = item.hp;
+                    if(item.effect != "LifeMaxUp") {
+                        val = Math.min(val, 4);
+                    }
+                    return val;
+                })
+                .reduce((acc, t0) => { return acc + t0; }, 0);
+            let hp = 2;
+            if(hps > 0) {
+                hp = hps / 2;
+            }
+            console.log(items.map(item => this.item(item))
+                        .map(item => [item.name,item.hp]));
+            return dubious_food( hp );
+        }
+        if(r.name == "Fairy Tonic") {
+            effect = 'None';
+        }
+        let potency_level = '';
+        let effect_level = 1;
+        if(!(effect in this.threshold)) {
+            console.error("Missing in threshold: ", effect);
+        }
+
+        if(potency >= this.threshold[effect][1]) {
+            potency_level = 'High';
+            effect_level = 3;
+        } else if (potency >= this.threshold[effect][0]) {
+            potency_level = 'Mid';
+            effect_level = 2;
+        } else {
+            potency_level = 'Low';
+            effect_level = 1;
+        }
+        let out = {
+            name: r.name,
+            id: r.id,
+            actors: r.actors,
+            tags: r.tags,
+            items: items,
+            hp: hp,
+            time: time,
+            potency: potency,
+            effect_level_name: potency_level,
+            effect_level: effect_level,
+            effect: effect,
+        }
+
+        const effects = ["MovingSpeed", "AttackUp", "ResistCold", "ResistHot",
+                         "DefenseUp", "ResistElectric", "Fireproof", "Quietness"];
+        if(effects.includes(out.effect)) {
+            out.time = Math.min(30*60, out.time);
+            out.time_sec = out.time;
+            out.time = t2ms(out.time_sec);
+        }
+        if(out.effect == 'None') {
+            delete out.time;
+            delete out.effect;
+            delete out.effect_level;
+            delete out.effect_level_name;
+        }
+        if(out.effect == "LifeMaxUp") {
+            delete out.time;
+            delete out.effect_level;
+            delete out.effect_level_name;
+            delete out.hp;
+            out.hearts_extra = Math.floor(out.potency / 4);
+        }
+        if(out.effect == 'GutsRecover') {
+            const recover = [0.0, 0.2, 0.4, 0.8, 1.0, 1.4, 1.6, 1.8, 2.2, 2.4, 2.8, 3.0]
+            out.stamina = recover[potency];
+            delete out.time;
+            delete out.effect_level_name;
+            delete out.effect_level;
+        }
+        if(out.effect == 'ExGutsMaxUp') {
+            const recover = [
+                {pts: 0, value: 0.0},
+                {pts: 1, value: 0.2},
+                {pts: 4, value: 0.4},
+                {pts: 6, value: 0.6},
+                {pts: 8, value: 0.8},
+                {pts: 10, value: 1.0},
+                {pts: 12, value: 1.2},
+                {pts: 14, value: 1.4},
+                {pts: 16, value: 1.6},
+                {pts: 18, value: 1.8},
+                {pts: 20, value: 2.0}
+            ];
+            let tmp = recover.filter(v => v.pts <= potency).pop();
+            out.stamina_extra = tmp.value;
+            delete out.time;
+            delete out.effect_level_name;
+            delete out.effect_level;
+        }
+        if(out.name == 'Elixir' && out.effect != "None") {
+            const elixirs = {
+                "AttackUp": "Mighty Elixir",
+                "DefenseUp": "Tough Elixir",
+                "ResistCold": "Spicy Elixir",
+                "ResistHot": "Chilly Elixir",
+                "ResistElectric": "Electro Elixir",
+                "Fireproof": "Fireproof Elixir",
+                "MovingSpeed": "Hasty Elixir",
+                "Quietness": "Sneaky Elixir",
+                "ExGutsMaxUp": "Enduring Elixir",
+                "GutsRecover": "Energizing Elixir",
+                "LifeMaxUp": "Hearty Elixir",
+            };
+            out.name = elixirs[ out.effect ];
+            delete out.hp;
+        }
+        out.hearts = hp / 2;
+
+        return out;
+    }
+}
+
+
+function inter(a,b) {
+    return a.filter(value => b.includes(value));
+}
+
+class Recipe {
+    constructor(name, actors, tags, id) {
+        this.name = name;
+        this.actors = actors;
+        this.tags = tags;
+        this.verbose = false;
+        this.id = id;
+    }
+    matches(items, tags, strict, verbose = false) {
+        if(strict) {
+            if(unique(items).length != 1) {
+                return false;
+            }
+        }
+        this.verbose = verbose;
+        let items_t = [...items];
+        let tags_t = [...tags];
+        if(this.verbose) {
+            console.log('init ', this.name, this.id);
+            console.log('     items: ', items_t);
+            console.log('      tags: ', tags_t);
+            console.log('    actors: ', this.actors);
+        }
+        const out = this.matches_actors(items_t, tags_t, strict);
+        items_t = out[0];
+        tags_t = out[1];
+        //console.log('     items: ', items_t);
+        //console.log('      tags: ', tags_t);
+        if(!items_t) {
+            return false;
+        }
+        if(this.verbose) {
+            console.log(' ');
+            console.log('     items: ', items_t);
+            console.log('      tags: ', tags_t);
+            console.log('recipe tags:', this.tags);
+        }
+        items_t = this.matches_tags(items_t, tags_t, strict);
+        if(this.verbose) {
+            console.log(' ');
+            console.log('     items: ', items_t);
+        }
+        if(!items_t) {
+            return false;
+        }
+        if(this.verbose) {
+            console.log('done ', this.name, items_t);
+        }
+        if(verbose == false) {
+            //console.log("-------------------------------------------------");
+            //this.matches(items, true);
+        }
+        //return items_t.length == 0;
+        if(strict) {
+            return items_t.length == 0;
+        }
+        return true;
+    }
+    matches_tags(items_t, tags_t, strict) {
+        //let tags_t = items_t.map(key => cdata.data[key].tags);
+        if(this.verbose) {
+            console.log('  item tags:', tags_t);
+        }
+        if(strict) {
+            if(this.tags.length == 0) {
+                return items_t;
+            }
+            let v = inter(this.tags, tags_t);
+            if(!v.length) {
+                return undefined;
+            }
+            let k = tags_t.indexOf(v[0]);
+            while(k != -1) {
+                items_t.splice(k, 1);
+                tags_t.splice(k, 1);
+                k = tags_t.indexOf(v[0]);
+            }
+            return items_t;
+        }
+
+        let n = this.tags.length;
+        for(let i = 0; i < n; i++) {
+            //console.log(this.tags[i]);
+            let item = undefined;
+            if(Array.isArray(this.tags[i])) {
+                for(let j = 0; j < this.tags[i].length; j++) {
+                    if(this.verbose) {
+                        console.log(this.tags[i], tags_t, i, j);
+                    }
+                    for(let k = 0; k < tags_t.length; k++) {
+                        if(tags_t[k] == this.tags[i][j]) {
+                            item = items_t[k];
+                            if(this.verbose) {
+                                console.log("   tag match: ", tags_t[k],this.tags[j]);
+                            }
+                            break
+                        }
+                    }
+                }
+            } else {
+                let k  = tags_t.indexOf(this.tags[i]);
+                item = items_t[k];
+            }
+            if(!item) {
+                return undefined;
+            }
+            let k = items_t.indexOf(item);
+            while(k != -1) {
+                items_t.splice(k, 1);
+                tags_t.splice(k, 1);
+                k = items_t.indexOf(item);
+            }
+        }
+        return items_t;
+    }
+    matches_actors(items_t, tags_t, strict) {
+        if(strict) {
+            if(this.actors.length == 0) {
+                return [items_t, tags_t];
+            }
+            let v = inter(this.actors, items_t);
+            if(!v.length) {
+                return [undefined,undefined];
+            }
+            v = v[0];
+            let k = items_t.indexOf(v);
+            while(k != -1) {
+                items_t.splice(k, 1);
+                tags_t.splice(k, 1);
+                k = items_t.indexOf(v);
+            }
+            return [items_t, tags_t];
+        }
+        let n = this.actors.length;
+        for(let i = 0; i < n; i++) {
+            if(this.verbose) {
+                console.log(this.actors[i], items_t);
+            }
+            let v = inter(this.actors[i], items_t);
+            if(!v.length) {
+                return [undefined,undefined];
+            }
+            v = v[0];
+            let k = items_t.indexOf(v);
+            items_t.splice(k, 1);
+            tags_t.splice(k, 1);
+        }
+        return [items_t, tags_t];
+    }
+}
+
+function unique(z) {
+    return [... new Set(z)];
+}
+
+function dubious_food( hp ) {
+    const ID = 5;
+    if(hp == 0) {
+        hp = 2;
+    }
+    return {
+        name: "Dubious Food",
+        hp: hp,
+        id: ID
+    }
+}
+function rock_hard_food(n) {
+    const SINGLE_ID = 126;
+    const MULTI_ID = 3;
+    return {
+        name: "Rock-Hard Food",
+        hp: 0.5,
+        id: (n == 1) ? SINGLE_ID : MULTI_ID
+    }
+}
+
+function t2ms(t) {
+    const m = Math.floor(t / 60);
+    const s = t % 60;
+    const ms = m.toString().padStart(2, '0')
+    const ss = s.toString().padStart(2, '0')
+    return `${ms}:${ss}`;
+}
+
+
+

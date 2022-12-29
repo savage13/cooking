@@ -1,0 +1,16 @@
+{
+    "name": "cooking",
+    "version": "1.0.0",
+    "description": "",
+    "scripts": {
+        "bundle": "rollup --config rollup.config.js",
+        "test": "rollup --config rollup.config.js && node test.js",
+        "dev": "python -m http.server"
+    },
+    "author": "savage13@gmail.com",
+    "license": "BSD 2-Clause",
+    "type": "module",
+    "dependencies": {
+        "@rollup/plugin-json": "^6.0.0"
+    }
+}
