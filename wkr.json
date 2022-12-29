@@ -1998,5 +1998,551 @@
         "id": 5,
         "ingredients": ["Big Hearty Radish", "Hearty Truffle", "Apple","Lizalfos Tail", "Wildberry"],
         "hp": 14
+    },
+    {
+        "name": "Dubious Food",
+        "id": 5,
+        "ingredients": ["Hearty Bass", "Hyrule Bass","Lizalfos Tail"],
+        "hp": 6
+    },
+    {
+        "name": "Dubious Food",
+        "id": 5,
+        "ingredients": ["Hearty Bass", "Apple","Lizalfos Tail"],
+        "hp": 5
+    },
+    {
+        "name": "Dubious Food",
+        "id": 5,
+        "ingredients": ["Hearty Bass", "Apple","Lizalfos Tail","Apple"],
+        "hp": 6
+    },
+    {
+        "name": "Dubious Food",
+        "id": 5,
+        "ingredients": ["Hearty Bass", "Apple","Lizalfos Tail","Lizalfos Tail","Apple"],
+        "hp": 6
+    },
+    {
+        "name": "Dubious Food",
+        "id": 5,
+        "ingredients": ["Hearty Bass", "Hearty Bass","Apple","Lizalfos Tail"],
+        "hp": 9
+    },
+    {
+        "name": "Dubious Food",
+        "id": 5,
+        "ingredients": ["Hearty Bass", "Hearty Bass","Apple","Lizalfos Tail","Lizalfos Tail"],
+        "hp": 9
+    },
+    {
+        "name": "Dubious Food",
+        "id": 5,
+        "ingredients": ["Hearty Bass", "Hearty Bass","Apple","Apple","Lizalfos Tail"],
+        "hp": 10
+    },
+    {
+        "name": "Dubious Food",
+        "id": 5,
+        "ingredients": ["Hearty Bass","Apple","Lizalfos Tail","Giant Ancient Core"],
+        "hp": 5
+    },
+    {
+        "name": "Dubious Food",
+        "id": 5,
+        "ingredients": ["Hearty Bass","Apple","Lizalfos Tail","Wildberry"],
+        "hp": 6
+    },
+    {
+        "name": "Dubious Food",
+        "id": 5,
+        "ingredients": ["Hearty Bass","Apple","Lizalfos Tail","Wildberry","Giant Ancient Core"],
+        "hp": 6
+    },
+    {
+        "name": "Dubious Food",
+        "id": 5,
+        "ingredients": ["Hearty Bass","Hearty Truffle","Apple", "Lizalfos Tail"],
+        "hp": 9
+    },
+    {
+        "name": "Dubious Food",
+        "id": 5,
+        "ingredients": ["Hearty Bass","Hearty Truffle","Apple", "Lizalfos Tail", "Giant Ancient Core"],
+        "hp": 9
+    },
+    {
+        "name": "Dubious Food",
+        "id": 5,
+        "ingredients": ["Hearty Bass","Hearty Truffle","Apple", "Lizalfos Tail", "Wildberry"],
+        "hp": 10
+    },
+    {
+        "name": "Dubious Food",
+        "id": 5,
+        "ingredients": ["Hearty Blueshell Snail","Hyrule Bass","Lizalfos Tail"],
+        "hp": 8
+    },
+    {
+        "name": "Dubious Food",
+        "id": 5,
+        "ingredients": ["Hearty Blueshell Snail","Apple","Lizalfos Tail"],
+        "hp": 7
+    },
+    {
+        "name": "Dubious Food",
+        "id": 5,
+        "ingredients": ["Hearty Blueshell Snail","Apple","Apple","Lizalfos Tail"],
+        "hp": 8
+    },
+    {
+        "name": "Dubious Food",
+        "id": 5,
+        "ingredients": ["Hearty Blueshell Snail","Apple","Apple","Lizalfos Tail","Lizalfos Tail"],
+        "hp": 8
+    },
+    {
+        "name": "Dubious Food",
+        "id": 5,
+        "ingredients": ["Hearty Blueshell Snail","Hearty Blueshell Snail","Apple","Lizalfos Tail"],
+        "hp": 13
+    },
+    {
+        "name": "Dubious Food",
+        "id": 5,
+        "ingredients": ["Hearty Blueshell Snail","Hearty Blueshell Snail","Apple","Lizalfos Tail", "Lizalfos Tail"],
+        "hp": 13
+    },
+    {
+        "name": "Dubious Food",
+        "id": 5,
+        "ingredients": ["Hearty Blueshell Snail","Hearty Blueshell Snail","Apple","Lizalfos Tail", "Apple"],
+        "hp": 14
+    },
+    {
+        "name": "Dubious Food",
+        "id": 5,
+        "ingredients": ["Hearty Blueshell Snail","Apple","Lizalfos Tail", "Giant Ancient Core"],
+        "hp": 7
+    },
+    {
+        "name": "Dubious Food",
+        "id": 5,
+        "ingredients": ["Hearty Blueshell Snail","Apple","Lizalfos Tail", "Wildberry"],
+        "hp": 8
+    },
+    {
+        "name": "Dubious Food",
+        "id": 5,
+        "ingredients": ["Hearty Blueshell Snail","Apple","Lizalfos Tail", "Wildberry","Giant Ancient Core"],
+        "hp": 8
+    },
+    {
+        "name": "Dubious Food",
+        "id": 5,
+        "ingredients": ["Hearty Blueshell Snail","Hearty Truffle","Apple","Lizalfos Tail"],
+        "hp": 11
+    },
+    {
+        "name": "Dubious Food",
+        "id": 5,
+        "ingredients": ["Hearty Blueshell Snail","Hearty Truffle","Apple","Lizalfos Tail","Giant Ancient Core"],
+        "hp": 11
+    },
+    {
+        "name": "Dubious Food",
+        "id": 5,
+        "ingredients": ["Hearty Blueshell Snail","Hearty Truffle","Apple","Lizalfos Tail","Wildberry"],
+        "hp": 12
+    },
+    {
+        "name": "Dubious Food",
+        "id": 5,
+        "ingredients": ["Hearty Radish","Hyrule Bass","Lizalfos Tail"],
+        "hp": 7
+    },
+    {
+        "name": "Dubious Food",
+        "id": 5,
+        "ingredients": ["Big Hearty Truffle","Hyrule Bass","Lizalfos Tail"],
+        "hp": 8
+    },
+    {
+        "name": "Dubious Food",
+        "id": 5,
+        "ingredients": ["Hearty Durian","Hyrule Bass","Lizalfos Tail"],
+        "hp": 8
+    },
+    {
+        "name": "Dubious Food",
+        "id": 5,
+        "ingredients": ["Hearty Salmon","Hyrule Bass","Lizalfos Tail"],
+        "hp": 10
+    },
+    {
+        "name": "Dubious Food",
+        "id": 5,
+        "ingredients": ["Big Hearty Radish","Hyrule Bass","Lizalfos Tail"],
+        "hp": 10
+    },
+    {
+        "name": "Dubious Food",
+        "id": 5,
+        "ingredients": ["Hearty Radish","Apple","Lizalfos Tail","Lizalfos Tail"],
+        "hp": 6
+    },
+    {
+        "name": "Dubious Food",
+        "id": 5,
+        "ingredients": ["Big Hearty Truffle","Apple","Lizalfos Tail","Lizalfos Tail"],
+        "hp": 7
+    },
+    {
+        "name": "Dubious Food",
+        "id": 5,
+        "ingredients": ["Hearty Durian","Apple","Lizalfos Tail","Lizalfos Tail"],
+        "hp": 7
+    },
+    {
+        "name": "Dubious Food",
+        "id": 5,
+        "ingredients": ["Hearty Salmon","Apple","Lizalfos Tail","Lizalfos Tail"],
+        "hp": 9
+    },
+    {
+        "name": "Dubious Food",
+        "id": 5,
+        "ingredients": ["Big Hearty Radish","Apple","Lizalfos Tail","Lizalfos Tail"],
+        "hp": 9
+    },
+    {
+        "name": "Dubious Food",
+        "id": 5,
+        "ingredients": ["Hearty Radish","Apple","Apple","Lizalfos Tail"],
+        "hp": 7
+    },
+    {
+        "name": "Dubious Food",
+        "id": 5,
+        "ingredients": ["Big Hearty Truffle","Apple","Apple","Lizalfos Tail"],
+        "hp": 8
+    },
+    {
+        "name": "Dubious Food",
+        "id": 5,
+        "ingredients": ["Hearty Durian","Apple","Apple","Lizalfos Tail"],
+        "hp": 8
+    },
+    {
+        "name": "Dubious Food",
+        "id": 5,
+        "ingredients": ["Hearty Salmon","Apple","Apple","Lizalfos Tail"],
+        "hp": 10
+    },
+    {
+        "name": "Dubious Food",
+        "id": 5,
+        "ingredients": ["Big Hearty Radish","Apple","Apple","Lizalfos Tail"],
+        "hp": 10
+    },
+    {
+        "name": "Dubious Food",
+        "id": 5,
+        "ingredients": ["Hearty Radish","Apple","Apple","Lizalfos Tail","Lizalfos Tail"],
+        "hp": 7
+    },
+    {
+        "name": "Dubious Food",
+        "id": 5,
+        "ingredients": ["Big Hearty Truffle","Apple","Apple","Lizalfos Tail","Lizalfos Tail"],
+        "hp": 8
+    },
+    {
+        "name": "Dubious Food",
+        "id": 5,
+        "ingredients": ["Hearty Durian","Apple","Apple","Lizalfos Tail","Lizalfos Tail"],
+        "hp": 8
+    },
+    {
+        "name": "Dubious Food",
+        "id": 5,
+        "ingredients": ["Hearty Salmon","Apple","Apple","Lizalfos Tail","Lizalfos Tail"],
+        "hp": 10
+    },
+    {
+        "name": "Dubious Food",
+        "id": 5,
+        "ingredients": ["Big Hearty Radish","Apple","Apple","Lizalfos Tail","Lizalfos Tail"],
+        "hp": 10
+    },
+    {
+        "name": "Dubious Food",
+        "id": 5,
+        "ingredients": ["Hearty Radish","Hearty Radish","Apple","Lizalfos Tail"],
+        "hp": 11
+    },
+    {
+        "name": "Dubious Food",
+        "id": 5,
+        "ingredients": ["Big Hearty Truffle","Big Hearty Truffle","Apple","Lizalfos Tail"],
+        "hp": 13
+    },
+    {
+        "name": "Dubious Food",
+        "id": 5,
+        "ingredients": ["Hearty Durian","Hearty Durian","Apple","Lizalfos Tail"],
+        "hp": 13
+    },
+    {
+        "name": "Dubious Food",
+        "id": 5,
+        "ingredients": ["Hearty Salmon","Hearty Salmon","Apple","Lizalfos Tail"],
+        "hp": 17
+    },
+    {
+        "name": "Dubious Food",
+        "id": 5,
+        "ingredients": ["Big Hearty Radish","Big Hearty Radish","Apple","Lizalfos Tail"],
+        "hp": 17
+    },
+    {
+        "name": "Dubious Food",
+        "id": 5,
+        "ingredients": ["Hearty Radish","Hearty Radish","Apple","Lizalfos Tail","Lizalfos Tail"],
+        "hp": 11
+    },
+    {
+        "name": "Dubious Food",
+        "id": 5,
+        "ingredients": ["Big Hearty Truffle","Big Hearty Truffle","Apple","Lizalfos Tail","Lizalfos Tail"],
+        "hp": 13
+    },
+    {
+        "name": "Dubious Food",
+        "id": 5,
+        "ingredients": ["Hearty Durian","Hearty Durian","Apple","Lizalfos Tail","Lizalfos Tail"],
+        "hp": 13
+    },
+    {
+        "name": "Dubious Food",
+        "id": 5,
+        "ingredients": ["Hearty Salmon","Hearty Salmon","Apple","Lizalfos Tail","Lizalfos Tail"],
+        "hp": 17
+    },
+    {
+        "name": "Dubious Food",
+        "id": 5,
+        "ingredients": ["Big Hearty Radish","Big Hearty Radish","Apple","Lizalfos Tail","Lizalfos Tail"],
+        "hp": 17
+    },
+    {
+        "name": "Dubious Food",
+        "id": 5,
+        "ingredients": ["Hearty Radish","Hearty Radish","Apple","Apple","Lizalfos Tail"],
+        "hp": 12
+    },
+    {
+        "name": "Dubious Food",
+        "id": 5,
+        "ingredients": ["Big Hearty Truffle","Big Hearty Truffle","Apple","Apple","Lizalfos Tail"],
+        "hp": 14
+    },
+    {
+        "name": "Dubious Food",
+        "id": 5,
+        "ingredients": ["Hearty Durian","Hearty Durian","Apple","Apple","Lizalfos Tail"],
+        "hp": 14
+    },
+    {
+        "name": "Dubious Food",
+        "id": 5,
+        "ingredients": ["Hearty Salmon","Hearty Salmon","Apple","Apple","Lizalfos Tail"],
+        "hp": 18
+    },
+    {
+        "name": "Dubious Food",
+        "id": 5,
+        "ingredients": ["Big Hearty Radish","Big Hearty Radish","Apple","Apple","Lizalfos Tail"],
+        "hp": 18
+    },
+    {
+        "name": "Dubious Food",
+        "id": 5,
+        "ingredients": ["Hearty Radish","Apple","Lizalfos Tail","Giant Ancient Core"],
+        "hp": 6
+    },
+    {
+        "name": "Dubious Food",
+        "id": 5,
+        "ingredients": ["Big Hearty Truffle","Apple","Lizalfos Tail","Giant Ancient Core"],
+        "hp": 7
+    },
+    {
+        "name": "Dubious Food",
+        "id": 5,
+        "ingredients": ["Hearty Durian","Apple","Lizalfos Tail","Giant Ancient Core"],
+        "hp": 7
+    },
+    {
+        "name": "Dubious Food",
+        "id": 5,
+        "ingredients": ["Hearty Salmon","Apple","Lizalfos Tail","Giant Ancient Core"],
+        "hp": 9
+    },
+    {
+        "name": "Dubious Food",
+        "id": 5,
+        "ingredients": ["Big Hearty Radish","Apple","Lizalfos Tail","Giant Ancient Core"],
+        "hp": 9
+    },
+    {
+        "name": "Dubious Food",
+        "id": 5,
+        "ingredients": ["Hearty Radish","Apple","Lizalfos Tail","Wildberry"],
+        "hp": 7
+    },
+    {
+        "name": "Dubious Food",
+        "id": 5,
+        "ingredients": ["Big Hearty Truffle","Apple","Lizalfos Tail","Wildberry"],
+        "hp": 8
+    },
+    {
+        "name": "Dubious Food",
+        "id": 5,
+        "ingredients": ["Hearty Durian","Apple","Lizalfos Tail","Wildberry"],
+        "hp": 8
+    },
+    {
+        "name": "Dubious Food",
+        "id": 5,
+        "ingredients": ["Hearty Salmon","Apple","Lizalfos Tail","Wildberry"],
+        "hp": 10
+    },
+    {
+        "name": "Dubious Food",
+        "id": 5,
+        "ingredients": ["Big Hearty Radish","Apple","Lizalfos Tail","Wildberry"],
+        "hp": 10
+    },
+    {
+        "name": "Dubious Food",
+        "id": 5,
+        "ingredients": ["Hearty Radish","Apple","Lizalfos Tail","Wildberry","Giant Ancient Core"],
+        "hp": 7
+    },
+    {
+        "name": "Dubious Food",
+        "id": 5,
+        "ingredients": ["Big Hearty Truffle","Apple","Lizalfos Tail","Wildberry","Giant Ancient Core"],
+        "hp": 8
+    },
+    {
+        "name": "Dubious Food",
+        "id": 5,
+        "ingredients": ["Hearty Durian","Apple","Lizalfos Tail","Wildberry","Giant Ancient Core"],
+        "hp": 8
+    },
+    {
+        "name": "Dubious Food",
+        "id": 5,
+        "ingredients": ["Hearty Salmon","Apple","Lizalfos Tail","Wildberry","Giant Ancient Core"],
+        "hp": 10
+    },
+    {
+        "name": "Dubious Food",
+        "id": 5,
+        "ingredients": ["Big Hearty Radish","Apple","Lizalfos Tail","Wildberry","Giant Ancient Core"],
+        "hp": 10
+    },
+    {
+        "name": "Dubious Food",
+        "id": 5,
+        "ingredients": ["Hearty Radish","Apple","Lizalfos Tail","Hearty Truffle"],
+        "hp": 10
+    },
+    {
+        "name": "Dubious Food",
+        "id": 5,
+        "ingredients": ["Big Hearty Truffle","Apple","Lizalfos Tail","Hearty Truffle"],
+        "hp": 11
+    },
+    {
+        "name": "Dubious Food",
+        "id": 5,
+        "ingredients": ["Hearty Durian","Apple","Lizalfos Tail","Hearty Truffle"],
+        "hp": 11
+    },
+    {
+        "name": "Dubious Food",
+        "id": 5,
+        "ingredients": ["Hearty Salmon","Apple","Lizalfos Tail","Hearty Truffle"],
+        "hp": 13
+    },
+    {
+        "name": "Dubious Food",
+        "id": 5,
+        "ingredients": ["Big Hearty Radish","Apple","Lizalfos Tail","Hearty Truffle"],
+        "hp": 13
+    },
+    {
+        "name": "Dubious Food",
+        "id": 5,
+        "ingredients": ["Hearty Radish","Apple","Lizalfos Tail","Hearty Truffle","Giant Ancient Core"],
+        "hp": 10
+    },
+    {
+        "name": "Dubious Food",
+        "id": 5,
+        "ingredients": ["Big Hearty Truffle","Apple","Lizalfos Tail","Hearty Truffle","Giant Ancient Core"],
+        "hp": 11
+    },
+    {
+        "name": "Dubious Food",
+        "id": 5,
+        "ingredients": ["Hearty Durian","Apple","Lizalfos Tail","Hearty Truffle","Giant Ancient Core"],
+        "hp": 11
+    },
+    {
+        "name": "Dubious Food",
+        "id": 5,
+        "ingredients": ["Hearty Salmon","Apple","Lizalfos Tail","Hearty Truffle","Giant Ancient Core"],
+        "hp": 13
+    },
+    {
+        "name": "Dubious Food",
+        "id": 5,
+        "ingredients": ["Big Hearty Radish","Apple","Lizalfos Tail","Hearty Truffle","Giant Ancient Core"],
+        "hp": 13
+    },
+    {
+        "name": "Dubious Food",
+        "id": 5,
+        "ingredients": ["Hearty Radish","Apple","Lizalfos Tail","Hearty Truffle","Wildberry"],
+        "hp": 11
+    },
+    {
+        "name": "Dubious Food",
+        "id": 5,
+        "ingredients": ["Big Hearty Truffle","Apple","Lizalfos Tail","Hearty Truffle","Wildberry"],
+        "hp": 12
+    },
+    {
+        "name": "Dubious Food",
+        "id": 5,
+        "ingredients": ["Hearty Durian","Apple","Lizalfos Tail","Hearty Truffle","Wildberry"],
+        "hp": 12
+    },
+    {
+        "name": "Dubious Food",
+        "id": 5,
+        "ingredients": ["Hearty Salmon","Apple","Lizalfos Tail","Hearty Truffle","Wildberry"],
+        "hp": 14
+    },
+    {
+        "name": "Dubious Food",
+        "id": 5,
+        "ingredients": ["Big Hearty Radish","Apple","Lizalfos Tail","Hearty Truffle","Wildberry"],
+        "hp": 14
     }
 ]
