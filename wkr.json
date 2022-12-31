@@ -2544,5 +2544,95 @@
         "id": 5,
         "ingredients": ["Big Hearty Radish","Apple","Lizalfos Tail","Hearty Truffle","Wildberry"],
         "hp": 14
+    },
+    {
+        "name": "Dubious Food",
+        "id": 5,
+        "ingredients": ["Hyrule Bass","Lizalfos Tail"],
+        "hp": 2
+    },
+    {
+        "name": "Dubious Food",
+        "id": 5,
+        "ingredients": ["Hearty Truffle","Raw Gourmet Meat","Lizalfos Tail"],
+        "hp": 10
+    },
+    {
+        "name": "Dubious Food",
+        "id": 5,
+        "ingredients": ["Hearty Salmon","Raw Gourmet Meat","Lizalfos Tail"],
+        "hp": 14
+    },
+    {
+        "name": "Dubious Food",
+        "id": 5,
+        "ingredients": ["Hearty Lizard","Raw Gourmet Meat"],
+        "hp": 14
+    },
+    {
+        "name": "Dubious Food",
+        "id": 5,
+        "ingredients": ["Hearty Durian","Raw Gourmet Meat", "Lizalfos Tail"],
+        "hp": 12
+    },
+    {
+        "name": "Dubious Food",
+        "id": 5,
+        "ingredients": ["Hearty Blueshell Snail","Raw Gourmet Meat", "Lizalfos Tail"],
+        "hp": 12
+    },
+    {
+        "name": "Dubious Food",
+        "id": 5,
+        "ingredients": ["Hearty Bass","Raw Gourmet Meat", "Lizalfos Tail"],
+        "hp": 10
+    },
+    {
+        "name": "Dubious Food",
+        "id": 5,
+        "ingredients": ["Big Hearty Radish","Raw Gourmet Meat", "Lizalfos Tail"],
+        "hp": 14
+    },
+    {
+        "name": "Dubious Food",
+        "id": 5,
+        "ingredients": ["Big Hearty Radish","Mighty Bananas", "Lizalfos Tail"],
+        "hp": 9
+    },
+    {
+        "name": "Dubious Food",
+        "id": 5,
+        "ingredients": ["Hearty Bass","Mighty Bananas", "Lizalfos Tail"],
+        "hp": 5
+    },
+    {
+        "name": "Dubious Food",
+        "id": 5,
+        "ingredients": ["Hearty Blueshell Snail","Mighty Bananas", "Lizalfos Tail"],
+        "hp": 7
+    },
+    {
+        "name": "Dubious Food",
+        "id": 5,
+        "ingredients": ["Hearty Durian","Mighty Bananas", "Lizalfos Tail"],
+        "hp": 7
+    },
+    {
+        "name": "Dubious Food",
+        "id": 5,
+        "ingredients": ["Hearty Lizard","Mighty Bananas"],
+        "hp": 9
+    },
+    {
+        "name": "Dubious Food",
+        "id": 5,
+        "ingredients": ["Hearty Salmon","Mighty Bananas","Lizalfos Tail"],
+        "hp": 9
+    },
+    {
+        "name": "Dubious Food",
+        "id": 5,
+        "ingredients": ["Hearty Truffle","Mighty Bananas","Lizalfos Tail"],
+        "hp": 5
     }
 ]

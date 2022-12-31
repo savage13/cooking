@@ -11761,13 +11761,7 @@ class CookingData {
                 console.log("recipe is dubious");
             }
             let hps = items.map(item => this.item(item))
-                .map(item => {
-                    let val = item.hp;
-                    if(item.effect != "LifeMaxUp") {
-                        val = Math.min(val, 4);
-                    }
-                    return val;
-                })
+                .map(item => item.hp)
                 .reduce((acc, t0) => { return acc + t0; }, 0);
             let hp = 2;
             if(hps > 0) {
