@@ -6,7 +6,7 @@ import { CookingData } from './bundle.js' ;
 const obj = new CookingData;
 const stop_on_error = true;
 
-const test_data = ['wkr.json', 'dubious.json','acorns.json'];
+const test_data = ['wkr.json', 'dubious.json','acorns.json', 'elixirs.json'];
 
 let ok = 0;
 let fails = 0;

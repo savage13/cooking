@@ -1,0 +1,93 @@
+[
+    {
+        "name": "Chilly Elixir",
+        "id": 4,
+        "ingredients": ["Cold Darner", "Lizalfos Tail"],
+        "effect": "ResistHot",
+        "hp": 0,
+        "hearts": 0,
+        "potency": 2,
+        "effect_level": 1,
+        "time": "05:40"
+    },
+    {
+        "name": "Chilly Elixir",
+        "id": 4,
+        "ingredients": ["Cold Darner","Cold Darner", "Lizalfos Tail"],
+        "effect": "ResistHot",
+        "hp": 0,
+        "hearts": 0,
+        "potency": 4,
+        "effect_level": 1,
+        "time": "08:10"
+    },
+    {
+        "name": "Chilly Elixir",
+        "id": 4,
+        "ingredients": ["Cold Darner","Cold Darner","Cold Darner", "Lizalfos Tail"],
+        "effect": "ResistHot",
+        "hp": 0,
+        "hearts": 0,
+        "potency": 6,
+        "effect_level": 2,
+        "time": "10:40"
+    },
+    {
+        "name": "Chilly Elixir",
+        "id": 4,
+        "ingredients": ["Cold Darner","Cold Darner","Cold Darner","Cold Darner", "Lizalfos Tail"],
+        "effect": "ResistHot",
+        "hp": 0,
+        "hearts": 0,
+        "potency": 8,
+        "effect_level": 2,
+        "time": "13:10"
+    },
+        {
+        "name": "Spicy Elixir",
+        "id": 4,
+        "ingredients": ["Warm Darner", "Lizalfos Tail"],
+        "effect": "ResistCold",
+        "hp": 0,
+        "hearts": 0,
+        "potency": 2,
+        "effect_level": 1,
+        "time": "05:40"
+    },
+    {
+        "name": "Spicy Elixir",
+        "id": 4,
+        "ingredients": ["Warm Darner","Warm Darner", "Lizalfos Tail"],
+        "effect": "ResistCold",
+        "hp": 0,
+        "hearts": 0,
+        "potency": 4,
+        "effect_level": 1,
+        "time": "08:10"
+    },
+    {
+        "name": "Spicy Elixir",
+        "id": 4,
+        "ingredients": ["Warm Darner","Warm Darner","Warm Darner", "Lizalfos Tail"],
+        "effect": "ResistCold",
+        "hp": 0,
+        "hearts": 0,
+        "potency": 6,
+        "effect_level": 2,
+        "time": "10:40"
+    },
+    {
+        "name": "Spicy Elixir",
+        "id": 4,
+        "ingredients": ["Warm Darner","Warm Darner","Warm Darner","Warm Darner", "Lizalfos Tail"],
+        "effect": "ResistCold",
+        "hp": 0,
+        "hearts": 0,
+        "potency": 8,
+        "effect_level": 2,
+        "time": "13:10"
+    }
+
+
+    
+]
