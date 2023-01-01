@@ -154,7 +154,7 @@ export class CookingData {
             }
 
             if(verbose) {
-                console.log('item,hp,potency,time',val.hp, val.potency, val.time/30, item, inames[item])
+                console.log('item,hp,potency,time',val.hp, val.potency, val.time/30, item, this.inames[item])
             }
             time += (val.time / 30) ;
             potency += val.potency;
@@ -192,8 +192,19 @@ export class CookingData {
             console.log('time boost', time, '+', time_boost);
             console.log('hp boost', hp, '+', hp_boost/2);
         }
+        //let spices = items.filter(item => this.item(item).is_spice).length;
+        //let non_spices = items.filter(item => ! this.item(item).is_spice).length;
+        // Acorns are a spice, but can also be used by themselves.
+        //   Acorns used by themselves do not get an HP Boost
+        //   Used with other things, they provide the HP Boost
+        let only_acorns = unique(items).length == 1 && items[0] == 'Acorn';
+        if(only_acorns) {
+            hp_boost = 0;
+            time_boost = 0;
+        }
         time += time_boost;
         hp += hp_boost/2;
+
 
         // Documentation needed here
         if(items.includes("Fairy") && ["Elixir","Fairy Tonic"].includes(r.name)) {
@@ -486,7 +497,7 @@ function unique(z) {
 
 function dubious_food( hp ) {
     const ID = 5;
-    if(hp == 0) {
+    if(hp < 2) {
         hp = 2;
     }
     return {

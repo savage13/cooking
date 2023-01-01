@@ -6,13 +6,15 @@ import { CookingData } from './bundle.js' ;
 const obj = new CookingData;
 const stop_on_error = true;
 
+const test_data = ['wkr.json', 'dubious.json','acorns.json'];
+
 let ok = 0;
 let fails = 0;
-const knowns = JSON.parse(fs.readFileSync('./wkr.json', 'utf8'));
-for(const known of knowns) {
+
+function test_recipe(known) {
     //console.log("--------------------------------------------");
     let r = obj.cook(known.ingredients, false);//known.id == 11126);
-    
+
     if(!r || r.name != known.name || r.id != known.id) {
         console.log("********************************************");
         console.log("Error");
@@ -31,6 +33,7 @@ for(const known of knowns) {
         console.log(known.name, known.ingredients);
         console.log(`HP is incorrect: returned '${r.hp}' != '${known.hp}' expected`);
         fails += 1;
+        //obj.cook(known.ingredients, true);
         if(stop_on_error) {
             process.exit(1);
         }
@@ -96,46 +99,16 @@ for(const known of knowns) {
         ok += 1;
     }
 }
+
+
+for (const file of test_data) {
+    const knowns = JSON.parse(fs.readFileSync(file, 'utf8'));
+    for(const known of knowns) {
+        test_recipe(known)
+    }
+}
 console.log(`Tests ${fails + ok}: Ok: ${ok} Fails: ${fails}`);
 
-
-//console.log(cook(Array(5).fill("Mighty Bananas")))
-//process.exit();
-
-//let r;
-//r = cook(["Mighty Porgy"])
-// console.log(r);
-// console.log();
-// r = cook(["Mighty Porgy","Mighty Porgy"]);
-// console.log(r);
-// console.log();
-// r = cook(["Mighty Porgy","Mighty Porgy","Mighty Porgy","Mighty Porgy","Mighty Porgy"]);
-// console.log(r);
-// console.log();
-//r = cook(["Mighty Carp","Armored Carp","Sanke Carp","Mighty Porgy"]);
-//console.log(r);
-//r = cook(["Mighty Carp","Armored Carp","Sanke Carp"]);
-//console.log(r);
-//r = cook(["Mighty Carp","Stamella Shroom"])
-//console.log(r);
-//r = cook(["Endura Shroom","Stamella Shroom", "Sunshroom", "Chillshroom", "Zapshroom"])
-//console.log(r);
-//r = cook(["Endura Shroom","Stamella Shroom", "Sunshroom", "Chillshroom", "Wood"])
-//console.log(r);
-//module.exports = {
-//    inames,
-//    data,
-//    CookingData,
-//    init,
-//    Recipe,
-//    cook,
-//};
-//exports['default'] = {
-//    cook
-//}
-//module.exports = {
-//    cook
-//}
 
 
 

@@ -1,0 +1,67 @@
+[
+    {
+        "name": "Simmered Fruit",
+        "id": 122,
+        "ingredients": ["Apple","Acorn"],
+        "hp": 4
+    },
+    {
+        "name": "Simmered Fruit",
+        "id": 122,
+        "ingredients": ["Apple","Acorn","Acorn"],
+        "hp": 5
+    },
+    {
+        "name": "Simmered Fruit",
+        "id": 122,
+        "ingredients": ["Apple","Acorn","Acorn","Acorn"],
+        "hp": 6
+    },
+    {
+        "name": "Simmered Fruit",
+        "id": 122,
+        "ingredients": ["Apple","Acorn","Acorn"],
+        "hp": 5
+    },
+    {
+        "name": "Sautéed Nuts",
+        "id": 134,
+        "ingredients": ["Acorn"],
+        "hp": 1,
+        "_notes": "same as id:134",
+        "NOTES": "Check Acorn and Chickaloo Tree Nut HP Boosts"
+    },
+    {
+        "name": "Sautéed Nuts",
+        "id": 134,
+        "ingredients": ["Acorn","Acorn"],
+        "hp": 2,
+        "_notes": "same as id:134",
+        "NOTES": "Check Acorn and Chickaloo Tree Nut HP Boosts"
+    },
+    {
+        "name": "Sautéed Nuts",
+        "id": 134,
+        "ingredients": ["Acorn","Acorn","Acorn"],
+        "hp": 3,
+        "_notes": "same as id:134",
+        "NOTES": "Check Acorn and Chickaloo Tree Nut HP Boosts"
+    },
+    {
+        "name": "Sautéed Nuts",
+        "id": 134,
+        "ingredients": ["Acorn","Acorn","Acorn","Acorn"],
+        "hp": 4,
+        "_notes": "same as id:134",
+        "NOTES": "Check Acorn and Chickaloo Tree Nut HP Boosts"
+    },
+    {
+        "name": "Sautéed Nuts",
+        "id": 134,
+        "ingredients": ["Acorn","Acorn","Acorn","Acorn","Acorn"],
+        "hp": 5,
+        "_notes": "same as id:134",
+        "NOTES": "Check Acorn and Chickaloo Tree Nut HP Boosts"
+    }
+
+]
