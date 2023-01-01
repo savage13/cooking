@@ -138,6 +138,7 @@ export class CookingData {
         if(!r) {
             r = {name: "Dubious Food"};
         }
+        let LifeRate = 2;
         let hp = 0;
         let time = 0;
         let potency = 0;
@@ -154,7 +155,8 @@ export class CookingData {
             }
 
             if(verbose) {
-                console.log('item,hp,potency,time',val.hp, val.potency, val.time/30, item, this.inames[item])
+                console.log('item,hp,potency,time',val.hp, val.potency,
+                            val.time/30, item, this.inames[item])
             }
             time += (val.time / 30) ;
             potency += val.potency;
@@ -164,6 +166,8 @@ export class CookingData {
             }
             //console.log(time, potency, effect);
         }
+        hp *= LifeRate;
+
         effect = unique(effect);
         if(effect.length == 1) {
             effect = effect[0];
@@ -190,25 +194,25 @@ export class CookingData {
             .reduce((acc, t0) => { return acc + t0; }, 0);
         if(verbose) {
             console.log('time boost', time, '+', time_boost);
-            console.log('hp boost', hp, '+', hp_boost/2);
+            console.log('hp boost', hp, '+', hp_boost);
         }
-        //let spices = items.filter(item => this.item(item).is_spice).length;
-        //let non_spices = items.filter(item => ! this.item(item).is_spice).length;
-        // Acorns are a spice, but can also be used by themselves.
+
+        // Acorns are a spice, but can also be used by themselves in recipes
         //   Acorns used by themselves do not get an HP Boost
-        //   Used with other things, they provide the HP Boost
+        //   Acorns used with other things, provide the HP Boost
+        //   Acorns are the only item like this
         let only_acorns = unique(items).length == 1 && items[0] == 'Acorn';
         if(only_acorns) {
             hp_boost = 0;
             time_boost = 0;
         }
         time += time_boost;
-        hp += hp_boost/2;
+        hp += hp_boost;
 
 
         // Documentation needed here
         if(items.includes("Fairy") && ["Elixir","Fairy Tonic"].includes(r.name)) {
-            hp -= 3*2;
+            hp -= 3*4;
         }
 
         if(r.name == "Rock-Hard Food") {
@@ -221,10 +225,7 @@ export class CookingData {
             let hps = items.map(item => this.item(item))
                 .map(item => item.hp)
                 .reduce((acc, t0) => { return acc + t0; }, 0);
-            let hp = 2;
-            if(hps > 0) {
-                hp = hps / 2;
-            }
+            let hp = (hps > 0) ? hps : 4;
             if(verbose) {
                 console.log(items.map(item => this.item(item))
                             .map(item => [item.name,item.hp]));
@@ -262,7 +263,7 @@ export class CookingData {
             effect_level_name: potency_level,
             effect_level: effect_level,
             effect: effect,
-            hearts: hp / 2,
+            hearts: hp / 4,
         }
 
         const effects = ["MovingSpeed", "AttackUp", "ResistCold", "ResistHot",
@@ -496,14 +497,14 @@ function unique(z) {
 
 function dubious_food( hp ) {
     const ID = 5;
-    if(hp < 2) {
-        hp = 2;
+    if(hp < 4) {
+        hp = 4;
     }
     return {
         name: "Dubious Food",
         hp: hp,
         id: ID,
-        hearts: hp/2,
+        hearts: hp/4,
     }
 }
 function rock_hard_food(n) {
@@ -511,7 +512,7 @@ function rock_hard_food(n) {
     const MULTI_ID = 3;
     return {
         name: "Rock-Hard Food",
-        hp: 0.5,
+        hp: 1,
         id: (n == 1) ? SINGLE_ID : MULTI_ID,
         hearts: 0.25,
     }
