@@ -2242,22 +2242,21 @@ var Animal_Fish_K$1 = {
 	potency: 12,
 	time: 900,
 	tags: [
-		"TypeInsect",
-		"UnderGodForest",
-		"ZukanAnimal",
 		"CureItem",
-		"Material",
 		"CanStack",
+		"CookFish",
+		"ZukanAnimal",
 		"EatItem",
-		"CanUse",
+		"UnderGodForest",
+		"TypeInsect",
 		"CanGetPouch",
 		"RevivalRandom",
-		"CookFish"
+		"Material",
+		"CanUse"
 	],
 	name: "Hearty Blueshell Snail",
 	time_boost: 0,
-	hp_boost: 0,
-	is_spice: false
+	hp_boost: 0
 };
 var Animal_Insect_AB$1 = {
 	hp: 0,
@@ -2265,23 +2264,22 @@ var Animal_Insect_AB$1 = {
 	potency: 2,
 	time: 900,
 	tags: [
-		"CookInsect",
-		"TypeInsect",
-		"UnderGodForest",
-		"ZukanAnimal",
 		"CureItem",
-		"Material",
-		"PutAndFly",
-		"CanStack",
 		"CookMaterial",
+		"CanStack",
+		"ZukanAnimal",
 		"EatItem",
+		"UnderGodForest",
+		"Material",
+		"TypeInsect",
 		"CanGetPouch",
-		"RevivalRandom"
+		"PutAndFly",
+		"RevivalRandom",
+		"CookInsect"
 	],
 	name: "Smotherwing Butterfly",
 	time_boost: 0,
-	hp_boost: 0,
-	is_spice: false
+	hp_boost: 0
 };
 var Item_Enemy_49$1 = {
 	hp: 0,
@@ -2289,24 +2287,23 @@ var Item_Enemy_49$1 = {
 	potency: 0,
 	time: 900,
 	tags: [
-		"CookSpice",
-		"DisableForbidPushJob",
-		"EnemyMaterial",
+		"CookMaterial",
 		"CanBalloonParasite",
 		"CanStack",
-		"CookLowPrice",
-		"CookMaterial",
+		"CookSpice",
+		"EatItem",
+		"EnemyMaterial",
 		"PhysicsPauseDisable",
 		"ObservedByTag",
-		"EatItem",
+		"CanGetPouch",
+		"CookLowPrice",
 		"CookValue1",
 		"StopTimerLong",
-		"CanGetPouch"
+		"DisableForbidPushJob"
 	],
 	name: "Naydra's Scale",
 	time_boost: 60,
-	hp_boost: 5,
-	is_spice: true
+	hp_boost: 5
 };
 var Animal_Insect_K$1 = {
 	hp: 4,
@@ -2314,23 +2311,22 @@ var Animal_Insect_K$1 = {
 	potency: 2,
 	time: 900,
 	tags: [
-		"TypeInsect",
-		"UnderGodForest",
-		"ZukanAnimal",
 		"CureItem",
-		"Material",
-		"LiftRockMaterial",
 		"CanStack",
+		"CookFish",
+		"ZukanAnimal",
 		"EatItem",
-		"CanUse",
+		"UnderGodForest",
+		"LiftRockMaterial",
+		"TypeInsect",
 		"CanGetPouch",
 		"RevivalRandom",
-		"CookFish"
+		"Material",
+		"CanUse"
 	],
 	name: "Razorclaw Crab",
 	time_boost: 0,
-	hp_boost: 0,
-	is_spice: false
+	hp_boost: 0
 };
 var Item_Material_01$1 = {
 	hp: 0,
@@ -2338,21 +2334,20 @@ var Item_Material_01$1 = {
 	potency: 0,
 	time: 900,
 	tags: [
-		"CookSpice",
-		"CanBalloonParasite",
 		"CureItem",
-		"Material",
-		"CanStack",
 		"CookMaterial",
+		"CanBalloonParasite",
+		"CanStack",
+		"CookSpice",
 		"EatItem",
-		"StopTimerLong",
 		"CanGetPouch",
-		"RevivalRandom"
+		"RevivalRandom",
+		"Material",
+		"StopTimerLong"
 	],
 	name: "Cane Sugar",
 	time_boost: 50,
-	hp_boost: 0,
-	is_spice: true
+	hp_boost: 0
 };
 var Item_Enemy_48$1 = {
 	hp: 0,
@@ -2360,23 +2355,22 @@ var Item_Enemy_48$1 = {
 	potency: 0,
 	time: 900,
 	tags: [
-		"CookSpice",
-		"DisableForbidPushJob",
-		"EnemyMaterial",
+		"CookMaterial",
 		"CanBalloonParasite",
 		"CanStack",
-		"CookLowPrice",
-		"CookMaterial",
-		"PhysicsPauseDisable",
+		"CookSpice",
 		"EatItem",
+		"EnemyMaterial",
+		"PhysicsPauseDisable",
+		"CanGetPouch",
+		"CookLowPrice",
 		"CookValue1",
 		"StopTimerLong",
-		"CanGetPouch"
+		"DisableForbidPushJob"
 	],
 	name: "Shard of Dinraal's Horn",
 	time_boost: 1800,
-	hp_boost: 15,
-	is_spice: true
+	hp_boost: 15
 };
 var Animal_Fish_J$1 = {
 	hp: 4,
@@ -2384,23 +2378,22 @@ var Animal_Fish_J$1 = {
 	potency: 3,
 	time: 900,
 	tags: [
-		"UnderGodForest",
-		"ZukanAnimal",
 		"CureItem",
-		"Material",
-		"AmiiboNoDropBeginning",
 		"CanStack",
-		"TypeFish",
+		"CookFish",
+		"ZukanAnimal",
 		"EatItem",
-		"CanUse",
+		"UnderGodForest",
+		"AmiiboNoDropBeginning",
+		"TypeFish",
 		"CanGetPouch",
 		"RevivalRandom",
-		"CookFish"
+		"Material",
+		"CanUse"
 	],
 	name: "Sizzlefin Trout",
 	time_boost: 0,
-	hp_boost: 0,
-	is_spice: false
+	hp_boost: 0
 };
 var Animal_Fish_H$1 = {
 	hp: 4,
@@ -2408,23 +2401,22 @@ var Animal_Fish_H$1 = {
 	potency: 2,
 	time: 900,
 	tags: [
-		"UnderGodForest",
-		"ZukanAnimal",
 		"CureItem",
-		"Material",
-		"AmiiboNoDropBeginning",
 		"CanStack",
-		"TypeFish",
+		"CookFish",
+		"ZukanAnimal",
 		"EatItem",
-		"CanUse",
+		"UnderGodForest",
+		"AmiiboNoDropBeginning",
+		"TypeFish",
 		"CanGetPouch",
 		"RevivalRandom",
-		"CookFish"
+		"Material",
+		"CanUse"
 	],
 	name: "Armored Carp",
 	time_boost: 0,
-	hp_boost: 0,
-	is_spice: false
+	hp_boost: 0
 };
 var Animal_Insect_AA$1 = {
 	hp: 0,
@@ -2432,23 +2424,22 @@ var Animal_Insect_AA$1 = {
 	potency: 6,
 	time: 900,
 	tags: [
-		"CookInsect",
-		"TypeInsect",
-		"UnderGodForest",
-		"ZukanAnimal",
 		"CureItem",
-		"CreateFromTrunkOrGlowStoneLocator",
-		"Material",
-		"CanStack",
 		"CookMaterial",
+		"CanStack",
+		"ZukanAnimal",
 		"EatItem",
+		"UnderGodForest",
+		"Material",
+		"TypeInsect",
 		"CanGetPouch",
-		"RevivalRandom"
+		"RevivalRandom",
+		"CookInsect",
+		"CreateFromTrunkOrGlowStoneLocator"
 	],
 	name: "Energetic Rhino Beetle",
 	time_boost: 0,
-	hp_boost: 0,
-	is_spice: false
+	hp_boost: 0
 };
 var Animal_Insect_H$1 = {
 	hp: 0,
@@ -2456,24 +2447,23 @@ var Animal_Insect_H$1 = {
 	potency: 1,
 	time: 900,
 	tags: [
-		"CookInsect",
-		"TypeInsect",
-		"UnderGodForest",
-		"ZukanAnimal",
 		"CureItem",
-		"Material",
-		"GrassDrop",
-		"LiftRockMaterial",
-		"CanStack",
 		"CookMaterial",
+		"CanStack",
+		"GrassDrop",
+		"ZukanAnimal",
 		"EatItem",
+		"UnderGodForest",
+		"LiftRockMaterial",
+		"Material",
+		"TypeInsect",
 		"CanGetPouch",
-		"RevivalRandom"
+		"RevivalRandom",
+		"CookInsect"
 	],
 	name: "Restless Cricket",
 	time_boost: 0,
-	hp_boost: 0,
-	is_spice: false
+	hp_boost: 0
 };
 var Item_Material_02$1 = {
 	hp: 0,
@@ -2481,21 +2471,20 @@ var Item_Material_02$1 = {
 	potency: 1,
 	time: 900,
 	tags: [
-		"CookSpice",
-		"CanBalloonParasite",
 		"CureItem",
-		"Material",
-		"CanStack",
 		"CookMaterial",
+		"CanBalloonParasite",
+		"CanStack",
+		"CookSpice",
 		"EatItem",
-		"StopTimerLong",
 		"CanGetPouch",
-		"RevivalRandom"
+		"RevivalRandom",
+		"Material",
+		"StopTimerLong"
 	],
 	name: "Goron Spice",
 	time_boost: 60,
-	hp_boost: 0,
-	is_spice: true
+	hp_boost: 0
 };
 var Item_Material_03$1 = {
 	hp: 4,
@@ -2503,23 +2492,22 @@ var Item_Material_03$1 = {
 	potency: 0,
 	time: 900,
 	tags: [
-		"CookSpice",
-		"StopTimerLong",
-		"CanBalloonParasite",
 		"CureItem",
-		"Material",
-		"GrassDrop",
-		"CanStack",
 		"CookMaterial",
+		"CanBalloonParasite",
+		"CanStack",
+		"GrassDrop",
+		"CookSpice",
 		"EatItem",
-		"CanUse",
 		"CanGetPouch",
-		"RevivalRandom"
+		"RevivalRandom",
+		"Material",
+		"CanUse",
+		"StopTimerLong"
 	],
 	name: "Hylian Rice",
 	time_boost: 30,
-	hp_boost: 0,
-	is_spice: true
+	hp_boost: 0
 };
 var Animal_Insect_I$1 = {
 	hp: 0,
@@ -2527,23 +2515,22 @@ var Animal_Insect_I$1 = {
 	potency: 2,
 	time: 900,
 	tags: [
-		"CookInsect",
-		"TypeInsect",
-		"UnderGodForest",
-		"ZukanAnimal",
 		"CureItem",
-		"Material",
-		"PutAndFly",
-		"CanStack",
 		"CookMaterial",
+		"CanStack",
+		"ZukanAnimal",
 		"EatItem",
+		"UnderGodForest",
+		"Material",
+		"TypeInsect",
 		"CanGetPouch",
-		"RevivalRandom"
+		"PutAndFly",
+		"RevivalRandom",
+		"CookInsect"
 	],
 	name: "Electric Darner",
 	time_boost: 0,
-	hp_boost: 0,
-	is_spice: false
+	hp_boost: 0
 };
 var Animal_Fish_I$1 = {
 	hp: 16,
@@ -2551,23 +2538,22 @@ var Animal_Fish_I$1 = {
 	potency: 16,
 	time: 900,
 	tags: [
-		"UnderGodForest",
-		"ZukanAnimal",
 		"CureItem",
-		"Material",
-		"AmiiboNoDropBeginning",
 		"CanStack",
-		"TypeFish",
+		"CookFish",
+		"ZukanAnimal",
 		"EatItem",
-		"CanUse",
+		"UnderGodForest",
+		"AmiiboNoDropBeginning",
+		"TypeFish",
 		"CanGetPouch",
 		"RevivalRandom",
-		"CookFish"
+		"Material",
+		"CanUse"
 	],
 	name: "Hearty Salmon",
 	time_boost: 0,
-	hp_boost: 0,
-	is_spice: false
+	hp_boost: 0
 };
 var Animal_Fish_M$1 = {
 	hp: 4,
@@ -2575,22 +2561,21 @@ var Animal_Fish_M$1 = {
 	potency: 1,
 	time: 900,
 	tags: [
-		"TypeInsect",
-		"UnderGodForest",
-		"ZukanAnimal",
 		"CureItem",
-		"Material",
 		"CanStack",
+		"CookFish",
+		"ZukanAnimal",
 		"EatItem",
-		"CanUse",
+		"UnderGodForest",
+		"TypeInsect",
 		"CanGetPouch",
 		"RevivalRandom",
-		"CookFish"
+		"Material",
+		"CanUse"
 	],
 	name: "Sneaky River Snail",
 	time_boost: 0,
-	hp_boost: 0,
-	is_spice: false
+	hp_boost: 0
 };
 var Animal_Fish_Z$1 = {
 	hp: 4,
@@ -2598,22 +2583,21 @@ var Animal_Fish_Z$1 = {
 	potency: 0,
 	time: 900,
 	tags: [
-		"UnderGodForest",
-		"ZukanAnimal",
 		"CureItem",
-		"Material",
 		"CanStack",
-		"TypeFish",
+		"CookFish",
+		"ZukanAnimal",
 		"EatItem",
-		"CanUse",
+		"UnderGodForest",
+		"TypeFish",
 		"CanGetPouch",
 		"RevivalRandom",
-		"CookFish"
+		"Material",
+		"CanUse"
 	],
 	name: "Sanke Carp",
 	time_boost: 0,
-	hp_boost: 0,
-	is_spice: false
+	hp_boost: 0
 };
 var Animal_Insect_Z$1 = {
 	hp: 4,
@@ -2621,24 +2605,23 @@ var Animal_Insect_Z$1 = {
 	potency: 2,
 	time: 900,
 	tags: [
-		"TypeInsect",
-		"UnderGodForest",
-		"ZukanAnimal",
 		"CureItem",
-		"Material",
-		"LiftRockMaterial",
 		"CanStack",
+		"CookFish",
+		"ZukanAnimal",
 		"EatItem",
-		"RandomCreateNotRain",
-		"CanUse",
+		"UnderGodForest",
+		"LiftRockMaterial",
+		"TypeInsect",
 		"CanGetPouch",
 		"RevivalRandom",
-		"CookFish"
+		"Material",
+		"CanUse",
+		"RandomCreateNotRain"
 	],
 	name: "Bright-Eyed Crab",
 	time_boost: 0,
-	hp_boost: 0,
-	is_spice: false
+	hp_boost: 0
 };
 var Item_Material_07$1 = {
 	hp: 4,
@@ -2646,23 +2629,22 @@ var Item_Material_07$1 = {
 	potency: 0,
 	time: 900,
 	tags: [
-		"CookSpice",
-		"StopTimerLong",
-		"CanBalloonParasite",
 		"CureItem",
-		"Material",
-		"GrassDrop",
-		"CanStack",
 		"CookMaterial",
+		"CanBalloonParasite",
+		"CanStack",
+		"GrassDrop",
+		"CookSpice",
 		"EatItem",
-		"CanUse",
 		"CanGetPouch",
-		"RevivalRandom"
+		"RevivalRandom",
+		"Material",
+		"CanUse",
+		"StopTimerLong"
 	],
 	name: "Tabantha Wheat",
 	time_boost: 30,
-	hp_boost: 0,
-	is_spice: true
+	hp_boost: 0
 };
 var Animal_Insect_M$1 = {
 	hp: 16,
@@ -2670,26 +2652,25 @@ var Animal_Insect_M$1 = {
 	potency: 16,
 	time: 900,
 	tags: [
-		"CreateFromTrunkLocatorRandom",
-		"CookInsect",
-		"TypeInsect",
-		"UnderGodForest",
-		"ZukanAnimal",
-		"RainBonusMaterial",
 		"CureItem",
-		"Material",
-		"GrassDrop",
-		"LiftRockMaterial",
-		"CanStack",
 		"CookMaterial",
+		"CanStack",
+		"GrassDrop",
+		"RainBonusMaterial",
+		"ZukanAnimal",
 		"EatItem",
+		"UnderGodForest",
+		"LiftRockMaterial",
+		"Material",
+		"CreateFromTrunkLocatorRandom",
+		"TypeInsect",
 		"CanGetPouch",
-		"RevivalRandom"
+		"RevivalRandom",
+		"CookInsect"
 	],
 	name: "Hearty Lizard",
 	time_boost: 0,
-	hp_boost: 0,
-	is_spice: false
+	hp_boost: 0
 };
 var Item_Material_06$1 = {
 	hp: 0,
@@ -2697,21 +2678,20 @@ var Item_Material_06$1 = {
 	potency: 0,
 	time: 900,
 	tags: [
-		"CookSpice",
-		"CanBalloonParasite",
 		"CureItem",
-		"Material",
-		"CanStack",
 		"CookMaterial",
+		"CanBalloonParasite",
+		"CanStack",
+		"CookSpice",
 		"EatItem",
-		"StopTimerLong",
 		"CanGetPouch",
-		"RevivalRandom"
+		"RevivalRandom",
+		"Material",
+		"StopTimerLong"
 	],
 	name: "Goat Butter",
 	time_boost: 50,
-	hp_boost: 0,
-	is_spice: true
+	hp_boost: 0
 };
 var Animal_Fish_L$1 = {
 	hp: 4,
@@ -2719,22 +2699,21 @@ var Animal_Fish_L$1 = {
 	potency: 4,
 	time: 900,
 	tags: [
-		"UnderGodForest",
-		"ZukanAnimal",
 		"CureItem",
-		"Material",
 		"CanStack",
-		"TypeFish",
+		"CookFish",
+		"ZukanAnimal",
 		"EatItem",
-		"CanUse",
+		"UnderGodForest",
+		"TypeFish",
 		"CanGetPouch",
 		"RevivalRandom",
-		"CookFish"
+		"Material",
+		"CanUse"
 	],
 	name: "Staminoka Bass",
 	time_boost: 0,
-	hp_boost: 0,
-	is_spice: false
+	hp_boost: 0
 };
 var Item_Material_04$1 = {
 	hp: 4,
@@ -2742,22 +2721,21 @@ var Item_Material_04$1 = {
 	potency: 0,
 	time: 900,
 	tags: [
-		"CookSpice",
-		"StopTimerLong",
-		"CanBalloonParasite",
 		"CureItem",
-		"Material",
-		"CanStack",
 		"CookMaterial",
+		"CanBalloonParasite",
+		"CanStack",
+		"CookSpice",
 		"EatItem",
-		"CanUse",
 		"CanGetPouch",
-		"RevivalRandom"
+		"RevivalRandom",
+		"Material",
+		"CanUse",
+		"StopTimerLong"
 	],
 	name: "Bird Egg",
 	time_boost: 60,
-	hp_boost: 0,
-	is_spice: true
+	hp_boost: 0
 };
 var Animal_Insect_N$1 = {
 	hp: 0,
@@ -2765,23 +2743,22 @@ var Animal_Insect_N$1 = {
 	potency: 1,
 	time: 900,
 	tags: [
-		"CookInsect",
-		"TypeInsect",
-		"UnderGodForest",
-		"ZukanAnimal",
 		"CureItem",
-		"Material",
-		"PutAndFly",
-		"CanStack",
 		"CookMaterial",
+		"CanStack",
+		"ZukanAnimal",
 		"EatItem",
+		"UnderGodForest",
+		"Material",
+		"TypeInsect",
 		"CanGetPouch",
-		"RevivalRandom"
+		"PutAndFly",
+		"RevivalRandom",
+		"CookInsect"
 	],
 	name: "Winterwing Butterfly",
 	time_boost: 0,
-	hp_boost: 0,
-	is_spice: false
+	hp_boost: 0
 };
 var Animal_Insect_O$1 = {
 	hp: 4,
@@ -2789,23 +2766,22 @@ var Animal_Insect_O$1 = {
 	potency: 2,
 	time: 900,
 	tags: [
-		"TypeInsect",
-		"UnderGodForest",
-		"ZukanAnimal",
 		"CureItem",
-		"Material",
-		"LiftRockMaterial",
 		"CanStack",
+		"CookFish",
+		"ZukanAnimal",
 		"EatItem",
-		"CanUse",
+		"UnderGodForest",
+		"LiftRockMaterial",
+		"TypeInsect",
 		"CanGetPouch",
 		"RevivalRandom",
-		"CookFish"
+		"Material",
+		"CanUse"
 	],
 	name: "Ironshell Crab",
 	time_boost: 0,
-	hp_boost: 0,
-	is_spice: false
+	hp_boost: 0
 };
 var Item_Material_05$1 = {
 	hp: 2,
@@ -2813,22 +2789,21 @@ var Item_Material_05$1 = {
 	potency: 0,
 	time: 900,
 	tags: [
-		"CookSpice",
-		"CanUse",
-		"CanBalloonParasite",
 		"CureItem",
-		"Material",
-		"CanStack",
 		"CookMaterial",
-		"DrinkItem",
-		"StopTimerLong",
+		"CanBalloonParasite",
+		"CanStack",
+		"CookSpice",
 		"CanGetPouch",
-		"RevivalRandom"
+		"RevivalRandom",
+		"DrinkItem",
+		"Material",
+		"CanUse",
+		"StopTimerLong"
 	],
 	name: "Fresh Milk",
 	time_boost: 50,
-	hp_boost: 0,
-	is_spice: true
+	hp_boost: 0
 };
 var Animal_Insect_X$1 = {
 	hp: 0,
@@ -2836,23 +2811,22 @@ var Animal_Insect_X$1 = {
 	potency: 1,
 	time: 900,
 	tags: [
-		"CookInsect",
-		"TypeInsect",
-		"ZukanAnimal",
-		"UnderGodForest",
 		"CureItem",
-		"Material",
-		"LiftRockMaterial",
-		"CanStack",
 		"CookMaterial",
+		"CanStack",
+		"ZukanAnimal",
 		"EatItem",
+		"UnderGodForest",
+		"LiftRockMaterial",
+		"TypeInsect",
 		"CanGetPouch",
-		"RevivalRandom"
+		"RevivalRandom",
+		"CookInsect",
+		"Material"
 	],
 	name: "Fireproof Lizard",
 	time_boost: 0,
-	hp_boost: 0,
-	is_spice: false
+	hp_boost: 0
 };
 var Animal_Fish_X$1 = {
 	hp: 4,
@@ -2860,22 +2834,21 @@ var Animal_Fish_X$1 = {
 	potency: 2,
 	time: 900,
 	tags: [
-		"ZukanAnimal",
 		"CureItem",
-		"Material",
-		"AmiiboNoDropBeginning",
 		"CanStack",
-		"TypeFish",
+		"CookFish",
+		"ZukanAnimal",
 		"EatItem",
-		"CanUse",
+		"AmiiboNoDropBeginning",
+		"TypeFish",
 		"CanGetPouch",
 		"RevivalRandom",
-		"CookFish"
+		"Material",
+		"CanUse"
 	],
 	name: "Stealthfin Trout",
 	time_boost: 0,
-	hp_boost: 0,
-	is_spice: false
+	hp_boost: 0
 };
 var Item_Fruit_D$1 = {
 	hp: 12,
@@ -2883,29 +2856,28 @@ var Item_Fruit_D$1 = {
 	potency: 16,
 	time: 900,
 	tags: [
-		"CookFruit",
-		"CanUse",
-		"AutoGenPlain",
-		"StopTimerLong",
-		"CanBalloonParasite",
-		"CureItem",
-		"Material",
-		"ZukanSozai",
-		"AmiiboNoDropBeginning",
-		"CanStack",
-		"CookMaterial",
-		"TurnActorBowCharge",
-		"ObservedByTag",
-		"EatItem",
 		"AutoGenFlatSurface",
+		"AutoGenPlain",
+		"CookMaterial",
+		"CanBalloonParasite",
+		"CanStack",
+		"CureItem",
+		"EatItem",
+		"TurnActorBowCharge",
+		"AmiiboNoDropBeginning",
+		"ZukanSozai",
+		"ObservedByTag",
 		"AutoGenReplaceSet",
 		"CanGetPouch",
-		"RevivalRandom"
+		"RevivalRandom",
+		"Material",
+		"CanUse",
+		"CookFruit",
+		"StopTimerLong"
 	],
 	name: "Hearty Durian",
 	time_boost: 0,
-	hp_boost: 0,
-	is_spice: false
+	hp_boost: 0
 };
 var Item_Mushroom_O$1 = {
 	hp: 4,
@@ -2913,25 +2885,24 @@ var Item_Mushroom_O$1 = {
 	potency: 1,
 	time: 900,
 	tags: [
-		"CookMushroom",
-		"StopTimerLong",
-		"CanBalloonParasite",
-		"AutoGenAroundMightyTree",
 		"CureItem",
-		"Material",
-		"ZukanSozai",
-		"AmiiboNoDropBeginning",
+		"CanUse",
+		"CanBalloonParasite",
 		"CanStack",
 		"CookMaterial",
 		"EatItem",
-		"CanUse",
+		"AmiiboNoDropBeginning",
+		"ZukanSozai",
 		"CanGetPouch",
-		"RevivalRandom"
+		"RevivalRandom",
+		"Material",
+		"AutoGenAroundMightyTree",
+		"StopTimerLong",
+		"CookMushroom"
 	],
 	name: "Endura Shroom",
 	time_boost: 0,
-	hp_boost: 0,
-	is_spice: false
+	hp_boost: 0
 };
 var Item_FishGet_D$1 = {
 	hp: 4,
@@ -2939,24 +2910,23 @@ var Item_FishGet_D$1 = {
 	potency: 3,
 	time: 900,
 	tags: [
-		"StopTimerLong",
-		"ZukanAnimal",
-		"CanBalloonParasite",
 		"CureItem",
-		"AmiiboNoDropBeginning",
-		"CanStack",
 		"CookMaterial",
-		"ObservedByTag",
+		"CanBalloonParasite",
+		"CanStack",
+		"CookFish",
+		"ZukanAnimal",
 		"EatItem",
-		"CanUse",
+		"AmiiboNoDropBeginning",
+		"ObservedByTag",
 		"CanGetPouch",
 		"RevivalRandom",
-		"CookFish"
+		"CanUse",
+		"StopTimerLong"
 	],
 	name: "Voltfin Trout",
 	time_boost: 0,
-	hp_boost: 0,
-	is_spice: false
+	hp_boost: 0
 };
 var Item_PlantGet_I$1 = {
 	hp: 0,
@@ -2964,22 +2934,21 @@ var Item_PlantGet_I$1 = {
 	potency: 1,
 	time: 900,
 	tags: [
-		"StopTimerLong",
-		"CanBalloonParasite",
 		"CureItem",
-		"Material",
-		"ZukanSozai",
-		"CanStack",
 		"CookMaterial",
+		"CanBalloonParasite",
+		"CanStack",
 		"EatItem",
+		"ZukanSozai",
 		"CookPlant",
 		"CanGetPouch",
-		"RevivalRandom"
+		"RevivalRandom",
+		"Material",
+		"StopTimerLong"
 	],
 	name: "Blue Nightshade",
 	time_boost: 0,
-	hp_boost: 0,
-	is_spice: false
+	hp_boost: 0
 };
 var Item_Ore_D$1 = {
 	hp: 0,
@@ -2988,21 +2957,20 @@ var Item_Ore_D$1 = {
 	time: 900,
 	tags: [
 		"AmiiboTreasure",
-		"CanBalloonParasite",
-		"Material",
-		"GrassDrop",
-		"CanStack",
 		"CookMaterial",
-		"CookOre",
+		"CanBalloonParasite",
+		"CanStack",
+		"GrassDrop",
 		"EatItem",
-		"StopTimerLong",
 		"CanGetPouch",
-		"RevivalRandom"
+		"RevivalRandom",
+		"Material",
+		"CookOre",
+		"StopTimerLong"
 	],
 	name: "Topaz",
 	time_boost: 0,
-	hp_boost: 0,
-	is_spice: false
+	hp_boost: 0
 };
 var Item_Enemy_16$1 = {
 	hp: 0,
@@ -3010,21 +2978,20 @@ var Item_Enemy_16$1 = {
 	potency: 0,
 	time: 900,
 	tags: [
-		"StopTimerLong",
-		"EnemyMaterial",
+		"CookMaterial",
 		"CanBalloonParasite",
 		"CanStack",
-		"CookMaterial",
-		"UseChemicalType",
 		"EatItem",
+		"EnemyMaterial",
 		"CookEnemy",
 		"CanGetPouch",
-		"RevivalRandom"
+		"RevivalRandom",
+		"UseChemicalType",
+		"StopTimerLong"
 	],
 	name: "Yellow Chuchu Jelly",
 	time_boost: 80,
-	hp_boost: 0,
-	is_spice: true
+	hp_boost: 0
 };
 var Item_Enemy_02$1 = {
 	hp: 0,
@@ -3032,20 +2999,19 @@ var Item_Enemy_02$1 = {
 	potency: 0,
 	time: 900,
 	tags: [
-		"EnemyMaterial",
+		"RevivalNone",
+		"CookMaterial",
 		"CanBalloonParasite",
 		"CanStack",
-		"CookEnemy",
-		"CookMaterial",
 		"EatItem",
-		"StopTimerLong",
+		"EnemyMaterial",
+		"CookEnemy",
 		"CanGetPouch",
-		"RevivalNone"
+		"StopTimerLong"
 	],
 	name: "Bokoblin Guts",
 	time_boost: 160,
-	hp_boost: 0,
-	is_spice: true
+	hp_boost: 0
 };
 var Item_Plant_E$1 = {
 	hp: 0,
@@ -3053,26 +3019,25 @@ var Item_Plant_E$1 = {
 	potency: 1,
 	time: 900,
 	tags: [
-		"AutoGenWoodRoot",
-		"CookPlant",
-		"AutoGenExcludeWaterFront",
-		"AutoGenGrassLong",
-		"StopTimerLong",
+		"AutoGenLimitExcludeGrit",
 		"AutoGenExcludePlain",
 		"CureItem",
-		"Material",
-		"ZukanSozai",
+		"AutoGenExcludeWaterFront",
 		"CanStack",
-		"AutoGenShade",
-		"AutoGenLimitExcludeGrit",
+		"AutoGenGrassLong",
+		"AutoGenWoodRoot",
 		"AutoGenAroundShrub",
+		"AutoGenShade",
+		"ZukanSozai",
+		"CookPlant",
 		"CanGetPouch",
-		"RevivalRandom"
+		"RevivalRandom",
+		"Material",
+		"StopTimerLong"
 	],
 	name: "Cool Safflina",
 	time_boost: 0,
-	hp_boost: 0,
-	is_spice: false
+	hp_boost: 0
 };
 var Item_Enemy_03$1 = {
 	hp: 0,
@@ -3080,19 +3045,18 @@ var Item_Enemy_03$1 = {
 	potency: 0,
 	time: 900,
 	tags: [
-		"StopTimerLong",
-		"EnemyMaterial",
+		"CookMaterial",
 		"CanBalloonParasite",
 		"CanStack",
-		"CookMaterial",
 		"EatItem",
+		"EnemyMaterial",
 		"CookEnemy",
-		"CanGetPouch"
+		"CanGetPouch",
+		"StopTimerLong"
 	],
 	name: "Lizalfos Horn",
 	time_boost: 40,
-	hp_boost: 0,
-	is_spice: true
+	hp_boost: 0
 };
 var Item_Enemy_17$1 = {
 	hp: 0,
@@ -3100,21 +3064,20 @@ var Item_Enemy_17$1 = {
 	potency: 0,
 	time: 900,
 	tags: [
-		"StopTimerLong",
-		"EnemyMaterial",
+		"CookMaterial",
 		"CanBalloonParasite",
 		"CanStack",
-		"CookMaterial",
-		"UseChemicalType",
 		"EatItem",
+		"EnemyMaterial",
 		"CookEnemy",
 		"CanGetPouch",
-		"RevivalRandom"
+		"RevivalRandom",
+		"UseChemicalType",
+		"StopTimerLong"
 	],
 	name: "White Chuchu Jelly",
 	time_boost: 80,
-	hp_boost: 0,
-	is_spice: true
+	hp_boost: 0
 };
 var Item_Ore_E$1 = {
 	hp: 0,
@@ -3123,22 +3086,21 @@ var Item_Ore_E$1 = {
 	time: 900,
 	tags: [
 		"AmiiboTreasure",
-		"CanBalloonParasite",
-		"RainBonusMaterial",
-		"Material",
-		"GrassDrop",
-		"CanStack",
 		"CookMaterial",
-		"CookOre",
+		"CanBalloonParasite",
+		"CanStack",
+		"GrassDrop",
+		"RainBonusMaterial",
 		"EatItem",
-		"StopTimerLong",
 		"CanGetPouch",
-		"RevivalRandom"
+		"RevivalRandom",
+		"Material",
+		"CookOre",
+		"StopTimerLong"
 	],
 	name: "Opal",
 	time_boost: 0,
-	hp_boost: 0,
-	is_spice: false
+	hp_boost: 0
 };
 var Item_PlantGet_H$1 = {
 	hp: 0,
@@ -3146,23 +3108,22 @@ var Item_PlantGet_H$1 = {
 	potency: 1,
 	time: 900,
 	tags: [
-		"StopTimerLong",
-		"CanBalloonParasite",
 		"CureItem",
-		"Material",
-		"ZukanSozai",
-		"AmiiboNoDropBeginning",
-		"CanStack",
 		"CookMaterial",
+		"CanBalloonParasite",
+		"CanStack",
 		"EatItem",
+		"AmiiboNoDropBeginning",
+		"ZukanSozai",
 		"CookPlant",
 		"CanGetPouch",
-		"RevivalRandom"
+		"RevivalRandom",
+		"Material",
+		"StopTimerLong"
 	],
 	name: "Armoranth",
 	time_boost: 0,
-	hp_boost: 0,
-	is_spice: false
+	hp_boost: 0
 };
 var Item_FishGet_E$1 = {
 	hp: 4,
@@ -3170,23 +3131,22 @@ var Item_FishGet_E$1 = {
 	potency: 2,
 	time: 900,
 	tags: [
-		"StopTimerLong",
-		"ZukanAnimal",
-		"CanBalloonParasite",
 		"CureItem",
-		"AmiiboNoDropBeginning",
-		"CanStack",
 		"CookMaterial",
+		"CanBalloonParasite",
+		"CanStack",
+		"CookFish",
+		"ZukanAnimal",
 		"EatItem",
-		"CanUse",
+		"AmiiboNoDropBeginning",
 		"CanGetPouch",
 		"RevivalRandom",
-		"CookFish"
+		"CanUse",
+		"StopTimerLong"
 	],
 	name: "Mighty Carp",
 	time_boost: 0,
-	hp_boost: 0,
-	is_spice: false
+	hp_boost: 0
 };
 var Item_Mushroom_N$1 = {
 	hp: 12,
@@ -3194,26 +3154,25 @@ var Item_Mushroom_N$1 = {
 	potency: 16,
 	time: 900,
 	tags: [
-		"CookMushroom",
-		"CreateFromOnTreeLocator",
-		"StopTimerLong",
-		"CanBalloonParasite",
 		"CureItem",
-		"Material",
-		"ZukanSozai",
-		"AmiiboNoDropBeginning",
-		"CanStack",
 		"CookMaterial",
-		"EatItem",
-		"CanUse",
 		"AutoPlacementMaterial",
+		"CanStack",
+		"CanBalloonParasite",
+		"EatItem",
+		"AmiiboNoDropBeginning",
+		"CreateFromOnTreeLocator",
+		"ZukanSozai",
 		"CanGetPouch",
-		"RevivalRandom"
+		"RevivalRandom",
+		"Material",
+		"CanUse",
+		"StopTimerLong",
+		"CookMushroom"
 	],
 	name: "Big Hearty Truffle",
 	time_boost: 0,
-	hp_boost: 0,
-	is_spice: false
+	hp_boost: 0
 };
 var Item_Meat_11$1 = {
 	hp: 12,
@@ -3221,24 +3180,23 @@ var Item_Meat_11$1 = {
 	potency: 0,
 	time: 900,
 	tags: [
-		"StopTimerLong",
-		"WolfLinkPowerUpFood",
-		"CanBalloonParasite",
 		"CureItem",
-		"Material",
-		"AmiiboNoDropBeginning",
-		"CanStack",
 		"CookMaterial",
+		"CanBalloonParasite",
+		"CanStack",
+		"WolfLinkPowerUpFood",
 		"EatItem",
+		"AmiiboNoDropBeginning",
 		"CookMeat",
-		"CanUse",
 		"CanGetPouch",
-		"RevivalRandom"
+		"RevivalRandom",
+		"Material",
+		"CanUse",
+		"StopTimerLong"
 	],
 	name: "Raw Gourmet Meat",
 	time_boost: 0,
-	hp_boost: 0,
-	is_spice: false
+	hp_boost: 0
 };
 var Item_Fruit_E$1 = {
 	hp: 2,
@@ -3246,28 +3204,27 @@ var Item_Fruit_E$1 = {
 	potency: 2,
 	time: 900,
 	tags: [
-		"CookFruit",
-		"StopTimerLong",
-		"CanBalloonParasite",
 		"AutoGenWaterSurface",
-		"CureItem",
-		"AutoGenWaterFlowNone",
-		"Material",
-		"ZukanSozai",
-		"AmiiboNoDropBeginning",
-		"CanStack",
 		"CookMaterial",
-		"TurnActorBowCharge",
+		"CanBalloonParasite",
+		"CanStack",
+		"CureItem",
 		"EatItem",
-		"CanUse",
+		"TurnActorBowCharge",
+		"AmiiboNoDropBeginning",
+		"AutoGenWaterFlowNone",
+		"ZukanSozai",
 		"AutoGenReplaceSet",
 		"CanGetPouch",
-		"RevivalRandom"
+		"RevivalRandom",
+		"Material",
+		"CanUse",
+		"CookFruit",
+		"StopTimerLong"
 	],
 	name: "Fleet-Lotus Seeds",
 	time_boost: 0,
-	hp_boost: 0,
-	is_spice: false
+	hp_boost: 0
 };
 var Item_Enemy_Put_57$1 = {
 	hp: 0,
@@ -3275,21 +3232,20 @@ var Item_Enemy_Put_57$1 = {
 	potency: 0,
 	time: 900,
 	tags: [
-		"EnemyMaterial",
-		"CanStack",
-		"CookEnemy",
-		"CookMaterial",
-		"EatItem",
 		"PutScatter",
-		"StopTimerLong",
+		"CookMaterial",
+		"CanStack",
+		"EatItem",
+		"EnemyMaterial",
+		"CookEnemy",
 		"CanGetPouch",
+		"RevivalRandom",
 		"ThroughKorogFan",
-		"RevivalRandom"
+		"StopTimerLong"
 	],
 	name: "Octo Balloon",
 	time_boost: 160,
-	hp_boost: 0,
-	is_spice: true
+	hp_boost: 0
 };
 var Item_Meat_07$1 = {
 	hp: 6,
@@ -3297,22 +3253,21 @@ var Item_Meat_07$1 = {
 	potency: 0,
 	time: 900,
 	tags: [
-		"StopTimerLong",
-		"CanBalloonParasite",
 		"CureItem",
-		"Material",
-		"CanStack",
 		"CookMaterial",
+		"CanBalloonParasite",
+		"CanStack",
 		"EatItem",
 		"CookMeat",
-		"CanUse",
 		"CanGetPouch",
-		"RevivalRandom"
+		"RevivalRandom",
+		"Material",
+		"CanUse",
+		"StopTimerLong"
 	],
 	name: "Raw Bird Thigh",
 	time_boost: 0,
-	hp_boost: 0,
-	is_spice: false
+	hp_boost: 0
 };
 var Item_Fruit_G$1 = {
 	hp: 4,
@@ -3320,29 +3275,28 @@ var Item_Fruit_G$1 = {
 	potency: 0,
 	time: 900,
 	tags: [
-		"CookFruit",
-		"AutoGenExcludeWaterFront",
-		"StopTimerLong",
-		"CanBalloonParasite",
 		"CureItem",
-		"AutoGenSand",
-		"Material",
-		"ZukanSozai",
-		"AmiiboNoDropBeginning",
-		"CanStack",
 		"CookMaterial",
-		"TurnActorBowCharge",
-		"ObservedByTag",
+		"AutoGenExcludeWaterFront",
+		"CanBalloonParasite",
+		"CanStack",
+		"AutoGenSand",
 		"EatItem",
-		"CanUse",
+		"TurnActorBowCharge",
+		"AmiiboNoDropBeginning",
+		"ZukanSozai",
+		"ObservedByTag",
 		"AutoGenReplaceSet",
 		"CanGetPouch",
-		"RevivalRandom"
+		"RevivalRandom",
+		"Material",
+		"CanUse",
+		"CookFruit",
+		"StopTimerLong"
 	],
 	name: "Palm Fruit",
 	time_boost: 0,
-	hp_boost: 0,
-	is_spice: false
+	hp_boost: 0
 };
 var Item_Mushroom_L$1 = {
 	hp: 2,
@@ -3350,25 +3304,24 @@ var Item_Mushroom_L$1 = {
 	potency: 2,
 	time: 900,
 	tags: [
-		"CookMushroom",
+		"CureItem",
+		"CookMaterial",
+		"CanBalloonParasite",
+		"CanStack",
+		"EatItem",
+		"AmiiboNoDropBeginning",
+		"AutoGenShade",
+		"ZukanSozai",
+		"CanGetPouch",
+		"RevivalRandom",
+		"Material",
 		"CanUse",
 		"StopTimerLong",
-		"CanBalloonParasite",
-		"CureItem",
-		"Material",
-		"ZukanSozai",
-		"CanStack",
-		"AmiiboNoDropBeginning",
-		"CookMaterial",
-		"EatItem",
-		"AutoGenShade",
-		"CanGetPouch",
-		"RevivalRandom"
+		"CookMushroom"
 	],
 	name: "Razorshroom",
 	time_boost: 0,
-	hp_boost: 0,
-	is_spice: false
+	hp_boost: 0
 };
 var Item_FishGet_G$1 = {
 	hp: 4,
@@ -3376,23 +3329,22 @@ var Item_FishGet_G$1 = {
 	potency: 3,
 	time: 900,
 	tags: [
-		"StopTimerLong",
-		"ZukanAnimal",
-		"CanBalloonParasite",
 		"CureItem",
-		"AmiiboNoDropBeginning",
-		"CanStack",
 		"CookMaterial",
+		"CanBalloonParasite",
+		"CanStack",
+		"CookFish",
+		"ZukanAnimal",
 		"EatItem",
-		"CanUse",
+		"AmiiboNoDropBeginning",
 		"CanGetPouch",
 		"RevivalRandom",
-		"CookFish"
+		"CanUse",
+		"StopTimerLong"
 	],
 	name: "Armored Porgy",
 	time_boost: 0,
-	hp_boost: 0,
-	is_spice: false
+	hp_boost: 0
 };
 var Item_MushroomGet_D$1 = {
 	hp: 2,
@@ -3400,25 +3352,24 @@ var Item_MushroomGet_D$1 = {
 	potency: 1,
 	time: 900,
 	tags: [
-		"CookMushroom",
-		"CanUse",
-		"CanBalloonParasite",
 		"CureItem",
-		"Material",
-		"ZukanSozai",
-		"CanStack",
-		"AmiiboNoDropBeginning",
 		"CookMaterial",
-		"EatItem",
-		"StopTimerLong",
 		"AutoCliffMaterial",
+		"CanStack",
+		"CanBalloonParasite",
+		"EatItem",
+		"AmiiboNoDropBeginning",
+		"ZukanSozai",
 		"CanGetPouch",
-		"RevivalRandom"
+		"RevivalRandom",
+		"Material",
+		"CanUse",
+		"StopTimerLong",
+		"CookMushroom"
 	],
 	name: "Rushroom",
 	time_boost: 0,
-	hp_boost: 0,
-	is_spice: false
+	hp_boost: 0
 };
 var Item_PlantGet_J$1 = {
 	hp: 4,
@@ -3426,23 +3377,22 @@ var Item_PlantGet_J$1 = {
 	potency: 3,
 	time: 1200,
 	tags: [
-		"StopTimerLong",
-		"CanBalloonParasite",
 		"CureItem",
-		"Material",
-		"ZukanSozai",
-		"AmiiboNoDropBeginning",
-		"CanStack",
 		"CookMaterial",
+		"CanBalloonParasite",
+		"CanStack",
 		"EatItem",
+		"AmiiboNoDropBeginning",
+		"ZukanSozai",
 		"CookPlant",
 		"CanGetPouch",
-		"RevivalRandom"
+		"RevivalRandom",
+		"Material",
+		"StopTimerLong"
 	],
 	name: "Silent Princess",
 	time_boost: 0,
-	hp_boost: 0,
-	is_spice: false
+	hp_boost: 0
 };
 var Item_Ore_G$1 = {
 	hp: 0,
@@ -3451,22 +3401,21 @@ var Item_Ore_G$1 = {
 	time: 900,
 	tags: [
 		"AmiiboTreasure",
-		"CanBalloonParasite",
-		"Material",
-		"CanStack",
 		"CookMaterial",
-		"CookOre",
-		"ObjectNightGlow",
-		"ObservedByTag",
+		"CanBalloonParasite",
+		"CanStack",
 		"EatItem",
-		"StopTimerLong",
+		"ObservedByTag",
 		"CanGetPouch",
-		"RevivalRandom"
+		"ObjectNightGlow",
+		"RevivalRandom",
+		"Material",
+		"CookOre",
+		"StopTimerLong"
 	],
 	name: "Luminous Stone",
 	time_boost: 0,
-	hp_boost: 0,
-	is_spice: false
+	hp_boost: 0
 };
 var Item_Plant_Q$1 = {
 	hp: 8,
@@ -3474,33 +3423,32 @@ var Item_Plant_Q$1 = {
 	potency: 4,
 	time: 300,
 	tags: [
-		"AutoGenWoodRoot",
-		"AutoGenExcludeWaterFront",
-		"ZukanSozai",
-		"AutoGenGrassAndTurfEdge",
-		"CanStack",
-		"AutoGenGrassShort",
-		"CookPlant",
-		"CanUse",
-		"AutoGenForest",
+		"AutoGenLimitExcludeGrit",
+		"AutoGenFlatAndTurf",
 		"CureItem",
+		"AmiiboNoDropBeginning",
+		"CookPlant",
+		"AutoGenGrassAndTurfEdge",
+		"AutoGenForest",
+		"CanGetPouch",
+		"CanUse",
+		"CanStack",
+		"AutoGenWoodRoot",
+		"EatItem",
+		"AutoGenShade",
+		"ZukanSozai",
 		"Material",
 		"StopTimerLong",
-		"AutoGenLimitExcludeGrit",
-		"CanGetPouch",
-		"AutoGenGrassLong",
-		"EatItem",
-		"AutoGenAroundShrub",
-		"AutoGenFlatAndTurf",
-		"AmiiboNoDropBeginning",
 		"AutoGenObjectEdgeMulti",
-		"AutoGenShade",
+		"AutoGenExcludeWaterFront",
+		"AutoGenGrassLong",
+		"AutoGenAroundShrub",
+		"AutoGenGrassShort",
 		"RevivalRandom"
 	],
 	name: "Endura Carrot",
 	time_boost: 0,
-	hp_boost: 0,
-	is_spice: false
+	hp_boost: 0
 };
 var Item_Enemy_29$1 = {
 	hp: 0,
@@ -3508,19 +3456,18 @@ var Item_Enemy_29$1 = {
 	potency: 0,
 	time: 900,
 	tags: [
-		"StopTimerLong",
-		"EnemyMaterial",
+		"RevivalNone",
 		"CanBalloonParasite",
 		"CanStack",
 		"EatItem",
+		"EnemyMaterial",
 		"CookEnemy",
 		"CanGetPouch",
-		"RevivalNone"
+		"StopTimerLong"
 	],
 	name: "Ancient Shaft",
 	time_boost: 80,
-	hp_boost: 0,
-	is_spice: true
+	hp_boost: 0
 };
 var Item_Plant_F$1 = {
 	hp: 0,
@@ -3528,26 +3475,25 @@ var Item_Plant_F$1 = {
 	potency: 1,
 	time: 900,
 	tags: [
-		"AutoGenWoodRoot",
-		"CookPlant",
-		"AutoGenExcludeWaterFront",
-		"AutoGenGrassLong",
-		"StopTimerLong",
+		"AutoGenLimitExcludeGrit",
 		"AutoGenExcludePlain",
 		"CureItem",
-		"Material",
-		"ZukanSozai",
+		"AutoGenExcludeWaterFront",
 		"CanStack",
-		"AutoGenShade",
-		"AutoGenLimitExcludeGrit",
+		"AutoGenGrassLong",
+		"AutoGenWoodRoot",
 		"AutoGenAroundShrub",
+		"AutoGenShade",
+		"ZukanSozai",
+		"CookPlant",
 		"CanGetPouch",
-		"RevivalRandom"
+		"RevivalRandom",
+		"Material",
+		"StopTimerLong"
 	],
 	name: "Warm Safflina",
 	time_boost: 0,
-	hp_boost: 0,
-	is_spice: false
+	hp_boost: 0
 };
 var Item_Enemy_01$1 = {
 	hp: 0,
@@ -3555,19 +3501,18 @@ var Item_Enemy_01$1 = {
 	potency: 0,
 	time: 900,
 	tags: [
-		"StopTimerLong",
-		"EnemyMaterial",
+		"CookMaterial",
 		"CanBalloonParasite",
 		"CanStack",
-		"CookMaterial",
 		"EatItem",
+		"EnemyMaterial",
 		"CookEnemy",
-		"CanGetPouch"
+		"CanGetPouch",
+		"StopTimerLong"
 	],
 	name: "Bokoblin Fang",
 	time_boost: 80,
-	hp_boost: 0,
-	is_spice: true
+	hp_boost: 0
 };
 var Item_Enemy_15$1 = {
 	hp: 0,
@@ -3575,21 +3520,20 @@ var Item_Enemy_15$1 = {
 	potency: 0,
 	time: 900,
 	tags: [
-		"StopTimerLong",
-		"EnemyMaterial",
+		"CookMaterial",
 		"CanBalloonParasite",
 		"CanStack",
-		"CookMaterial",
-		"UseChemicalType",
 		"EatItem",
+		"EnemyMaterial",
 		"CookEnemy",
 		"CanGetPouch",
-		"RevivalRandom"
+		"RevivalRandom",
+		"UseChemicalType",
+		"StopTimerLong"
 	],
 	name: "Red Chuchu Jelly",
 	time_boost: 80,
-	hp_boost: 0,
-	is_spice: true
+	hp_boost: 0
 };
 var Item_Enemy_14$1 = {
 	hp: 0,
@@ -3598,19 +3542,18 @@ var Item_Enemy_14$1 = {
 	time: 900,
 	tags: [
 		"AmiiboTreasure",
-		"StopTimerLong",
-		"EnemyMaterial",
+		"CookMaterial",
 		"CanBalloonParasite",
 		"CanStack",
-		"CookMaterial",
 		"EatItem",
+		"EnemyMaterial",
 		"CookEnemy",
-		"CanGetPouch"
+		"CanGetPouch",
+		"StopTimerLong"
 	],
 	name: "Lynel Guts",
 	time_boost: 160,
-	hp_boost: 0,
-	is_spice: true
+	hp_boost: 0
 };
 var Item_Plant_G$1 = {
 	hp: 0,
@@ -3618,29 +3561,28 @@ var Item_Plant_G$1 = {
 	potency: 1,
 	time: 900,
 	tags: [
-		"CookPlant",
-		"AutoGenExcludeWaterFront",
-		"AutoGenGrassLong",
-		"AutoGenLimitShade",
-		"AutoGenGrove",
-		"StopTimerLong",
-		"CureItem",
-		"Material",
-		"ZukanSozai",
-		"AutoGenGrassAndTurfEdge",
-		"AmiiboNoDropBeginning",
-		"CanStack",
-		"AutoGenGrassShort",
 		"AutoGenFlatSurface",
 		"AutoGenLimitExcludeGrit",
+		"AutoGenLimitShade",
+		"AutoGenExcludeWaterFront",
+		"CanStack",
+		"AutoGenGrassLong",
+		"CureItem",
+		"Material",
+		"AmiiboNoDropBeginning",
+		"ZukanSozai",
+		"AutoGenGrassShort",
+		"CookPlant",
+		"AutoGenGrassAndTurfEdge",
 		"CanGetPouch",
+		"AutoGenGrove",
+		"RevivalRandom",
 		"AutoGenFlatAndTurf",
-		"RevivalRandom"
+		"StopTimerLong"
 	],
 	name: "Mighty Thistle",
 	time_boost: 0,
-	hp_boost: 0,
-	is_spice: false
+	hp_boost: 0
 };
 var Item_Enemy_00$1 = {
 	hp: 0,
@@ -3648,19 +3590,18 @@ var Item_Enemy_00$1 = {
 	potency: 0,
 	time: 900,
 	tags: [
-		"StopTimerLong",
-		"EnemyMaterial",
+		"CookMaterial",
 		"CanBalloonParasite",
 		"CanStack",
-		"CookMaterial",
 		"EatItem",
+		"EnemyMaterial",
 		"CookEnemy",
-		"CanGetPouch"
+		"CanGetPouch",
+		"StopTimerLong"
 	],
 	name: "Bokoblin Horn",
 	time_boost: 40,
-	hp_boost: 0,
-	is_spice: true
+	hp_boost: 0
 };
 var Item_Enemy_28$1 = {
 	hp: 0,
@@ -3668,19 +3609,18 @@ var Item_Enemy_28$1 = {
 	potency: 0,
 	time: 900,
 	tags: [
-		"StopTimerLong",
-		"EnemyMaterial",
+		"RevivalNone",
 		"CanBalloonParasite",
 		"CanStack",
 		"EatItem",
+		"EnemyMaterial",
 		"CookEnemy",
 		"CanGetPouch",
-		"RevivalNone"
+		"StopTimerLong"
 	],
 	name: "Ancient Spring",
 	time_boost: 40,
-	hp_boost: 0,
-	is_spice: true
+	hp_boost: 0
 };
 var Item_Ore_F$1 = {
 	hp: 0,
@@ -3689,22 +3629,21 @@ var Item_Ore_F$1 = {
 	time: 900,
 	tags: [
 		"AmiiboTreasure",
-		"CanBalloonParasite",
-		"RainBonusMaterial",
-		"Material",
-		"GrassDrop",
-		"CanStack",
 		"CookMaterial",
-		"CookOre",
+		"CanBalloonParasite",
+		"CanStack",
+		"GrassDrop",
+		"RainBonusMaterial",
 		"EatItem",
-		"StopTimerLong",
 		"CanGetPouch",
-		"RevivalRandom"
+		"RevivalRandom",
+		"Material",
+		"CookOre",
+		"StopTimerLong"
 	],
 	name: "Amber",
 	time_boost: 0,
-	hp_boost: 0,
-	is_spice: false
+	hp_boost: 0
 };
 var Item_FishGet_F$1 = {
 	hp: 4,
@@ -3712,23 +3651,22 @@ var Item_FishGet_F$1 = {
 	potency: 3,
 	time: 900,
 	tags: [
-		"StopTimerLong",
-		"ZukanAnimal",
-		"CanBalloonParasite",
 		"CureItem",
-		"AmiiboNoDropBeginning",
-		"CanStack",
 		"CookMaterial",
+		"CanBalloonParasite",
+		"CanStack",
+		"CookFish",
+		"ZukanAnimal",
 		"EatItem",
-		"CanUse",
+		"AmiiboNoDropBeginning",
 		"CanGetPouch",
 		"RevivalRandom",
-		"CookFish"
+		"CanUse",
+		"StopTimerLong"
 	],
 	name: "Mighty Porgy",
 	time_boost: 0,
-	hp_boost: 0,
-	is_spice: false
+	hp_boost: 0
 };
 var Item_Mushroom_M$1 = {
 	hp: 2,
@@ -3736,24 +3674,23 @@ var Item_Mushroom_M$1 = {
 	potency: 2,
 	time: 900,
 	tags: [
-		"CookMushroom",
-		"StopTimerLong",
-		"CanBalloonParasite",
 		"CureItem",
-		"Material",
-		"ZukanSozai",
-		"AmiiboNoDropBeginning",
-		"CanStack",
 		"CookMaterial",
+		"CanBalloonParasite",
+		"CanStack",
 		"EatItem",
-		"CanUse",
+		"AmiiboNoDropBeginning",
+		"ZukanSozai",
 		"CanGetPouch",
-		"RevivalRandom"
+		"RevivalRandom",
+		"Material",
+		"CanUse",
+		"StopTimerLong",
+		"CookMushroom"
 	],
 	name: "Ironshroom",
 	time_boost: 0,
-	hp_boost: 0,
-	is_spice: false
+	hp_boost: 0
 };
 var Item_Fruit_F$1 = {
 	hp: 2,
@@ -3761,27 +3698,26 @@ var Item_Fruit_F$1 = {
 	potency: 1,
 	time: 900,
 	tags: [
-		"CookFruit",
-		"AutoGenExcludeWaterFront",
-		"StopTimerLong",
-		"CanBalloonParasite",
 		"CureItem",
-		"Material",
-		"ZukanSozai",
-		"AmiiboNoDropBeginning",
-		"CanStack",
 		"CookMaterial",
-		"TurnActorBowCharge",
+		"AutoGenExcludeWaterFront",
+		"CanBalloonParasite",
+		"CanStack",
 		"EatItem",
-		"CanUse",
-		"AutoGenReplaceSet",
+		"TurnActorBowCharge",
+		"AmiiboNoDropBeginning",
+		"ZukanSozai",
 		"CanGetPouch",
-		"RevivalRandom"
+		"AutoGenReplaceSet",
+		"RevivalRandom",
+		"Material",
+		"CanUse",
+		"CookFruit",
+		"StopTimerLong"
 	],
 	name: "Hydromelon",
 	time_boost: 0,
-	hp_boost: 0,
-	is_spice: false
+	hp_boost: 0
 };
 var Item_Meat_12$1 = {
 	hp: 12,
@@ -3789,24 +3725,23 @@ var Item_Meat_12$1 = {
 	potency: 0,
 	time: 900,
 	tags: [
-		"StopTimerLong",
-		"WolfLinkPowerUpFood",
-		"CanBalloonParasite",
 		"CureItem",
-		"Material",
-		"AmiiboNoDropBeginning",
-		"CanStack",
 		"CookMaterial",
+		"CanBalloonParasite",
+		"CanStack",
+		"WolfLinkPowerUpFood",
 		"EatItem",
+		"AmiiboNoDropBeginning",
 		"CookMeat",
-		"CanUse",
 		"CanGetPouch",
-		"RevivalRandom"
+		"RevivalRandom",
+		"Material",
+		"CanUse",
+		"StopTimerLong"
 	],
 	name: "Raw Whole Bird",
 	time_boost: 0,
-	hp_boost: 0,
-	is_spice: false
+	hp_boost: 0
 };
 var Item_Meat_06$1 = {
 	hp: 4,
@@ -3814,22 +3749,21 @@ var Item_Meat_06$1 = {
 	potency: 0,
 	time: 900,
 	tags: [
-		"StopTimerLong",
-		"CanBalloonParasite",
 		"CureItem",
-		"Material",
-		"CanStack",
 		"CookMaterial",
+		"CanBalloonParasite",
+		"CanStack",
 		"EatItem",
 		"CookMeat",
-		"CanUse",
 		"CanGetPouch",
-		"RevivalRandom"
+		"RevivalRandom",
+		"Material",
+		"CanUse",
+		"StopTimerLong"
 	],
 	name: "Raw Bird Drumstick",
 	time_boost: 0,
-	hp_boost: 0,
-	is_spice: false
+	hp_boost: 0
 };
 var Item_Meat_02$1 = {
 	hp: 6,
@@ -3837,22 +3771,21 @@ var Item_Meat_02$1 = {
 	potency: 0,
 	time: 900,
 	tags: [
-		"StopTimerLong",
-		"CanBalloonParasite",
 		"CureItem",
-		"Material",
-		"CanStack",
 		"CookMaterial",
+		"CanBalloonParasite",
+		"CanStack",
 		"EatItem",
 		"CookMeat",
-		"CanUse",
 		"CanGetPouch",
-		"RevivalRandom"
+		"RevivalRandom",
+		"Material",
+		"CanUse",
+		"StopTimerLong"
 	],
 	name: "Raw Prime Meat",
 	time_boost: 0,
-	hp_boost: 0,
-	is_spice: false
+	hp_boost: 0
 };
 var Item_Fruit_B$1 = {
 	hp: 2,
@@ -3860,31 +3793,30 @@ var Item_Fruit_B$1 = {
 	potency: 0,
 	time: 900,
 	tags: [
-		"ZukanSozai",
-		"CanStack",
-		"CanUse",
-		"TurnActorBowCharge",
-		"AutoGenObjectEdgeAdd",
-		"AutoGenShade",
-		"CureItem",
-		"Material",
 		"CookMaterial",
-		"StopTimerLong",
-		"CanGetPouch",
-		"CookFruit",
-		"CanBalloonParasite",
-		"AutoGenAroundMightyTree",
-		"EatItem",
 		"AutoGenReplaceSet",
-		"AutoGenAroundShrub",
-		"AmiiboNoDropBeginning",
 		"OnLowTree",
+		"AutoGenObjectEdgeAdd",
+		"AutoGenAroundMightyTree",
+		"CookFruit",
+		"CureItem",
+		"AmiiboNoDropBeginning",
+		"CanGetPouch",
+		"CanUse",
+		"CanBalloonParasite",
+		"CanStack",
+		"EatItem",
+		"TurnActorBowCharge",
+		"AutoGenShade",
+		"ZukanSozai",
+		"Material",
+		"StopTimerLong",
+		"AutoGenAroundShrub",
 		"RevivalRandom"
 	],
 	name: "Wildberry",
 	time_boost: 0,
-	hp_boost: 0,
-	is_spice: false
+	hp_boost: 0
 };
 var Item_FishGet_B$1 = {
 	hp: 8,
@@ -3892,23 +3824,22 @@ var Item_FishGet_B$1 = {
 	potency: 8,
 	time: 900,
 	tags: [
-		"CanUse",
-		"ZukanAnimal",
-		"CanBalloonParasite",
 		"CureItem",
-		"CanStack",
-		"AmiiboNoDropBeginning",
 		"CookMaterial",
+		"CanBalloonParasite",
+		"CanStack",
+		"CookFish",
+		"ZukanAnimal",
 		"EatItem",
-		"StopTimerLong",
+		"AmiiboNoDropBeginning",
 		"CanGetPouch",
 		"RevivalRandom",
-		"CookFish"
+		"CanUse",
+		"StopTimerLong"
 	],
 	name: "Hearty Bass",
 	time_boost: 0,
-	hp_boost: 0,
-	is_spice: false
+	hp_boost: 0
 };
 var Item_Ore_B$1 = {
 	hp: 0,
@@ -3917,21 +3848,20 @@ var Item_Ore_B$1 = {
 	time: 900,
 	tags: [
 		"AmiiboTreasure",
-		"CanBalloonParasite",
-		"Material",
-		"GrassDrop",
-		"CanStack",
 		"CookMaterial",
-		"CookOre",
+		"CanBalloonParasite",
+		"CanStack",
+		"GrassDrop",
 		"EatItem",
-		"StopTimerLong",
 		"CanGetPouch",
-		"RevivalRandom"
+		"RevivalRandom",
+		"Material",
+		"CookOre",
+		"StopTimerLong"
 	],
 	name: "Ruby",
 	time_boost: 0,
-	hp_boost: 0,
-	is_spice: false
+	hp_boost: 0
 };
 var Item_PlantGet_O$1 = {
 	hp: 0,
@@ -3939,23 +3869,22 @@ var Item_PlantGet_O$1 = {
 	potency: 2,
 	time: 900,
 	tags: [
-		"StopTimerLong",
-		"CanBalloonParasite",
 		"CureItem",
-		"Material",
-		"ZukanSozai",
-		"AmiiboNoDropBeginning",
-		"CanStack",
 		"CookMaterial",
+		"CanBalloonParasite",
+		"CanStack",
 		"EatItem",
+		"AmiiboNoDropBeginning",
+		"ZukanSozai",
 		"CookPlant",
 		"CanGetPouch",
-		"RevivalRandom"
+		"RevivalRandom",
+		"Material",
+		"StopTimerLong"
 	],
 	name: "Swift Violet",
 	time_boost: 0,
-	hp_boost: 0,
-	is_spice: false
+	hp_boost: 0
 };
 var Item_Enemy_04$1 = {
 	hp: 0,
@@ -3963,19 +3892,18 @@ var Item_Enemy_04$1 = {
 	potency: 0,
 	time: 900,
 	tags: [
-		"StopTimerLong",
-		"EnemyMaterial",
+		"CookMaterial",
 		"CanBalloonParasite",
 		"CanStack",
-		"CookMaterial",
 		"EatItem",
+		"EnemyMaterial",
 		"CookEnemy",
-		"CanGetPouch"
+		"CanGetPouch",
+		"StopTimerLong"
 	],
 	name: "Lizalfos Talon",
 	time_boost: 80,
-	hp_boost: 0,
-	is_spice: true
+	hp_boost: 0
 };
 var Item_Plant_C$1 = {
 	hp: 16,
@@ -3983,31 +3911,30 @@ var Item_Plant_C$1 = {
 	potency: 20,
 	time: 900,
 	tags: [
-		"AutoGenWoodRoot",
-		"AutoGenExcludeWaterFront",
-		"ZukanSozai",
-		"AutoGenGrassAndTurfEdge",
-		"CanStack",
-		"AutoGenGrassShort",
-		"CookPlant",
-		"CanUse",
+		"AutoGenLimitExcludeGrit",
+		"AutoGenFlatAndTurf",
 		"CureItem",
+		"AmiiboNoDropBeginning",
+		"CookPlant",
+		"AutoGenGrassAndTurfEdge",
+		"CanGetPouch",
+		"AutoGenGrove",
+		"CanUse",
+		"CanStack",
+		"AutoGenWoodRoot",
+		"EatItem",
+		"AutoGenShade",
+		"ZukanSozai",
 		"Material",
 		"StopTimerLong",
-		"AutoGenLimitExcludeGrit",
-		"CanGetPouch",
+		"AutoGenExcludeWaterFront",
 		"AutoGenGrassLong",
-		"EatItem",
-		"AutoGenFlatAndTurf",
-		"AmiiboNoDropBeginning",
-		"AutoGenShade",
-		"AutoGenGrove",
+		"AutoGenGrassShort",
 		"RevivalRandom"
 	],
 	name: "Big Hearty Radish",
 	time_boost: 0,
-	hp_boost: 0,
-	is_spice: false
+	hp_boost: 0
 };
 var Item_Enemy_38$1 = {
 	hp: 0,
@@ -4015,24 +3942,23 @@ var Item_Enemy_38$1 = {
 	potency: 0,
 	time: 900,
 	tags: [
-		"CookSpice",
-		"DisableForbidPushJob",
-		"EnemyMaterial",
+		"CookMaterial",
 		"CanBalloonParasite",
 		"CanStack",
-		"CookLowPrice",
-		"CookMaterial",
+		"CookSpice",
+		"EatItem",
+		"EnemyMaterial",
 		"PhysicsPauseDisable",
 		"ObservedByTag",
-		"EatItem",
+		"CanGetPouch",
+		"CookLowPrice",
 		"CookValue1",
 		"StopTimerLong",
-		"CanGetPouch"
+		"DisableForbidPushJob"
 	],
 	name: "Dinraal's Scale",
 	time_boost: 60,
-	hp_boost: 5,
-	is_spice: true
+	hp_boost: 5
 };
 var Item_Enemy_39$1 = {
 	hp: 0,
@@ -4040,23 +3966,22 @@ var Item_Enemy_39$1 = {
 	potency: 0,
 	time: 900,
 	tags: [
-		"CookSpice",
-		"DisableForbidPushJob",
-		"EnemyMaterial",
+		"CookMaterial",
 		"CanBalloonParasite",
 		"CanStack",
-		"CookLowPrice",
-		"CookMaterial",
-		"PhysicsPauseDisable",
+		"CookSpice",
 		"EatItem",
+		"EnemyMaterial",
+		"PhysicsPauseDisable",
+		"CanGetPouch",
+		"CookLowPrice",
 		"CookValue1",
 		"StopTimerLong",
-		"CanGetPouch"
+		"DisableForbidPushJob"
 	],
 	name: "Dinraal's Claw",
 	time_boost: 180,
-	hp_boost: 8,
-	is_spice: true
+	hp_boost: 8
 };
 var Item_Enemy_05$1 = {
 	hp: 0,
@@ -4064,21 +3989,20 @@ var Item_Enemy_05$1 = {
 	potency: 0,
 	time: 900,
 	tags: [
+		"RevivalNone",
 		"AmiiboTreasure",
-		"EnemyMaterial",
-		"CanBalloonParasite",
-		"CanStack",
-		"CookEnemy",
 		"CookMaterial",
+		"CanStack",
+		"CanBalloonParasite",
 		"EatItem",
-		"StopTimerLong",
+		"EnemyMaterial",
+		"CookEnemy",
 		"CanGetPouch",
-		"RevivalNone"
+		"StopTimerLong"
 	],
 	name: "Lizalfos Tail",
 	time_boost: 160,
-	hp_boost: 0,
-	is_spice: true
+	hp_boost: 0
 };
 var Item_Plant_B$1 = {
 	hp: 10,
@@ -4086,32 +4010,31 @@ var Item_Plant_B$1 = {
 	potency: 12,
 	time: 900,
 	tags: [
-		"AutoGenWoodRoot",
-		"AutoGenExcludeWaterFront",
-		"ZukanSozai",
-		"AutoGenGrassAndTurfEdge",
-		"CanStack",
-		"AutoGenGrassShort",
-		"CookPlant",
-		"CanUse",
+		"AutoGenLimitExcludeGrit",
+		"AutoGenFlatAndTurf",
 		"CureItem",
+		"AmiiboNoDropBeginning",
+		"CookPlant",
+		"AutoGenGrassAndTurfEdge",
+		"CanGetPouch",
+		"AutoGenGrove",
+		"CanUse",
+		"CanStack",
+		"AutoGenWoodRoot",
+		"EatItem",
+		"AutoGenShade",
+		"ZukanSozai",
 		"Material",
 		"StopTimerLong",
-		"AutoGenLimitExcludeGrit",
-		"CanGetPouch",
+		"AutoGenExcludeWaterFront",
 		"AutoGenGrassLong",
-		"EatItem",
 		"AutoGenAroundShrub",
-		"AutoGenFlatAndTurf",
-		"AmiiboNoDropBeginning",
-		"AutoGenShade",
-		"AutoGenGrove",
+		"AutoGenGrassShort",
 		"RevivalRandom"
 	],
 	name: "Hearty Radish",
 	time_boost: 0,
-	hp_boost: 0,
-	is_spice: false
+	hp_boost: 0
 };
 var Item_Ore_C$1 = {
 	hp: 0,
@@ -4120,21 +4043,20 @@ var Item_Ore_C$1 = {
 	time: 900,
 	tags: [
 		"AmiiboTreasure",
-		"CanBalloonParasite",
-		"Material",
-		"GrassDrop",
-		"CanStack",
 		"CookMaterial",
-		"CookOre",
+		"CanBalloonParasite",
+		"CanStack",
+		"GrassDrop",
 		"EatItem",
-		"StopTimerLong",
 		"CanGetPouch",
-		"RevivalRandom"
+		"RevivalRandom",
+		"Material",
+		"CookOre",
+		"StopTimerLong"
 	],
 	name: "Sapphire",
 	time_boost: 0,
-	hp_boost: 0,
-	is_spice: false
+	hp_boost: 0
 };
 var Item_FishGet_C$1 = {
 	hp: 4,
@@ -4142,23 +4064,22 @@ var Item_FishGet_C$1 = {
 	potency: 3,
 	time: 900,
 	tags: [
-		"StopTimerLong",
-		"ZukanAnimal",
-		"CanBalloonParasite",
 		"CureItem",
-		"AmiiboNoDropBeginning",
-		"CanStack",
 		"CookMaterial",
+		"CanBalloonParasite",
+		"CanStack",
+		"CookFish",
+		"ZukanAnimal",
 		"EatItem",
-		"CanUse",
+		"AmiiboNoDropBeginning",
 		"CanGetPouch",
 		"RevivalRandom",
-		"CookFish"
+		"CanUse",
+		"StopTimerLong"
 	],
 	name: "Chillfin Trout",
 	time_boost: 0,
-	hp_boost: 0,
-	is_spice: false
+	hp_boost: 0
 };
 var Item_Mushroom_H$1 = {
 	hp: 2,
@@ -4166,24 +4087,23 @@ var Item_Mushroom_H$1 = {
 	potency: 2,
 	time: 900,
 	tags: [
-		"CookMushroom",
-		"CanUse",
-		"StopTimerLong",
-		"CanBalloonParasite",
 		"CureItem",
-		"Material",
-		"ZukanSozai",
-		"CanStack",
 		"CookMaterial",
+		"CanBalloonParasite",
+		"CanStack",
 		"EatItem",
 		"AutoGenShade",
+		"ZukanSozai",
 		"CanGetPouch",
-		"RevivalRandom"
+		"RevivalRandom",
+		"Material",
+		"CanUse",
+		"StopTimerLong",
+		"CookMushroom"
 	],
 	name: "Zapshroom",
 	time_boost: 0,
-	hp_boost: 0,
-	is_spice: false
+	hp_boost: 0
 };
 var Item_Fruit_C$1 = {
 	hp: 2,
@@ -4191,29 +4111,28 @@ var Item_Fruit_C$1 = {
 	potency: 1,
 	time: 900,
 	tags: [
-		"CookFruit",
-		"StopTimerLong",
-		"CanBalloonParasite",
 		"CureItem",
-		"Material",
-		"ZukanSozai",
-		"AmiiboNoDropBeginning",
-		"CanStack",
 		"CookMaterial",
-		"OnLowTree",
-		"TurnActorBowCharge",
-		"AutoGenLimitExcludeShade",
-		"ObservedByTag",
+		"CanBalloonParasite",
+		"CanStack",
 		"EatItem",
-		"CanUse",
-		"AutoGenReplaceSet",
+		"TurnActorBowCharge",
+		"AmiiboNoDropBeginning",
+		"ZukanSozai",
+		"ObservedByTag",
 		"CanGetPouch",
-		"RevivalRandom"
+		"AutoGenReplaceSet",
+		"OnLowTree",
+		"RevivalRandom",
+		"Material",
+		"CanUse",
+		"CookFruit",
+		"AutoGenLimitExcludeShade",
+		"StopTimerLong"
 	],
 	name: "Voltfruit",
 	time_boost: 0,
-	hp_boost: 0,
-	is_spice: false
+	hp_boost: 0
 };
 var Item_Fruit_A$1 = {
 	hp: 2,
@@ -4221,28 +4140,27 @@ var Item_Fruit_A$1 = {
 	potency: 0,
 	time: 900,
 	tags: [
-		"CookFruit",
-		"CanUse",
-		"AutoGenPlain",
-		"StopTimerLong",
-		"CanBalloonParasite",
-		"CureItem",
-		"Material",
-		"ZukanSozai",
-		"CanStack",
-		"TurnActorBowCharge",
-		"CookMaterial",
-		"ObservedByTag",
-		"EatItem",
 		"AutoGenFlatSurface",
-		"AutoGenReplaceSet",
+		"AutoGenPlain",
+		"CookMaterial",
+		"CanBalloonParasite",
+		"CanStack",
+		"CureItem",
+		"EatItem",
+		"TurnActorBowCharge",
+		"ZukanSozai",
+		"ObservedByTag",
 		"CanGetPouch",
-		"RevivalRandom"
+		"AutoGenReplaceSet",
+		"RevivalRandom",
+		"Material",
+		"CanUse",
+		"CookFruit",
+		"StopTimerLong"
 	],
 	name: "Apple",
 	time_boost: 0,
-	hp_boost: 0,
-	is_spice: false
+	hp_boost: 0
 };
 var Item_Meat_01$1 = {
 	hp: 4,
@@ -4250,22 +4168,21 @@ var Item_Meat_01$1 = {
 	potency: 0,
 	time: 900,
 	tags: [
-		"StopTimerLong",
-		"CanBalloonParasite",
 		"CureItem",
-		"Material",
-		"CanStack",
 		"CookMaterial",
+		"CanBalloonParasite",
+		"CanStack",
 		"EatItem",
 		"CookMeat",
-		"CanUse",
 		"CanGetPouch",
-		"RevivalRandom"
+		"RevivalRandom",
+		"Material",
+		"CanUse",
+		"StopTimerLong"
 	],
 	name: "Raw Meat",
 	time_boost: 0,
-	hp_boost: 0,
-	is_spice: false
+	hp_boost: 0
 };
 var Item_Mushroom_J$1 = {
 	hp: 2,
@@ -4273,25 +4190,24 @@ var Item_Mushroom_J$1 = {
 	potency: 2,
 	time: 900,
 	tags: [
-		"CookMushroom",
-		"StopTimerLong",
-		"CanBalloonParasite",
 		"CureItem",
-		"Material",
-		"ZukanSozai",
-		"CanStack",
 		"CookMaterial",
+		"CanBalloonParasite",
+		"CanStack",
+		"AlwaysTurnActor",
 		"EatItem",
-		"RandomCreateNotRain",
-		"CanUse",
+		"StopTimerLong",
+		"ZukanSozai",
 		"CanGetPouch",
 		"RevivalRandom",
-		"AlwaysTurnActor"
+		"Material",
+		"CanUse",
+		"RandomCreateNotRain",
+		"CookMushroom"
 	],
 	name: "Silent Shroom",
 	time_boost: 0,
-	hp_boost: 0,
-	is_spice: false
+	hp_boost: 0
 };
 var Item_FishGet_A$1 = {
 	hp: 4,
@@ -4299,22 +4215,21 @@ var Item_FishGet_A$1 = {
 	potency: 0,
 	time: 900,
 	tags: [
-		"StopTimerLong",
-		"ZukanAnimal",
-		"CanBalloonParasite",
 		"CureItem",
-		"CanStack",
 		"CookMaterial",
+		"CanBalloonParasite",
+		"CanStack",
+		"CookFish",
+		"ZukanAnimal",
 		"EatItem",
-		"CanUse",
 		"CanGetPouch",
 		"RevivalRandom",
-		"CookFish"
+		"CanUse",
+		"StopTimerLong"
 	],
 	name: "Hyrule Bass",
 	time_boost: 0,
-	hp_boost: 0,
-	is_spice: false
+	hp_boost: 0
 };
 var Item_Ore_A$1 = {
 	hp: 0,
@@ -4323,21 +4238,20 @@ var Item_Ore_A$1 = {
 	time: 900,
 	tags: [
 		"AmiiboTreasure",
-		"CanBalloonParasite",
-		"Material",
-		"GrassDrop",
-		"CanStack",
 		"CookMaterial",
-		"CookOre",
+		"CanBalloonParasite",
+		"CanStack",
+		"GrassDrop",
 		"EatItem",
-		"StopTimerLong",
 		"CanGetPouch",
-		"RevivalRandom"
+		"RevivalRandom",
+		"Material",
+		"CookOre",
+		"StopTimerLong"
 	],
 	name: "Diamond",
 	time_boost: 0,
-	hp_boost: 0,
-	is_spice: false
+	hp_boost: 0
 };
 var Item_PlantGet_L$1 = {
 	hp: 0,
@@ -4345,22 +4259,21 @@ var Item_PlantGet_L$1 = {
 	potency: 1,
 	time: 900,
 	tags: [
-		"StopTimerLong",
-		"CanBalloonParasite",
 		"CureItem",
-		"Material",
-		"ZukanSozai",
-		"CanStack",
 		"CookMaterial",
+		"CanBalloonParasite",
+		"CanStack",
 		"EatItem",
+		"ZukanSozai",
 		"CookPlant",
 		"CanGetPouch",
-		"RevivalRandom"
+		"RevivalRandom",
+		"Material",
+		"StopTimerLong"
 	],
 	name: "Electric Safflina",
 	time_boost: 0,
-	hp_boost: 0,
-	is_spice: false
+	hp_boost: 0
 };
 var Item_Enemy_13$1 = {
 	hp: 0,
@@ -4368,20 +4281,19 @@ var Item_Enemy_13$1 = {
 	potency: 0,
 	time: 900,
 	tags: [
-		"StopTimerLong",
-		"EnemyMaterial",
+		"CookMaterial",
 		"CanBalloonParasite",
 		"CanStack",
-		"CookMaterial",
-		"ObservedByTag",
 		"EatItem",
+		"EnemyMaterial",
+		"ObservedByTag",
 		"CookEnemy",
-		"CanGetPouch"
+		"CanGetPouch",
+		"StopTimerLong"
 	],
 	name: "Lynel Hoof",
 	time_boost: 80,
-	hp_boost: 0,
-	is_spice: true
+	hp_boost: 0
 };
 var Item_Enemy_07$1 = {
 	hp: 0,
@@ -4389,19 +4301,18 @@ var Item_Enemy_07$1 = {
 	potency: 0,
 	time: 900,
 	tags: [
-		"StopTimerLong",
-		"EnemyMaterial",
+		"CookMaterial",
 		"CanBalloonParasite",
 		"CanStack",
-		"CookMaterial",
 		"EatItem",
+		"EnemyMaterial",
 		"CookEnemy",
-		"CanGetPouch"
+		"CanGetPouch",
+		"StopTimerLong"
 	],
 	name: "Moblin Fang",
 	time_boost: 80,
-	hp_boost: 0,
-	is_spice: true
+	hp_boost: 0
 };
 var Item_Plant_A$1 = {
 	hp: 4,
@@ -4409,28 +4320,27 @@ var Item_Plant_A$1 = {
 	potency: 0,
 	time: 900,
 	tags: [
-		"AutoGenWoodRoot",
-		"CookPlant",
-		"AutoGenExcludeWaterFront",
-		"CanUse",
-		"StopTimerLong",
-		"AutoGenLimitGrassLong",
-		"CureItem",
-		"Material",
-		"ZukanSozai",
-		"CanStack",
-		"EatItem",
-		"AutoGenShade",
 		"AutoGenLimitExcludeGrit",
+		"CureItem",
+		"AutoGenExcludeWaterFront",
+		"CanStack",
+		"AutoGenWoodRoot",
+		"EatItem",
 		"AutoGenAroundShrub",
+		"Material",
+		"AutoGenShade",
+		"AutoGenLimitGrassLong",
+		"ZukanSozai",
+		"CookPlant",
 		"CanGetPouch",
 		"RevivalRandom",
-		"AutoGenObjectEdgeAdd"
+		"AutoGenObjectEdgeAdd",
+		"CanUse",
+		"StopTimerLong"
 	],
 	name: "Hyrule Herb",
 	time_boost: 0,
-	hp_boost: 0,
-	is_spice: false
+	hp_boost: 0
 };
 var Item_Enemy_06$1 = {
 	hp: 0,
@@ -4438,19 +4348,18 @@ var Item_Enemy_06$1 = {
 	potency: 0,
 	time: 900,
 	tags: [
-		"StopTimerLong",
-		"EnemyMaterial",
+		"CookMaterial",
 		"CanBalloonParasite",
 		"CanStack",
-		"CookMaterial",
 		"EatItem",
+		"EnemyMaterial",
 		"CookEnemy",
-		"CanGetPouch"
+		"CanGetPouch",
+		"StopTimerLong"
 	],
 	name: "Moblin Horn",
 	time_boost: 40,
-	hp_boost: 0,
-	is_spice: true
+	hp_boost: 0
 };
 var Item_Enemy_12$1 = {
 	hp: 0,
@@ -4458,19 +4367,18 @@ var Item_Enemy_12$1 = {
 	potency: 0,
 	time: 900,
 	tags: [
-		"EnemyMaterial",
+		"CookMaterial",
 		"CanBalloonParasite",
 		"CanStack",
-		"CookEnemy",
-		"CookMaterial",
 		"EatItem",
-		"StopTimerLong",
-		"CanGetPouch"
+		"EnemyMaterial",
+		"CookEnemy",
+		"CanGetPouch",
+		"StopTimerLong"
 	],
 	name: "Lynel Horn",
 	time_boost: 40,
-	hp_boost: 0,
-	is_spice: true
+	hp_boost: 0
 };
 var Item_PlantGet_M$1 = {
 	hp: 2,
@@ -4478,24 +4386,23 @@ var Item_PlantGet_M$1 = {
 	potency: 1,
 	time: 900,
 	tags: [
-		"CookPlant",
-		"StopTimerLong",
-		"CanBalloonParasite",
 		"CureItem",
-		"Material",
-		"ZukanSozai",
-		"AmiiboNoDropBeginning",
-		"CanStack",
 		"CookMaterial",
+		"CanBalloonParasite",
+		"CanStack",
 		"EatItem",
-		"CanUse",
+		"AmiiboNoDropBeginning",
+		"ZukanSozai",
+		"CookPlant",
 		"CanGetPouch",
-		"RevivalRandom"
+		"RevivalRandom",
+		"Material",
+		"CanUse",
+		"StopTimerLong"
 	],
 	name: "Swift Carrot",
 	time_boost: 0,
-	hp_boost: 0,
-	is_spice: false
+	hp_boost: 0
 };
 var Item_Mushroom_F$1 = {
 	hp: 8,
@@ -4503,26 +4410,25 @@ var Item_Mushroom_F$1 = {
 	potency: 4,
 	time: 900,
 	tags: [
-		"CookMushroom",
-		"CreateFromOnTreeLocator",
-		"StopTimerLong",
-		"CanBalloonParasite",
 		"CureItem",
-		"Material",
-		"ZukanSozai",
-		"AmiiboNoDropBeginning",
-		"CanStack",
 		"CookMaterial",
-		"EatItem",
-		"CanUse",
 		"AutoPlacementMaterial",
+		"CanStack",
+		"CanBalloonParasite",
+		"EatItem",
+		"AmiiboNoDropBeginning",
+		"CreateFromOnTreeLocator",
+		"ZukanSozai",
 		"CanGetPouch",
-		"RevivalRandom"
+		"RevivalRandom",
+		"Material",
+		"CanUse",
+		"StopTimerLong",
+		"CookMushroom"
 	],
 	name: "Hearty Truffle",
 	time_boost: 0,
-	hp_boost: 0,
-	is_spice: false
+	hp_boost: 0
 };
 var Item_FishGet_M$1 = {
 	hp: 4,
@@ -4530,23 +4436,22 @@ var Item_FishGet_M$1 = {
 	potency: 1,
 	time: 900,
 	tags: [
-		"StopTimerLong",
-		"ZukanAnimal",
-		"CanBalloonParasite",
 		"CureItem",
-		"AmiiboNoDropBeginning",
-		"CanStack",
 		"CookMaterial",
+		"CanBalloonParasite",
+		"CanStack",
+		"CookFish",
+		"ZukanAnimal",
 		"EatItem",
-		"CanUse",
+		"AmiiboNoDropBeginning",
 		"CanGetPouch",
 		"RevivalRandom",
-		"CookFish"
+		"CanUse",
+		"StopTimerLong"
 	],
 	name: "Sneaky River Snail",
 	time_boost: 0,
-	hp_boost: 0,
-	is_spice: false
+	hp_boost: 0
 };
 var Item_FishGet_Z$1 = {
 	hp: 4,
@@ -4554,23 +4459,22 @@ var Item_FishGet_Z$1 = {
 	potency: 0,
 	time: 900,
 	tags: [
-		"StopTimerLong",
-		"ZukanAnimal",
-		"CanBalloonParasite",
 		"CureItem",
-		"AmiiboNoDropBeginning",
-		"CanStack",
 		"CookMaterial",
+		"CanBalloonParasite",
+		"CanStack",
+		"CookFish",
+		"ZukanAnimal",
 		"EatItem",
-		"CanUse",
+		"AmiiboNoDropBeginning",
 		"CanGetPouch",
 		"RevivalRandom",
-		"CookFish"
+		"CanUse",
+		"StopTimerLong"
 	],
 	name: "Sanke Carp",
 	time_boost: 0,
-	hp_boost: 0,
-	is_spice: false
+	hp_boost: 0
 };
 var Item_InsectGet_Z$1 = {
 	hp: 4,
@@ -4578,23 +4482,22 @@ var Item_InsectGet_Z$1 = {
 	potency: 2,
 	time: 900,
 	tags: [
-		"StopTimerLong",
-		"ZukanAnimal",
-		"CanBalloonParasite",
 		"CureItem",
-		"AmiiboNoDropBeginning",
-		"CanStack",
 		"CookMaterial",
+		"CanBalloonParasite",
+		"CanStack",
+		"CookFish",
+		"ZukanAnimal",
 		"EatItem",
-		"CanUse",
+		"AmiiboNoDropBeginning",
 		"CanGetPouch",
 		"RevivalRandom",
-		"CookFish"
+		"CanUse",
+		"StopTimerLong"
 	],
 	name: "Bright-Eyed Crab",
 	time_boost: 0,
-	hp_boost: 0,
-	is_spice: false
+	hp_boost: 0
 };
 var Item_Plant_L$1 = {
 	hp: 0,
@@ -4602,25 +4505,24 @@ var Item_Plant_L$1 = {
 	potency: 1,
 	time: 900,
 	tags: [
-		"AutoGenWoodRoot",
-		"CookPlant",
-		"AutoGenShade",
-		"AutoGenGrassLong",
-		"CureItem",
-		"Material",
-		"AutoGenExcludePlain",
-		"ZukanSozai",
-		"CanStack",
-		"StopTimerLong",
 		"AutoGenLimitExcludeGrit",
+		"CureItem",
+		"AutoGenExcludePlain",
+		"CanStack",
+		"AutoGenGrassLong",
+		"AutoGenWoodRoot",
 		"AutoGenAroundShrub",
+		"AutoGenShade",
+		"ZukanSozai",
+		"CookPlant",
 		"CanGetPouch",
-		"RevivalRandom"
+		"RevivalRandom",
+		"Material",
+		"StopTimerLong"
 	],
 	name: "Electric Safflina",
 	time_boost: 0,
-	hp_boost: 0,
-	is_spice: false
+	hp_boost: 0
 };
 var Item_Plant_M$1 = {
 	hp: 2,
@@ -4628,32 +4530,31 @@ var Item_Plant_M$1 = {
 	potency: 1,
 	time: 900,
 	tags: [
-		"AutoGenWoodRoot",
-		"AutoGenExcludeWaterFront",
-		"ZukanSozai",
-		"AutoGenGrassAndTurfEdge",
-		"CanStack",
-		"AutoGenGrassShort",
-		"CookPlant",
-		"CanUse",
-		"AutoGenForest",
+		"AutoGenLimitExcludeGrit",
+		"AutoGenFlatAndTurf",
 		"CureItem",
+		"AmiiboNoDropBeginning",
+		"CookPlant",
+		"AutoGenGrassAndTurfEdge",
+		"AutoGenForest",
+		"CanGetPouch",
+		"CanUse",
+		"CanStack",
+		"AutoGenWoodRoot",
+		"EatItem",
+		"AutoGenShade",
+		"ZukanSozai",
 		"Material",
 		"StopTimerLong",
-		"AutoGenLimitExcludeGrit",
-		"CanGetPouch",
+		"AutoGenExcludeWaterFront",
 		"AutoGenGrassLong",
-		"EatItem",
 		"AutoGenAroundShrub",
-		"AutoGenFlatAndTurf",
-		"AmiiboNoDropBeginning",
-		"AutoGenShade",
+		"AutoGenGrassShort",
 		"RevivalRandom"
 	],
 	name: "Swift Carrot",
 	time_boost: 0,
-	hp_boost: 0,
-	is_spice: false
+	hp_boost: 0
 };
 var Item_PlantGet_A$1 = {
 	hp: 4,
@@ -4661,23 +4562,22 @@ var Item_PlantGet_A$1 = {
 	potency: 0,
 	time: 900,
 	tags: [
-		"CookPlant",
-		"StopTimerLong",
-		"CanBalloonParasite",
 		"CureItem",
-		"Material",
-		"ZukanSozai",
-		"CanStack",
 		"CookMaterial",
+		"CanBalloonParasite",
+		"CanStack",
 		"EatItem",
-		"CanUse",
+		"ZukanSozai",
+		"CookPlant",
 		"CanGetPouch",
-		"RevivalRandom"
+		"RevivalRandom",
+		"Material",
+		"CanUse",
+		"StopTimerLong"
 	],
 	name: "Hyrule Herb",
 	time_boost: 0,
-	hp_boost: 0,
-	is_spice: false
+	hp_boost: 0
 };
 var Item_FishGet_L$1 = {
 	hp: 4,
@@ -4685,22 +4585,21 @@ var Item_FishGet_L$1 = {
 	potency: 4,
 	time: 900,
 	tags: [
-		"StopTimerLong",
-		"ZukanAnimal",
-		"CanBalloonParasite",
 		"CureItem",
-		"CanStack",
 		"CookMaterial",
+		"CanBalloonParasite",
+		"CanStack",
+		"CookFish",
+		"ZukanAnimal",
 		"EatItem",
-		"CanUse",
 		"CanGetPouch",
 		"RevivalRandom",
-		"CookFish"
+		"CanUse",
+		"StopTimerLong"
 	],
 	name: "Staminoka Bass",
 	time_boost: 0,
-	hp_boost: 0,
-	is_spice: false
+	hp_boost: 0
 };
 var Item_Fruit_L$1 = {
 	hp: 1,
@@ -4708,27 +4607,26 @@ var Item_Fruit_L$1 = {
 	potency: 0,
 	time: 900,
 	tags: [
-		"CookSpice",
-		"CreateFromOnTreeLocator",
-		"AutoGenExcludeWaterFront",
-		"StopTimerLong",
-		"CanBalloonParasite",
 		"CureItem",
-		"Material",
-		"CanStack",
-		"TurnActorBowCharge",
 		"CookMaterial",
-		"AutoGenReplaceSet",
-		"EatItem",
-		"CanUse",
 		"AutoPlacementMaterial",
+		"AutoGenExcludeWaterFront",
+		"CanBalloonParasite",
+		"CanStack",
+		"CookSpice",
+		"EatItem",
+		"TurnActorBowCharge",
+		"CreateFromOnTreeLocator",
 		"CanGetPouch",
-		"RevivalRandom"
+		"AutoGenReplaceSet",
+		"RevivalRandom",
+		"Material",
+		"CanUse",
+		"StopTimerLong"
 	],
 	name: "Chickaloo Tree Nut",
 	time_boost: 10,
-	hp_boost: 2,
-	is_spice: true
+	hp_boost: 2
 };
 var Item_Mushroom_E$1 = {
 	hp: 2,
@@ -4736,23 +4634,22 @@ var Item_Mushroom_E$1 = {
 	potency: 0,
 	time: 900,
 	tags: [
-		"CookMushroom",
-		"StopTimerLong",
-		"CanBalloonParasite",
 		"CureItem",
-		"Material",
-		"ZukanSozai",
-		"CanStack",
 		"CookMaterial",
+		"CanBalloonParasite",
+		"CanStack",
 		"EatItem",
-		"CanUse",
+		"ZukanSozai",
 		"CanGetPouch",
-		"RevivalRandom"
+		"RevivalRandom",
+		"Material",
+		"CanUse",
+		"StopTimerLong",
+		"CookMushroom"
 	],
 	name: "Hylian Shroom",
 	time_boost: 0,
-	hp_boost: 0,
-	is_spice: false
+	hp_boost: 0
 };
 var Item_PlantGet_C$1 = {
 	hp: 16,
@@ -4760,24 +4657,23 @@ var Item_PlantGet_C$1 = {
 	potency: 20,
 	time: 900,
 	tags: [
-		"CookPlant",
-		"StopTimerLong",
-		"CanBalloonParasite",
 		"CureItem",
-		"Material",
-		"ZukanSozai",
-		"AmiiboNoDropBeginning",
-		"CanStack",
 		"CookMaterial",
+		"CanBalloonParasite",
+		"CanStack",
 		"EatItem",
-		"CanUse",
+		"AmiiboNoDropBeginning",
+		"ZukanSozai",
+		"CookPlant",
 		"CanGetPouch",
-		"RevivalRandom"
+		"RevivalRandom",
+		"Material",
+		"CanUse",
+		"StopTimerLong"
 	],
 	name: "Big Hearty Radish",
 	time_boost: 0,
-	hp_boost: 0,
-	is_spice: false
+	hp_boost: 0
 };
 var Item_Plant_O$1 = {
 	hp: 0,
@@ -4785,21 +4681,20 @@ var Item_Plant_O$1 = {
 	potency: 2,
 	time: 900,
 	tags: [
-		"StopTimerLong",
-		"CureItem",
-		"Material",
-		"ZukanSozai",
-		"AmiiboNoDropBeginning",
-		"CanStack",
-		"CookPlant",
 		"AutoCliffMaterial",
+		"CureItem",
+		"CanStack",
+		"AmiiboNoDropBeginning",
+		"ZukanSozai",
+		"CookPlant",
 		"CanGetPouch",
-		"RevivalRandom"
+		"RevivalRandom",
+		"Material",
+		"StopTimerLong"
 	],
 	name: "Swift Violet",
 	time_boost: 0,
-	hp_boost: 0,
-	is_spice: false
+	hp_boost: 0
 };
 var Item_Enemy_08$1 = {
 	hp: 0,
@@ -4808,19 +4703,18 @@ var Item_Enemy_08$1 = {
 	time: 900,
 	tags: [
 		"AmiiboTreasure",
-		"StopTimerLong",
-		"EnemyMaterial",
+		"CookMaterial",
 		"CanBalloonParasite",
 		"CanStack",
-		"CookMaterial",
 		"EatItem",
+		"EnemyMaterial",
 		"CookEnemy",
-		"CanGetPouch"
+		"CanGetPouch",
+		"StopTimerLong"
 	],
 	name: "Moblin Guts",
 	time_boost: 160,
-	hp_boost: 0,
-	is_spice: true
+	hp_boost: 0
 };
 var Item_Enemy_20$1 = {
 	hp: 0,
@@ -4828,19 +4722,18 @@ var Item_Enemy_20$1 = {
 	potency: 0,
 	time: 900,
 	tags: [
-		"StopTimerLong",
-		"EnemyMaterial",
+		"CookMaterial",
 		"CanBalloonParasite",
 		"CanStack",
-		"CookMaterial",
 		"EatItem",
+		"EnemyMaterial",
 		"CookEnemy",
-		"CanGetPouch"
+		"CanGetPouch",
+		"StopTimerLong"
 	],
 	name: "Octorok Tentacle",
 	time_boost: 40,
-	hp_boost: 0,
-	is_spice: true
+	hp_boost: 0
 };
 var Item_Enemy_34$1 = {
 	hp: 0,
@@ -4848,19 +4741,18 @@ var Item_Enemy_34$1 = {
 	potency: 0,
 	time: 900,
 	tags: [
-		"StopTimerLong",
-		"EnemyMaterial",
+		"CookMaterial",
 		"CanBalloonParasite",
 		"CanStack",
-		"CookMaterial",
 		"EatItem",
+		"EnemyMaterial",
 		"CookEnemy",
-		"CanGetPouch"
+		"CanGetPouch",
+		"StopTimerLong"
 	],
 	name: "Hinox Guts",
 	time_boost: 160,
-	hp_boost: 0,
-	is_spice: true
+	hp_boost: 0
 };
 var Item_Enemy_21$1 = {
 	hp: 0,
@@ -4868,19 +4760,18 @@ var Item_Enemy_21$1 = {
 	potency: 0,
 	time: 900,
 	tags: [
-		"StopTimerLong",
-		"EnemyMaterial",
+		"CookMaterial",
 		"CanBalloonParasite",
 		"CanStack",
-		"CookMaterial",
 		"EatItem",
+		"EnemyMaterial",
 		"CookEnemy",
-		"CanGetPouch"
+		"CanGetPouch",
+		"StopTimerLong"
 	],
 	name: "Octorok Eyeball",
 	time_boost: 80,
-	hp_boost: 0,
-	is_spice: true
+	hp_boost: 0
 };
 var Item_InsectGet_O$1 = {
 	hp: 4,
@@ -4888,23 +4779,22 @@ var Item_InsectGet_O$1 = {
 	potency: 2,
 	time: 900,
 	tags: [
-		"StopTimerLong",
-		"ZukanAnimal",
-		"CanBalloonParasite",
 		"CureItem",
-		"AmiiboNoDropBeginning",
-		"CanStack",
 		"CookMaterial",
+		"CanBalloonParasite",
+		"CanStack",
+		"CookFish",
+		"ZukanAnimal",
 		"EatItem",
-		"CanUse",
+		"AmiiboNoDropBeginning",
 		"CanGetPouch",
 		"RevivalRandom",
-		"CookFish"
+		"CanUse",
+		"StopTimerLong"
 	],
 	name: "Ironshell Crab",
 	time_boost: 0,
-	hp_boost: 0,
-	is_spice: false
+	hp_boost: 0
 };
 var Item_PlantGet_B$1 = {
 	hp: 10,
@@ -4912,24 +4802,23 @@ var Item_PlantGet_B$1 = {
 	potency: 12,
 	time: 900,
 	tags: [
-		"CookPlant",
-		"StopTimerLong",
-		"CanBalloonParasite",
 		"CureItem",
-		"Material",
-		"ZukanSozai",
-		"AmiiboNoDropBeginning",
-		"CanStack",
 		"CookMaterial",
+		"CanBalloonParasite",
+		"CanStack",
 		"EatItem",
-		"CanUse",
+		"AmiiboNoDropBeginning",
+		"ZukanSozai",
+		"CookPlant",
 		"CanGetPouch",
-		"RevivalRandom"
+		"RevivalRandom",
+		"Material",
+		"CanUse",
+		"StopTimerLong"
 	],
 	name: "Hearty Radish",
 	time_boost: 0,
-	hp_boost: 0,
-	is_spice: false
+	hp_boost: 0
 };
 var Item_FishGet_X$1 = {
 	hp: 4,
@@ -4937,23 +4826,22 @@ var Item_FishGet_X$1 = {
 	potency: 2,
 	time: 900,
 	tags: [
-		"StopTimerLong",
-		"ZukanAnimal",
-		"CanBalloonParasite",
 		"CureItem",
-		"AmiiboNoDropBeginning",
-		"CanStack",
 		"CookMaterial",
+		"CanBalloonParasite",
+		"CanStack",
+		"CookFish",
+		"ZukanAnimal",
 		"EatItem",
-		"CanUse",
+		"AmiiboNoDropBeginning",
 		"CanGetPouch",
 		"RevivalRandom",
-		"CookFish"
+		"CanUse",
+		"StopTimerLong"
 	],
 	name: "Stealthfin Trout",
 	time_boost: 0,
-	hp_boost: 0,
-	is_spice: false
+	hp_boost: 0
 };
 var Item_Mushroom_D$1 = {
 	hp: 2,
@@ -4961,25 +4849,24 @@ var Item_Mushroom_D$1 = {
 	potency: 1,
 	time: 900,
 	tags: [
-		"CookMushroom",
-		"StopTimerLong",
-		"CanBalloonParasite",
-		"CureItem",
-		"Material",
-		"ZukanSozai",
-		"AmiiboNoDropBeginning",
-		"CanStack",
-		"CookMaterial",
-		"EatItem",
-		"CanUse",
 		"AutoCliffMaterial",
+		"CookMaterial",
+		"CanBalloonParasite",
+		"CanStack",
+		"CureItem",
+		"EatItem",
+		"AmiiboNoDropBeginning",
+		"ZukanSozai",
 		"CanGetPouch",
-		"RevivalRandom"
+		"RevivalRandom",
+		"Material",
+		"CanUse",
+		"StopTimerLong",
+		"CookMushroom"
 	],
 	name: "Rushroom",
 	time_boost: 0,
-	hp_boost: 0,
-	is_spice: false
+	hp_boost: 0
 };
 var Item_Fruit_K$1 = {
 	hp: 1,
@@ -4987,27 +4874,26 @@ var Item_Fruit_K$1 = {
 	potency: 0,
 	time: 900,
 	tags: [
-		"CookSpice",
-		"AutoGenExcludeWaterFront",
-		"StopTimerLong",
-		"CanBalloonParasite",
 		"CureItem",
-		"Material",
-		"CanStack",
-		"TurnActorBowCharge",
 		"CookMaterial",
-		"CreateFromOnTreeLocatorRandom",
-		"AutoGenReplaceSet",
-		"EatItem",
-		"CanUse",
 		"AutoPlacementMaterial",
+		"AutoGenExcludeWaterFront",
+		"CanBalloonParasite",
+		"CanStack",
+		"CookSpice",
+		"EatItem",
+		"TurnActorBowCharge",
+		"CreateFromOnTreeLocatorRandom",
 		"CanGetPouch",
-		"RevivalRandom"
+		"AutoGenReplaceSet",
+		"RevivalRandom",
+		"Material",
+		"CanUse",
+		"StopTimerLong"
 	],
 	name: "Acorn",
 	time_boost: 20,
-	hp_boost: 2,
-	is_spice: true
+	hp_boost: 2
 };
 var Item_FishGet_K$1 = {
 	hp: 12,
@@ -5015,23 +4901,22 @@ var Item_FishGet_K$1 = {
 	potency: 12,
 	time: 900,
 	tags: [
-		"StopTimerLong",
-		"ZukanAnimal",
-		"CanBalloonParasite",
 		"CureItem",
-		"AmiiboNoDropBeginning",
-		"CanStack",
 		"CookMaterial",
+		"CanBalloonParasite",
+		"CanStack",
+		"CookFish",
+		"ZukanAnimal",
 		"EatItem",
-		"CanUse",
+		"AmiiboNoDropBeginning",
 		"CanGetPouch",
 		"RevivalRandom",
-		"CookFish"
+		"CanUse",
+		"StopTimerLong"
 	],
 	name: "Hearty Blueshell Snail",
 	time_boost: 0,
-	hp_boost: 0,
-	is_spice: false
+	hp_boost: 0
 };
 var Item_PlantGet_F$1 = {
 	hp: 0,
@@ -5039,22 +4924,21 @@ var Item_PlantGet_F$1 = {
 	potency: 1,
 	time: 900,
 	tags: [
-		"StopTimerLong",
-		"CanBalloonParasite",
 		"CureItem",
-		"Material",
-		"ZukanSozai",
-		"CanStack",
 		"CookMaterial",
+		"CanBalloonParasite",
+		"CanStack",
 		"EatItem",
+		"ZukanSozai",
 		"CookPlant",
 		"CanGetPouch",
-		"RevivalRandom"
+		"RevivalRandom",
+		"Material",
+		"StopTimerLong"
 	],
 	name: "Warm Safflina",
 	time_boost: 0,
-	hp_boost: 0,
-	is_spice: false
+	hp_boost: 0
 };
 var Item_PlantGet_Q$1 = {
 	hp: 8,
@@ -5062,24 +4946,23 @@ var Item_PlantGet_Q$1 = {
 	potency: 4,
 	time: 300,
 	tags: [
-		"CookPlant",
-		"StopTimerLong",
-		"CanBalloonParasite",
 		"CureItem",
-		"Material",
-		"ZukanSozai",
-		"AmiiboNoDropBeginning",
-		"CanStack",
 		"CookMaterial",
+		"CanBalloonParasite",
+		"CanStack",
 		"EatItem",
-		"CanUse",
+		"AmiiboNoDropBeginning",
+		"ZukanSozai",
+		"CookPlant",
 		"CanGetPouch",
-		"RevivalRandom"
+		"RevivalRandom",
+		"Material",
+		"CanUse",
+		"StopTimerLong"
 	],
 	name: "Endura Carrot",
 	time_boost: 0,
-	hp_boost: 0,
-	is_spice: false
+	hp_boost: 0
 };
 var Item_InsectGet_K$1 = {
 	hp: 4,
@@ -5087,23 +4970,22 @@ var Item_InsectGet_K$1 = {
 	potency: 2,
 	time: 900,
 	tags: [
-		"StopTimerLong",
-		"ZukanAnimal",
-		"CanBalloonParasite",
 		"CureItem",
-		"AmiiboNoDropBeginning",
-		"CanStack",
 		"CookMaterial",
+		"CanBalloonParasite",
+		"CanStack",
+		"CookFish",
+		"ZukanAnimal",
 		"EatItem",
-		"CanUse",
+		"AmiiboNoDropBeginning",
 		"CanGetPouch",
 		"RevivalRandom",
-		"CookFish"
+		"CanUse",
+		"StopTimerLong"
 	],
 	name: "Razorclaw Crab",
 	time_boost: 0,
-	hp_boost: 0,
-	is_spice: false
+	hp_boost: 0
 };
 var Item_Enemy_25$1 = {
 	hp: 0,
@@ -5111,19 +4993,18 @@ var Item_Enemy_25$1 = {
 	potency: 0,
 	time: 900,
 	tags: [
-		"StopTimerLong",
-		"EnemyMaterial",
+		"CookMaterial",
 		"CanBalloonParasite",
 		"CanStack",
-		"CookMaterial",
 		"EatItem",
+		"EnemyMaterial",
 		"CookEnemy",
-		"CanGetPouch"
+		"CanGetPouch",
+		"StopTimerLong"
 	],
 	name: "Molduga Guts",
 	time_boost: 160,
-	hp_boost: 0,
-	is_spice: true
+	hp_boost: 0
 };
 var Item_Enemy_31$1 = {
 	hp: 0,
@@ -5132,19 +5013,18 @@ var Item_Enemy_31$1 = {
 	time: 900,
 	tags: [
 		"AmiiboTreasure",
-		"StopTimerLong",
-		"EnemyMaterial",
+		"RevivalNone",
 		"CanBalloonParasite",
 		"CanStack",
 		"EatItem",
+		"EnemyMaterial",
 		"CookEnemy",
 		"CanGetPouch",
-		"RevivalNone"
+		"StopTimerLong"
 	],
 	name: "Giant Ancient Core",
 	time_boost: 160,
-	hp_boost: 0,
-	is_spice: true
+	hp_boost: 0
 };
 var Item_Enemy_19$1 = {
 	hp: 0,
@@ -5152,19 +5032,18 @@ var Item_Enemy_19$1 = {
 	potency: 0,
 	time: 900,
 	tags: [
-		"StopTimerLong",
-		"EnemyMaterial",
+		"CookMaterial",
 		"CanBalloonParasite",
 		"CanStack",
-		"CookMaterial",
 		"EatItem",
+		"EnemyMaterial",
 		"CookEnemy",
-		"CanGetPouch"
+		"CanGetPouch",
+		"StopTimerLong"
 	],
 	name: "Keese Eyeball",
 	time_boost: 160,
-	hp_boost: 0,
-	is_spice: true
+	hp_boost: 0
 };
 var Item_Plant_J$1 = {
 	hp: 0,
@@ -5172,31 +5051,30 @@ var Item_Plant_J$1 = {
 	potency: 3,
 	time: 1200,
 	tags: [
-		"AutoGenWoodRoot",
-		"AutoGenExcludeWaterFront",
-		"ZukanSozai",
-		"CanStack",
-		"CookPlant",
-		"PreActorXLink",
-		"AutoGenForest",
+		"AutoGenLimitExcludeGrit",
+		"AlwaysTurnActor",
 		"CureItem",
+		"AmiiboNoDropBeginning",
+		"CookPlant",
+		"CanGetPouch",
+		"AutoGenForest",
+		"AutoGenExcludePlain",
+		"CanStack",
+		"AutoGenWoodRoot",
+		"PreActorXLink",
+		"AutoGenShade",
+		"ZukanSozai",
 		"Material",
 		"StopTimerLong",
-		"AutoGenLimitExcludeGrit",
-		"CanGetPouch",
-		"AlwaysTurnActor",
+		"AutoGenObjectEdgeMulti",
+		"AutoGenExcludeWaterFront",
 		"AutoGenGrassLong",
 		"AutoGenAroundShrub",
-		"AutoGenExcludePlain",
-		"AmiiboNoDropBeginning",
-		"AutoGenObjectEdgeMulti",
-		"AutoGenShade",
 		"RevivalRandom"
 	],
 	name: "Silent Princess",
 	time_boost: 0,
-	hp_boost: 0,
-	is_spice: false
+	hp_boost: 0
 };
 var Item_Enemy_18$1 = {
 	hp: 0,
@@ -5204,19 +5082,18 @@ var Item_Enemy_18$1 = {
 	potency: 0,
 	time: 900,
 	tags: [
-		"StopTimerLong",
-		"EnemyMaterial",
+		"CookMaterial",
 		"CanBalloonParasite",
 		"CanStack",
-		"CookMaterial",
 		"EatItem",
+		"EnemyMaterial",
 		"CookEnemy",
-		"CanGetPouch"
+		"CanGetPouch",
+		"StopTimerLong"
 	],
 	name: "Keese Wing",
 	time_boost: 40,
-	hp_boost: 0,
-	is_spice: true
+	hp_boost: 0
 };
 var Item_Enemy_30$1 = {
 	hp: 0,
@@ -5225,19 +5102,18 @@ var Item_Enemy_30$1 = {
 	time: 900,
 	tags: [
 		"AmiiboTreasure",
-		"StopTimerLong",
-		"EnemyMaterial",
+		"RevivalNone",
 		"CanBalloonParasite",
 		"CanStack",
 		"EatItem",
+		"EnemyMaterial",
 		"CookEnemy",
 		"CanGetPouch",
-		"RevivalNone"
+		"StopTimerLong"
 	],
 	name: "Ancient Core",
 	time_boost: 160,
-	hp_boost: 0,
-	is_spice: true
+	hp_boost: 0
 };
 var Item_Enemy_24$1 = {
 	hp: 0,
@@ -5245,20 +5121,19 @@ var Item_Enemy_24$1 = {
 	potency: 0,
 	time: 900,
 	tags: [
-		"StopTimerLong",
-		"EnemyMaterial",
+		"CookMaterial",
 		"CanBalloonParasite",
 		"CanStack",
-		"CookMaterial",
 		"EatItem",
+		"EnemyMaterial",
 		"CookEnemy",
 		"CanGetPouch",
-		"RevivalRandom"
+		"RevivalRandom",
+		"StopTimerLong"
 	],
 	name: "Molduga Fin",
 	time_boost: 80,
-	hp_boost: 0,
-	is_spice: true
+	hp_boost: 0
 };
 var Item_Ore_J$1 = {
 	hp: 0,
@@ -5267,22 +5142,21 @@ var Item_Ore_J$1 = {
 	time: 900,
 	tags: [
 		"AmiiboTreasure",
-		"CookSpice",
-		"CanBalloonParasite",
-		"Material",
-		"GrassDrop",
-		"CanStack",
-		"CookLowPrice",
 		"CookMaterial",
+		"CanBalloonParasite",
+		"CanStack",
+		"GrassDrop",
+		"CookSpice",
 		"EatItem",
-		"StopTimerLong",
 		"CanGetPouch",
-		"RevivalRandom"
+		"CookLowPrice",
+		"RevivalRandom",
+		"Material",
+		"StopTimerLong"
 	],
 	name: "Star Fragment",
 	time_boost: 60,
-	hp_boost: 0,
-	is_spice: true
+	hp_boost: 0
 };
 var Item_PlantGet_G$1 = {
 	hp: 0,
@@ -5290,23 +5164,22 @@ var Item_PlantGet_G$1 = {
 	potency: 1,
 	time: 900,
 	tags: [
-		"StopTimerLong",
-		"CanBalloonParasite",
 		"CureItem",
-		"Material",
-		"ZukanSozai",
-		"AmiiboNoDropBeginning",
-		"CanStack",
 		"CookMaterial",
+		"CanBalloonParasite",
+		"CanStack",
 		"EatItem",
+		"AmiiboNoDropBeginning",
+		"ZukanSozai",
 		"CookPlant",
 		"CanGetPouch",
-		"RevivalRandom"
+		"RevivalRandom",
+		"Material",
+		"StopTimerLong"
 	],
 	name: "Mighty Thistle",
 	time_boost: 0,
-	hp_boost: 0,
-	is_spice: false
+	hp_boost: 0
 };
 var Item_FishGet_J$1 = {
 	hp: 4,
@@ -5314,23 +5187,22 @@ var Item_FishGet_J$1 = {
 	potency: 3,
 	time: 900,
 	tags: [
-		"StopTimerLong",
-		"ZukanAnimal",
-		"CanBalloonParasite",
 		"CureItem",
-		"AmiiboNoDropBeginning",
-		"CanStack",
 		"CookMaterial",
+		"CanBalloonParasite",
+		"CanStack",
+		"CookFish",
+		"ZukanAnimal",
 		"EatItem",
-		"CanUse",
+		"AmiiboNoDropBeginning",
 		"CanGetPouch",
 		"RevivalRandom",
-		"CookFish"
+		"CanUse",
+		"StopTimerLong"
 	],
 	name: "Sizzlefin Trout",
 	time_boost: 0,
-	hp_boost: 0,
-	is_spice: false
+	hp_boost: 0
 };
 var Item_Mushroom_A$1 = {
 	hp: 2,
@@ -5338,24 +5210,23 @@ var Item_Mushroom_A$1 = {
 	potency: 1,
 	time: 900,
 	tags: [
-		"CookMushroom",
-		"StopTimerLong",
-		"CanBalloonParasite",
-		"AutoGenAroundMightyTree",
 		"CureItem",
-		"Material",
-		"ZukanSozai",
+		"CanUse",
+		"CanBalloonParasite",
 		"CanStack",
 		"CookMaterial",
 		"EatItem",
-		"CanUse",
+		"ZukanSozai",
 		"CanGetPouch",
-		"RevivalRandom"
+		"RevivalRandom",
+		"Material",
+		"AutoGenAroundMightyTree",
+		"StopTimerLong",
+		"CookMushroom"
 	],
 	name: "Stamella Shroom",
 	time_boost: 0,
-	hp_boost: 0,
-	is_spice: false
+	hp_boost: 0
 };
 var Item_Fruit_J$1 = {
 	hp: 2,
@@ -5363,27 +5234,26 @@ var Item_Fruit_J$1 = {
 	potency: 2,
 	time: 900,
 	tags: [
-		"CookPlant",
-		"AutoGenExcludeWaterFront",
-		"StopTimerLong",
-		"CanBalloonParasite",
 		"CureItem",
-		"Material",
-		"ZukanSozai",
-		"AmiiboNoDropBeginning",
-		"CanStack",
 		"CookMaterial",
-		"ObservedByTag",
+		"AutoGenExcludeWaterFront",
+		"CanBalloonParasite",
+		"CanStack",
 		"EatItem",
-		"CanUse",
-		"AutoGenReplaceSet",
+		"AmiiboNoDropBeginning",
+		"ZukanSozai",
+		"ObservedByTag",
+		"CookPlant",
 		"CanGetPouch",
-		"RevivalRandom"
+		"AutoGenReplaceSet",
+		"RevivalRandom",
+		"Material",
+		"CanUse",
+		"StopTimerLong"
 	],
 	name: "Fortified Pumpkin",
 	time_boost: 0,
-	hp_boost: 0,
-	is_spice: false
+	hp_boost: 0
 };
 var Item_Fruit_H$1 = {
 	hp: 2,
@@ -5391,32 +5261,31 @@ var Item_Fruit_H$1 = {
 	potency: 2,
 	time: 900,
 	tags: [
-		"AutoGenExcludeWaterFront",
-		"ZukanSozai",
-		"AutoGenGrassAndTurfEdge",
-		"CanStack",
-		"AutoGenGrassShort",
-		"CanUse",
-		"TurnActorBowCharge",
-		"CureItem",
-		"Material",
 		"CookMaterial",
-		"StopTimerLong",
-		"CanGetPouch",
-		"CookFruit",
-		"AutoGenGrassLong",
-		"CanBalloonParasite",
-		"EatItem",
 		"AutoGenReplaceSet",
-		"AmiiboNoDropBeginning",
-		"ObservedByTag",
 		"OnLowTree",
+		"CookFruit",
+		"CureItem",
+		"AmiiboNoDropBeginning",
+		"AutoGenGrassAndTurfEdge",
+		"CanGetPouch",
+		"CanUse",
+		"CanBalloonParasite",
+		"CanStack",
+		"EatItem",
+		"TurnActorBowCharge",
+		"ZukanSozai",
+		"Material",
+		"StopTimerLong",
+		"AutoGenExcludeWaterFront",
+		"AutoGenGrassLong",
+		"AutoGenGrassShort",
+		"ObservedByTag",
 		"RevivalRandom"
 	],
 	name: "Mighty Bananas",
 	time_boost: 0,
-	hp_boost: 0,
-	is_spice: false
+	hp_boost: 0
 };
 var Item_Mushroom_C$1 = {
 	hp: 2,
@@ -5424,26 +5293,25 @@ var Item_Mushroom_C$1 = {
 	potency: 2,
 	time: 900,
 	tags: [
-		"CookMushroom",
-		"CanUse",
-		"StopTimerLong",
-		"CanBalloonParasite",
 		"CureItem",
-		"Material",
-		"ZukanSozai",
-		"CanStack",
-		"AllRadarActor",
 		"CookMaterial",
-		"ObservedByTag",
+		"CanBalloonParasite",
+		"CanStack",
 		"EatItem",
 		"AutoGenShade",
+		"ZukanSozai",
+		"ObservedByTag",
+		"AllRadarActor",
 		"CanGetPouch",
-		"RevivalRandom"
+		"RevivalRandom",
+		"Material",
+		"CanUse",
+		"StopTimerLong",
+		"CookMushroom"
 	],
 	name: "Sunshroom",
 	time_boost: 0,
-	hp_boost: 0,
-	is_spice: false
+	hp_boost: 0
 };
 var Item_FishGet_H$1 = {
 	hp: 4,
@@ -5451,23 +5319,22 @@ var Item_FishGet_H$1 = {
 	potency: 2,
 	time: 900,
 	tags: [
-		"StopTimerLong",
-		"ZukanAnimal",
-		"CanBalloonParasite",
 		"CureItem",
-		"AmiiboNoDropBeginning",
-		"CanStack",
 		"CookMaterial",
+		"CanBalloonParasite",
+		"CanStack",
+		"CookFish",
+		"ZukanAnimal",
 		"EatItem",
-		"CanUse",
+		"AmiiboNoDropBeginning",
 		"CanGetPouch",
 		"RevivalRandom",
-		"CookFish"
+		"CanUse",
+		"StopTimerLong"
 	],
 	name: "Armored Carp",
 	time_boost: 0,
-	hp_boost: 0,
-	is_spice: false
+	hp_boost: 0
 };
 var Item_PlantGet_E$1 = {
 	hp: 0,
@@ -5475,22 +5342,21 @@ var Item_PlantGet_E$1 = {
 	potency: 1,
 	time: 900,
 	tags: [
-		"StopTimerLong",
-		"CanBalloonParasite",
 		"CureItem",
-		"Material",
-		"ZukanSozai",
-		"CanStack",
 		"CookMaterial",
+		"CanBalloonParasite",
+		"CanStack",
 		"EatItem",
+		"ZukanSozai",
 		"CookPlant",
 		"CanGetPouch",
-		"RevivalRandom"
+		"RevivalRandom",
+		"Material",
+		"StopTimerLong"
 	],
 	name: "Cool Safflina",
 	time_boost: 0,
-	hp_boost: 0,
-	is_spice: false
+	hp_boost: 0
 };
 var Item_Ore_H$1 = {
 	hp: 0,
@@ -5499,20 +5365,19 @@ var Item_Ore_H$1 = {
 	time: 900,
 	tags: [
 		"AmiiboTreasure",
-		"CookSpice",
-		"CanBalloonParasite",
-		"Material",
-		"CanStack",
 		"CookMaterial",
+		"CanBalloonParasite",
+		"CanStack",
+		"CookSpice",
 		"EatItem",
-		"StopTimerLong",
 		"CanGetPouch",
-		"RevivalRandom"
+		"RevivalRandom",
+		"Material",
+		"StopTimerLong"
 	],
 	name: "Rock Salt",
 	time_boost: 30,
-	hp_boost: 0,
-	is_spice: true
+	hp_boost: 0
 };
 var Item_Enemy_32$1 = {
 	hp: 0,
@@ -5520,19 +5385,18 @@ var Item_Enemy_32$1 = {
 	potency: 0,
 	time: 900,
 	tags: [
-		"StopTimerLong",
-		"EnemyMaterial",
+		"CookMaterial",
 		"CanBalloonParasite",
 		"CanStack",
-		"CookMaterial",
 		"EatItem",
+		"EnemyMaterial",
 		"CookEnemy",
-		"CanGetPouch"
+		"CanGetPouch",
+		"StopTimerLong"
 	],
 	name: "Hinox Toenail",
 	time_boost: 40,
-	hp_boost: 0,
-	is_spice: true
+	hp_boost: 0
 };
 var Item_Enemy_26$1 = {
 	hp: 0,
@@ -5540,19 +5404,18 @@ var Item_Enemy_26$1 = {
 	potency: 0,
 	time: 900,
 	tags: [
-		"StopTimerLong",
-		"EnemyMaterial",
+		"RevivalNone",
 		"CanBalloonParasite",
 		"CanStack",
 		"EatItem",
+		"EnemyMaterial",
 		"CookEnemy",
 		"CanGetPouch",
-		"RevivalNone"
+		"StopTimerLong"
 	],
 	name: "Ancient Gear",
 	time_boost: 80,
-	hp_boost: 0,
-	is_spice: true
+	hp_boost: 0
 };
 var Item_Plant_I$1 = {
 	hp: 0,
@@ -5560,27 +5423,26 @@ var Item_Plant_I$1 = {
 	potency: 1,
 	time: 900,
 	tags: [
-		"CookPlant",
-		"AutoGenExcludeWaterFront",
-		"PreActorXLink",
-		"StopTimerLong",
-		"AutoGenForest",
-		"CureItem",
-		"Material",
-		"ZukanSozai",
-		"CanStack",
-		"AutoGenShade",
 		"AutoGenLimitExcludeGrit",
+		"CureItem",
+		"AutoGenExcludeWaterFront",
+		"CanStack",
+		"AlwaysTurnActor",
 		"AutoGenAroundShrub",
+		"Material",
+		"PreActorXLink",
+		"AutoGenShade",
+		"ZukanSozai",
+		"CookPlant",
+		"AutoGenForest",
 		"CanGetPouch",
 		"RevivalRandom",
 		"AutoGenObjectEdgeAdd",
-		"AlwaysTurnActor"
+		"StopTimerLong"
 	],
 	name: "Blue Nightshade",
 	time_boost: 0,
-	hp_boost: 0,
-	is_spice: false
+	hp_boost: 0
 };
 var Item_Plant_H$1 = {
 	hp: 0,
@@ -5588,28 +5450,27 @@ var Item_Plant_H$1 = {
 	potency: 1,
 	time: 900,
 	tags: [
-		"AutoGenShade",
-		"AutoGenWoodRoot",
-		"AutoGenExcludeWaterFront",
-		"CookPlant",
-		"StopTimerLong",
-		"AutoGenLimitGrassLong",
-		"CureItem",
-		"Material",
-		"ZukanSozai",
-		"AmiiboNoDropBeginning",
-		"CanStack",
-		"AutoGenFlatSurface",
 		"AutoGenLimitExcludeGrit",
+		"AutoGenFlatSurface",
+		"CureItem",
+		"AutoGenExcludeWaterFront",
+		"CanStack",
+		"AutoGenWoodRoot",
 		"AutoGenAroundShrub",
+		"Material",
+		"AmiiboNoDropBeginning",
+		"AutoGenShade",
+		"AutoGenLimitGrassLong",
+		"ZukanSozai",
+		"CookPlant",
 		"CanGetPouch",
 		"RevivalRandom",
-		"AutoGenObjectEdgeAdd"
+		"AutoGenObjectEdgeAdd",
+		"StopTimerLong"
 	],
 	name: "Armoranth",
 	time_boost: 0,
-	hp_boost: 0,
-	is_spice: false
+	hp_boost: 0
 };
 var Item_Enemy_27$1 = {
 	hp: 0,
@@ -5617,19 +5478,18 @@ var Item_Enemy_27$1 = {
 	potency: 0,
 	time: 900,
 	tags: [
-		"StopTimerLong",
-		"EnemyMaterial",
+		"RevivalNone",
 		"CanBalloonParasite",
 		"CanStack",
 		"EatItem",
+		"EnemyMaterial",
 		"CookEnemy",
 		"CanGetPouch",
-		"RevivalNone"
+		"StopTimerLong"
 	],
 	name: "Ancient Screw",
 	time_boost: 40,
-	hp_boost: 0,
-	is_spice: true
+	hp_boost: 0
 };
 var Item_Enemy_33$1 = {
 	hp: 0,
@@ -5637,19 +5497,18 @@ var Item_Enemy_33$1 = {
 	potency: 0,
 	time: 900,
 	tags: [
-		"StopTimerLong",
-		"EnemyMaterial",
+		"CookMaterial",
 		"CanBalloonParasite",
 		"CanStack",
-		"CookMaterial",
 		"EatItem",
+		"EnemyMaterial",
 		"CookEnemy",
-		"CanGetPouch"
+		"CanGetPouch",
+		"StopTimerLong"
 	],
 	name: "Hinox Tooth",
 	time_boost: 80,
-	hp_boost: 0,
-	is_spice: true
+	hp_boost: 0
 };
 var Item_Ore_I$1 = {
 	hp: 0,
@@ -5658,20 +5517,19 @@ var Item_Ore_I$1 = {
 	time: 900,
 	tags: [
 		"AmiiboTreasure",
-		"CanBalloonParasite",
-		"Material",
-		"CanStack",
 		"CookMaterial",
-		"CookOre",
+		"CanBalloonParasite",
+		"CanStack",
 		"EatItem",
-		"StopTimerLong",
 		"CanGetPouch",
-		"RevivalRandom"
+		"RevivalRandom",
+		"Material",
+		"CookOre",
+		"StopTimerLong"
 	],
 	name: "Flint",
 	time_boost: 0,
-	hp_boost: 0,
-	is_spice: false
+	hp_boost: 0
 };
 var Item_FishGet_I$1 = {
 	hp: 16,
@@ -5679,23 +5537,22 @@ var Item_FishGet_I$1 = {
 	potency: 16,
 	time: 900,
 	tags: [
-		"StopTimerLong",
-		"ZukanAnimal",
-		"CanBalloonParasite",
 		"CureItem",
-		"AmiiboNoDropBeginning",
-		"CanStack",
 		"CookMaterial",
+		"CanBalloonParasite",
+		"CanStack",
+		"CookFish",
+		"ZukanAnimal",
 		"EatItem",
-		"CanUse",
+		"AmiiboNoDropBeginning",
 		"CanGetPouch",
 		"RevivalRandom",
-		"CookFish"
+		"CanUse",
+		"StopTimerLong"
 	],
 	name: "Hearty Salmon",
 	time_boost: 0,
-	hp_boost: 0,
-	is_spice: false
+	hp_boost: 0
 };
 var Item_Mushroom_B$1 = {
 	hp: 2,
@@ -5703,24 +5560,23 @@ var Item_Mushroom_B$1 = {
 	potency: 2,
 	time: 900,
 	tags: [
-		"CookMushroom",
-		"CanUse",
-		"StopTimerLong",
-		"CanBalloonParasite",
 		"CureItem",
-		"Material",
-		"ZukanSozai",
-		"CanStack",
 		"CookMaterial",
+		"CanBalloonParasite",
+		"CanStack",
 		"EatItem",
 		"AutoGenShade",
+		"ZukanSozai",
 		"CanGetPouch",
-		"RevivalRandom"
+		"RevivalRandom",
+		"Material",
+		"CanUse",
+		"StopTimerLong",
+		"CookMushroom"
 	],
 	name: "Chillshroom",
 	time_boost: 0,
-	hp_boost: 0,
-	is_spice: false
+	hp_boost: 0
 };
 var Item_Fruit_I$1 = {
 	hp: 2,
@@ -5728,28 +5584,27 @@ var Item_Fruit_I$1 = {
 	potency: 1,
 	time: 900,
 	tags: [
-		"CookFruit",
-		"AutoGenExcludeWaterFront",
-		"AutoGenLimitShade",
-		"StopTimerLong",
-		"CanBalloonParasite",
 		"CureItem",
-		"Material",
-		"ZukanSozai",
+		"AutoGenLimitShade",
+		"AutoGenExcludeWaterFront",
+		"CanBalloonParasite",
 		"CanStack",
-		"TurnActorBowCharge",
 		"CookMaterial",
-		"ObservedByTag",
 		"EatItem",
-		"CanUse",
-		"AutoGenReplaceSet",
+		"TurnActorBowCharge",
+		"ZukanSozai",
+		"ObservedByTag",
 		"CanGetPouch",
-		"RevivalRandom"
+		"AutoGenReplaceSet",
+		"RevivalRandom",
+		"Material",
+		"CanUse",
+		"CookFruit",
+		"StopTimerLong"
 	],
 	name: "Spicy Pepper",
 	time_boost: 0,
-	hp_boost: 0,
-	is_spice: false
+	hp_boost: 0
 };
 var Animal_Fish_B$1 = {
 	hp: 8,
@@ -5757,23 +5612,22 @@ var Animal_Fish_B$1 = {
 	potency: 8,
 	time: 900,
 	tags: [
-		"UnderGodForest",
-		"ZukanAnimal",
 		"CureItem",
-		"Material",
-		"AmiiboNoDropBeginning",
 		"CanStack",
-		"TypeFish",
+		"CookFish",
+		"ZukanAnimal",
 		"EatItem",
-		"CanUse",
+		"UnderGodForest",
+		"AmiiboNoDropBeginning",
+		"TypeFish",
 		"CanGetPouch",
 		"RevivalRandom",
-		"CookFish"
+		"Material",
+		"CanUse"
 	],
 	name: "Hearty Bass",
 	time_boost: 0,
-	hp_boost: 0,
-	is_spice: false
+	hp_boost: 0
 };
 var Item_Material_08$1 = {
 	hp: 0,
@@ -5781,22 +5635,21 @@ var Item_Material_08$1 = {
 	potency: 0,
 	time: 0,
 	tags: [
-		"CookSpice",
-		"EnemyMaterial",
-		"CanBalloonParasite",
 		"CureItem",
-		"Material",
-		"CanStack",
 		"CookMaterial",
+		"CanBalloonParasite",
+		"CanStack",
+		"CookSpice",
 		"EatItem",
-		"StopTimerLong",
+		"EnemyMaterial",
 		"CanGetPouch",
-		"RevivalRandom"
+		"RevivalRandom",
+		"Material",
+		"StopTimerLong"
 	],
 	name: "Monster Extract",
 	time_boost: 0,
-	hp_boost: 0,
-	is_spice: true
+	hp_boost: 0
 };
 var Item_Enemy_54$1 = {
 	hp: 0,
@@ -5804,23 +5657,22 @@ var Item_Enemy_54$1 = {
 	potency: 0,
 	time: 900,
 	tags: [
-		"CookSpice",
-		"DisableForbidPushJob",
-		"EnemyMaterial",
+		"CookMaterial",
 		"CanBalloonParasite",
 		"CanStack",
-		"CookLowPrice",
-		"CookMaterial",
-		"PhysicsPauseDisable",
+		"CookSpice",
 		"EatItem",
+		"EnemyMaterial",
+		"PhysicsPauseDisable",
+		"CanGetPouch",
+		"CookLowPrice",
 		"CookValue1",
 		"StopTimerLong",
-		"CanGetPouch"
+		"DisableForbidPushJob"
 	],
 	name: "Farosh's Claw",
 	time_boost: 180,
-	hp_boost: 8,
-	is_spice: true
+	hp_boost: 8
 };
 var Animal_Insect_B$1 = {
 	hp: 8,
@@ -5828,24 +5680,23 @@ var Animal_Insect_B$1 = {
 	potency: 2,
 	time: 900,
 	tags: [
-		"CookInsect",
-		"TypeInsect",
-		"ZukanAnimal",
-		"UnderGodForest",
-		"RainBonusMaterial",
 		"CureItem",
-		"Material",
-		"LiftRockMaterial",
-		"CanStack",
 		"CookMaterial",
+		"CanStack",
+		"RainBonusMaterial",
+		"ZukanAnimal",
 		"EatItem",
+		"UnderGodForest",
+		"LiftRockMaterial",
+		"TypeInsect",
 		"CanGetPouch",
-		"RevivalRandom"
+		"RevivalRandom",
+		"CookInsect",
+		"Material"
 	],
 	name: "Tireless Frog",
 	time_boost: 0,
-	hp_boost: 0,
-	is_spice: false
+	hp_boost: 0
 };
 var Item_Enemy_40$1 = {
 	hp: 0,
@@ -5853,21 +5704,20 @@ var Item_Enemy_40$1 = {
 	potency: 0,
 	time: 900,
 	tags: [
-		"StopTimerLong",
-		"EnemyMaterial",
+		"CookMaterial",
 		"CanBalloonParasite",
 		"CanStack",
-		"CookMaterial",
-		"UseChemicalType",
 		"EatItem",
+		"EnemyMaterial",
 		"CookEnemy",
 		"CanGetPouch",
-		"RevivalRandom"
+		"RevivalRandom",
+		"UseChemicalType",
+		"StopTimerLong"
 	],
 	name: "Chuchu Jelly",
 	time_boost: 40,
-	hp_boost: 0,
-	is_spice: true
+	hp_boost: 0
 };
 var Item_Enemy_41$1 = {
 	hp: 0,
@@ -5875,19 +5725,18 @@ var Item_Enemy_41$1 = {
 	potency: 0,
 	time: 900,
 	tags: [
-		"StopTimerLong",
-		"EnemyMaterial",
+		"CookMaterial",
 		"CanBalloonParasite",
 		"CanStack",
-		"CookMaterial",
 		"EatItem",
+		"EnemyMaterial",
 		"CookEnemy",
-		"CanGetPouch"
+		"CanGetPouch",
+		"StopTimerLong"
 	],
 	name: "Red Lizalfos Tail",
 	time_boost: 160,
-	hp_boost: 0,
-	is_spice: true
+	hp_boost: 0
 };
 var Animal_Insect_C$1 = {
 	hp: 0,
@@ -5895,23 +5744,22 @@ var Animal_Insect_C$1 = {
 	potency: 2,
 	time: 900,
 	tags: [
-		"CookInsect",
-		"TypeInsect",
-		"UnderGodForest",
-		"ZukanAnimal",
 		"CureItem",
-		"Material",
-		"PutAndFly",
-		"CanStack",
 		"CookMaterial",
+		"CanStack",
+		"ZukanAnimal",
 		"EatItem",
+		"UnderGodForest",
+		"Material",
+		"TypeInsect",
 		"CanGetPouch",
-		"RevivalRandom"
+		"PutAndFly",
+		"RevivalRandom",
+		"CookInsect"
 	],
 	name: "Cold Darner",
 	time_boost: 0,
-	hp_boost: 0,
-	is_spice: false
+	hp_boost: 0
 };
 var Item_Enemy_55$1 = {
 	hp: 0,
@@ -5919,23 +5767,22 @@ var Item_Enemy_55$1 = {
 	potency: 0,
 	time: 900,
 	tags: [
-		"CookSpice",
-		"DisableForbidPushJob",
-		"EnemyMaterial",
+		"CookMaterial",
 		"CanBalloonParasite",
 		"CanStack",
-		"CookLowPrice",
-		"CookMaterial",
-		"PhysicsPauseDisable",
+		"CookSpice",
 		"EatItem",
+		"EnemyMaterial",
+		"PhysicsPauseDisable",
+		"CanGetPouch",
+		"CookLowPrice",
 		"CookValue1",
 		"StopTimerLong",
-		"CanGetPouch"
+		"DisableForbidPushJob"
 	],
 	name: "Shard of Farosh's Fang",
 	time_boost: 600,
-	hp_boost: 10,
-	is_spice: true
+	hp_boost: 10
 };
 var Animal_Insect_T$1 = {
 	hp: 0,
@@ -5943,23 +5790,22 @@ var Animal_Insect_T$1 = {
 	potency: 2,
 	time: 900,
 	tags: [
-		"CookInsect",
-		"TypeInsect",
-		"UnderGodForest",
-		"ZukanAnimal",
 		"CureItem",
-		"Material",
-		"PutAndFly",
-		"CanStack",
 		"CookMaterial",
+		"CanStack",
+		"ZukanAnimal",
 		"EatItem",
+		"UnderGodForest",
+		"Material",
+		"TypeInsect",
 		"CanGetPouch",
-		"RevivalRandom"
+		"PutAndFly",
+		"RevivalRandom",
+		"CookInsect"
 	],
 	name: "Warm Darner",
 	time_boost: 0,
-	hp_boost: 0,
-	is_spice: false
+	hp_boost: 0
 };
 var Animal_Fish_C$1 = {
 	hp: 4,
@@ -5967,23 +5813,22 @@ var Animal_Fish_C$1 = {
 	potency: 3,
 	time: 900,
 	tags: [
-		"UnderGodForest",
-		"ZukanAnimal",
 		"CureItem",
-		"Material",
-		"AmiiboNoDropBeginning",
 		"CanStack",
-		"TypeFish",
+		"CookFish",
+		"ZukanAnimal",
 		"EatItem",
-		"CanUse",
+		"UnderGodForest",
+		"AmiiboNoDropBeginning",
+		"TypeFish",
 		"CanGetPouch",
 		"RevivalRandom",
-		"CookFish"
+		"Material",
+		"CanUse"
 	],
 	name: "Chillfin Trout",
 	time_boost: 0,
-	hp_boost: 0,
-	is_spice: false
+	hp_boost: 0
 };
 var Animal_Fish_A$1 = {
 	hp: 4,
@@ -5991,22 +5836,21 @@ var Animal_Fish_A$1 = {
 	potency: 0,
 	time: 900,
 	tags: [
-		"UnderGodForest",
-		"ZukanAnimal",
 		"CureItem",
-		"Material",
 		"CanStack",
-		"TypeFish",
+		"CookFish",
+		"ZukanAnimal",
 		"EatItem",
-		"CanUse",
+		"UnderGodForest",
+		"TypeFish",
 		"CanGetPouch",
 		"RevivalRandom",
-		"CookFish"
+		"Material",
+		"CanUse"
 	],
 	name: "Hyrule Bass",
 	time_boost: 0,
-	hp_boost: 0,
-	is_spice: false
+	hp_boost: 0
 };
 var Animal_Insect_A$1 = {
 	hp: 0,
@@ -6014,25 +5858,24 @@ var Animal_Insect_A$1 = {
 	potency: 2,
 	time: 900,
 	tags: [
-		"CookInsect",
-		"TypeInsect",
-		"UnderGodForest",
-		"ZukanAnimal",
-		"RainBonusMaterial",
 		"CureItem",
-		"Material",
-		"GrassDrop",
-		"LiftRockMaterial",
-		"CanStack",
 		"CookMaterial",
+		"CanStack",
+		"GrassDrop",
+		"RainBonusMaterial",
+		"ZukanAnimal",
 		"EatItem",
+		"UnderGodForest",
+		"LiftRockMaterial",
+		"Material",
+		"TypeInsect",
 		"CanGetPouch",
-		"RevivalRandom"
+		"RevivalRandom",
+		"CookInsect"
 	],
 	name: "Hot-Footed Frog",
 	time_boost: 0,
-	hp_boost: 0,
-	is_spice: false
+	hp_boost: 0
 };
 var Item_Enemy_43$1 = {
 	hp: 0,
@@ -6040,19 +5883,18 @@ var Item_Enemy_43$1 = {
 	potency: 0,
 	time: 900,
 	tags: [
-		"StopTimerLong",
-		"EnemyMaterial",
+		"CookMaterial",
 		"CanBalloonParasite",
 		"CanStack",
-		"CookMaterial",
 		"EatItem",
+		"EnemyMaterial",
 		"CookEnemy",
-		"CanGetPouch"
+		"CanGetPouch",
+		"StopTimerLong"
 	],
 	name: "Yellow Lizalfos Tail",
 	time_boost: 160,
-	hp_boost: 0,
-	is_spice: true
+	hp_boost: 0
 };
 var Item_Enemy_57$1 = {
 	hp: 0,
@@ -6060,21 +5902,20 @@ var Item_Enemy_57$1 = {
 	potency: 0,
 	time: 900,
 	tags: [
-		"StopTimerLong",
-		"EnemyMaterial",
-		"CanStack",
 		"CookMaterial",
+		"CanStack",
+		"AlwaysTurnActor",
 		"EatItem",
+		"EnemyMaterial",
 		"CookEnemy",
 		"CanGetPouch",
-		"ThroughKorogFan",
 		"RevivalRandom",
-		"AlwaysTurnActor"
+		"ThroughKorogFan",
+		"StopTimerLong"
 	],
 	name: "Octo Balloon",
 	time_boost: 40,
-	hp_boost: 0,
-	is_spice: true
+	hp_boost: 0
 };
 var Item_Enemy_56$1 = {
 	hp: 0,
@@ -6082,23 +5923,22 @@ var Item_Enemy_56$1 = {
 	potency: 0,
 	time: 900,
 	tags: [
-		"CookSpice",
-		"DisableForbidPushJob",
-		"EnemyMaterial",
+		"CookMaterial",
 		"CanBalloonParasite",
 		"CanStack",
-		"CookLowPrice",
-		"CookMaterial",
-		"PhysicsPauseDisable",
+		"CookSpice",
 		"EatItem",
+		"EnemyMaterial",
+		"PhysicsPauseDisable",
+		"CanGetPouch",
+		"CookLowPrice",
 		"CookValue1",
 		"StopTimerLong",
-		"CanGetPouch"
+		"DisableForbidPushJob"
 	],
 	name: "Shard of Farosh's Horn",
 	time_boost: 1800,
-	hp_boost: 15,
-	is_spice: true
+	hp_boost: 15
 };
 var Item_Enemy_42$1 = {
 	hp: 0,
@@ -6106,19 +5946,18 @@ var Item_Enemy_42$1 = {
 	potency: 0,
 	time: 900,
 	tags: [
-		"StopTimerLong",
-		"EnemyMaterial",
+		"CookMaterial",
 		"CanBalloonParasite",
 		"CanStack",
-		"CookMaterial",
 		"EatItem",
+		"EnemyMaterial",
 		"CookEnemy",
-		"CanGetPouch"
+		"CanGetPouch",
+		"StopTimerLong"
 	],
 	name: "Icy Lizalfos Tail",
 	time_boost: 160,
-	hp_boost: 0,
-	is_spice: true
+	hp_boost: 0
 };
 var Obj_FireWoodBundle$1 = {
 	hp: 0,
@@ -6126,19 +5965,18 @@ var Obj_FireWoodBundle$1 = {
 	potency: 0,
 	time: 900,
 	tags: [
+		"CookMaterial",
 		"CanBalloonParasite",
 		"CanStack",
-		"CookMaterial",
-		"CookOre",
 		"EatItem",
-		"StopTimerLong",
 		"CanGetPouch",
-		"RevivalRandom"
+		"RevivalRandom",
+		"CookOre",
+		"StopTimerLong"
 	],
 	name: "Wood",
 	time_boost: 0,
-	hp_boost: 0,
-	is_spice: false
+	hp_boost: 0
 };
 var Animal_Fish_D$1 = {
 	hp: 4,
@@ -6146,23 +5984,22 @@ var Animal_Fish_D$1 = {
 	potency: 3,
 	time: 900,
 	tags: [
-		"UnderGodForest",
-		"ZukanAnimal",
 		"CureItem",
-		"Material",
-		"AmiiboNoDropBeginning",
 		"CanStack",
-		"TypeFish",
+		"CookFish",
+		"ZukanAnimal",
 		"EatItem",
-		"CanUse",
+		"UnderGodForest",
+		"AmiiboNoDropBeginning",
+		"TypeFish",
 		"CanGetPouch",
 		"RevivalRandom",
-		"CookFish"
+		"Material",
+		"CanUse"
 	],
 	name: "Voltfin Trout",
 	time_boost: 0,
-	hp_boost: 0,
-	is_spice: false
+	hp_boost: 0
 };
 var BeeHome$1 = {
 	hp: 8,
@@ -6170,23 +6007,22 @@ var BeeHome$1 = {
 	potency: 2,
 	time: 900,
 	tags: [
-		"CookSpice",
-		"CanUse",
-		"CanBalloonParasite",
 		"CureItem",
-		"ZukanSozai",
-		"CanStack",
 		"CookMaterial",
+		"CanBalloonParasite",
+		"CanStack",
+		"CookSpice",
 		"EatItem",
-		"StopTimerLong",
-		"NestActor",
+		"ZukanSozai",
 		"CanGetPouch",
-		"RevivalRandom"
+		"NestActor",
+		"RevivalRandom",
+		"CanUse",
+		"StopTimerLong"
 	],
 	name: "Courser Bee Honey",
 	time_boost: 0,
-	hp_boost: 0,
-	is_spice: true
+	hp_boost: 0
 };
 var Item_Enemy_46$1 = {
 	hp: 0,
@@ -6194,19 +6030,18 @@ var Item_Enemy_46$1 = {
 	potency: 0,
 	time: 900,
 	tags: [
-		"StopTimerLong",
-		"EnemyMaterial",
+		"CookMaterial",
 		"CanBalloonParasite",
 		"CanStack",
-		"CookMaterial",
 		"EatItem",
+		"EnemyMaterial",
 		"CookEnemy",
-		"CanGetPouch"
+		"CanGetPouch",
+		"StopTimerLong"
 	],
 	name: "Ice Keese Wing",
 	time_boost: 80,
-	hp_boost: 0,
-	is_spice: true
+	hp_boost: 0
 };
 var Item_Enemy_52$1 = {
 	hp: 0,
@@ -6214,23 +6049,22 @@ var Item_Enemy_52$1 = {
 	potency: 0,
 	time: 900,
 	tags: [
-		"CookSpice",
-		"DisableForbidPushJob",
-		"EnemyMaterial",
+		"CookMaterial",
 		"CanBalloonParasite",
 		"CanStack",
-		"CookLowPrice",
-		"CookMaterial",
-		"PhysicsPauseDisable",
+		"CookSpice",
 		"EatItem",
+		"EnemyMaterial",
+		"PhysicsPauseDisable",
+		"CanGetPouch",
+		"CookLowPrice",
 		"CookValue1",
 		"StopTimerLong",
-		"CanGetPouch"
+		"DisableForbidPushJob"
 	],
 	name: "Shard of Naydra's Horn",
 	time_boost: 1800,
-	hp_boost: 15,
-	is_spice: true
+	hp_boost: 15
 };
 var Animal_Insect_S$1 = {
 	hp: 0,
@@ -6238,25 +6072,24 @@ var Animal_Insect_S$1 = {
 	potency: 1,
 	time: 900,
 	tags: [
-		"CreateFromTrunkLocatorRandom",
-		"CookInsect",
-		"TypeInsect",
-		"UnderGodForest",
-		"ZukanAnimal",
 		"CureItem",
-		"Material",
-		"GrassDrop",
-		"LiftRockMaterial",
-		"CanStack",
 		"CookMaterial",
+		"CanStack",
+		"GrassDrop",
+		"ZukanAnimal",
 		"EatItem",
+		"UnderGodForest",
+		"LiftRockMaterial",
+		"Material",
+		"CreateFromTrunkLocatorRandom",
+		"TypeInsect",
 		"CanGetPouch",
-		"RevivalRandom"
+		"RevivalRandom",
+		"CookInsect"
 	],
 	name: "Hightail Lizard",
 	time_boost: 0,
-	hp_boost: 0,
-	is_spice: false
+	hp_boost: 0
 };
 var Animal_Insect_R$1 = {
 	hp: 0,
@@ -6264,23 +6097,22 @@ var Animal_Insect_R$1 = {
 	potency: 1,
 	time: 900,
 	tags: [
-		"CookInsect",
-		"TypeInsect",
-		"UnderGodForest",
-		"ZukanAnimal",
 		"CureItem",
-		"Material",
-		"PutAndFly",
-		"CanStack",
 		"CookMaterial",
+		"CanStack",
+		"ZukanAnimal",
 		"EatItem",
+		"UnderGodForest",
+		"Material",
+		"TypeInsect",
 		"CanGetPouch",
-		"RevivalRandom"
+		"PutAndFly",
+		"RevivalRandom",
+		"CookInsect"
 	],
 	name: "Thunderwing Butterfly",
 	time_boost: 0,
-	hp_boost: 0,
-	is_spice: false
+	hp_boost: 0
 };
 var Item_Enemy_53$1 = {
 	hp: 0,
@@ -6288,24 +6120,23 @@ var Item_Enemy_53$1 = {
 	potency: 0,
 	time: 900,
 	tags: [
-		"CookSpice",
-		"DisableForbidPushJob",
-		"EnemyMaterial",
+		"CookMaterial",
 		"CanBalloonParasite",
 		"CanStack",
-		"CookLowPrice",
-		"CookMaterial",
+		"CookSpice",
+		"EatItem",
+		"EnemyMaterial",
 		"PhysicsPauseDisable",
 		"ObservedByTag",
-		"EatItem",
+		"CanGetPouch",
+		"CookLowPrice",
 		"CookValue1",
 		"StopTimerLong",
-		"CanGetPouch"
+		"DisableForbidPushJob"
 	],
 	name: "Farosh's Scale",
 	time_boost: 60,
-	hp_boost: 5,
-	is_spice: true
+	hp_boost: 5
 };
 var Item_Enemy_47$1 = {
 	hp: 0,
@@ -6313,23 +6144,22 @@ var Item_Enemy_47$1 = {
 	potency: 0,
 	time: 900,
 	tags: [
-		"CookSpice",
-		"DisableForbidPushJob",
-		"EnemyMaterial",
+		"CookMaterial",
 		"CanBalloonParasite",
 		"CanStack",
-		"CookLowPrice",
-		"CookMaterial",
-		"PhysicsPauseDisable",
+		"CookSpice",
 		"EatItem",
+		"EnemyMaterial",
+		"PhysicsPauseDisable",
+		"CanGetPouch",
+		"CookLowPrice",
 		"CookValue1",
 		"StopTimerLong",
-		"CanGetPouch"
+		"DisableForbidPushJob"
 	],
 	name: "Shard of Dinraal's Fang",
 	time_boost: 600,
-	hp_boost: 10,
-	is_spice: true
+	hp_boost: 10
 };
 var Animal_Insect_E$1 = {
 	hp: 0,
@@ -6337,24 +6167,23 @@ var Animal_Insect_E$1 = {
 	potency: 1,
 	time: 900,
 	tags: [
-		"CookInsect",
-		"TypeInsect",
-		"UnderGodForest",
-		"ZukanAnimal",
 		"CureItem",
-		"Material",
-		"PutAndFly",
-		"CanStack",
 		"CookMaterial",
-		"ObservedByTag",
+		"CanStack",
+		"ZukanAnimal",
 		"EatItem",
+		"UnderGodForest",
+		"Material",
+		"ObservedByTag",
+		"TypeInsect",
 		"CanGetPouch",
-		"RevivalRandom"
+		"PutAndFly",
+		"RevivalRandom",
+		"CookInsect"
 	],
 	name: "Sunset Firefly",
 	time_boost: 0,
-	hp_boost: 0,
-	is_spice: false
+	hp_boost: 0
 };
 var Animal_Fish_E$1 = {
 	hp: 4,
@@ -6362,23 +6191,22 @@ var Animal_Fish_E$1 = {
 	potency: 2,
 	time: 900,
 	tags: [
-		"UnderGodForest",
-		"ZukanAnimal",
 		"CureItem",
-		"Material",
-		"AmiiboNoDropBeginning",
 		"CanStack",
-		"TypeFish",
+		"CookFish",
+		"ZukanAnimal",
 		"EatItem",
-		"CanUse",
+		"UnderGodForest",
+		"AmiiboNoDropBeginning",
+		"TypeFish",
 		"CanGetPouch",
 		"RevivalRandom",
-		"CookFish"
+		"Material",
+		"CanUse"
 	],
 	name: "Mighty Carp",
 	time_boost: 0,
-	hp_boost: 0,
-	is_spice: false
+	hp_boost: 0
 };
 var Animal_Fish_G$1 = {
 	hp: 4,
@@ -6386,23 +6214,22 @@ var Animal_Fish_G$1 = {
 	potency: 3,
 	time: 900,
 	tags: [
-		"UnderGodForest",
-		"ZukanAnimal",
 		"CureItem",
-		"Material",
-		"AmiiboNoDropBeginning",
 		"CanStack",
-		"TypeFish",
+		"CookFish",
+		"ZukanAnimal",
 		"EatItem",
-		"CanUse",
+		"UnderGodForest",
+		"AmiiboNoDropBeginning",
+		"TypeFish",
 		"CanGetPouch",
 		"RevivalRandom",
-		"CookFish"
+		"Material",
+		"CanUse"
 	],
 	name: "Armored Porgy",
 	time_boost: 0,
-	hp_boost: 0,
-	is_spice: false
+	hp_boost: 0
 };
 var Item_Enemy_51$1 = {
 	hp: 0,
@@ -6410,23 +6237,22 @@ var Item_Enemy_51$1 = {
 	potency: 0,
 	time: 900,
 	tags: [
-		"CookSpice",
-		"DisableForbidPushJob",
-		"EnemyMaterial",
+		"CookMaterial",
 		"CanBalloonParasite",
 		"CanStack",
-		"CookLowPrice",
-		"CookMaterial",
-		"PhysicsPauseDisable",
+		"CookSpice",
 		"EatItem",
+		"EnemyMaterial",
+		"PhysicsPauseDisable",
+		"CanGetPouch",
+		"CookLowPrice",
 		"CookValue1",
 		"StopTimerLong",
-		"CanGetPouch"
+		"DisableForbidPushJob"
 	],
 	name: "Shard of Naydra's Fang",
 	time_boost: 600,
-	hp_boost: 10,
-	is_spice: true
+	hp_boost: 10
 };
 var Animal_Insect_G$1 = {
 	hp: 0,
@@ -6434,24 +6260,23 @@ var Animal_Insect_G$1 = {
 	potency: 1,
 	time: 900,
 	tags: [
-		"CookInsect",
-		"TypeInsect",
-		"UnderGodForest",
-		"ZukanAnimal",
 		"CureItem",
-		"CreateFromTrunkOrGlowStoneLocator",
-		"Material",
-		"PutAndFly",
-		"CanStack",
 		"CookMaterial",
+		"CanStack",
+		"ZukanAnimal",
 		"EatItem",
+		"UnderGodForest",
+		"Material",
+		"TypeInsect",
 		"CanGetPouch",
-		"RevivalRandom"
+		"PutAndFly",
+		"RevivalRandom",
+		"CookInsect",
+		"CreateFromTrunkOrGlowStoneLocator"
 	],
 	name: "Bladed Rhino Beetle",
 	time_boost: 0,
-	hp_boost: 0,
-	is_spice: false
+	hp_boost: 0
 };
 var Item_Enemy_45$1 = {
 	hp: 0,
@@ -6459,19 +6284,18 @@ var Item_Enemy_45$1 = {
 	potency: 0,
 	time: 900,
 	tags: [
-		"StopTimerLong",
-		"EnemyMaterial",
+		"CookMaterial",
 		"CanBalloonParasite",
 		"CanStack",
-		"CookMaterial",
 		"EatItem",
+		"EnemyMaterial",
 		"CookEnemy",
-		"CanGetPouch"
+		"CanGetPouch",
+		"StopTimerLong"
 	],
 	name: "Electric Keese Wing",
 	time_boost: 80,
-	hp_boost: 0,
-	is_spice: true
+	hp_boost: 0
 };
 var Animal_Insect_P$1 = {
 	hp: 0,
@@ -6479,24 +6303,23 @@ var Animal_Insect_P$1 = {
 	potency: 1,
 	time: 900,
 	tags: [
-		"CookInsect",
-		"TypeInsect",
-		"UnderGodForest",
-		"ZukanAnimal",
 		"CureItem",
-		"CreateFromTrunkOrGlowStoneLocator",
-		"Material",
-		"PutAndFly",
-		"CanStack",
 		"CookMaterial",
+		"CanStack",
+		"ZukanAnimal",
 		"EatItem",
+		"UnderGodForest",
+		"Material",
+		"TypeInsect",
 		"CanGetPouch",
-		"RevivalRandom"
+		"PutAndFly",
+		"RevivalRandom",
+		"CookInsect",
+		"CreateFromTrunkOrGlowStoneLocator"
 	],
 	name: "Rugged Rhino Beetle",
 	time_boost: 0,
-	hp_boost: 0,
-	is_spice: false
+	hp_boost: 0
 };
 var Animal_Insect_Q$1 = {
 	hp: 0,
@@ -6504,23 +6327,22 @@ var Animal_Insect_Q$1 = {
 	potency: 1,
 	time: 900,
 	tags: [
-		"CookInsect",
-		"TypeInsect",
-		"UnderGodForest",
-		"ZukanAnimal",
 		"CureItem",
-		"Material",
-		"PutAndFly",
-		"CanStack",
 		"CookMaterial",
+		"CanStack",
+		"ZukanAnimal",
 		"EatItem",
+		"UnderGodForest",
+		"Material",
+		"TypeInsect",
 		"CanGetPouch",
-		"RevivalRandom"
+		"PutAndFly",
+		"RevivalRandom",
+		"CookInsect"
 	],
 	name: "Summerwing Butterfly",
 	time_boost: 0,
-	hp_boost: 0,
-	is_spice: false
+	hp_boost: 0
 };
 var Item_Enemy_44$1 = {
 	hp: 0,
@@ -6528,19 +6350,18 @@ var Item_Enemy_44$1 = {
 	potency: 0,
 	time: 900,
 	tags: [
-		"StopTimerLong",
-		"EnemyMaterial",
+		"CookMaterial",
 		"CanBalloonParasite",
 		"CanStack",
-		"CookMaterial",
 		"EatItem",
+		"EnemyMaterial",
 		"CookEnemy",
-		"CanGetPouch"
+		"CanGetPouch",
+		"StopTimerLong"
 	],
 	name: "Fire Keese Wing",
 	time_boost: 80,
-	hp_boost: 0,
-	is_spice: true
+	hp_boost: 0
 };
 var Animal_Insect_F$1 = {
 	hp: 20,
@@ -6548,23 +6369,22 @@ var Animal_Insect_F$1 = {
 	potency: 0,
 	time: 900,
 	tags: [
-		"TypeInsect",
-		"UnderGodForest",
-		"ZukanAnimal",
 		"CureItem",
-		"PutAndFly",
-		"GrassDrop",
-		"CanStack",
 		"CookMaterial",
+		"CanStack",
+		"GrassDrop",
+		"ZukanAnimal",
+		"UnderGodForest",
 		"Fairy",
-		"CanUse",
+		"TypeInsect",
 		"CanGetPouch",
-		"RevivalRandom"
+		"PutAndFly",
+		"RevivalRandom",
+		"CanUse"
 	],
 	name: "Fairy",
 	time_boost: 0,
-	hp_boost: 0,
-	is_spice: false
+	hp_boost: 0
 };
 var Item_Enemy_50$1 = {
 	hp: 0,
@@ -6572,23 +6392,22 @@ var Item_Enemy_50$1 = {
 	potency: 0,
 	time: 900,
 	tags: [
-		"CookSpice",
-		"DisableForbidPushJob",
-		"EnemyMaterial",
+		"CookMaterial",
 		"CanBalloonParasite",
 		"CanStack",
-		"CookLowPrice",
-		"CookMaterial",
-		"PhysicsPauseDisable",
+		"CookSpice",
 		"EatItem",
+		"EnemyMaterial",
+		"PhysicsPauseDisable",
+		"CanGetPouch",
+		"CookLowPrice",
 		"CookValue1",
 		"StopTimerLong",
-		"CanGetPouch"
+		"DisableForbidPushJob"
 	],
 	name: "Naydra's Claw",
 	time_boost: 180,
-	hp_boost: 8,
-	is_spice: true
+	hp_boost: 8
 };
 var Animal_Fish_F$1 = {
 	hp: 4,
@@ -6596,23 +6415,22 @@ var Animal_Fish_F$1 = {
 	potency: 3,
 	time: 900,
 	tags: [
-		"UnderGodForest",
-		"ZukanAnimal",
 		"CureItem",
-		"Material",
-		"AmiiboNoDropBeginning",
 		"CanStack",
-		"TypeFish",
+		"CookFish",
+		"ZukanAnimal",
 		"EatItem",
-		"CanUse",
+		"UnderGodForest",
+		"AmiiboNoDropBeginning",
+		"TypeFish",
 		"CanGetPouch",
 		"RevivalRandom",
-		"CookFish"
+		"Material",
+		"CanUse"
 	],
 	name: "Mighty Porgy",
 	time_boost: 0,
-	hp_boost: 0,
-	is_spice: false
+	hp_boost: 0
 };
 var data = {
 	Animal_Fish_K: Animal_Fish_K$1,
