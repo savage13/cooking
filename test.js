@@ -33,7 +33,13 @@ function test_recipe(known) {
         console.log(known.name, known.ingredients);
         console.log(`HP is incorrect: returned '${r.hp}' != '${known.hp}' expected`);
         fails += 1;
-        //obj.cook(known.ingredients, true);
+        if(stop_on_error) {
+            process.exit(1);
+        }
+    } else if(r.hearts != known.hearts) {
+        console.log(known.name, known.ingredients);
+        console.log(`Hearts is incorrect: returned '${r.hearts}' != '${known.hearts}' expected`);
+        fails += 1;
         if(stop_on_error) {
             process.exit(1);
         }

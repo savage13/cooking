@@ -11835,8 +11835,8 @@ class CookingData {
             delete out.time;
             delete out.effect_level;
             delete out.effect_level_name;
-            delete out.hp;
-            delete out.hearts;
+            out.hp = 0;
+            out.hearts = 0;
             out.hearts_extra = Math.floor(out.potency / 4);
         }
         if(out.effect == 'GutsRecover') {
@@ -11881,9 +11881,8 @@ class CookingData {
                 "LifeMaxUp": "Hearty Elixir",
             };
             out.name = elixirs[ out.effect ];
-            delete out.hp; // Not certain about this
+            //delete out.hp; // Not certain about this
         }
-
         return out;
     }
 }
@@ -12052,7 +12051,8 @@ function dubious_food( hp ) {
     return {
         name: "Dubious Food",
         hp: hp,
-        id: ID
+        id: ID,
+        hearts: hp/2,
     }
 }
 function rock_hard_food(n) {
@@ -12061,7 +12061,8 @@ function rock_hard_food(n) {
     return {
         name: "Rock-Hard Food",
         hp: 0.5,
-        id: (n == 1) ? SINGLE_ID : MULTI_ID
+        id: (n == 1) ? SINGLE_ID : MULTI_ID,
+        hearts: 0.25,
     }
 }
 
