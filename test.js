@@ -6,7 +6,7 @@ import { CookingData } from './bundle.js' ;
 const obj = new CookingData;
 const stop_on_error = true;
 
-const test_data = ['wkr.json', 'dubious.json','acorns.json', 'elixirs.json'];
+const test_data = ['wkr.json', 'dubious.json','acorns.json', 'elixirs.json',"quietness.json"];
 
 let ok = 0;
 let fails = 0;
@@ -86,7 +86,7 @@ function test_recipe(known) {
         if(stop_on_error) {
             process.exit(1);
         }
-    } else if(["ResistCold","DefenseUp", "AttackUp", "ResistHot", "ResistElectric", "Quiteness", "MovingSpeed"].includes(known.effect) && (r.potency != known.potency || r.time != known.time || r.effect_level != known.effect_level)) {
+    } else if(["ResistCold","DefenseUp", "AttackUp", "ResistHot", "ResistElectric", "Quietness", "MovingSpeed"].includes(known.effect) && (r.potency != known.potency || r.time != known.time || r.effect_level != known.effect_level)) {
         console.log(known.name, known.ingredients);
         if(r.potency != known.potency) {
             console.log(`Potency is incorrect: returned '${r.potency}' != '${known.potency}' expected`);
