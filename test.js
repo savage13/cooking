@@ -5,10 +5,11 @@ import { CookingData } from './bundle.js' ;
 
 const obj = new CookingData;
 const stop_on_error = true;
-const check_img = false;
+const check_img = true;
 const stop_on_missing_img = false;
 
-const test_data = ['wkr.json', 'dubious.json','acorns.json', 'elixirs.json',"quietness.json", "other.json"];
+const test_data = ['t/wkr.json', 't/dubious.json','t/acorns.json',
+                   't/elixirs.json',"t/quietness.json", "t/other.json"];
 
 let ok = 0;
 let fails = 0;
