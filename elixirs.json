@@ -7,7 +7,7 @@
         "hp": 0,
         "hearts": 0,
         "potency": 2,
-        "effect_level": 1,
+        "level": 1,
         "time": "05:40"
     },
     {
@@ -18,7 +18,7 @@
         "hp": 0,
         "hearts": 0,
         "potency": 4,
-        "effect_level": 1,
+        "level": 1,
         "time": "08:10"
     },
     {
@@ -29,7 +29,7 @@
         "hp": 0,
         "hearts": 0,
         "potency": 6,
-        "effect_level": 2,
+        "level": 2,
         "time": "10:40"
     },
     {
@@ -40,7 +40,7 @@
         "hp": 0,
         "hearts": 0,
         "potency": 8,
-        "effect_level": 2,
+        "level": 2,
         "time": "13:10"
     },
         {
@@ -51,7 +51,7 @@
         "hp": 0,
         "hearts": 0,
         "potency": 2,
-        "effect_level": 1,
+        "level": 1,
         "time": "05:40"
     },
     {
@@ -62,7 +62,7 @@
         "hp": 0,
         "hearts": 0,
         "potency": 4,
-        "effect_level": 1,
+        "level": 1,
         "time": "08:10"
     },
     {
@@ -73,7 +73,7 @@
         "hp": 0,
         "hearts": 0,
         "potency": 6,
-        "effect_level": 2,
+        "level": 2,
         "time": "10:40"
     },
     {
@@ -84,7 +84,7 @@
         "hp": 0,
         "hearts": 0,
         "potency": 8,
-        "effect_level": 2,
+        "level": 2,
         "time": "13:10"
     }
 

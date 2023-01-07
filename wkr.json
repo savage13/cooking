@@ -6,7 +6,8 @@
       "ingredients" : [
          "Fairy"
       ],
-      "name" : "Fairy Tonic"
+       "name" : "Fairy Tonic",
+       "img": "img/Fairy.jpg"
    },
    {
       "hearts" : 7,
@@ -18,6 +19,8 @@
          "Yellow Chuchu Jelly",
          "Wood"
       ],
+       "price": 2,
+       "img": "img/Fairy_Summerwing_Butterfly_Wood_Yellow_Chuchu_Jelly.jpg",
       "name" : "Fairy Tonic"
    },
    {
@@ -28,6 +31,8 @@
          "Fairy",
          "Summerwing Butterfly"
       ],
+       "price": 2,
+       "img": "img/Fairy_Summerwing_Butterfly.jpg",
       "name" : "Fairy Tonic"
    },
    {
@@ -38,6 +43,8 @@
          "Fairy",
          "Wood"
       ],
+       "price": 2,
+       "img": "img/Fairy_Wood.jpg",
       "name" : "Fairy Tonic"
    },
    {
@@ -48,6 +55,8 @@
          "Fairy",
          "Yellow Chuchu Jelly"
       ],
+       "price": 2,
+       "img": "img/Fairy_Yellow_Chuchu_Jelly.jpg",
       "name" : "Fairy Tonic"
    },
    {
@@ -59,6 +68,8 @@
          "Yellow Chuchu Jelly",
          "Summerwing Butterfly"
       ],
+       "price": 2,
+       "img": "img/Fairy_Summerwing_Butterfly_Yellow_Chuchu_Jelly.jpg",
       "name" : "Fairy Tonic"
    },
    {
@@ -68,6 +79,8 @@
       "ingredients" : [
          "Wood"
       ],
+       "price": 2,
+       "img": "img/Wood.jpg",
       "name" : "Rock-Hard Food"
    },
    {
@@ -77,6 +90,8 @@
       "ingredients" : [
          "Topaz"
       ],
+       "price": 2,
+       "img": "img/Topaz.jpg",
       "name" : "Rock-Hard Food"
    },
    {
@@ -86,6 +101,8 @@
       "ingredients" : [
          "Opal"
       ],
+       "price": 2,
+       "img": "img/Opal.jpg",
       "name" : "Rock-Hard Food"
    },
    {
@@ -95,6 +112,8 @@
       "ingredients" : [
          "Luminous Stone"
       ],
+       "price": 2,
+       "img": "img/Luminous_Stone.jpg",
       "name" : "Rock-Hard Food"
    },
    {
@@ -104,6 +123,8 @@
       "ingredients" : [
          "Amber"
       ],
+       "price": 2,
+       "img": "img/Amber.jpg",
       "name" : "Rock-Hard Food"
    },
    {
@@ -113,6 +134,8 @@
       "ingredients" : [
          "Ruby"
       ],
+       "price": 2,
+       "img": "img/Ruby.jpg",
       "name" : "Rock-Hard Food"
    },
    {
@@ -155,7 +178,7 @@
    {
       "effect" : "LifeMaxUp",
       "hearts" : 0,
-      "hearts_extra" : 4,
+      "level" : 4,
       "hp" : 0,
       "id" : 6,
       "ingredients" : [
@@ -182,7 +205,7 @@
    },
    {
       "effect" : "ResistCold",
-      "effect_level" : 1,
+      "level" : 1,
       "hearts" : 0,
       "hp" : 0,
       "id" : 4,
@@ -298,7 +321,7 @@
    },
    {
       "effect" : "DefenseUp",
-      "effect_level" : 1,
+      "level" : 1,
       "hearts" : 4,
       "hp" : 16,
       "id" : 12,
@@ -338,7 +361,7 @@
    {
       "effect" : "LifeMaxUp",
       "hearts" : 0,
-      "hearts_extra" : 3,
+      "level" : 3,
       "hp" : 0,
       "id" : 14,
       "ingredients" : [
@@ -352,7 +375,7 @@
    },
    {
       "effect" : "DefenseUp",
-      "effect_level" : 1,
+      "level" : 1,
       "hearts" : 4,
       "hp" : 16,
       "id" : 15,
@@ -506,7 +529,7 @@
    },
    {
       "effect" : "DefenseUp",
-      "effect_level" : 1,
+      "level" : 1,
       "hearts" : 4,
       "hp" : 16,
       "id" : 25,
@@ -521,7 +544,7 @@
    },
    {
       "effect" : "AttackUp",
-      "effect_level" : 1,
+      "level" : 1,
       "hearts" : 4,
       "hp" : 16,
       "id" : 25,
@@ -538,7 +561,7 @@
       "NOTES" : "13 vs 12 - does the value get truncated at hearts?",
       "effect" : "LifeMaxUp",
       "hearts" : 0,
-      "hearts_extra" : 3,
+      "level" : 3,
       "hp" : 0,
       "id" : 25,
       "ingredients" : [
@@ -566,7 +589,7 @@
    {
       "NOTES" : "Timing expected to be 3:30, but get 3:10, CHECK",
       "effect" : "MovingSpeed",
-      "effect_level" : 1,
+      "level" : 1,
       "hearts" : 3,
       "hp" : 12,
       "id" : 26,
@@ -581,7 +604,7 @@
    },
    {
       "effect" : "DefenseUp",
-      "effect_level" : 1,
+      "level" : 1,
       "hearts" : 3,
       "hp" : 12,
       "id" : 26,
@@ -596,7 +619,7 @@
    },
    {
       "effect" : "DefenseUp",
-      "effect_level" : 1,
+      "level" : 1,
       "hearts" : 3,
       "hp" : 12,
       "id" : 27,
@@ -628,7 +651,7 @@
    {
       "NOTES" : "CHECK the duration time for the swift carrot using Carrot cake and Veggie Curry",
       "effect" : "MovingSpeed",
-      "effect_level" : 1,
+      "level" : 1,
       "hearts" : 3,
       "hp" : 12,
       "id" : 28,
@@ -746,7 +769,7 @@
    },
    {
       "effect" : "AttackUp",
-      "effect_level" : 1,
+      "level" : 1,
       "hearts" : 3,
       "hp" : 12,
       "id" : 36,
@@ -761,7 +784,7 @@
    },
    {
       "effect" : "ResistHot",
-      "effect_level" : 1,
+      "level" : 1,
       "hearts" : 3,
       "hp" : 12,
       "id" : 37,
@@ -813,7 +836,7 @@
    },
    {
       "effect" : "AttackUp",
-      "effect_level" : 1,
+      "level" : 1,
       "hearts" : 4,
       "hp" : 16,
       "id" : 39,
@@ -829,7 +852,7 @@
    },
    {
       "effect" : "AttackUp",
-      "effect_level" : 1,
+      "level" : 1,
       "hearts" : 4,
       "hp" : 16,
       "id" : 39,
@@ -846,7 +869,7 @@
    {
       "effect" : "LifeMaxUp",
       "hearts" : 0,
-      "hearts_extra" : 4,
+      "level" : 4,
       "hp" : 0,
       "id" : 40,
       "ingredients" : [
@@ -860,7 +883,7 @@
    {
       "effect" : "LifeMaxUp",
       "hearts" : 0,
-      "hearts_extra" : 4,
+      "level" : 4,
       "hp" : 0,
       "id" : 41,
       "ingredients" : [
@@ -874,7 +897,7 @@
    },
    {
       "effect" : "AttackUp",
-      "effect_level" : 1,
+      "level" : 1,
       "hearts" : 4,
       "hp" : 16,
       "id" : 42,
@@ -947,7 +970,7 @@
    {
       "effect" : "LifeMaxUp",
       "hearts" : 0,
-      "hearts_extra" : 3,
+      "level" : 3,
       "hp" : 0,
       "id" : 47,
       "ingredients" : [
@@ -974,7 +997,7 @@
    {
       "effect" : "LifeMaxUp",
       "hearts" : 0,
-      "hearts_extra" : 3,
+      "level" : 3,
       "hp" : 0,
       "id" : 49,
       "ingredients" : [
@@ -1017,7 +1040,7 @@
    },
    {
       "effect" : "AttackUp",
-      "effect_level" : 1,
+      "level" : 1,
       "hearts" : 6,
       "hp" : 24,
       "id" : 52,
@@ -1070,7 +1093,7 @@
    {
       "effect" : "LifeMaxUp",
       "hearts" : 0,
-      "hearts_extra" : 3,
+      "level" : 3,
       "hp" : 0,
       "id" : 56,
       "ingredients" : [
@@ -1084,7 +1107,7 @@
    },
    {
       "effect" : "AttackUp",
-      "effect_level" : 1,
+      "level" : 1,
       "hearts" : 4,
       "hp" : 16,
       "id" : 57,
@@ -1099,7 +1122,7 @@
    },
    {
       "effect" : "DefenseUp",
-      "effect_level" : 1,
+      "level" : 1,
       "hearts" : 4,
       "hp" : 16,
       "id" : 57,
@@ -1114,7 +1137,7 @@
    },
    {
       "effect" : "AttackUp",
-      "effect_level" : 1,
+      "level" : 1,
       "hearts" : 4,
       "hp" : 16,
       "id" : 58,
@@ -1129,7 +1152,7 @@
    },
    {
       "effect" : "AttackUp",
-      "effect_level" : 1,
+      "level" : 1,
       "hearts" : 4,
       "hp" : 16,
       "id" : 59,
@@ -1208,7 +1231,7 @@
    },
    {
       "effect" : "AttackUp",
-      "effect_level" : 1,
+      "level" : 1,
       "hearts" : 4,
       "hp" : 16,
       "id" : 66,
@@ -1236,7 +1259,7 @@
    {
       "effect" : "LifeMaxUp",
       "hearts" : 0,
-      "hearts_extra" : 3,
+      "level" : 3,
       "hp" : 0,
       "id" : 68,
       "ingredients" : [
@@ -1254,11 +1277,13 @@
          "Apple",
          "Goat Butter"
       ],
+       "price": 10, 
+       "img": "img/Hot_Buttered_Apple.jpg",
       "name" : "Hot Buttered Apple"
    },
    {
       "effect" : "DefenseUp",
-      "effect_level" : 1,
+      "level" : 1,
       "hearts" : 7,
       "hp" : 28,
       "id" : 70,
@@ -1332,6 +1357,8 @@
          "Apple",
          "Courser Bee Honey"
       ],
+       "price": 30,
+       "img": "img/Honeyed_Apple.jpg",
       "name" : "Honeyed Apple",
       "potency" : 2,
       "stamina" : 0.4
@@ -1392,7 +1419,7 @@
    {
       "effect" : "LifeMaxUp",
       "hearts" : 0,
-      "hearts_extra" : 3,
+      "level" : 3,
       "hp" : 0,
       "id" : 82,
       "ingredients" : [
@@ -1464,7 +1491,7 @@
    },
    {
       "effect" : "AttackUp",
-      "effect_level" : 1,
+      "level" : 1,
       "hearts" : 2,
       "hp" : 8,
       "id" : 86,
@@ -1478,7 +1505,7 @@
    },
    {
       "effect" : "DefenseUp",
-      "effect_level" : 1,
+      "level" : 1,
       "hearts" : 2,
       "hp" : 8,
       "id" : 86,
@@ -1506,7 +1533,7 @@
    },
    {
       "effect" : "AttackUp",
-      "effect_level" : 1,
+      "level" : 1,
       "hearts" : 2,
       "hp" : 8,
       "id" : 87,
@@ -1520,7 +1547,7 @@
    },
    {
       "effect" : "DefenseUp",
-      "effect_level" : 1,
+      "level" : 1,
       "hearts" : 2,
       "hp" : 8,
       "id" : 87,
@@ -1547,7 +1574,7 @@
    },
    {
       "effect" : "AttackUp",
-      "effect_level" : 1,
+      "level" : 1,
       "hearts" : 2,
       "hp" : 8,
       "id" : 88,
@@ -1572,7 +1599,7 @@
    {
       "effect" : "LifeMaxUp",
       "hearts" : 0,
-      "hearts_extra" : 3,
+      "level" : 3,
       "hp" : 0,
       "id" : 90,
       "ingredients" : [
@@ -1622,7 +1649,7 @@
    {
       "effect" : "LifeMaxUp",
       "hearts" : 0,
-      "hearts_extra" : 4,
+      "level" : 4,
       "hp" : 0,
       "id" : 94,
       "ingredients" : [
@@ -1681,7 +1708,7 @@
    {
       "effect" : "LifeMaxUp",
       "hearts" : 0,
-      "hearts_extra" : 4,
+      "level" : 4,
       "hp" : 0,
       "id" : 98,
       "ingredients" : [
@@ -1707,7 +1734,7 @@
    {
       "effect" : "LifeMaxUp",
       "hearts" : 0,
-      "hearts_extra" : 8,
+      "level" : 8,
       "hp" : 0,
       "id" : 100,
       "ingredients" : [
@@ -1719,7 +1746,7 @@
    },
    {
       "effect" : "AttackUp",
-      "effect_level" : 1,
+      "level" : 1,
       "hearts" : 8,
       "hp" : 32,
       "id" : 101,
@@ -1733,7 +1760,7 @@
    },
    {
       "effect" : "AttackUp",
-      "effect_level" : 1,
+      "level" : 1,
       "hearts" : 8,
       "hp" : 32,
       "id" : 101,
@@ -1747,7 +1774,7 @@
    },
    {
       "effect" : "AttackUp",
-      "effect_level" : 1,
+      "level" : 1,
       "hearts" : 5,
       "hp" : 20,
       "id" : 102,
@@ -1761,7 +1788,7 @@
    },
    {
       "effect" : "AttackUp",
-      "effect_level" : 1,
+      "level" : 1,
       "hearts" : 5,
       "hp" : 20,
       "id" : 102,
@@ -1775,7 +1802,7 @@
    },
    {
       "effect" : "AttackUp",
-      "effect_level" : 1,
+      "level" : 1,
       "hearts" : 4,
       "hp" : 16,
       "id" : 103,
@@ -1789,7 +1816,7 @@
    },
    {
       "effect" : "AttackUp",
-      "effect_level" : 1,
+      "level" : 1,
       "hearts" : 4,
       "hp" : 16,
       "id" : 103,
@@ -1803,7 +1830,7 @@
    },
    {
       "effect" : "ResistCold",
-      "effect_level" : 1,
+      "level" : 1,
       "hearts" : 3,
       "hp" : 12,
       "id" : 104,
@@ -1847,7 +1874,7 @@
    },
    {
       "effect" : "AttackUp",
-      "effect_level" : 2,
+      "level" : 2,
       "hearts" : 4,
       "hp" : 16,
       "id" : 106,
@@ -1892,7 +1919,7 @@
    {
       "effect" : "LifeMaxUp",
       "hearts" : 0,
-      "hearts_extra" : 3,
+      "level" : 3,
       "hp" : 0,
       "id" : 108,
       "ingredients" : [
@@ -1925,7 +1952,7 @@
    {
       "effect" : "LifeMaxUp",
       "hearts" : 0,
-      "hearts_extra" : 3,
+      "level" : 3,
       "hp" : 0,
       "id" : 111,
       "ingredients" : [
@@ -1995,7 +2022,7 @@
    {
       "_notes" : "same as id:130 = id:116",
       "effect" : "Quietness",
-      "effect_level" : 1,
+      "level" : 1,
       "hearts" : 2,
       "hp" : 8,
       "id" : 130,
@@ -2010,7 +2037,7 @@
       "_notes" : "same as id:130 = id:116",
       "effect" : "LifeMaxUp",
       "hearts" : 0,
-      "hearts_extra" : 3,
+      "level" : 3,
       "hp" : 0,
       "id" : 130,
       "ingredients" : [
@@ -2022,7 +2049,7 @@
    {
       "_notes" : "same as id:130 = id:116",
       "effect" : "AttackUp",
-      "effect_level" : 1,
+      "level" : 1,
       "hearts" : 2,
       "hp" : 8,
       "id" : 130,
@@ -2036,7 +2063,7 @@
    {
       "_notes" : "same as id:130 = id:116",
       "effect" : "DefenseUp",
-      "effect_level" : 1,
+      "level" : 1,
       "hearts" : 2,
       "hp" : 8,
       "id" : 130,
@@ -2077,7 +2104,7 @@
    {
       "_notes" : "same as id:117 = id:131",
       "effect" : "AttackUp",
-      "effect_level" : 1,
+      "level" : 1,
       "hearts" : 2,
       "hp" : 8,
       "id" : 131,
@@ -2091,7 +2118,7 @@
    {
       "_notes" : "same as id:131",
       "effect" : "AttackUp",
-      "effect_level" : 2,
+      "level" : 2,
       "hearts" : 4,
       "hp" : 16,
       "id" : 131,
@@ -2140,7 +2167,7 @@
       "_notes" : "same as id:136 = id:121",
       "effect" : "LifeMaxUp",
       "hearts" : 0,
-      "hearts_extra" : 3,
+      "level" : 3,
       "hp" : 0,
       "id" : 136,
       "ingredients" : [
@@ -2157,6 +2184,8 @@
       "ingredients" : [
          "Apple"
       ],
+       "img": "img/Apple.jpg",
+       "price": 10,
       "name" : "Simmered Fruit"
    },
    {
@@ -2205,13 +2234,15 @@
    },
    {
       "effect" : "ResistCold",
-      "effect_level" : 1,
+      "level" : 1,
       "hearts" : 1,
       "hp" : 4,
       "id" : 127,
       "ingredients" : [
          "Spicy Pepper"
       ],
+       "price": 10,
+       "img": "img/Spicy_Pepper.jpg",
       "name" : "Sautéed Peppers",
       "potency" : 1,
       "time" : "02:30"
@@ -2230,7 +2261,7 @@
    },
    {
       "effect" : "AttackUp",
-      "effect_level" : 1,
+      "level" : 1,
       "hearts" : 3.25,
       "hp" : 13,
       "id" : 117,
@@ -2245,7 +2276,7 @@
    },
    {
       "effect" : "AttackUp",
-      "effect_level" : 1,
+      "level" : 1,
       "hearts" : 4,
       "hp" : 16,
       "id" : 117,
@@ -2260,7 +2291,7 @@
    },
    {
       "effect" : "AttackUp",
-      "effect_level" : 1,
+      "level" : 1,
       "hearts" : 4.5,
       "hp" : 18,
       "id" : 117,
@@ -2275,7 +2306,7 @@
    },
    {
       "effect" : "AttackUp",
-      "effect_level" : 1,
+      "level" : 1,
       "hearts" : 5.75,
       "hp" : 23,
       "id" : 117,
@@ -2290,7 +2321,7 @@
    },
    {
       "effect" : "Quietness",
-      "effect_level" : 1,
+      "level" : 1,
       "hearts" : 0,
       "hp" : 0,
       "id" : 136,
@@ -2303,7 +2334,7 @@
    },
    {
       "effect" : "Quietness",
-      "effect_level" : 1,
+      "level" : 1,
       "hearts" : 0,
       "hp" : 0,
       "id" : 136,
@@ -2317,7 +2348,7 @@
    },
    {
       "effect" : "Quietness",
-      "effect_level" : 1,
+      "level" : 1,
       "hearts" : 0,
       "hp" : 0,
       "id" : 136,
@@ -2333,7 +2364,7 @@
    {
       "NOTES" : "silent princess Item_Plant_J differs from Item_PlantGet_J",
       "effect" : "Quietness",
-      "effect_level" : 1,
+      "level" : 1,
       "hearts" : 2,
       "hp" : 8,
       "id" : 136,
@@ -2347,7 +2378,7 @@
    {
       "NOTES" : "silent princess Item_Plant_J differs from Item_PlantGet_J",
       "effect" : "Quietness",
-      "effect_level" : 2,
+      "level" : 2,
       "hearts" : 4,
       "hp" : 16,
       "id" : 136,
@@ -2362,7 +2393,7 @@
    {
       "NOTES" : "silent princess Item_Plant_J differs from Item_PlantGet_J",
       "effect" : "Quietness",
-      "effect_level" : 3,
+      "level" : 3,
       "hearts" : 6,
       "hp" : 24,
       "id" : 136,
@@ -2377,7 +2408,7 @@
    },
    {
       "effect" : "Quietness",
-      "effect_level" : 3,
+      "level" : 3,
       "hearts" : 8,
       "hp" : 32,
       "id" : 136,
@@ -2393,20 +2424,22 @@
    },
    {
       "effect" : "ResistElectric",
-      "effect_level" : 1,
+      "level" : 1,
       "hearts" : 0,
       "hp" : 0,
       "id" : 136,
       "ingredients" : [
          "Electric Safflina"
       ],
+       "price": 10,
+       "img": "img/Electric_Safflina.jpg",
       "name" : "Fried Wild Greens",
       "potency" : 1,
       "time" : "02:30"
    },
    {
       "effect" : "ResistElectric",
-      "effect_level" : 1,
+      "level" : 1,
       "hearts" : 0,
       "hp" : 0,
       "id" : 136,
@@ -2420,7 +2453,7 @@
    },
    {
       "effect" : "ResistElectric",
-      "effect_level" : 1,
+      "level" : 1,
       "hearts" : 0,
       "hp" : 0,
       "id" : 136,
@@ -2435,7 +2468,7 @@
    },
    {
       "effect" : "ResistElectric",
-      "effect_level" : 2,
+      "level" : 2,
       "hearts" : 0,
       "hp" : 0,
       "id" : 136,
@@ -2451,7 +2484,7 @@
    },
    {
       "effect" : "DefenseUp",
-      "effect_level" : 1,
+      "level" : 1,
       "hearts" : 1,
       "hp" : 4,
       "id" : 136,
@@ -2464,7 +2497,7 @@
    },
    {
       "effect" : "DefenseUp",
-      "effect_level" : 1,
+      "level" : 1,
       "hearts" : 2,
       "hp" : 8,
       "id" : 136,
@@ -2478,7 +2511,7 @@
    },
    {
       "effect" : "DefenseUp",
-      "effect_level" : 2,
+      "level" : 2,
       "hearts" : 3,
       "hp" : 12,
       "id" : 136,
@@ -2493,7 +2526,7 @@
    },
    {
       "effect" : "DefenseUp",
-      "effect_level" : 3,
+      "level" : 3,
       "hearts" : 4,
       "hp" : 16,
       "id" : 136,
@@ -2509,7 +2542,7 @@
    },
    {
       "effect" : "DefenseUp",
-      "effect_level" : 3,
+      "level" : 3,
       "hearts" : 5,
       "hp" : 20,
       "id" : 136,
@@ -2694,7 +2727,7 @@
    },
    {
       "effect" : "AttackUp",
-      "effect_level" : 3,
+      "level" : 3,
       "hearts" : 6,
       "hp" : 24,
       "id" : 106,
@@ -2711,7 +2744,7 @@
    },
    {
       "effect" : "AttackUp",
-      "effect_level" : 3,
+      "level" : 3,
       "hearts" : 5,
       "hp" : 20,
       "id" : 109,
@@ -2733,18 +2766,22 @@
       "ingredients" : [
          "Star Fragment"
       ],
+       "price": 2,
+       "img": "img/Star_Fragment.jpg",
       "name" : "Dubious Food"
    },
    {
       "effect" : "LifeMaxUp",
       "hearts" : 0,
-      "hearts_extra" : 4,
+      "level" : 4,
       "hp" : 0,
       "id" : 137,
       "ingredients" : [
          "Hearty Durian"
       ],
-      "name" : "Simmered Fruit",
+       "price": 30,
+       "name" : "Simmered Fruit",
+       "img": "img/Durian.jpg",
       "potency" : 16
    },
    {
@@ -2763,56 +2800,66 @@
       "ingredients" : [
          "Wildberry"
       ],
+       "price": 10,
+       "img": "img/Wildberry.jpg",
       "name" : "Simmered Fruit"
    },
    {
       "effect" : "ResistHot",
-      "effect_level" : 1,
+      "level" : 1,
       "hearts" : 1,
       "hp" : 4,
       "id" : 137,
       "ingredients" : [
          "Hydromelon"
       ],
+       "price": 10,
+       "img": "img/Hydromelon.jpg",
       "name" : "Simmered Fruit",
       "potency" : 1,
       "time" : "02:30"
    },
    {
       "effect" : "ResistElectric",
-      "effect_level" : 1,
+      "level" : 1,
       "hearts" : 1,
       "hp" : 4,
       "id" : 137,
       "ingredients" : [
          "Voltfruit"
       ],
+       "price": 10,
+       "img": "img/Voltfruit.jpg",
       "name" : "Simmered Fruit",
       "potency" : 1,
       "time" : "02:30"
    },
    {
       "effect" : "MovingSpeed",
-      "effect_level" : 1,
+      "level" : 1,
       "hearts" : 1,
       "hp" : 4,
       "id" : 137,
       "ingredients" : [
          "Fleet-Lotus Seeds"
       ],
+       "price": 10,
+       "img": "img/Fleet-Lotus_Seeds.jpg",
       "name" : "Simmered Fruit",
       "potency" : 2,
       "time" : "01:00"
    },
    {
       "effect" : "AttackUp",
-      "effect_level" : 1,
+      "level" : 1,
       "hearts" : 1,
       "hp" : 4,
       "id" : 137,
       "ingredients" : [
          "Mighty Bananas"
       ],
+       "price": 10,
+       "img": "img/Mighty_Bananas.jpg",
       "name" : "Simmered Fruit",
       "potency" : 2,
       "time" : "00:50"
@@ -2820,12 +2867,14 @@
    {
       "effect" : "LifeMaxUp",
       "hearts" : 0,
-      "hearts_extra" : 1,
+      "level" : 1,
       "hp" : 0,
       "id" : 132,
       "ingredients" : [
          "Hearty Truffle"
       ],
+       "price": 10,
+       "img": "img/Hearty_Truffle.jpg",
       "name" : "Mushroom Skewer",
       "potency" : 4
    },
@@ -2837,6 +2886,8 @@
       "ingredients" : [
          "Endura Shroom"
       ],
+       "price": 10,
+       "img": "img/Endura_Shroom.jpg",
       "name" : "Mushroom Skewer",
       "potency" : 1,
       "stamina_extra" : 0.2
@@ -2848,17 +2899,21 @@
       "ingredients" : [
          "Molduga Fin"
       ],
+       "price": 2,
+       "img": "img/Molduga_Fin.jpg",
       "name" : "Dubious Food"
    },
    {
       "effect" : "ResistCold",
-      "effect_level" : 1,
+      "level" : 1,
       "hearts" : 0,
       "hp" : 0,
       "id" : 136,
       "ingredients" : [
          "Warm Safflina"
       ],
+       "price": 10,
+       "img": "img/Warm_Safflina.jpg",
       "name" : "Fried Wild Greens",
       "potency" : 1,
       "time" : "02:30"

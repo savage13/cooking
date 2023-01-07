@@ -5,16 +5,32 @@ import { CookingData } from './bundle.js' ;
 
 const obj = new CookingData;
 const stop_on_error = true;
+const check_img = false;
+const stop_on_missing_img = false;
 
-const test_data = ['wkr.json', 'dubious.json','acorns.json', 'elixirs.json',"quietness.json"];
+const test_data = ['wkr.json', 'dubious.json','acorns.json', 'elixirs.json',"quietness.json", "other.json"];
 
 let ok = 0;
 let fails = 0;
+let proof = 0;
+
+const EFFECTS = ["LifeMaxUp","ExGutsMaxUp","GutsRecover","ResistCold","DefenseUp", "AttackUp", "ResistHot", "ResistElectric", "Quietness", "MovingSpeed","Fireproof"];
 
 function test_recipe(known) {
     //console.log("--------------------------------------------");
     let r = obj.cook(known.ingredients, false);//known.id == 11126);
 
+    if((r.effect && ! EFFECTS.includes(r.effect)) ||
+       (known.effect && ! EFFECTS.includes(known.effect)) ) {
+        console.log("Error");
+        console.log(known.name, known.ingredients);
+        console.log(`Effect is unknown: returned '${r.effect}' != '${known.effect}' expected`);
+        fails += 1;
+        if(stop_on_error) {
+            process.exit(1);
+        }
+    }
+    
     if(!r || r.name != known.name || r.id != known.id) {
         console.log("********************************************");
         console.log("Error");
@@ -50,13 +66,13 @@ function test_recipe(known) {
         if(stop_on_error) {
             process.exit(1);
         }
-    } else if(known.effect == "LifeMaxUp" && (r.potency != known.potency || r.hearts_extra != known.hearts_extra)) {
+    } else if(known.effect == "LifeMaxUp" && (r.potency != known.potency || r.level != known.level)) {
         console.log(known.name, known.ingredients);
         if(r.potency != known.potency) {
             console.log(`Potency is incorrect: returned '${r.potency}' != '${known.potency}' expected`);
         }
-        if(r.hearts_extra != known.hearts_extra) {
-            console.log(`Hearts Extra is incorrect: returned '${r.hearts_extra}' != '${known.hearts_extra}' expected`);
+        if(r.level != known.level) {
+            console.log(`Hearts Extra (level) is incorrect: returned '${r.level}' != '${known.level}' expected`);
         }
         fails += 1;
         if(stop_on_error) {
@@ -86,7 +102,7 @@ function test_recipe(known) {
         if(stop_on_error) {
             process.exit(1);
         }
-    } else if(["ResistCold","DefenseUp", "AttackUp", "ResistHot", "ResistElectric", "Quietness", "MovingSpeed"].includes(known.effect) && (r.potency != known.potency || r.time != known.time || r.effect_level != known.effect_level)) {
+    } else if(["ResistCold","DefenseUp", "AttackUp", "Fireproof", "ResistHot", "ResistElectric", "Quietness", "MovingSpeed"].includes(known.effect) && (r.potency != known.potency || r.time != known.time || r.level != known.level)) {
         console.log(known.name, known.ingredients);
         if(r.potency != known.potency) {
             console.log(`Potency is incorrect: returned '${r.potency}' != '${known.potency}' expected`);
@@ -94,8 +110,8 @@ function test_recipe(known) {
         if(r.time != known.time) {
             console.log(`Time is incorrect: returned '${r.time}' != '${known.time}' expected`);
         }
-        if(r.effect_level != known.effect_level) {
-            console.log(`Level is incorrect: returned '${r.effect_level}' != '${known.effect_level}' expected`);
+        if(r.level != known.level) {
+            console.log(`Level is incorrect: returned '${r.level}' != '${known.level}' expected`);
         }
         fails += 1;
         if(stop_on_error) {
@@ -103,6 +119,20 @@ function test_recipe(known) {
         }
     } else {
         ok += 1;
+    }
+    if(known.img) {
+        if(fs.existsSync(known.img)) {
+            proof += 1;
+        } else if(!check_img) {
+            proof += 1;
+        } else {
+            console.log("img file is incorrect ", known.img);
+            process.exit(1);
+        }
+    } else if(stop_on_missing_img) {
+        console.log(known.name, known.ingredients);
+        console.log("Missing img file");
+        process.exit(1);
     }
 }
 
@@ -113,7 +143,10 @@ for (const file of test_data) {
         test_recipe(known)
     }
 }
-console.log(`Tests ${fails + ok}: Ok: ${ok} Fails: ${fails}`);
+let total = fails + ok;
+let proof_pct = 100 * proof / total;
+
+console.log(`Tests ${total}: Ok: ${ok} Fails: ${fails} Proof: ${proof} (${proof_pct.toFixed(2)}%)`);
 
 
 

@@ -1,0 +1,170 @@
+[
+    {
+        "name": "Simmered Fruit",
+        "id": 137,
+        "ingredients": ["Voltfruit", "Voltfruit"],
+        "level": 1,
+        "time": "05:00",
+        "hp": 8,
+        "hearts": 2,
+        "potency": 2,
+        "price": 20,
+        "effect": "ResistElectric",
+        "img": "img/Voltfruit2.jpg"
+    },
+    {
+        "name": "Simmered Fruit",
+        "id": 137,
+        "ingredients": ["Voltfruit", "Voltfruit","Voltfruit", "Voltfruit"],
+        "level": 2,
+        "time": "10:00",
+        "hp": 16,
+        "hearts": 4,
+        "potency": 4,
+        "price": 40,
+        "effect": "ResistElectric",
+        "img": "img/Voltfruit4.jpg"
+    },
+    {
+        "name": "Fish Skewer",
+        "id": 131,
+        "ingredients": ["Voltfin Trout", "Voltfin Trout"],
+        "level": 3,
+        "time": "05:00",
+        "hp": 16,
+        "hearts": 4,
+        "potency": 6,
+        "effect": "ResistElectric",
+        "price": 30,
+        "img": "img/Voltfin_Trout2.jpg"
+    },
+    {
+        "name": "Mushroom Skewer",
+        "id": 132,
+        "ingredients": ["Rushroom","Rushroom","Rushroom","Rushroom","Rushroom"],
+        "level": 2,
+        "time": "05:00",
+        "hp": 20,
+        "hearts": 5,
+        "potency": 5,
+        "price": 50,
+        "effect": "MovingSpeed",
+        "img": "img/Rushroom5.jpg"
+    },
+    {
+        "name": "Dubious Food",
+        "id": 5,
+        "ingredients": ["Red Chuchu Jelly"],
+        "hp": 4,
+        "hearts": 1,
+        "price": 2,
+        "img": "img/Red_Chuchu_Jelly.jpg"
+    },
+    {
+        "name": "Meat Skewer",
+        "id": 129,
+        "ingredients": ["Raw Prime Meat"],
+        "hp": 12,
+        "hearts": 3,
+        "price": 30,
+        "img": "img/Raw_Prime_Meat.jpg"
+    },
+    {
+        "name": "Rock-Hard Food",
+        "id": 126,
+        "ingredients": ["Opal","Opal","Opal","Opal","Opal"],
+        "hp": 1,
+        "hearts": 0.25,
+        "price": 2,
+        "img": "img/Opal5.jpg"
+    },
+    {
+        "name": "Dubious Food",
+        "id": 5,
+        "ingredients": ["Lizalfos Tail"],
+        "hp": 4,
+        "hearts": 1,
+        "price": 2,
+        "img": "img/Lizalfos_Tail.jpg"
+    },
+    {
+        "name": "Dubious Food",
+        "id": 5,
+        "ingredients": ["Hylian Rice"],
+        "hp": 4,
+        "hearts": 1,
+        "price": 2,
+        "img": "img/Hylian_Rice.jpg"
+    },
+    {
+        "name": "Dubious Food",
+        "id": 5,
+        "ingredients": ["Goat Butter"],
+        "hp": 4,
+        "hearts": 1,
+        "price": 2,
+        "img": "img/Goat_Butter.jpg"
+    },
+    {
+        "name": "Dubious Food",
+        "id": 5,
+        "ingredients": ["Giant Ancient Core"],
+        "hp": 4,
+        "hearts": 1,
+        "price": 2,
+        "img": "img/Giant_Ancient_Core.jpg"
+    },
+    {
+        "name": "Fireproof Elixir",
+        "id": 4,
+        "ingredients": ["Bokoblin Horn", "Smotherwing Butterfly"],
+        "hp": 0,
+        "hearts": 0,
+        "effect": "Fireproof",
+        "time": "03:40",
+        "level": 1,
+        "potency": 2,
+        "price": 10,
+        "img": "img/Bokoblin_Horn_Smotherwing_Butterfly.jpg"
+    },
+    {
+        "name": "Fireproof Elixir",
+        "id": 4,
+        "ingredients": ["Bokoblin Horn", "Fireproof Lizard", "Fireproof Lizard"],
+        "hp": 0,
+        "hearts": 0,
+        "effect": "Fireproof",
+        "time": "06:10",
+        "level": 1,
+        "potency": 2,
+        "price": 30,
+        "img": "img/Bokoblin_Horn_Fireproof_Lizard2.jpg"
+    },
+    {
+        "name": "Meat-Stuffed Pumpkin",
+        "id": 70,
+        "ingredients": ["Fortified Pumpkin", "Raw Meat"],
+        "hp": 12,
+        "hearts": 3,
+        "effect": "DefenseUp",
+        "time": "01:20",
+        "level": 1,
+        "potency": 2,
+        "price": 30,
+        "img": "img/Fortified_Pumpkin_Raw_Meat.jpg"
+    },
+    {
+        "name": "Veggie Cream Soup",
+        "id": 46,
+        "ingredients": ["Swift Carrot", "Fresh Milk", "Rock Salt"],
+        "hp": 8,
+        "hearts": 2,
+        "effect": "MovingSpeed",
+        "time": "03:20",
+        "level": 1,
+        "potency": 1,
+        "price": 20,
+        "img": "img/Fresh_Milk_Rock_Salt_Swift_Carrot.jpg"
+    }
+
+]

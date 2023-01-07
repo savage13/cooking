@@ -11655,9 +11655,10 @@ class CookingData {
         for(let i = 0; i < iname.length; i++) {
             if(!iname[i]) {
                 console.log("Unknown item", items[i]);
+                return undefined;
             }
         }
-        return iname;
+        return iname.filter(x => x);
     }
     find_recipe(items, verbose = false) {
         // Get internal names
@@ -11687,6 +11688,11 @@ class CookingData {
     }
 
     cook(items, verbose = false) {
+        let _inames = this.items_names(items);
+        if(_inames === undefined) {
+            return undefined;
+        }
+
         let r = this.find_recipe(items, verbose);
         if(!r) {
             r = {name: "Dubious Food"};
@@ -11814,7 +11820,7 @@ class CookingData {
             time: time,
             potency: potency,
             effect_level_name: potency_level,
-            effect_level: effect_level,
+            level: effect_level,
             effect: effect,
             hearts: hp / 4,
         };
@@ -11828,24 +11834,26 @@ class CookingData {
         }
         if(out.effect == 'None') {
             delete out.time;
+            delete out.potency;
             delete out.effect;
-            delete out.effect_level;
+            delete out.level;
             delete out.effect_level_name;
         }
         if(out.effect == "LifeMaxUp") {
             delete out.time;
-            delete out.effect_level;
+            //delete out.effect_level;
             delete out.effect_level_name;
             out.hp = 0;
             out.hearts = 0;
-            out.hearts_extra = Math.floor(out.potency / 4);
+            //out.hearts_extra = Math.floor(out.potency / 4);
+            out.level = Math.floor(out.potency / 4);
         }
         if(out.effect == 'GutsRecover') {
             const recover = [0.0, 0.2, 0.4, 0.8, 1.0, 1.4, 1.6, 1.8, 2.2, 2.4, 2.8, 3.0];
             out.stamina = recover[potency];
             delete out.time;
             delete out.effect_level_name;
-            delete out.effect_level;
+            delete out.level;
         }
         if(out.effect == 'ExGutsMaxUp') {
             const recover = [
@@ -11865,7 +11873,7 @@ class CookingData {
             out.stamina_extra = tmp.value;
             delete out.time;
             delete out.effect_level_name;
-            delete out.effect_level;
+            delete out.level;
         }
         if(out.name == 'Elixir' && out.effect != "None") {
             const elixirs = {
