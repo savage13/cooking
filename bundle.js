@@ -1,5 +1,6 @@
 var recipes = [
 	{
+		hb: -12,
 		name: "Fairy Tonic",
 		tags: [
 			[
@@ -20,6 +21,7 @@ var recipes = [
 		num: 0
 	},
 	{
+		hb: -12,
 		name: "Fairy Tonic",
 		tags: [
 			[
@@ -37,6 +39,7 @@ var recipes = [
 		num: 0
 	},
 	{
+		hb: -12,
 		name: "Fairy Tonic",
 		tags: [
 			[
@@ -53,6 +56,7 @@ var recipes = [
 		num: 0
 	},
 	{
+		hb: 0,
 		name: "Rock-Hard Food",
 		tags: [
 			[
@@ -64,6 +68,7 @@ var recipes = [
 		num: 0
 	},
 	{
+		hb: 0,
 		name: "Elixir",
 		tags: [
 			[
@@ -78,6 +83,7 @@ var recipes = [
 		num: 0
 	},
 	{
+		hb: 0,
 		name: "Dubious Food",
 		tags: [
 			[
@@ -90,6 +96,7 @@ var recipes = [
 		num: 0
 	},
 	{
+		hb: 4,
 		name: "Fruitcake",
 		tags: [
 		],
@@ -117,6 +124,7 @@ var recipes = [
 		num: 0
 	},
 	{
+		hb: 8,
 		name: "Seafood Paella",
 		tags: [
 		],
@@ -141,6 +149,7 @@ var recipes = [
 		num: 0
 	},
 	{
+		hb: 0,
 		name: "Monster Curry",
 		tags: [
 		],
@@ -158,6 +167,7 @@ var recipes = [
 		num: 0
 	},
 	{
+		hb: 0,
 		name: "Monster Rice Balls",
 		tags: [
 		],
@@ -175,6 +185,7 @@ var recipes = [
 		num: 0
 	},
 	{
+		hb: 0,
 		name: "Monster Cake",
 		tags: [
 		],
@@ -195,6 +206,7 @@ var recipes = [
 		num: 0
 	},
 	{
+		hb: 0,
 		name: "Monster Soup",
 		tags: [
 		],
@@ -215,6 +227,7 @@ var recipes = [
 		num: 0
 	},
 	{
+		hb: 0,
 		name: "Monster Stew",
 		tags: [
 			[
@@ -232,6 +245,7 @@ var recipes = [
 		num: 0
 	},
 	{
+		hb: 0,
 		name: "Creamy Heart Soup",
 		tags: [
 		],
@@ -253,6 +267,7 @@ var recipes = [
 		num: 0
 	},
 	{
+		hb: 0,
 		name: "Clam Chowder",
 		tags: [
 		],
@@ -273,6 +288,7 @@ var recipes = [
 		num: 0
 	},
 	{
+		hb: 0,
 		name: "Pumpkin Stew",
 		tags: [
 		],
@@ -293,6 +309,7 @@ var recipes = [
 		num: 0
 	},
 	{
+		hb: 0,
 		name: "Gourmet Meat Stew",
 		tags: [
 		],
@@ -314,6 +331,7 @@ var recipes = [
 		num: 0
 	},
 	{
+		hb: 0,
 		name: "Prime Meat Stew",
 		tags: [
 		],
@@ -335,6 +353,7 @@ var recipes = [
 		num: 0
 	},
 	{
+		hb: 0,
 		name: "Meat Stew",
 		tags: [
 		],
@@ -356,6 +375,7 @@ var recipes = [
 		num: 0
 	},
 	{
+		hb: 0,
 		name: "Gourmet Meat Curry",
 		tags: [
 		],
@@ -373,6 +393,7 @@ var recipes = [
 		num: 0
 	},
 	{
+		hb: 0,
 		name: "Gourmet Poultry Curry",
 		tags: [
 		],
@@ -390,6 +411,7 @@ var recipes = [
 		num: 0
 	},
 	{
+		hb: 0,
 		name: "Prime Meat Curry",
 		tags: [
 		],
@@ -407,6 +429,7 @@ var recipes = [
 		num: 0
 	},
 	{
+		hb: 0,
 		name: "Prime Poultry Curry",
 		tags: [
 		],
@@ -424,6 +447,7 @@ var recipes = [
 		num: 0
 	},
 	{
+		hb: 0,
 		name: "Meat Curry",
 		tags: [
 		],
@@ -441,6 +465,7 @@ var recipes = [
 		num: 0
 	},
 	{
+		hb: 0,
 		name: "Poultry Curry",
 		tags: [
 		],
@@ -458,6 +483,7 @@ var recipes = [
 		num: 0
 	},
 	{
+		hb: 0,
 		name: "Seafood Curry",
 		tags: [
 		],
@@ -477,6 +503,7 @@ var recipes = [
 		num: 0
 	},
 	{
+		hb: 0,
 		name: "Vegetable Curry",
 		tags: [
 		],
@@ -496,6 +523,7 @@ var recipes = [
 		num: 0
 	},
 	{
+		hb: 0,
 		name: "Pumpkin Pie",
 		tags: [
 		],
@@ -516,6 +544,7 @@ var recipes = [
 		num: 0
 	},
 	{
+		hb: 0,
 		name: "Carrot Cake",
 		tags: [
 		],
@@ -537,6 +566,7 @@ var recipes = [
 		num: 0
 	},
 	{
+		hb: 16,
 		name: "Wildberry Crepe",
 		tags: [
 		],
@@ -560,6 +590,7 @@ var recipes = [
 		num: 0
 	},
 	{
+		hb: 4,
 		name: "Honey Crepe",
 		tags: [
 		],
@@ -583,6 +614,7 @@ var recipes = [
 		num: 0
 	},
 	{
+		hb: 0,
 		name: "Plain Crepe",
 		tags: [
 		],
@@ -603,6 +635,7 @@ var recipes = [
 		num: 0
 	},
 	{
+		hb: 0,
 		name: "Apple Pie",
 		tags: [
 		],
@@ -623,6 +656,7 @@ var recipes = [
 		num: 0
 	},
 	{
+		hb: 0,
 		name: "Nutcake",
 		tags: [
 		],
@@ -644,6 +678,7 @@ var recipes = [
 		num: 0
 	},
 	{
+		hb: 0,
 		name: "Egg Tart",
 		tags: [
 		],
@@ -664,6 +699,7 @@ var recipes = [
 		num: 0
 	},
 	{
+		hb: 0,
 		name: "Egg Pudding",
 		tags: [
 		],
@@ -681,6 +717,7 @@ var recipes = [
 		num: 0
 	},
 	{
+		hb: 0,
 		name: "Fried Bananas",
 		tags: [
 		],
@@ -698,6 +735,7 @@ var recipes = [
 		num: 0
 	},
 	{
+		hb: 0,
 		name: "Fruit Pie",
 		tags: [
 			[
@@ -718,6 +756,7 @@ var recipes = [
 		num: 0
 	},
 	{
+		hb: 0,
 		name: "Meat Pie",
 		tags: [
 			[
@@ -738,6 +777,7 @@ var recipes = [
 		num: 0
 	},
 	{
+		hb: 0,
 		name: "Fish Pie",
 		tags: [
 			[
@@ -758,6 +798,7 @@ var recipes = [
 		num: 0
 	},
 	{
+		hb: 0,
 		name: "Salmon Meunière",
 		tags: [
 		],
@@ -775,6 +816,7 @@ var recipes = [
 		num: 0
 	},
 	{
+		hb: 0,
 		name: "Salmon Risotto",
 		tags: [
 		],
@@ -795,6 +837,7 @@ var recipes = [
 		num: 0
 	},
 	{
+		hb: 0,
 		name: "Crab Risotto",
 		tags: [
 		],
@@ -817,6 +860,7 @@ var recipes = [
 		num: 0
 	},
 	{
+		hb: 0,
 		name: "Vegetable Risotto",
 		tags: [
 		],
@@ -839,6 +883,7 @@ var recipes = [
 		num: 0
 	},
 	{
+		hb: 0,
 		name: "Mushroom Risotto",
 		tags: [
 			[
@@ -859,6 +904,7 @@ var recipes = [
 		num: 0
 	},
 	{
+		hb: 0,
 		name: "Cream of Mushroom Soup",
 		tags: [
 			[
@@ -880,6 +926,7 @@ var recipes = [
 		num: 0
 	},
 	{
+		hb: 0,
 		name: "Veggie Cream Soup",
 		tags: [
 		],
@@ -899,6 +946,7 @@ var recipes = [
 		num: 0
 	},
 	{
+		hb: 0,
 		name: "Creamy Meat Soup",
 		tags: [
 			[
@@ -920,6 +968,7 @@ var recipes = [
 		num: 0
 	},
 	{
+		hb: 0,
 		name: "Creamy Seafood Soup",
 		tags: [
 			[
@@ -941,6 +990,7 @@ var recipes = [
 		num: 0
 	},
 	{
+		hb: 0,
 		name: "Cream of Vegetable Soup",
 		tags: [
 			[
@@ -959,6 +1009,7 @@ var recipes = [
 		num: 0
 	},
 	{
+		hb: 0,
 		name: "Carrot Stew",
 		tags: [
 		],
@@ -980,6 +1031,7 @@ var recipes = [
 		num: 0
 	},
 	{
+		hb: 0,
 		name: "Mushroom Omelet",
 		tags: [
 			[
@@ -1000,6 +1052,7 @@ var recipes = [
 		num: 0
 	},
 	{
+		hb: 0,
 		name: "Crab Omelet with Rice",
 		tags: [
 		],
@@ -1022,6 +1075,7 @@ var recipes = [
 		num: 0
 	},
 	{
+		hb: 0,
 		name: "Gourmet Poultry Pilaf",
 		tags: [
 		],
@@ -1042,6 +1096,7 @@ var recipes = [
 		num: 0
 	},
 	{
+		hb: 0,
 		name: "Prime Poultry Pilaf",
 		tags: [
 		],
@@ -1062,6 +1117,7 @@ var recipes = [
 		num: 0
 	},
 	{
+		hb: 0,
 		name: "Poultry Pilaf",
 		tags: [
 		],
@@ -1082,6 +1138,7 @@ var recipes = [
 		num: 0
 	},
 	{
+		hb: 0,
 		name: "Vegetable Omelet",
 		tags: [
 			[
@@ -1103,6 +1160,7 @@ var recipes = [
 		num: 0
 	},
 	{
+		hb: 0,
 		name: "Porgy Meunière",
 		tags: [
 		],
@@ -1121,6 +1179,7 @@ var recipes = [
 		num: 0
 	},
 	{
+		hb: 0,
 		name: "Seafood Meunière",
 		tags: [
 			[
@@ -1138,6 +1197,7 @@ var recipes = [
 		num: 0
 	},
 	{
+		hb: 0,
 		name: "Seafood Fried Rice",
 		tags: [
 		],
@@ -1157,6 +1217,7 @@ var recipes = [
 		num: 0
 	},
 	{
+		hb: 0,
 		name: "Curry Pilaf",
 		tags: [
 		],
@@ -1174,6 +1235,7 @@ var recipes = [
 		num: 0
 	},
 	{
+		hb: 0,
 		name: "Gourmet Meat and Rice Bowl",
 		tags: [
 		],
@@ -1191,6 +1253,7 @@ var recipes = [
 		num: 0
 	},
 	{
+		hb: 0,
 		name: "Prime Meat and Rice Bowl",
 		tags: [
 		],
@@ -1208,6 +1271,7 @@ var recipes = [
 		num: 0
 	},
 	{
+		hb: 0,
 		name: "Meat and Rice Bowl",
 		tags: [
 		],
@@ -1225,6 +1289,7 @@ var recipes = [
 		num: 0
 	},
 	{
+		hb: 0,
 		name: "Fried Egg and Rice",
 		tags: [
 		],
@@ -1239,6 +1304,7 @@ var recipes = [
 		num: 0
 	},
 	{
+		hb: 0,
 		name: "Meaty Rice Balls",
 		tags: [
 			[
@@ -1253,6 +1319,7 @@ var recipes = [
 		num: 0
 	},
 	{
+		hb: 0,
 		name: "Seafood Rice Balls",
 		tags: [
 			[
@@ -1267,6 +1334,7 @@ var recipes = [
 		num: 0
 	},
 	{
+		hb: 0,
 		name: "Mushroom Rice Balls",
 		tags: [
 			[
@@ -1281,6 +1349,7 @@ var recipes = [
 		num: 0
 	},
 	{
+		hb: 0,
 		name: "Veggie Rice Balls",
 		tags: [
 			[
@@ -1296,6 +1365,7 @@ var recipes = [
 		num: 0
 	},
 	{
+		hb: 4,
 		name: "Hot Buttered Apple",
 		tags: [
 		],
@@ -1310,6 +1380,7 @@ var recipes = [
 		num: 0
 	},
 	{
+		hb: 0,
 		name: "Meat-Stuffed Pumpkin",
 		tags: [
 			[
@@ -1324,6 +1395,7 @@ var recipes = [
 		num: 0
 	},
 	{
+		hb: 0,
 		name: "Glazed Meat",
 		tags: [
 			[
@@ -1338,6 +1410,7 @@ var recipes = [
 		num: 0
 	},
 	{
+		hb: 0,
 		name: "Glazed Seafood",
 		tags: [
 			[
@@ -1352,6 +1425,7 @@ var recipes = [
 		num: 0
 	},
 	{
+		hb: 0,
 		name: "Glazed Mushrooms",
 		tags: [
 			[
@@ -1366,6 +1440,7 @@ var recipes = [
 		num: 0
 	},
 	{
+		hb: 0,
 		name: "Glazed Veggies",
 		tags: [
 			[
@@ -1381,6 +1456,7 @@ var recipes = [
 		num: 0
 	},
 	{
+		hb: 0,
 		name: "Curry Rice",
 		tags: [
 		],
@@ -1395,6 +1471,7 @@ var recipes = [
 		num: 0
 	},
 	{
+		hb: 0,
 		name: "Honeyed Apple",
 		tags: [
 		],
@@ -1409,6 +1486,7 @@ var recipes = [
 		num: 0
 	},
 	{
+		hb: 0,
 		name: "Honeyed Fruits",
 		tags: [
 			[
@@ -1423,6 +1501,7 @@ var recipes = [
 		num: 0
 	},
 	{
+		hb: 0,
 		name: "Gourmet Spiced Meat Skewer",
 		tags: [
 		],
@@ -1437,6 +1516,7 @@ var recipes = [
 		num: 0
 	},
 	{
+		hb: 0,
 		name: "Prime Spiced Meat Skewer",
 		tags: [
 		],
@@ -1451,6 +1531,7 @@ var recipes = [
 		num: 0
 	},
 	{
+		hb: 0,
 		name: "Spiced Meat Skewer",
 		tags: [
 		],
@@ -1465,6 +1546,7 @@ var recipes = [
 		num: 0
 	},
 	{
+		hb: 0,
 		name: "Fragrant Mushroom Sauté",
 		tags: [
 			[
@@ -1479,6 +1561,7 @@ var recipes = [
 		num: 0
 	},
 	{
+		hb: 0,
 		name: "Herb Sauté",
 		tags: [
 			[
@@ -1494,6 +1577,7 @@ var recipes = [
 		num: 0
 	},
 	{
+		hb: 0,
 		name: "Salt-Grilled Gourmet Meat",
 		tags: [
 		],
@@ -1509,6 +1593,7 @@ var recipes = [
 		num: 0
 	},
 	{
+		hb: 0,
 		name: "Salt-Grilled Prime Meat",
 		tags: [
 		],
@@ -1524,6 +1609,7 @@ var recipes = [
 		num: 0
 	},
 	{
+		hb: 0,
 		name: "Salt-Grilled Meat",
 		tags: [
 		],
@@ -1539,6 +1625,7 @@ var recipes = [
 		num: 0
 	},
 	{
+		hb: 0,
 		name: "Crab Stir-Fry",
 		tags: [
 		],
@@ -1555,6 +1642,7 @@ var recipes = [
 		num: 0
 	},
 	{
+		hb: 0,
 		name: "Salt-Grilled Crab",
 		tags: [
 		],
@@ -1571,6 +1659,7 @@ var recipes = [
 		num: 0
 	},
 	{
+		hb: 0,
 		name: "Salt-Grilled Fish",
 		tags: [
 			[
@@ -1585,6 +1674,7 @@ var recipes = [
 		num: 0
 	},
 	{
+		hb: 0,
 		name: "Wheat Bread",
 		tags: [
 		],
@@ -1599,6 +1689,7 @@ var recipes = [
 		num: 0
 	},
 	{
+		hb: 0,
 		name: "Salt-Grilled Greens",
 		tags: [
 			[
@@ -1614,6 +1705,7 @@ var recipes = [
 		num: 0
 	},
 	{
+		hb: 0,
 		name: "Salt-Grilled Mushrooms",
 		tags: [
 			[
@@ -1628,6 +1720,7 @@ var recipes = [
 		num: 0
 	},
 	{
+		hb: 0,
 		name: "Copious Meat Skewers",
 		tags: [
 			[
@@ -1648,6 +1741,7 @@ var recipes = [
 		num: 0
 	},
 	{
+		hb: 0,
 		name: "Copious Fried Wild Greens",
 		tags: [
 			[
@@ -1672,6 +1766,7 @@ var recipes = [
 		num: 0
 	},
 	{
+		hb: 0,
 		name: "Copious Simmered Fruit",
 		tags: [
 			[
@@ -1692,6 +1787,7 @@ var recipes = [
 		num: 0
 	},
 	{
+		hb: 0,
 		name: "Copious Mushroom Skewers",
 		tags: [
 			[
@@ -1712,6 +1808,7 @@ var recipes = [
 		num: 0
 	},
 	{
+		hb: 0,
 		name: "Copious Seafood Skewers",
 		tags: [
 			[
@@ -1732,6 +1829,7 @@ var recipes = [
 		num: 0
 	},
 	{
+		hb: 0,
 		name: "Meat Skewer",
 		tags: [
 			[
@@ -1746,6 +1844,7 @@ var recipes = [
 		num: 0
 	},
 	{
+		hb: 0,
 		name: "Simmered Fruit",
 		tags: [
 			[
@@ -1760,6 +1859,7 @@ var recipes = [
 		num: 0
 	},
 	{
+		hb: 0,
 		name: "Mushroom Skewer",
 		tags: [
 			[
@@ -1774,6 +1874,7 @@ var recipes = [
 		num: 0
 	},
 	{
+		hb: 0,
 		name: "Fried Wild Greens",
 		tags: [
 			[
@@ -1790,6 +1891,7 @@ var recipes = [
 		num: 0
 	},
 	{
+		hb: 0,
 		name: "Gourmet Meat and Seafood Fry",
 		tags: [
 			[
@@ -1805,6 +1907,7 @@ var recipes = [
 		num: 0
 	},
 	{
+		hb: 0,
 		name: "Prime Meat and Seafood Fry",
 		tags: [
 			[
@@ -1820,6 +1923,7 @@ var recipes = [
 		num: 0
 	},
 	{
+		hb: 0,
 		name: "Meat and Seafood Fry",
 		tags: [
 			[
@@ -1834,6 +1938,7 @@ var recipes = [
 		num: 0
 	},
 	{
+		hb: 0,
 		name: "Pepper Steak",
 		tags: [
 			[
@@ -1848,6 +1953,7 @@ var recipes = [
 		num: 0
 	},
 	{
+		hb: 0,
 		name: "Pepper Seafood",
 		tags: [
 			[
@@ -1862,6 +1968,7 @@ var recipes = [
 		num: 0
 	},
 	{
+		hb: 0,
 		name: "Seafood Skewer",
 		tags: [
 			[
@@ -1880,6 +1987,7 @@ var recipes = [
 		num: 0
 	},
 	{
+		hb: 0,
 		name: "Fish Skewer",
 		tags: [
 			[
@@ -1894,6 +2002,7 @@ var recipes = [
 		num: 0
 	},
 	{
+		hb: 0,
 		name: "Steamed Meat",
 		tags: [
 			[
@@ -1909,6 +2018,7 @@ var recipes = [
 		num: 0
 	},
 	{
+		hb: 0,
 		name: "Steamed Fish",
 		tags: [
 			[
@@ -1924,6 +2034,7 @@ var recipes = [
 		num: 0
 	},
 	{
+		hb: 0,
 		name: "Steamed Mushrooms",
 		tags: [
 			[
@@ -1939,6 +2050,7 @@ var recipes = [
 		num: 0
 	},
 	{
+		hb: 0,
 		name: "Steamed Fruit",
 		tags: [
 			[
@@ -1954,6 +2066,7 @@ var recipes = [
 		num: 0
 	},
 	{
+		hb: 0,
 		name: "Fish and Mushroom Skewer",
 		tags: [
 			[
@@ -1968,6 +2081,7 @@ var recipes = [
 		num: 0
 	},
 	{
+		hb: 0,
 		name: "Meat and Mushroom Skewer",
 		tags: [
 			[
@@ -1982,6 +2096,7 @@ var recipes = [
 		num: 0
 	},
 	{
+		hb: 0,
 		name: "Fruit and Mushroom Mix",
 		tags: [
 			[
@@ -1996,6 +2111,7 @@ var recipes = [
 		num: 0
 	},
 	{
+		hb: 0,
 		name: "Meat Skewer",
 		tags: [
 			[
@@ -2007,6 +2123,7 @@ var recipes = [
 		num: 0
 	},
 	{
+		hb: 0,
 		name: "Seafood Skewer",
 		tags: [
 		],
@@ -2022,6 +2139,7 @@ var recipes = [
 		num: 0
 	},
 	{
+		hb: 0,
 		name: "Fish Skewer",
 		tags: [
 			[
@@ -2033,6 +2151,7 @@ var recipes = [
 		num: 0
 	},
 	{
+		hb: 0,
 		name: "Omelet",
 		tags: [
 		],
@@ -2044,6 +2163,7 @@ var recipes = [
 		num: 0
 	},
 	{
+		hb: 0,
 		name: "Milk",
 		tags: [
 		],
@@ -2055,6 +2175,7 @@ var recipes = [
 		num: 0
 	},
 	{
+		hb: 0,
 		name: "Mushroom Skewer",
 		tags: [
 			[
@@ -2066,6 +2187,7 @@ var recipes = [
 		num: 0
 	},
 	{
+		hb: 0,
 		name: "Fried Wild Greens",
 		tags: [
 			[
@@ -2077,6 +2199,7 @@ var recipes = [
 		num: 0
 	},
 	{
+		hb: 0,
 		name: "Simmered Fruit",
 		tags: [
 			[
@@ -2088,6 +2211,7 @@ var recipes = [
 		num: 0
 	},
 	{
+		hb: 0,
 		name: "Sautéed Nuts",
 		tags: [
 		],
@@ -2102,6 +2226,7 @@ var recipes = [
 		num: 0
 	},
 	{
+		hb: -12,
 		name: "Fairy Tonic",
 		tags: [
 		],
@@ -2113,6 +2238,7 @@ var recipes = [
 		num: 0
 	},
 	{
+		hb: -12,
 		name: "Fairy Tonic",
 		tags: [
 		],
@@ -2122,6 +2248,7 @@ var recipes = [
 		num: 1
 	},
 	{
+		hb: 0,
 		name: "Rock-Hard Food",
 		tags: [
 			"CookOre"
@@ -2131,6 +2258,7 @@ var recipes = [
 		num: 1
 	},
 	{
+		hb: 0,
 		name: "Sautéed Peppers",
 		tags: [
 		],
@@ -2140,6 +2268,7 @@ var recipes = [
 		num: 1
 	},
 	{
+		hb: 0,
 		name: "Omelet",
 		tags: [
 		],
@@ -2149,6 +2278,7 @@ var recipes = [
 		num: 1
 	},
 	{
+		hb: 0,
 		name: "Meat Skewer",
 		tags: [
 			"CookMeat"
@@ -2158,6 +2288,7 @@ var recipes = [
 		num: 1
 	},
 	{
+		hb: 0,
 		name: "Seafood Skewer",
 		tags: [
 		],
@@ -2171,6 +2302,7 @@ var recipes = [
 		num: 1
 	},
 	{
+		hb: 0,
 		name: "Fish Skewer",
 		tags: [
 			"CookFish"
@@ -2180,6 +2312,7 @@ var recipes = [
 		num: 1
 	},
 	{
+		hb: 0,
 		name: "Mushroom Skewer",
 		tags: [
 			"CookMushroom"
@@ -2189,6 +2322,7 @@ var recipes = [
 		num: 1
 	},
 	{
+		hb: -8,
 		name: "Honey Candy",
 		tags: [
 		],
@@ -2198,6 +2332,7 @@ var recipes = [
 		num: 1
 	},
 	{
+		hb: -2,
 		name: "Sautéed Nuts",
 		tags: [
 		],
@@ -2208,6 +2343,7 @@ var recipes = [
 		num: 1
 	},
 	{
+		hb: 2,
 		name: "Milk",
 		tags: [
 		],
@@ -2217,6 +2353,7 @@ var recipes = [
 		num: 1
 	},
 	{
+		hb: 0,
 		name: "Fried Wild Greens",
 		tags: [
 			"CookPlant"
@@ -2226,6 +2363,7 @@ var recipes = [
 		num: 1
 	},
 	{
+		hb: 0,
 		name: "Simmered Fruit",
 		tags: [
 			"CookFruit"
@@ -11602,7 +11740,7 @@ class CookingData {
     create_recipe_list() {
         let id = 0;
         for(const rec of this.recipes) {
-            const r = new Recipe(rec.name, rec.actors, rec.tags, id);
+            const r = new Recipe(rec.name, rec.actors, rec.tags, id, rec.hb);
             this.all_recipe.push(r);
             id += 1;
         }
@@ -11765,40 +11903,11 @@ class CookingData {
             console.log('hp boost', hp, '+', hp_boost);
         }
 
-        // Acorns are a spice, but can also be used by themselves in recipes
-        //   Acorns used by themselves do not get an HP Boost
-        //   Acorns used with other things, provide the HP Boost
-        //   Acorns are the only item like this
-        let only_acorns = unique(items).length == 1 && items[0] == 'Acorn';
-        if(only_acorns) {
-            hp_boost = 0;
-            time_boost = 0;
-        }
         time += time_boost;
         hp += hp_boost;
 
-        if(r.name == "Fruitcake") {
-            // It appears that Fruitcake adds an extra heart
-            hp += 1 * 4;
-        }
-        if(r.name == "Seafood Paella") {
-            // It appears that Seafood Paella adds an extra 2 hearts
-            hp += 2 * 4;
-        }
-        if(r.name == "Wildberry Crepe") {
-            // It appears that Wildberry Crepe adds an extra 4 hearts
-            hp += 4 * 4;
-        }
-        if(r.name == "Honey Crepe") {
-            // It appears that Honey Crepe adds an extra 1 hearts
-            hp += 1 * 4;
-        }
-
-        // Documentation needed here
-        if(items.includes("Fairy") && ["Elixir","Fairy Tonic"].includes(r.name)) {
-            hp -= 3*4;
-        }
-
+        // Hit Point Boost(?); thanks Piston
+        hp += r.hb;
         if(r.name == "Rock-Hard Food") {
             return rock_hard_food( unique(items).length );
         }
@@ -11928,12 +12037,13 @@ function inter(a,b) {
 }
 
 class Recipe {
-    constructor(name, actors, tags, id) {
+    constructor(name, actors, tags, id, hb) {
         this.name = name;
         this.actors = actors;
         this.tags = tags;
         this.verbose = false;
         this.id = id;
+        this.hb = hb;
     }
     matches(items, tags, strict, verbose = false) {
         if(strict) {

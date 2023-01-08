@@ -1443,8 +1443,8 @@
       "potency" : 12
    },
    {
-      "hearts" : 1,
-      "hp" : 4,
+      "hearts" : 2,
+      "hp" : 8,
       "id" : 69,
       "ingredients" : [
          "Apple",
@@ -2321,13 +2321,15 @@
    },
    {
       "_notes" : "same as id:135 = id:119",
-      "hearts" : 1,
-      "hp" : 4,
+      "hearts" : 1.5,
+      "hp" : 6,
       "id" : 135,
       "ingredients" : [
          "Fresh Milk"
       ],
-      "name" : "Milk"
+       "price": 10,
+       "img": "img/Fresh_Milk.jpg",
+       "name" : "Milk"
    },
    {
       "_notes" : "same as id:132 = id:120",
@@ -2377,6 +2379,8 @@
          "Acorn",
          "Chickaloo Tree Nut"
       ],
+       "price": 10,
+       "img": "img/Acorn_Chickaloo_Tree_Nut.jpg",
       "name" : "Sautéed Nuts"
    },
    {
@@ -2388,18 +2392,22 @@
       "ingredients" : [
          "Acorn"
       ],
+       "price": 8,
+       "img": "img/Acorn.jpg",
       "name" : "Sautéed Nuts"
    },
    {
       "NOTES" : "Check Acorn and Chickaloo Tree Nut HP Boosts",
       "_notes" : "same as id:134",
-      "hearts" : 1,
-      "hp" : 4,
+      "hearts" : 0.5,
+      "hp" : 2,
       "id" : 134,
       "ingredients" : [
          "Chickaloo Tree Nut"
       ],
-      "name" : "Sautéed Nuts"
+       "price": 10,
+       "img": "img/Chickaloo_Tree_Nut.jpg",
+       "name" : "Sautéed Nuts"
    },
    {
       "_notes" : "same as id:125 = id:124 plus others",
@@ -2428,13 +2436,15 @@
    },
    {
       "effect" : "GutsRecover",
-      "hearts" : 4,
-      "hp" : 16,
+      "hearts" : 2,
+      "hp" : 8,
       "id" : 133,
       "ingredients" : [
          "Courser Bee Honey"
       ],
-      "name" : "Honey Candy",
+       "price": 20,
+       "img": "img/Courser_Bee_Honey.jpg",
+       "name" : "Honey Candy",
       "potency" : 2,
       "stamina" : 0.4
    },

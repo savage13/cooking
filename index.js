@@ -45,7 +45,7 @@ export class CookingData {
     create_recipe_list() {
         let id = 0;
         for(const rec of this.recipes) {
-            const r = new Recipe(rec.name, rec.actors, rec.tags, id);
+            const r = new Recipe(rec.name, rec.actors, rec.tags, id, rec.hb);
             this.all_recipe.push(r);
             id += 1;
         }
@@ -212,40 +212,11 @@ export class CookingData {
             console.log('hp boost', hp, '+', hp_boost);
         }
 
-        // Acorns are a spice, but can also be used by themselves in recipes
-        //   Acorns used by themselves do not get an HP Boost
-        //   Acorns used with other things, provide the HP Boost
-        //   Acorns are the only item like this
-        let only_acorns = unique(items).length == 1 && items[0] == 'Acorn';
-        if(only_acorns) {
-            hp_boost = 0;
-            time_boost = 0;
-        }
         time += time_boost;
         hp += hp_boost;
 
-        if(r.name == "Fruitcake") {
-            // It appears that Fruitcake adds an extra heart
-            hp += 1 * 4;
-        }
-        if(r.name == "Seafood Paella") {
-            // It appears that Seafood Paella adds an extra 2 hearts
-            hp += 2 * 4;
-        }
-        if(r.name == "Wildberry Crepe") {
-            // It appears that Wildberry Crepe adds an extra 4 hearts
-            hp += 4 * 4;
-        }
-        if(r.name == "Honey Crepe") {
-            // It appears that Honey Crepe adds an extra 1 hearts
-            hp += 1 * 4;
-        }
-
-        // Documentation needed here
-        if(items.includes("Fairy") && ["Elixir","Fairy Tonic"].includes(r.name)) {
-            hp -= 3*4;
-        }
-
+        // Hit Point Boost(?); thanks Piston
+        hp += r.hb;
         if(r.name == "Rock-Hard Food") {
             return rock_hard_food( unique(items).length );
         }
@@ -375,12 +346,13 @@ function inter(a,b) {
 }
 
 class Recipe {
-    constructor(name, actors, tags, id) {
+    constructor(name, actors, tags, id, hb) {
         this.name = name;
         this.actors = actors;
         this.tags = tags;
         this.verbose = false;
         this.id = id;
+        this.hb = hb;
     }
     matches(items, tags, strict, verbose = false) {
         if(strict) {
