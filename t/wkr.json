@@ -145,6 +145,8 @@
       "ingredients" : [
          "Sapphire"
       ],
+       "price": 2,
+       "img": "img/Sapphire.jpg",
       "name" : "Rock-Hard Food"
    },
    {
@@ -154,6 +156,8 @@
       "ingredients" : [
          "Diamond"
       ],
+       "price": 2,
+       "img": "img/Diamond.jpg",
       "name" : "Rock-Hard Food"
    },
    {
@@ -163,6 +167,8 @@
       "ingredients" : [
          "Flint"
       ],
+       "price": 2,
+       "img": "img/Flint.jpg",
       "name" : "Rock-Hard Food"
    },
    {
@@ -173,6 +179,8 @@
          "Wood",
          "Sapphire"
       ],
+       "price": 2,
+       "img": "img/Sapphire_Wood.jpg",
       "name" : "Rock-Hard Food"
    },
    {
@@ -187,13 +195,15 @@
          "Tabantha Wheat",
          "Cane Sugar"
       ],
+       "price": 60,
+       "img": "img/Apple_Cane_Sugar_Hearty_Durian_Tabantha_Wheat.jpg",
       "name" : "Fruitcake",
       "potency" : 16
    },
    {
-      "FAILS" : "HP Should be 12",
-      "hearts" : 5,
-      "hp" : 20,
+      "NOTES" : "HP Should be 24, I think Fruitcake adds an extra heart or hp += 4",
+      "hearts" : 6,
+      "hp" : 24,
       "id" : 6,
       "ingredients" : [
          "Apple",
@@ -201,6 +211,8 @@
          "Tabantha Wheat",
          "Cane Sugar"
       ],
+       "price": 40,
+       "img": "img/Apple_Cane_Sugar_Palm_Fruit_Tabantha_Wheat.jpg",
       "name" : "Fruitcake"
    },
    {
@@ -213,6 +225,8 @@
          "Summerwing Butterfly",
          "Yellow Chuchu Jelly"
       ],
+       "price": 30,
+       "img": "img/Summerwing_Butterfly_Yellow_Chuchu_Jelly.jpg",
       "name" : "Spicy Elixir",
       "potency" : 1,
       "time" : "04:20"
@@ -224,7 +238,9 @@
       "ingredients" : [
          "Summerwing Butterfly"
       ],
-      "name" : "Dubious Food"
+       "name" : "Dubious Food",
+       "price": 2,
+       "img": "img/Summerwing_Butterfly.jpg"
    },
    {
       "hearts" : 1,
@@ -233,11 +249,13 @@
       "ingredients" : [
          "Yellow Chuchu Jelly"
       ],
+       "price": 2,
+       "img": "img/Yellow_Chuchu_Jelly.jpg",
       "name" : "Dubious Food"
    },
    {
-      "hearts" : 10,
-      "hp" : 40,
+      "hearts" : 12,
+      "hp" : 48,
       "id" : 7,
       "ingredients" : [
          "Rock Salt",
@@ -246,11 +264,13 @@
          "Hearty Blueshell Snail",
          "Armored Porgy"
       ],
+       "price": 100,
+       "img": "img/Armored_Porgy_Goat_Butter_Hearty_Blueshell_Snail_Hylian_Rice_Rock_Salt.jpg",
       "name" : "Seafood Paella"
    },
    {
-      "hearts" : 10,
-      "hp" : 40,
+      "hearts" : 12,
+      "hp" : 48,
       "id" : 7,
       "ingredients" : [
          "Rock Salt",
@@ -259,6 +279,8 @@
          "Hearty Blueshell Snail",
          "Mighty Porgy"
       ],
+       "price": 100,
+       "img": "img/Goat_Butter_Hearty_Blueshell_Snail_Hylian_Rice_Mighty_Porgy_Rock_Salt.jpg",
       "name" : "Seafood Paella"
    },
    {
@@ -270,6 +292,8 @@
          "Hylian Rice",
          "Goron Spice"
       ],
+       "price": 30,
+       "img": "img/Goron_Spice_Hylian_Rice_Monster_Extract.jpg",
       "name" : "Monster Curry"
    },
    {
@@ -282,6 +306,8 @@
          "Goron Spice",
          "Apple"
       ],
+       "price": 40,
+       "img": "img/Apple_Goron_Spice_Hylian_Rice_Monster_Extract.jpg",
       "name" : "Monster Curry"
    },
    {
@@ -293,6 +319,8 @@
          "Hylian Rice",
          "Rock Salt"
       ],
+       "price": 20,
+       "img": "img/Hylian_Rice_Monster_Extract_Rock_Salt.jpg",
       "name" : "Monster Rice Balls"
    },
    {
@@ -305,6 +333,8 @@
          "Cane Sugar",
          "Goat Butter"
       ],
+       "price": 30,
+       "img": "img/Cane_Sugar_Goat_Butter_Monster_Extract_Tabantha_Wheat.jpg",
       "name" : "Monster Cake"
    },
    {
@@ -317,6 +347,8 @@
          "Fresh Milk",
          "Goat Butter"
       ],
+       "price": 30,
+       "img": "img/Fresh_Milk_Goat_Butter_Monster_Extract_Tabantha_Wheat.jpg",
       "name" : "Monster Soup"
    },
    {
@@ -330,6 +362,8 @@
          "Armored Porgy",
          "Raw Meat"
       ],
+       "price": 50,
+       "img": "img/Armored_Porgy_Monster_Extract_Raw_Meat.jpg",
       "name" : "Monster Stew",
       "potency" : 3,
       "time" : "01:20"
@@ -344,6 +378,8 @@
          "Voltfruit",
          "Fresh Milk"
       ],
+       "price": 50,
+       "img": "img/Fresh_Milk_Hearty_Radish_Hydromelon_Voltfruit.jpg",
       "name" : "Creamy Heart Soup"
    },
    {
@@ -356,6 +392,9 @@
          "Voltfruit",
          "Fresh Milk"
       ],
+       "price": 70,
+       "img": "img/Big_Hearty_Radish_Fresh_Milk_Hydromelon_Voltfruit.jpg",
+
       "name" : "Creamy Heart Soup"
    },
    {
@@ -370,6 +409,8 @@
          "Goat Butter",
          "Hearty Blueshell Snail"
       ],
+       "price": 60,
+       "img": "img/Fresh_Milk_Goat_Butter_Hearty_Blueshell_Snail_Tabantha_Wheat.jpg",
       "name" : "Clam Chowder",
       "potency" : 12
    },
@@ -385,6 +426,8 @@
          "Goat Butter",
          "Fortified Pumpkin"
       ],
+       "price": 40,
+       "img": "img/Fortified_Pumpkin_Fresh_Milk_Goat_Butter_Tabantha_Wheat.jpg",
       "name" : "Pumpkin Stew",
       "potency" : 2,
       "time" : "04:30"
@@ -399,6 +442,8 @@
          "Goat Butter",
          "Raw Whole Bird"
       ],
+       "price": 110,
+       "img": "img/Fresh_Milk_Goat_Butter_Raw_Whole_Bird_Tabantha_Wheat.jpg",
       "name" : "Gourmet Meat Stew"
    },
    {
@@ -411,6 +456,8 @@
          "Goat Butter",
          "Raw Gourmet Meat"
       ],
+       "price": 110,
+       "img": "img/Fresh_Milk_Goat_Butter_Raw_Gourmet_Meat_Tabantha_Wheat.jpg",
       "name" : "Gourmet Meat Stew"
    },
    {
@@ -423,6 +470,8 @@
          "Goat Butter",
          "Raw Prime Meat"
       ],
+       "price": 60,
+       "img": "img/Fresh_Milk_Goat_Butter_Raw_Prime_Meat_Tabantha_Wheat.jpg",
       "name" : "Prime Meat Stew"
    },
    {
@@ -435,6 +484,8 @@
          "Goat Butter",
          "Raw Bird Thigh"
       ],
+       "price": 60,
+       "img": "img/Fresh_Milk_Goat_Butter_Raw_Bird_Thigh_Tabantha_Wheat.jpg",
       "name" : "Prime Meat Stew"
    },
    {
@@ -447,7 +498,9 @@
          "Goat Butter",
          "Raw Bird Drumstick"
       ],
-      "name" : "Meat Stew"
+       "price": 40,
+       "img": "img/Fresh_Milk_Goat_Butter_Raw_Bird_Drumstick_Tabantha_Wheat.jpg",
+       "name" : "Meat Stew"
    },
    {
       "hearts" : 5,
@@ -459,6 +512,8 @@
          "Goat Butter",
          "Raw Meat"
       ],
+       "price": 40,
+       "img": "img/Fresh_Milk_Goat_Butter_Raw_Meat_Tabantha_Wheat.jpg",
       "name" : "Meat Stew"
    },
    {
@@ -470,6 +525,8 @@
          "Hylian Rice",
          "Goron Spice"
       ],
+       "price": 90,
+       "img": "img/Goron_Spice_Hylian_Rice_Raw_Gourmet_Meat.jpg",
       "name" : "Gourmet Meat Curry"
    },
    {
@@ -481,6 +538,8 @@
          "Hylian Rice",
          "Goron Spice"
       ],
+       "price": 90,
+       "img": "img/Goron_Spice_Hylian_Rice_Raw_Whole_Bird.jpg",
       "name" : "Gourmet Poultry Curry"
    },
    {
@@ -492,6 +551,8 @@
          "Hylian Rice",
          "Goron Spice"
       ],
+       "price": 50,
+       "img": "img/Goron_Spice_Hylian_Rice_Raw_Prime_Meat.jpg",
       "name" : "Prime Meat Curry"
    },
    {
@@ -503,6 +564,8 @@
          "Hylian Rice",
          "Goron Spice"
       ],
+       "price": 50,
+       "img": "img/Goron_Spice_Hylian_Rice_Raw_Bird_Thigh.jpg",
       "name" : "Prime Poultry Curry"
    },
    {
@@ -514,6 +577,8 @@
          "Hylian Rice",
          "Goron Spice"
       ],
+       "price": 40,
+       "img": "img/Goron_Spice_Hylian_Rice_Raw_Meat.jpg",
       "name" : "Meat Curry"
    },
    {
@@ -525,6 +590,8 @@
          "Hylian Rice",
          "Goron Spice"
       ],
+       "price": 40,
+       "img": "img/Goron_Spice_Hylian_Rice_Raw_Bird_Drumstick.jpg",
       "name" : "Poultry Curry"
    },
    {
@@ -538,6 +605,8 @@
          "Hylian Rice",
          "Goron Spice"
       ],
+       "price": 40,
+       "img": "img/Armored_Porgy_Goron_Spice_Hylian_Rice.jpg",
       "name" : "Seafood Curry",
       "potency" : 4,
       "time" : "03:20"
@@ -553,6 +622,8 @@
          "Hylian Rice",
          "Goron Spice"
       ],
+       "price": 40,
+       "img": "img/Goron_Spice_Hylian_Rice_Mighty_Porgy.jpg",
       "name" : "Seafood Curry",
       "potency" : 4,
       "time" : "03:20"
@@ -569,6 +640,8 @@
          "Hylian Rice",
          "Goron Spice"
       ],
+       "price": 50,
+       "img": "img/Goron_Spice_Hearty_Blueshell_Snail_Hylian_Rice.jpg",
       "name" : "Seafood Curry",
       "potency" : 13
    },
@@ -582,12 +655,13 @@
          "Hylian Rice",
          "Goron Spice"
       ],
+       "price": 80,
+       "img": "img/Endura_Carrot_Goron_Spice_Hylian_Rice.jpg",
       "name" : "Vegetable Curry",
       "potency" : 5,
       "stamina_extra" : 0.4
    },
    {
-      "NOTES" : "Timing expected to be 3:30, but get 3:10, CHECK",
       "effect" : "MovingSpeed",
       "level" : 1,
       "hearts" : 3,
@@ -598,6 +672,8 @@
          "Hylian Rice",
          "Goron Spice"
       ],
+       "price": 30,
+       "img": "img/Goron_Spice_Hylian_Rice_Swift_Carrot.jpg",
       "name" : "Vegetable Curry",
       "potency" : 2,
       "time" : "03:30"
@@ -613,6 +689,8 @@
          "Hylian Rice",
          "Goron Spice"
       ],
+       "price": 30,
+       "img": "img/Fortified_Pumpkin_Goron_Spice_Hylian_Rice.jpg",
       "name" : "Vegetable Curry",
       "potency" : 3,
       "time" : "03:20"
@@ -629,6 +707,8 @@
          "Cane Sugar",
          "Goat Butter"
       ],
+       "price": 40,
+       "img": "img/Cane_Sugar_Fortified_Pumpkin_Goat_Butter_Tabantha_Wheat.jpg",
       "name" : "Pumpkin Pie",
       "potency" : 2,
       "time" : "04:30"
@@ -644,6 +724,8 @@
          "Cane Sugar",
          "Goat Butter"
       ],
+       "price": 100,
+       "img": "img/Cane_Sugar_Endura_Carrot_Goat_Butter_Tabantha_Wheat.jpg",
       "name" : "Carrot Cake",
       "potency" : 4,
       "stamina_extra" : 0.4
@@ -661,13 +743,15 @@
          "Cane Sugar",
          "Goat Butter"
       ],
+       "price": 40,
+       "img": "img/Cane_Sugar_Goat_Butter_Swift_Carrot_Tabantha_Wheat.jpg",
       "name" : "Carrot Cake",
       "potency" : 1,
       "time" : "04:40"
    },
    {
-      "hearts" : 6,
-      "hp" : 24,
+      "hearts" : 10,
+      "hp" : 40,
       "id" : 29,
       "ingredients" : [
          "Fresh Milk",
@@ -676,12 +760,14 @@
          "Cane Sugar",
          "Wildberry"
       ],
+       "price": 50,
+       "img": "img/Bird_Egg_Cane_Sugar_Fresh_Milk_Tabantha_Wheat_Wildberry.jpg",
       "name" : "Wildberry Crepe"
    },
    {
       "effect" : "GutsRecover",
-      "hearts" : 9,
-      "hp" : 36,
+      "hearts" : 10,
+      "hp" : 40,
       "id" : 30,
       "ingredients" : [
          "Fresh Milk",
@@ -690,6 +776,8 @@
          "Cane Sugar",
          "Courser Bee Honey"
       ],
+       "price": 70,
+       "img": "img/Bird_Egg_Cane_Sugar_Courser_Bee_Honey_Fresh_Milk_Tabantha_Wheat.jpg",
       "name" : "Honey Crepe",
       "potency" : 2,
       "stamina" : 0.4
@@ -704,6 +792,8 @@
          "Tabantha Wheat",
          "Cane Sugar"
       ],
+       "price": 0,
+       "img": "img/Bird_Egg_Cane_Sugar_Fresh_Milk_Tabantha_Wheat.jpg",
       "name" : "Plain Crepe"
    },
    {
@@ -716,10 +806,11 @@
          "Tabantha Wheat",
          "Cane Sugar"
       ],
+       "price": 30,
+       "img": "img/Apple_Cane_Sugar_Goat_Butter_Tabantha_Wheat.jpg",
       "name" : "Apple Pie"
    },
    {
-      "NOTES" : "CHECK hp value of Acorn in Game. What is the proper boost value. should be 6",
       "hearts" : 3,
       "hp" : 12,
       "id" : 33,
@@ -729,6 +820,8 @@
          "Tabantha Wheat",
          "Cane Sugar"
       ],
+       "price": 30,
+       "img": "img/Acorn_Cane_Sugar_Goat_Butter_Tabantha_Wheat.jpg",
       "name" : "Nutcake"
    },
    {
@@ -742,6 +835,8 @@
          "Tabantha Wheat",
          "Cane Sugar"
       ],
+       "price": 30,
+       "img": "img/Cane_Sugar_Chickaloo_Tree_Nut_Goat_Butter_Tabantha_Wheat.jpg",
       "name" : "Nutcake"
    },
    {
@@ -754,6 +849,8 @@
          "Tabantha Wheat",
          "Cane Sugar"
       ],
+       "price": 30,
+       "img": "img/Bird_Egg_Cane_Sugar_Goat_Butter_Tabantha_Wheat.jpg",
       "name" : "Egg Tart"
    },
    {
@@ -765,6 +862,8 @@
          "Fresh Milk",
          "Cane Sugar"
       ],
+       "price": 20,
+       "img": "img/Bird_Egg_Cane_Sugar_Fresh_Milk.jpg",
       "name" : "Egg Pudding"
    },
    {
@@ -778,6 +877,8 @@
          "Tabantha Wheat",
          "Cane Sugar"
       ],
+       "price": 30,
+       "img": "img/Cane_Sugar_Mighty_Bananas_Tabantha_Wheat.jpg",
       "name" : "Fried Bananas",
       "potency" : 2,
       "time" : "03:10"
@@ -794,6 +895,8 @@
          "Cane Sugar",
          "Goat Butter"
       ],
+       "price": 40,
+       "img": "img/Cane_Sugar_Goat_Butter_Hydromelon_Tabantha_Wheat.jpg",
       "name" : "Fruit Pie",
       "potency" : 1,
       "time" : "06:10"
@@ -808,6 +911,8 @@
          "Rock Salt",
          "Goat Butter"
       ],
+       "price": 110,
+       "img": "img/Goat_Butter_Raw_Whole_Bird_Rock_Salt_Tabantha_Wheat.jpg",
       "name" : "Meat Pie"
    },
    {
@@ -820,6 +925,8 @@
          "Rock Salt",
          "Goat Butter"
       ],
+       "price": 40,
+       "img": "img/Goat_Butter_Raw_Meat_Rock_Salt_Tabantha_Wheat.jpg",
       "name" : "Meat Pie"
    },
    {
@@ -832,6 +939,8 @@
          "Rock Salt",
          "Goat Butter"
       ],
+       "price": 60,
+       "img": "img/Goat_Butter_Raw_Prime_Meat_Rock_Salt_Tabantha_Wheat.jpg",
       "name" : "Meat Pie"
    },
    {
@@ -846,7 +955,9 @@
          "Rock Salt",
          "Goat Butter"
       ],
-      "name" : "Fish Pie",
+       "price": 50,
+       "img": "img/Goat_Butter_Mighty_Porgy_Rock_Salt_Tabantha_Wheat.jpg",
+       "name" : "Fish Pie",
       "potency" : 3,
       "time" : "04:10"
    },
@@ -862,6 +973,8 @@
          "Rock Salt",
          "Goat Butter"
       ],
+       "price": 40,
+       "img": "img/Goat_Butter_Razorclaw_Crab_Rock_Salt_Tabantha_Wheat.jpg",
       "name" : "Fish Pie",
       "potency" : 2,
       "time" : "04:10"
@@ -877,6 +990,8 @@
          "Tabantha Wheat",
          "Goat Butter"
       ],
+       "price": 40,
+       "img": "img/Goat_Butter_Hearty_Salmon_Tabantha_Wheat.jpg",
       "name" : "Salmon Meunière",
       "potency" : 16
    },
@@ -892,7 +1007,9 @@
          "Goat Butter",
          "Rock Salt"
       ],
-      "name" : "Salmon Risotto",
+       "price": 50,
+       "img": "img/Goat_Butter_Hearty_Salmon_Hylian_Rice_Rock_Salt.jpg",
+       "name" : "Salmon Risotto",
       "potency" : 16
    },
    {
@@ -907,6 +1024,8 @@
          "Goat Butter",
          "Rock Salt"
       ],
+       "price": 40,
+       "img": "img/Goat_Butter_Hylian_Rice_Razorclaw_Crab_Rock_Salt.jpg",
       "name" : "Crab Risotto",
       "potency" : 2,
       "time" : "04:10"
@@ -922,7 +1041,9 @@
          "Goat Butter",
          "Rock Salt"
       ],
-      "name" : "Vegetable Risotto",
+       "price": 100,
+       "img": "img/Endura_Carrot_Goat_Butter_Hylian_Rice_Rock_Salt.jpg",
+       "name" : "Vegetable Risotto",
       "potency" : 4,
       "stamina_extra" : 0.4
    },
@@ -937,7 +1058,9 @@
          "Goat Butter",
          "Rock Salt"
       ],
-      "name" : "Mushroom Risotto",
+       "price": 40,
+       "img": "img/Endura_Shroom_Goat_Butter_Hylian_Rice_Rock_Salt.jpg",
+       "name" : "Mushroom Risotto",
       "potency" : 1,
       "stamina_extra" : 0.2
    },
@@ -951,6 +1074,8 @@
          "Hearty Radish",
          "Rock Salt"
       ],
+       "price": 50,
+       "img": "img/Endura_Shroom_Fresh_Milk_Hearty_Radish_Rock_Salt.jpg",
       "name" : "Cream of Mushroom Soup"
    },
    {
@@ -963,6 +1088,8 @@
          "Endura Carrot",
          "Rock Salt"
       ],
+       "price": 80,
+       "img": "img/Endura_Carrot_Fresh_Milk_Rock_Salt.jpg",
       "name" : "Veggie Cream Soup",
       "potency" : 4,
       "stamina_extra" : 0.4
@@ -979,6 +1106,8 @@
          "Rock Salt",
          "Hearty Radish"
       ],
+       "price": 120,
+       "img": "img/Fresh_Milk_Hearty_Radish_Raw_Whole_Bird_Rock_Salt.jpg",
       "name" : "Creamy Meat Soup",
       "potency" : 12
    },
@@ -992,6 +1121,8 @@
          "Rock Salt",
          "Hearty Radish"
       ],
+       "price": 60,
+       "img": "img/Fresh_Milk_Hearty_Radish_Mighty_Porgy_Rock_Salt.jpg",
       "name" : "Creamy Seafood Soup"
    },
    {
@@ -1005,6 +1136,8 @@
          "Rock Salt",
          "Hearty Radish"
       ],
+       "price": 30,
+       "img": "img/Fresh_Milk_Hearty_Radish_Rock_Salt.jpg",
       "name" : "Cream of Vegetable Soup",
       "potency" : 12
    },
@@ -1019,6 +1152,8 @@
          "Endura Carrot",
          "Tabantha Wheat"
       ],
+       "price": 100,
+       "img": "img/Endura_Carrot_Fresh_Milk_Goat_Butter_Tabantha_Wheat.jpg",
       "name" : "Carrot Stew",
       "potency" : 4,
       "stamina_extra" : 0.4
@@ -1034,6 +1169,8 @@
          "Rock Salt",
          "Endura Shroom"
       ],
+       "price": 40,
+       "img": "img/Bird_Egg_Endura_Shroom_Goat_Butter_Rock_Salt.jpg",
       "name" : "Mushroom Omelet",
       "potency" : 1,
       "stamina_extra" : 0.2
@@ -1050,6 +1187,8 @@
          "Rock Salt",
          "Razorclaw Crab"
       ],
+       "price": 40,
+       "img": "img/Bird_Egg_Hylian_Rice_Razorclaw_Crab_Rock_Salt.jpg",
       "name" : "Crab Omelet with Rice",
       "potency" : 2,
       "time" : "04:20"
@@ -1064,7 +1203,9 @@
          "Goat Butter",
          "Raw Whole Bird"
       ],
-      "name" : "Gourmet Poultry Pilaf"
+       "price": 110,
+       "img": "img/Bird_Egg_Goat_Butter_Hylian_Rice_Raw_Whole_Bird.jpg",
+       "name" : "Gourmet Poultry Pilaf"
    },
    {
       "hearts" : 7,
@@ -1076,6 +1217,8 @@
          "Goat Butter",
          "Raw Bird Thigh"
       ],
+       "price": 60,
+       "img": "img/Bird_Egg_Goat_Butter_Hylian_Rice_Raw_Bird_Thigh.jpg",
       "name" : "Prime Poultry Pilaf"
    },
    {
@@ -1088,6 +1231,8 @@
          "Goat Butter",
          "Raw Bird Drumstick"
       ],
+       "price": 40,
+       "img": "img/Bird_Egg_Goat_Butter_Hylian_Rice_Raw_Bird_Drumstick.jpg",
       "name" : "Poultry Pilaf"
    },
    {
@@ -1102,6 +1247,8 @@
          "Rock Salt",
          "Hearty Radish"
       ],
+       "price": 40,
+       "img": "img/Bird_Egg_Goat_Butter_Hearty_Radish_Rock_Salt.jpg",
       "name" : "Vegetable Omelet",
       "potency" : 12
    },
@@ -1116,6 +1263,8 @@
          "Goat Butter",
          "Mighty Porgy"
       ],
+       "price": 40,
+       "img": "img/Goat_Butter_Mighty_Porgy_Tabantha_Wheat.jpg",
       "name" : "Porgy Meunière",
       "potency" : 3,
       "time" : "03:10"
@@ -1131,6 +1280,8 @@
          "Goat Butter",
          "Armored Porgy"
       ],
+       "price": 40,
+       "img": "img/Armored_Porgy_Goat_Butter_Tabantha_Wheat.jpg",
       "name" : "Porgy Meunière",
       "potency" : 3,
       "time" : "03:10"
@@ -1146,6 +1297,8 @@
          "Goat Butter",
          "Razorclaw Crab"
       ],
+       "price": 30,
+       "img": "img/Goat_Butter_Razorclaw_Crab_Tabantha_Wheat.jpg",
       "name" : "Seafood Meunière",
       "potency" : 2,
       "time" : "03:10"
@@ -1161,6 +1314,8 @@
          "Rock Salt",
          "Mighty Porgy"
       ],
+       "price": 40,
+       "img": "img/Hylian_Rice_Mighty_Porgy_Rock_Salt.jpg",
       "name" : "Seafood Fried Rice",
       "potency" : 3,
       "time" : "02:50"
@@ -1174,6 +1329,8 @@
          "Goat Butter",
          "Goron Spice"
       ],
+       "price": 30,
+       "img": "img/Goat_Butter_Goron_Spice_Hylian_Rice.jpg",
       "name" : "Curry Pilaf"
    },
    {
@@ -1185,7 +1342,9 @@
          "Rock Salt",
          "Raw Gourmet Meat"
       ],
-      "name" : "Gourmet Meat and Rice Bowl"
+       "price": 90,
+       "img": "img/Hylian_Rice_Raw_Gourmet_Meat_Rock_Salt.jpg",
+       "name" : "Gourmet Meat and Rice Bowl"
    },
    {
       "hearts" : 5,
@@ -1196,6 +1355,8 @@
          "Rock Salt",
          "Raw Prime Meat"
       ],
+       "price": 50,
+       "img": "img/Hylian_Rice_Raw_Prime_Meat_Rock_Salt.jpg",
       "name" : "Prime Meat and Rice Bowl"
    },
    {
@@ -1207,6 +1368,8 @@
          "Rock Salt",
          "Raw Meat"
       ],
+       "price": 30,
+       "img": "img/Hylian_Rice_Raw_Meat_Rock_Salt.jpg",
       "name" : "Meat and Rice Bowl"
    },
    {
@@ -1217,6 +1380,8 @@
          "Hylian Rice",
          "Bird Egg"
       ],
+       "price": 10,
+       "img": "img/Bird_Egg_Hylian_Rice.jpg",
       "name" : "Fried Egg and Rice"
    },
    {
@@ -1227,6 +1392,8 @@
          "Hylian Rice",
          "Raw Whole Bird"
       ],
+       "price": 70,
+       "img": "img/Hylian_Rice_Raw_Whole_Bird.jpg",
       "name" : "Meaty Rice Balls"
    },
    {
@@ -1239,6 +1406,8 @@
          "Hylian Rice",
          "Mighty Porgy"
       ],
+       "price": 30,
+       "img": "img/Hylian_Rice_Mighty_Porgy.jpg",
       "name" : "Seafood Rice Balls",
       "potency" : 3,
       "time" : "01:50"
@@ -1252,7 +1421,9 @@
          "Hylian Rice",
          "Endura Shroom"
       ],
-      "name" : "Mushroom Rice Balls",
+       "price": 20,
+       "img": "img/Endura_Shroom_Hylian_Rice.jpg",
+       "name" : "Mushroom Rice Balls",
       "potency" : 1,
       "stamina_extra" : 0.2
    },
@@ -1266,6 +1437,8 @@
          "Hylian Rice",
          "Hearty Radish"
       ],
+       "price": 20,
+       "img": "img/Hearty_Radish_Hylian_Rice.jpg",
       "name" : "Veggie Rice Balls",
       "potency" : 12
    },
@@ -1277,8 +1450,8 @@
          "Apple",
          "Goat Butter"
       ],
-       "price": 10, 
-       "img": "img/Hot_Buttered_Apple.jpg",
+       "price": 10,
+       "img": "img/Apple_Goat_Butter.jpg",
       "name" : "Hot Buttered Apple"
    },
    {
@@ -1291,6 +1464,8 @@
          "Fortified Pumpkin",
          "Raw Whole Bird"
       ],
+       "price": 80,
+       "img": "img/Fortified_Pumpkin_Raw_Whole_Bird.jpg",
       "name" : "Meat-Stuffed Pumpkin",
       "potency" : 2,
       "time" : "01:20"
@@ -1304,6 +1479,8 @@
          "Courser Bee Honey",
          "Raw Whole Bird"
       ],
+       "price": 90,
+       "img": "img/Courser_Bee_Honey_Raw_Whole_Bird.jpg",
       "name" : "Glazed Meat",
       "potency" : 2,
       "stamina" : 0.4
@@ -1316,6 +1493,8 @@
          "Courser Bee Honey",
          "Razorclaw Crab"
       ],
+       "price": 40,
+       "img": "img/Courser_Bee_Honey_Razorclaw_Crab.jpg",
       "name" : "Glazed Seafood"
    },
    {
@@ -1358,7 +1537,7 @@
          "Courser Bee Honey"
       ],
        "price": 30,
-       "img": "img/Honeyed_Apple.jpg",
+       "img": "img/Apple_Courser_Bee_Honey.jpg",
       "name" : "Honeyed Apple",
       "potency" : 2,
       "stamina" : 0.4
@@ -2781,7 +2960,7 @@
       ],
        "price": 30,
        "name" : "Simmered Fruit",
-       "img": "img/Durian.jpg",
+       "img": "img/Hearty_Durian.jpg",
       "potency" : 16
    },
    {

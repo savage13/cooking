@@ -1,12 +1,13 @@
-
+import { execSync } from 'child_process';
 import fs from "fs";
 
 import { CookingData } from './bundle.js' ;
 
+const stop_on_error = process.argv.filter(arg => arg == "-k").length == 0;
+const check_img = process.argv.filter(arg => arg == "-c").length;
+const stop_on_missing_img = process.argv.filter(arg => arg == "-m").length ;
+
 const obj = new CookingData;
-const stop_on_error = true;
-const check_img = true;
-const stop_on_missing_img = false;
 
 const test_data = ['t/wkr.json', 't/dubious.json','t/acorns.json',
                    't/elixirs.json',"t/quietness.json", "t/other.json"];
@@ -15,7 +16,35 @@ let ok = 0;
 let fails = 0;
 let proof = 0;
 
-const EFFECTS = ["LifeMaxUp","ExGutsMaxUp","GutsRecover","ResistCold","DefenseUp", "AttackUp", "ResistHot", "ResistElectric", "Quietness", "MovingSpeed","Fireproof"];
+const EFFECTS = ["LifeMaxUp","ExGutsMaxUp","GutsRecover","ResistCold","DefenseUp", "AttackUp",
+                 "ResistHot", "ResistElectric", "Quietness", "MovingSpeed","Fireproof"];
+
+function unique(z) {
+    return [... new Set(z)];
+}
+
+function image_filename(known) {
+    let items = unique(known.ingredients);
+    items.sort();
+    let out = [];
+    for(const item of items) {
+        let n = known.ingredients.filter(x => x == item).length;
+        if(n == 1) {
+            n = "";
+        }
+        out.push(`${item}${n}`);
+    }
+    out = 'img/' + out.join("_") + ".jpg";
+    out = out.replace(/ /g, '_');
+    return out;
+}
+
+function create_image(known) {
+    console.log(known.name, known.ingredients);
+    console.log("Missing img file");
+    const out = image_filename(known);
+    const res = execSync(`python ./img/grab.py ${out}`, {stdio: [process.stdin, process.stdout, process.stderr]})
+}
 
 function test_recipe(known) {
     //console.log("--------------------------------------------");
@@ -122,17 +151,21 @@ function test_recipe(known) {
         ok += 1;
     }
     if(known.img) {
+        const img = image_filename(known);
+        if(img != known.img) {
+            console.log("Image filename inconsistent with naming scheme: ", known.img, img);
+        }
         if(fs.existsSync(known.img)) {
             proof += 1;
         } else if(!check_img) {
             proof += 1;
         } else {
             console.log("img file is incorrect ", known.img);
+            create_image(known);
             process.exit(1);
         }
     } else if(stop_on_missing_img) {
-        console.log(known.name, known.ingredients);
-        console.log("Missing img file");
+        create_image(known)
         process.exit(1);
     }
 }

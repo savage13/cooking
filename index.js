@@ -149,6 +149,7 @@ export class CookingData {
         let time = 0;
         let potency = 0;
         let effect = [];
+        let price = 0;
         for(const item of items) {
             const val = this.data[this.inames[item]];
             //console.log(val);
@@ -170,6 +171,7 @@ export class CookingData {
             if(val.effect) {
                 effect.push( val.effect );
             }
+            price += val.price || 0;
             //console.log(time, potency, effect);
         }
         hp *= LifeRate;
@@ -180,6 +182,13 @@ export class CookingData {
         } else {
             effect = 'None';
         }
+
+        // https://gamefaqs.gamespot.com/boards/189707-the-legend-of-zelda-breath-of-the-wild/75108593
+        // https://gaming.stackexchange.com/questions/302414/what-are-the-most-profitable-meals-and-elixirs-i-can-cook
+        const PRICE_SCALE = [0, 1.5, 1.75, 2.05, 2.4, 2.8];
+        price *= PRICE_SCALE[ items.length ];
+        price = Math.ceil(price / 10) * 10;
+
         if(verbose) {
             console.log('time boosts', unique(items)
                         .map(item => this.data[this.inames[item]].time_boost)
@@ -215,6 +224,22 @@ export class CookingData {
         time += time_boost;
         hp += hp_boost;
 
+        if(r.name == "Fruitcake") {
+            // It appears that Fruitcake adds an extra heart
+            hp += 1 * 4;
+        }
+        if(r.name == "Seafood Paella") {
+            // It appears that Seafood Paella adds an extra 2 hearts
+            hp += 2 * 4;
+        }
+        if(r.name == "Wildberry Crepe") {
+            // It appears that Wildberry Crepe adds an extra 4 hearts
+            hp += 4 * 4;
+        }
+        if(r.name == "Honey Crepe") {
+            // It appears that Honey Crepe adds an extra 1 hearts
+            hp += 1 * 4;
+        }
 
         // Documentation needed here
         if(items.includes("Fairy") && ["Elixir","Fairy Tonic"].includes(r.name)) {
@@ -270,6 +295,7 @@ export class CookingData {
             level: effect_level,
             effect: effect,
             hearts: hp / 4,
+            price: price,
         }
 
         const effects = ["MovingSpeed", "AttackUp", "ResistCold", "ResistHot",
