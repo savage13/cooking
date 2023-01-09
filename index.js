@@ -41,7 +41,7 @@ export class CookingData {
     item(name) {
         return this.data[this.inames[name]];
     }
-    
+
     create_recipe_list() {
         let id = 0;
         for(const rec of this.recipes) {
@@ -150,6 +150,7 @@ export class CookingData {
         let potency = 0;
         let effect = [];
         let price = 0;
+        let buy_total = 0;
         for(const item of items) {
             const val = this.data[this.inames[item]];
             //console.log(val);
@@ -497,8 +498,11 @@ class Recipe {
             }
             v = v[0];
             let k = items_t.indexOf(v);
-            items_t.splice(k, 1);
-            tags_t.splice(k, 1);
+            while(k != -1) {
+                items_t.splice(k, 1);
+                tags_t.splice(k, 1);
+                k = items_t.indexOf(v);
+            }
         }
         return [items_t, tags_t];
     }

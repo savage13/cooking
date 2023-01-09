@@ -10,14 +10,15 @@ const stop_on_missing_img = process.argv.filter(arg => arg == "-m").length ;
 const obj = new CookingData;
 
 const test_data = ['t/wkr.json', 't/dubious.json','t/acorns.json',
-                   't/elixirs.json',"t/quietness.json", "t/other.json"];
+                   't/elixirs.json','t/quietness.json', 't/other.json',
+                   't/fruitcake.json'];
 
 let ok = 0;
 let fails = 0;
 let proof = 0;
 
-const EFFECTS = ["LifeMaxUp","ExGutsMaxUp","GutsRecover","ResistCold","DefenseUp", "AttackUp",
-                 "ResistHot", "ResistElectric", "Quietness", "MovingSpeed","Fireproof"];
+const EFFECTS = ['LifeMaxUp','ExGutsMaxUp','GutsRecover','ResistCold','DefenseUp', 'AttackUp',
+                 'ResistHot', 'ResistElectric', 'Quietness', 'MovingSpeed','Fireproof'];
 
 function unique(z) {
     return [... new Set(z)];
@@ -67,6 +68,8 @@ function test_recipe(known) {
         console.log(known.name, known.ingredients);
         if(r.id != known.id) {
             console.log(`ID is incorrect: returned ${r.id} != ${known.id} expected`)
+            console.log(`Returned ${r.id}: ${r.name}`);
+            console.log(`Known    ${known.id}: ${known.name}`);
         }
         if(r.name != known.name) {
             console.log(`Name is incorrect: returned '${r.name}' != '${known.name}' expected`);

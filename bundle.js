@@ -11736,7 +11736,7 @@ class CookingData {
     item(name) {
         return this.data[this.inames[name]];
     }
-    
+
     create_recipe_list() {
         let id = 0;
         for(const rec of this.recipes) {
@@ -11841,6 +11841,7 @@ class CookingData {
         let potency = 0;
         let effect = [];
         let price = 0;
+        let buy_total = 0;
         for(const item of items) {
             const val = this.data[this.inames[item]];
             //console.log(val);
@@ -11876,10 +11877,17 @@ class CookingData {
 
         // https://gamefaqs.gamespot.com/boards/189707-the-legend-of-zelda-breath-of-the-wild/75108593
         // https://gaming.stackexchange.com/questions/302414/what-are-the-most-profitable-meals-and-elixirs-i-can-cook
-        const PRICE_SCALE = [0, 1.5, 1.75, 2.05, 2.4, 2.8];
+        // https://github.com/iTNTPiston/botw-recipe/blob/main/dump/find_recipes_simple.py:getPrice()
+        // Values from Cooking/CookData.yml::System::NNMR
+        const PRICE_SCALE = [0, 1.5, 1.8, 2.1, 2.4, 2.8];
         price *= PRICE_SCALE[ items.length ];
         price = Math.ceil(price / 10) * 10;
 
+        // Selling price is capped at buying price
+        price = Math.min(price, buy_total);
+        // Minimum price is limited to 2
+        price = Math.max(price, 2);
+        
         if(verbose) {
             console.log('time boosts', unique(items)
                         .map(item => this.data[this.inames[item]].time_boost)
@@ -12177,8 +12185,11 @@ class Recipe {
             }
             v = v[0];
             let k = items_t.indexOf(v);
-            items_t.splice(k, 1);
-            tags_t.splice(k, 1);
+            while(k != -1) {
+                items_t.splice(k, 1);
+                tags_t.splice(k, 1);
+                k = items_t.indexOf(v);
+            }
         }
         return [items_t, tags_t];
     }
