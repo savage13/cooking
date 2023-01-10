@@ -4,6 +4,7 @@
     "description": "",
     "scripts": {
         "bundle": "rollup --config rollup.config.js",
+        "compress": "npx uglifyjs --compress < bundle.js > bundle.min.js",
         "test": "rollup --config rollup.config.js && node test.js",
         "dev": "python -m http.server"
     },
@@ -11,6 +12,7 @@
     "license": "BSD 2-Clause",
     "type": "module",
     "dependencies": {
-        "@rollup/plugin-json": "^6.0.0"
+        "@rollup/plugin-json": "^6.0.0",
+        "uglify-js": "^3.17.4"
     }
 }

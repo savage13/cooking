@@ -34,7 +34,14 @@ export class CookingData {
             'None': [999,999],
         }
     }
-
+    
+    items_with_tag(tag) {
+        return Object.fromEntries(
+            Object.entries(this.data)
+                .filter(([key, value]) => value.tags == tag)
+        );
+    }
+    
     items() {
         return Object.keys(this.inames);
     }
@@ -302,6 +309,7 @@ export class CookingData {
         }
         if(out.effect == 'GutsRecover') {
             const recover = [0.0, 0.2, 0.4, 0.8, 1.0, 1.4, 1.6, 1.8, 2.2, 2.4, 2.8, 3.0]
+            potency = Math.min(potency, recover.length-1);
             out.stamina = recover[potency];
             delete out.time;
             delete out.effect_level_name;
@@ -321,6 +329,7 @@ export class CookingData {
                 {pts: 18, value: 1.8},
                 {pts: 20, value: 2.0}
             ];
+            potency = Math.min(20, potency);
             let tmp = recover.filter(v => v.pts <= potency).pop();
             out.stamina_extra = tmp.value;
             delete out.time;
