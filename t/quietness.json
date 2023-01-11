@@ -8,7 +8,8 @@
         "level": 1,
         "time": "02:00",
         "hearts": 2,
-        "hp": 8
+        "hp": 8,
+        "price": 20
     },
         {
         "name": "Fried Wild Greens",
@@ -19,7 +20,8 @@
         "level": 2,
         "time": "04:00",
         "hearts": 4,
-        "hp": 16
+            "hp": 16,
+            "price": 40
     }
 
 ]

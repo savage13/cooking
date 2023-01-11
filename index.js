@@ -174,7 +174,9 @@ export class CookingData {
                             val.time/30, item, this.inames[item])
             }
             time += (val.time / 30) ;
-            potency += val.potency;
+            if(item !== "Goron Spice") {
+                potency += val.potency;
+            }
             hp += val.hp;
             if(val.effect) {
                 effect.push( val.effect );
@@ -255,7 +257,7 @@ export class CookingData {
                 console.log(items.map(item => this.item(item))
                             .map(item => [item.name,item.hp]));
             }
-            return dubious_food( hp );
+            return dubious_food( hp, items );
         }
         if(r.name == "Fairy Tonic") {
             effect = 'None';
@@ -530,7 +532,7 @@ function unique(z) {
     return [... new Set(z)];
 }
 
-function dubious_food( hp ) {
+function dubious_food( hp, items ) {
     const ID = 5;
     if(hp < 4) {
         hp = 4;
@@ -541,6 +543,7 @@ function dubious_food( hp ) {
         id: ID,
         hearts: hp/4,
         price: 2,
+        items: items,
     }
 }
 function rock_hard_food(n, items) {

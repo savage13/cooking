@@ -6,6 +6,7 @@
       "ingredients" : [
          "Fairy"
       ],
+       "price": 2,
        "name" : "Fairy Tonic",
        "img": "img/Fairy.jpg"
    },
@@ -608,8 +609,9 @@
        "price": 40,
        "img": "img/Armored_Porgy_Goron_Spice_Hylian_Rice.jpg",
       "name" : "Seafood Curry",
-      "potency" : 4,
-      "time" : "03:20"
+      "potency" : 3,
+       "time" : "03:20",
+       "notes": "CHECK How does Goron Spice contribute to potency?"
    },
    {
       "effect" : "AttackUp",
@@ -625,8 +627,9 @@
        "price": 40,
        "img": "img/Goron_Spice_Hylian_Rice_Mighty_Porgy.jpg",
       "name" : "Seafood Curry",
-      "potency" : 4,
-      "time" : "03:20"
+      "potency" : 3,
+       "time" : "03:20",
+       "notes": "CHECK How does Goron Spice contribute to potency?"
    },
    {
       "NOTES" : "13 vs 12 - does the value get truncated at hearts?",
@@ -643,7 +646,8 @@
        "price": 50,
        "img": "img/Goron_Spice_Hearty_Blueshell_Snail_Hylian_Rice.jpg",
       "name" : "Seafood Curry",
-      "potency" : 13
+       "potency" : 12,
+       "notes": "CHECK How does Goron Spice contribute to potency?"
    },
    {
       "effect" : "ExGutsMaxUp",
@@ -658,8 +662,9 @@
        "price": 80,
        "img": "img/Endura_Carrot_Goron_Spice_Hylian_Rice.jpg",
       "name" : "Vegetable Curry",
-      "potency" : 5,
-      "stamina_extra" : 0.4
+      "potency" : 4,
+       "stamina_extra" : 0.4,
+       "notes": "CHECK How does Goron Spice contribute to potency?"
    },
    {
       "effect" : "MovingSpeed",
@@ -675,8 +680,9 @@
        "price": 30,
        "img": "img/Goron_Spice_Hylian_Rice_Swift_Carrot.jpg",
       "name" : "Vegetable Curry",
-      "potency" : 2,
-      "time" : "03:30"
+      "potency" : 1,
+       "time" : "03:30",
+       "notes": "CHECK How does Goron Spice contribute to potency?"
    },
    {
       "effect" : "DefenseUp",
@@ -692,8 +698,9 @@
        "price": 30,
        "img": "img/Fortified_Pumpkin_Goron_Spice_Hylian_Rice.jpg",
       "name" : "Vegetable Curry",
-      "potency" : 3,
-      "time" : "03:20"
+      "potency" : 2,
+       "time" : "03:20",
+       "notes": "CHECK How does Goron Spice contribute to potency?"
    },
    {
       "effect" : "DefenseUp",
@@ -1505,6 +1512,8 @@
          "Courser Bee Honey",
          "Endura Shroom"
       ],
+       "price": 30,
+       "img": "img/Courser_Bee_Honey_Endura_Shroom.jpg",
       "name" : "Glazed Mushrooms"
    },
    {
@@ -1515,6 +1524,8 @@
          "Courser Bee Honey",
          "Hearty Radish"
       ],
+       "price": 40,
+       "img": "img/Courser_Bee_Honey_Hearty_Radish.jpg",
       "name" : "Glazed Veggies"
    },
    {
@@ -1525,6 +1536,8 @@
          "Hylian Rice",
          "Goron Spice"
       ],
+       "price": 20,
+       "img": "img/Goron_Spice_Hylian_Rice.jpg",
       "name" : "Curry Rice"
    },
    {
@@ -1550,6 +1563,8 @@
          "Mighty Bananas",
          "Courser Bee Honey"
       ],
+       "price": 30,
+       "img": "img/Courser_Bee_Honey_Mighty_Bananas.jpg",
       "name" : "Honeyed Fruits"
    },
    {
@@ -1560,6 +1575,8 @@
          "Raw Gourmet Meat",
          "Goron Spice"
       ],
+       "price": 70,
+       "img": "img/Goron_Spice_Raw_Gourmet_Meat.jpg",
       "name" : "Gourmet Spiced Meat Skewer"
    },
    {
@@ -1570,6 +1587,8 @@
          "Raw Prime Meat",
          "Goron Spice"
       ],
+       "price": 40,
+       "img": "img/Goron_Spice_Raw_Prime_Meat.jpg",
       "name" : "Prime Spiced Meat Skewer"
    },
    {
@@ -1580,6 +1599,8 @@
          "Raw Meat",
          "Goron Spice"
       ],
+       "price": 30,
+       "img": "img/Goron_Spice_Raw_Meat.jpg",
       "name" : "Spiced Meat Skewer"
    },
    {
@@ -1592,8 +1613,11 @@
          "Goron Spice"
       ],
       "name" : "Fragrant Mushroom Sauté",
-      "potency" : 2,
-      "stamina_extra" : 0.2
+      "potency" : 1,
+       "price": 20,
+       "img": "img/Endura_Shroom_Goron_Spice.jpg",
+       "stamina_extra" : 0.2,
+       "notes": "CHECK How does Goron Spice contribute to potency?"
    },
    {
       "effect" : "LifeMaxUp",
@@ -1606,7 +1630,10 @@
          "Goron Spice"
       ],
       "name" : "Herb Sauté",
-      "potency" : 13
+       "price": 30,
+       "img": "img/Goron_Spice_Hearty_Radish.jpg",
+       "potency" : 12,
+       "notes": "CHECK How does Goron Spice contribute to potency?"
    },
    {
       "hearts" : 6,
@@ -1616,6 +1643,8 @@
          "Raw Gourmet Meat",
          "Rock Salt"
       ],
+       "price": 70,
+       "img": "img/Raw_Gourmet_Meat_Rock_Salt.jpg",
       "name" : "Salt-Grilled Gourmet Meat"
    },
    {
@@ -1626,6 +1655,8 @@
          "Raw Whole Bird",
          "Rock Salt"
       ],
+       "price": 70,
+       "img": "img/Raw_Whole_Bird_Rock_Salt.jpg",
       "name" : "Salt-Grilled Gourmet Meat"
    },
    {
@@ -1636,6 +1667,8 @@
          "Raw Prime Meat",
          "Rock Salt"
       ],
+       "price": 30,
+       "img": "img/Raw_Prime_Meat_Rock_Salt.jpg",
       "name" : "Salt-Grilled Prime Meat"
    },
    {
@@ -1646,6 +1679,8 @@
          "Raw Bird Thigh",
          "Rock Salt"
       ],
+       "price": 30,
+       "img": "img/Raw_Bird_Thigh_Rock_Salt.jpg",
       "name" : "Salt-Grilled Prime Meat"
    },
    {
@@ -1656,6 +1691,8 @@
          "Raw Bird Drumstick",
          "Rock Salt"
       ],
+       "price": 20,
+       "img": "img/Raw_Bird_Drumstick_Rock_Salt.jpg",
       "name" : "Salt-Grilled Meat"
    },
    {
@@ -1666,6 +1703,8 @@
          "Raw Meat",
          "Rock Salt"
       ],
+       "price": 20,
+       "img": "img/Raw_Meat_Rock_Salt.jpg",
       "name" : "Salt-Grilled Meat"
    },
    {
@@ -1678,9 +1717,12 @@
          "Razorclaw Crab",
          "Goron Spice"
       ],
+       "price": 30,
+       "img": "img/Goron_Spice_Razorclaw_Crab.jpg",
       "name" : "Crab Stir-Fry",
-      "potency" : 3,
-      "time" : "02:20"
+       "potency" : 2,
+       "time" : "02:20",
+       "notes": "CHECK How does Goron Spice contribute to potency?"
    },
    {
       "effect" : "DefenseUp",
@@ -1692,9 +1734,12 @@
          "Ironshell Crab",
          "Goron Spice"
       ],
+       "price": 30,
+       "img": "img/Goron_Spice_Ironshell_Crab.jpg",
       "name" : "Crab Stir-Fry",
-      "potency" : 3,
-      "time" : "02:20"
+      "potency" : 2,
+       "time" : "02:20",
+       "notes": "CHECK How does Goron Spice contribute to potency?"
    },
    {
       "NOTES" : "Check stamina level, 0.4 vs 0.8",
@@ -1706,9 +1751,12 @@
          "Bright-Eyed Crab",
          "Goron Spice"
       ],
+       "price": 30,
+       "img": "img/Bright-Eyed_Crab_Goron_Spice.jpg",
       "name" : "Crab Stir-Fry",
-      "potency" : 3,
-      "stamina" : 0.8
+      "potency" : 2,
+       "stamina" : 0.4,
+       "notes": "CHECK How does Goron Spice contribute to potency?"
    },
    {
       "effect" : "AttackUp",
@@ -1720,7 +1768,9 @@
          "Razorclaw Crab",
          "Rock Salt"
       ],
-      "name" : "Salt-Grilled Crab",
+       "price": 20,
+       "img": "img/Razorclaw_Crab_Rock_Salt.jpg",
+       "name" : "Salt-Grilled Crab",
       "potency" : 2,
       "time" : "01:50"
    },
@@ -1734,6 +1784,8 @@
          "Ironshell Crab",
          "Rock Salt"
       ],
+       "price": 20,
+       "img": "img/Ironshell_Crab_Rock_Salt.jpg",
       "name" : "Salt-Grilled Crab",
       "potency" : 2,
       "time" : "01:50"
@@ -1747,6 +1799,8 @@
          "Bright-Eyed Crab",
          "Rock Salt"
       ],
+       "price": 30,
+       "img": "img/Bright-Eyed_Crab_Rock_Salt.jpg",
       "name" : "Salt-Grilled Crab",
       "potency" : 2,
       "stamina" : 0.4
@@ -1761,6 +1815,8 @@
          "Mighty Porgy",
          "Rock Salt"
       ],
+       "price": 30,
+       "img": "img/Mighty_Porgy_Rock_Salt.jpg",
       "name" : "Salt-Grilled Fish",
       "potency" : 3,
       "time" : "01:50"
@@ -1773,6 +1829,8 @@
          "Tabantha Wheat",
          "Rock Salt"
       ],
+       "price": 10,
+       "img": "img/Rock_Salt_Tabantha_Wheat.jpg",
       "name" : "Wheat Bread"
    },
    {
@@ -1785,6 +1843,8 @@
          "Hearty Radish",
          "Rock Salt"
       ],
+       "price": 20,
+       "img": "img/Hearty_Radish_Rock_Salt.jpg",
       "name" : "Salt-Grilled Greens",
       "potency" : 12
    },
@@ -1797,6 +1857,8 @@
          "Endura Shroom",
          "Rock Salt"
       ],
+       "price": 20,
+       "img": "img/Endura_Shroom_Rock_Salt.jpg",
       "name" : "Salt-Grilled Mushrooms",
       "potency" : 1,
       "stamina_extra" : 0.2
@@ -1811,6 +1873,8 @@
          "Raw Whole Bird",
          "Raw Meat"
       ],
+       "price": 230,
+       "img": "img/Raw_Gourmet_Meat_Raw_Meat_Raw_Prime_Meat_Raw_Whole_Bird.jpg",
       "name" : "Copious Meat Skewers"
    },
    {
@@ -1823,6 +1887,8 @@
          "Endura Carrot",
          "Swift Carrot"
       ],
+       "price": 140,
+       "img": "img/Big_Hearty_Radish_Endura_Carrot_Hearty_Radish_Swift_Carrot.jpg",
       "name" : "Copious Fried Wild Greens"
    },
    {
@@ -1837,6 +1903,8 @@
          "Apple",
          "Wildberry"
       ],
+       "price": 60,
+       "img": "img/Apple_Hearty_Durian_Palm_Fruit_Wildberry.jpg",
       "name" : "Copious Simmered Fruit",
       "potency" : 16
    },
@@ -1850,6 +1918,8 @@
          "Hylian Shroom",
          "Endura Shroom"
       ],
+       "price": 80,
+       "img": "img/Big_Hearty_Truffle_Endura_Shroom_Hearty_Truffle_Hylian_Shroom.jpg",
       "name" : "Copious Mushroom Skewers"
    },
    {
@@ -1862,6 +1932,8 @@
          "Hearty Bass",
          "Hyrule Bass"
       ],
+       "price": 110,
+       "img": "img/Armored_Porgy_Hearty_Bass_Hyrule_Bass_Mighty_Porgy.jpg",
       "name" : "Copious Seafood Skewers"
    },
    {
@@ -1872,6 +1944,8 @@
          "Raw Meat",
          "Raw Prime Meat"
       ],
+       "price": 50,
+       "img": "img/Raw_Meat_Raw_Prime_Meat.jpg",
       "name" : "Meat Skewer"
    },
    {
@@ -1882,6 +1956,8 @@
          "Raw Meat",
          "Raw Whole Bird"
       ],
+       "price": 80,
+       "img": "img/Raw_Meat_Raw_Whole_Bird.jpg",
       "name" : "Meat Skewer"
    },
    {
@@ -1894,6 +1970,8 @@
          "Apple",
          "Hearty Durian"
       ],
+       "price": 40,
+       "img": "img/Apple_Hearty_Durian.jpg",
       "name" : "Simmered Fruit",
       "potency" : 16
    },
@@ -1906,6 +1984,8 @@
          "Hylian Shroom",
          "Endura Shroom"
       ],
+       "price": 20,
+       "img": "img/Endura_Shroom_Hylian_Shroom.jpg",
       "name" : "Mushroom Skewer",
       "potency" : 1,
       "stamina_extra" : 0.2
@@ -1920,6 +2000,8 @@
          "Hearty Radish",
          "Big Hearty Radish"
       ],
+       "price": 50,
+       "img": "img/Big_Hearty_Radish_Hearty_Radish.jpg",
       "name" : "Fried Wild Greens",
       "potency" : 32
    },
@@ -1933,6 +2015,8 @@
          "Mighty Porgy",
          "Raw Whole Bird"
       ],
+       "price": 90,
+       "img": "img/Mighty_Porgy_Raw_Whole_Bird.jpg",
       "name" : "Gourmet Meat and Seafood Fry",
       "potency" : 3,
       "time" : "01:20"
@@ -1947,6 +2031,8 @@
          "Mighty Porgy",
          "Raw Gourmet Meat"
       ],
+       "price": 90,
+       "img": "img/Mighty_Porgy_Raw_Gourmet_Meat.jpg",
       "name" : "Gourmet Meat and Seafood Fry",
       "potency" : 3,
       "time" : "01:20"
@@ -1961,6 +2047,9 @@
          "Mighty Porgy",
          "Raw Prime Meat"
       ],
+       "price": 50,
+       "img": "img/Mighty_Porgy_Raw_Prime_Meat.jpg",
+
       "name" : "Prime Meat and Seafood Fry",
       "potency" : 3,
       "time" : "01:20"
@@ -1975,6 +2064,8 @@
          "Mighty Porgy",
          "Raw Bird Thigh"
       ],
+       "price": 50,
+       "img": "img/Mighty_Porgy_Raw_Bird_Thigh.jpg",
       "name" : "Prime Meat and Seafood Fry",
       "potency" : 3,
       "time" : "01:20"
@@ -1989,6 +2080,8 @@
          "Mighty Porgy",
          "Raw Bird Drumstick"
       ],
+       "price": 40,
+       "img": "img/Mighty_Porgy_Raw_Bird_Drumstick.jpg",
       "name" : "Meat and Seafood Fry",
       "potency" : 3,
       "time" : "01:20"
@@ -2003,6 +2096,8 @@
          "Mighty Porgy",
          "Raw Meat"
       ],
+       "price": 40,
+       "img": "img/Mighty_Porgy_Raw_Meat.jpg",
       "name" : "Meat and Seafood Fry",
       "potency" : 3,
       "time" : "01:20"
@@ -2017,6 +2112,8 @@
          "Spicy Pepper",
          "Raw Meat"
       ],
+       "price": 20,
+       "img": "img/Raw_Meat_Spicy_Pepper.jpg",
       "name" : "Pepper Steak",
       "potency" : 1,
       "time" : "03:00"
@@ -2029,6 +2126,8 @@
          "Spicy Pepper",
          "Mighty Porgy"
       ],
+       "price": 30,
+       "img": "img/Mighty_Porgy_Spicy_Pepper.jpg",
       "name" : "Pepper Seafood"
    },
    {
@@ -2039,6 +2138,8 @@
          "Mighty Porgy",
          "Hearty Blueshell Snail"
       ],
+       "price": 50,
+       "img": "img/Hearty_Blueshell_Snail_Mighty_Porgy.jpg",
       "name" : "Seafood Skewer"
    },
    {
@@ -2049,6 +2150,8 @@
          "Mighty Porgy",
          "Sneaky River Snail"
       ],
+       "price": 30,
+       "img": "img/Mighty_Porgy_Sneaky_River_Snail.jpg",
       "name" : "Seafood Skewer"
    },
    {
@@ -2061,6 +2164,8 @@
          "Mighty Porgy",
          "Razorclaw Crab"
       ],
+       "price": 40,
+       "img": "img/Mighty_Porgy_Razorclaw_Crab.jpg",
       "name" : "Seafood Skewer",
       "potency" : 5,
       "time" : "01:40"
@@ -2073,6 +2178,8 @@
          "Mighty Porgy",
          "Ironshell Crab"
       ],
+       "price": 40,
+       "img": "img/Ironshell_Crab_Mighty_Porgy.jpg",
       "name" : "Seafood Skewer"
    },
    {
@@ -2083,6 +2190,8 @@
          "Mighty Porgy",
          "Bright-Eyed Crab"
       ],
+       "price": 40,
+       "img": "img/Bright-Eyed_Crab_Mighty_Porgy.jpg",
       "name" : "Seafood Skewer"
    },
    {
@@ -2093,6 +2202,8 @@
          "Mighty Porgy",
          "Armored Porgy"
       ],
+       "price": 40,
+       "img": "img/Armored_Porgy_Mighty_Porgy.jpg",
       "name" : "Fish Skewer"
    },
    {
@@ -2105,6 +2216,8 @@
          "Hearty Radish",
          "Raw Meat"
       ],
+       "price": 30,
+       "img": "img/Hearty_Radish_Raw_Meat.jpg",
       "name" : "Steamed Meat",
       "potency" : 12
    },
@@ -2116,6 +2229,8 @@
          "Hearty Radish",
          "Mighty Porgy"
       ],
+       "price": 40,
+       "img": "img/Hearty_Radish_Mighty_Porgy.jpg",
       "name" : "Steamed Fish"
    },
    {
@@ -2126,6 +2241,8 @@
          "Hearty Radish",
          "Endura Shroom"
       ],
+       "price": 30,
+       "img": "img/Endura_Shroom_Hearty_Radish.jpg",
       "name" : "Steamed Mushrooms"
    },
    {
@@ -2138,6 +2255,8 @@
          "Hearty Radish",
          "Apple"
       ],
+       "price": 20,
+       "img": "img/Apple_Hearty_Radish.jpg",
       "name" : "Steamed Fruit",
       "potency" : 12
    },
@@ -2149,6 +2268,8 @@
          "Endura Shroom",
          "Mighty Porgy"
       ],
+       "price": 30,
+       "img": "img/Endura_Shroom_Mighty_Porgy.jpg",
       "name" : "Fish and Mushroom Skewer"
    },
    {
@@ -2160,6 +2281,8 @@
          "Endura Shroom",
          "Raw Meat"
       ],
+       "price": 30,
+       "img": "img/Endura_Shroom_Raw_Meat.jpg",
       "name" : "Meat and Mushroom Skewer",
       "potency" : 1,
       "stamina_extra" : 0.2
@@ -2173,6 +2296,8 @@
          "Endura Shroom",
          "Apple"
       ],
+       "price": 20,
+       "img": "img/Apple_Endura_Shroom.jpg",
       "name" : "Fruit and Mushroom Mix",
       "potency" : 1,
       "stamina_extra" : 0.2
@@ -2185,6 +2310,8 @@
       "ingredients" : [
          "Raw Meat"
       ],
+       "price": 20,
+       "img": "img/Raw_Meat.jpg",
       "name" : "Meat Skewer"
    },
    {
@@ -2196,6 +2323,8 @@
          "Raw Meat",
          "Raw Meat"
       ],
+       "price": 30,
+       "img": "img/Raw_Meat2.jpg",
       "name" : "Meat Skewer"
    },
    {
@@ -2208,6 +2337,8 @@
       "ingredients" : [
          "Sneaky River Snail"
       ],
+       "price": 10,
+       "img": "img/Sneaky_River_Snail.jpg",
       "name" : "Seafood Skewer",
       "potency" : 1,
       "time" : "02:00"
@@ -2222,6 +2353,8 @@
       "ingredients" : [
          "Hearty Blueshell Snail"
       ],
+       "price": 30,
+       "img": "img/Hearty_Blueshell_Snail.jpg",
       "name" : "Seafood Skewer",
       "potency" : 12
    },
@@ -2235,6 +2368,8 @@
       "ingredients" : [
          "Razorclaw Crab"
       ],
+       "price": 20,
+       "img": "img/Razorclaw_Crab.jpg",
       "name" : "Seafood Skewer",
       "potency" : 2,
       "time" : "00:50"
@@ -2249,6 +2384,8 @@
       "ingredients" : [
          "Ironshell Crab"
       ],
+       "price": 20,
+       "img": "img/Ironshell_Crab.jpg",
       "name" : "Seafood Skewer",
       "potency" : 2,
       "time" : "00:50"
@@ -2262,6 +2399,8 @@
       "ingredients" : [
          "Bright-Eyed Crab"
       ],
+       "price": 20,
+       "img": "img/Bright-Eyed_Crab.jpg",
       "name" : "Seafood Skewer",
       "potency" : 2,
       "stamina" : 0.4
@@ -2276,6 +2415,8 @@
          "Bright-Eyed Crab",
          "Bright-Eyed Crab"
       ],
+       "price": 40,
+       "img": "img/Bright-Eyed_Crab2.jpg",
       "name" : "Seafood Skewer",
       "potency" : 4,
       "stamina" : 1
@@ -2290,6 +2431,8 @@
       "ingredients" : [
          "Mighty Porgy"
       ],
+       "price": 20,
+       "img": "img/Mighty_Porgy.jpg",
       "name" : "Fish Skewer",
       "potency" : 3,
       "time" : "00:50"
@@ -2305,6 +2448,8 @@
          "Mighty Porgy",
          "Mighty Porgy"
       ],
+       "price": 40,
+       "img": "img/Mighty_Porgy2.jpg",
       "name" : "Fish Skewer",
       "potency" : 6,
       "time" : "01:40"
@@ -2317,6 +2462,8 @@
       "ingredients" : [
          "Bird Egg"
       ],
+       "price": 10,
+       "img": "img/Bird_Egg.jpg",
       "name" : "Omelet"
    },
    {
@@ -2340,6 +2487,8 @@
       "ingredients" : [
          "Endura Shroom"
       ],
+       "price": 10,
+       "img": "img/Endura_Shroom.jpg",
       "name" : "Mushroom Skewer",
       "potency" : 1,
       "stamina_extra" : 0.2
@@ -2354,6 +2503,8 @@
       "ingredients" : [
          "Hearty Radish"
       ],
+       "price": 20,
+       "img": "img/Hearty_Radish.jpg",
       "name" : "Fried Wild Greens",
       "potency" : 12
    },
@@ -2417,6 +2568,7 @@
       "ingredients" : [
          "Fairy"
       ],
+       "img": "img/Fairy.jpg",
        "price": 2,
       "name" : "Fairy Tonic"
    },
@@ -2450,66 +2602,6 @@
       "stamina" : 0.4
    },
    {
-      "effect" : "AttackUp",
-      "level" : 1,
-      "hearts" : 3.25,
-      "hp" : 13,
-      "id" : 117,
-      "ingredients" : [
-         "Mighty Porgy",
-         "Dinraal's Scale"
-      ],
-      "name" : "Fish Skewer",
-      "notes" : "TEST Does a dragon provide an HP Boost? 9 vs 4",
-      "potency" : 3,
-      "time" : "02:20"
-   },
-   {
-      "effect" : "AttackUp",
-      "level" : 1,
-      "hearts" : 4,
-      "hp" : 16,
-      "id" : 117,
-      "ingredients" : [
-         "Mighty Porgy",
-         "Dinraal's Claw"
-      ],
-      "name" : "Fish Skewer",
-      "notes" : "TEST Does a dragon provide an HP Boost? 12 vs 4",
-      "potency" : 3,
-      "time" : "04:20"
-   },
-   {
-      "effect" : "AttackUp",
-      "level" : 1,
-      "hearts" : 4.5,
-      "hp" : 18,
-      "id" : 117,
-      "ingredients" : [
-         "Mighty Porgy",
-         "Shard of Dinraal's Fang"
-      ],
-      "name" : "Fish Skewer",
-      "notes" : "TEST Does a dragon provide an HP Boost? 14 vs 4",
-      "potency" : 3,
-      "time" : "11:20"
-   },
-   {
-      "effect" : "AttackUp",
-      "level" : 1,
-      "hearts" : 5.75,
-      "hp" : 23,
-      "id" : 117,
-      "ingredients" : [
-         "Mighty Porgy",
-         "Shard of Dinraal's Horn"
-      ],
-      "name" : "Fish Skewer",
-      "notes" : "TEST Does a dragon provide an HP Boost? 19 vs 4",
-      "potency" : 3,
-      "time" : "30:00"
-   },
-   {
       "effect" : "Quietness",
       "level" : 1,
       "hearts" : 0,
@@ -2518,6 +2610,8 @@
       "ingredients" : [
          "Blue Nightshade"
       ],
+       "price": 10,
+       "img": "img/Blue_Nightshade.jpg",
       "name" : "Fried Wild Greens",
       "potency" : 1,
       "time" : "02:00"
@@ -2532,6 +2626,8 @@
          "Blue Nightshade",
          "Blue Nightshade"
       ],
+       "price": 20,
+       "img": "img/Blue_Nightshade2.jpg",
       "name" : "Fried Wild Greens",
       "potency" : 2,
       "time" : "04:00"
@@ -2547,6 +2643,8 @@
          "Blue Nightshade",
          "Blue Nightshade"
       ],
+       "price": 30,
+       "img": "img/Blue_Nightshade3.jpg",
       "name" : "Fried Wild Greens",
       "potency" : 3,
       "time" : "06:00"
@@ -2561,6 +2659,8 @@
       "ingredients" : [
          "Silent Princess"
       ],
+       "price": 20,
+       "img": "img/Silent_Princess.jpg",
       "name" : "Fried Wild Greens",
       "potency" : 3,
       "time" : "02:00"
@@ -2576,6 +2676,8 @@
          "Silent Princess",
          "Silent Princess"
       ],
+       "price": 40,
+       "img": "img/Silent_Princess2.jpg",
       "name" : "Fried Wild Greens",
       "potency" : 6,
       "time" : "04:00"
@@ -2592,6 +2694,8 @@
          "Silent Princess",
          "Silent Princess"
       ],
+       "price": 70,
+       "img": "img/Silent_Princess3.jpg",
       "name" : "Fried Wild Greens",
       "potency" : 9,
       "time" : "06:00"
@@ -2608,6 +2712,8 @@
          "Silent Princess",
          "Silent Princess"
       ],
+       "price": 100,
+       "img": "img/Silent_Princess4.jpg",
       "name" : "Fried Wild Greens",
       "potency" : 12,
       "time" : "08:00"
@@ -4762,5 +4868,68 @@
          "Lizalfos Tail"
       ],
       "name" : "Dubious Food"
+   },
+       {
+      "effect" : "AttackUp",
+      "level" : 1,
+      "hearts" : 3.25,
+      "hp" : 13,
+      "id" : 117,
+      "ingredients" : [
+         "Mighty Porgy",
+         "Dinraal's Scale"
+      ],
+       "price": 290,
+       "img": "",
+      "name" : "Fish Skewer",
+      "notes" : "TEST Does a dragon provide an HP Boost? 9 vs 4",
+      "potency" : 3,
+      "time" : "02:20"
+   },
+   {
+      "effect" : "AttackUp",
+      "level" : 1,
+      "hearts" : 4,
+      "hp" : 16,
+      "id" : 117,
+      "ingredients" : [
+         "Mighty Porgy",
+         "Dinraal's Claw"
+      ],
+      "name" : "Fish Skewer",
+      "notes" : "TEST Does a dragon provide an HP Boost? 12 vs 4",
+      "potency" : 3,
+      "time" : "04:20"
+   },
+   {
+      "effect" : "AttackUp",
+      "level" : 1,
+      "hearts" : 4.5,
+      "hp" : 18,
+      "id" : 117,
+      "ingredients" : [
+         "Mighty Porgy",
+         "Shard of Dinraal's Fang"
+      ],
+      "name" : "Fish Skewer",
+      "notes" : "TEST Does a dragon provide an HP Boost? 14 vs 4",
+      "potency" : 3,
+      "time" : "11:20"
+   },
+   {
+      "effect" : "AttackUp",
+      "level" : 1,
+      "hearts" : 5.75,
+      "hp" : 23,
+      "id" : 117,
+      "ingredients" : [
+         "Mighty Porgy",
+         "Shard of Dinraal's Horn"
+      ],
+      "name" : "Fish Skewer",
+      "notes" : "TEST Does a dragon provide an HP Boost? 19 vs 4",
+      "potency" : 3,
+      "time" : "30:00"
    }
+
 ]

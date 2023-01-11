@@ -16,6 +16,7 @@ const test_data = ['t/wkr.json', 't/dubious.json','t/acorns.json',
 let ok = 0;
 let fails = 0;
 let proof = 0;
+let price = 0;
 
 const EFFECTS = ['LifeMaxUp','ExGutsMaxUp','GutsRecover','ResistCold','DefenseUp', 'AttackUp',
                  'ResistHot', 'ResistElectric', 'Quietness', 'MovingSpeed','Fireproof'];
@@ -37,6 +38,7 @@ function image_filename(known) {
     }
     out = 'img/' + out.join("_") + ".jpg";
     out = out.replace(/ /g, '_');
+    out = out.replace(/'/g, '');
     return out;
 }
 
@@ -164,6 +166,8 @@ function test_recipe(known) {
     }
     if(known.price === undefined) {
         console.log("Price Missing for ", known.name);
+        console.log(known.ingredients);
+        price += 1;
     }
     if(known.img) {
         const img = image_filename(known);
@@ -195,7 +199,7 @@ for (const file of test_data) {
 let total = fails + ok;
 let proof_pct = 100 * proof / total;
 
-console.log(`Tests ${total}: Ok: ${ok} Fails: ${fails} Proof: ${proof} (${proof_pct.toFixed(2)}%)`);
+console.log(`Tests ${total}: Ok: ${ok} Fails: ${fails} Proof: ${proof} (${proof_pct.toFixed(2)}%) Price: ${total-price} / ${total}`);
 
 
 
