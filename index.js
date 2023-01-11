@@ -156,8 +156,8 @@ export class CookingData {
         let time = 0;
         let potency = 0;
         let effect = [];
-        let price = 0;
-        let buy_total = 0;
+        let sell_price = 0;
+        let buy_price = 0;
         for(const item of items) {
             const val = this.data[this.inames[item]];
             //console.log(val);
@@ -179,7 +179,8 @@ export class CookingData {
             if(val.effect) {
                 effect.push( val.effect );
             }
-            price += val.price || 0;
+            sell_price += val.sell_price || 0;
+            buy_price += val.buy_price || 0;
             //console.log(time, potency, effect);
         }
         hp *= LifeRate;
@@ -196,14 +197,21 @@ export class CookingData {
         // https://github.com/iTNTPiston/botw-recipe/blob/main/dump/find_recipes_simple.py:getPrice()
         // Values from Cooking/CookData.yml::System::NNMR
         const PRICE_SCALE = [0, 1.5, 1.8, 2.1, 2.4, 2.8];
-        price *= PRICE_SCALE[ items.length ];
-        price = Math.ceil(price / 10) * 10;
-
+        const sp = items.map(item => this.item(item).sell_price);
+        if(verbose) {
+            console.log('sell price ',sp, ' scale', PRICE_SCALE[items.length]);
+        }
+        sell_price = Math.floor(sell_price * PRICE_SCALE[ items.length ]);
+        const tmp = sell_price;
+        sell_price = Math.ceil(sell_price / 10) * 10;
+        if(verbose) {
+            console.log('sell price, round, buy',tmp, sell_price, buy_price)
+        }
         // Selling price is capped at buying price
-        price = Math.min(price, buy_total);
+        sell_price = Math.min(sell_price, buy_price);
         // Minimum price is limited to 2
-        price = Math.max(price, 2);
-        
+        sell_price = Math.max(sell_price, 2);
+
         if(verbose) {
             console.log('time boosts', unique(items)
                         .map(item => this.data[this.inames[item]].time_boost)
@@ -233,7 +241,7 @@ export class CookingData {
         // Hit Point Boost(?); thanks Piston
         hp += r.hb;
         if(r.name == "Rock-Hard Food") {
-            return rock_hard_food( unique(items).length );
+            return rock_hard_food( unique(items).length, items );
         }
         if(r.name == "Dubious Food") {
             if(verbose) {
@@ -251,6 +259,7 @@ export class CookingData {
         }
         if(r.name == "Fairy Tonic") {
             effect = 'None';
+            sell_price = 2; // CHECK THIS
         }
         let potency_level = '';
         let effect_level = 1;
@@ -281,7 +290,7 @@ export class CookingData {
             level: effect_level,
             effect: effect,
             hearts: hp / 4,
-            price: price,
+            price: sell_price,
         }
 
         const effects = ["MovingSpeed", "AttackUp", "ResistCold", "ResistHot",
@@ -531,9 +540,10 @@ function dubious_food( hp ) {
         hp: hp,
         id: ID,
         hearts: hp/4,
+        price: 2,
     }
 }
-function rock_hard_food(n) {
+function rock_hard_food(n, items) {
     const SINGLE_ID = 126;
     const MULTI_ID = 3;
     return {
@@ -541,6 +551,8 @@ function rock_hard_food(n) {
         hp: 1,
         id: (n == 1) ? SINGLE_ID : MULTI_ID,
         hearts: 0.25,
+        price: 2,
+        items: items
     }
 }
 

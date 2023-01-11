@@ -792,7 +792,7 @@
          "Tabantha Wheat",
          "Cane Sugar"
       ],
-       "price": 0,
+       "price": 30,
        "img": "img/Bird_Egg_Cane_Sugar_Fresh_Milk_Tabantha_Wheat.jpg",
       "name" : "Plain Crepe"
    },
@@ -2417,6 +2417,7 @@
       "ingredients" : [
          "Fairy"
       ],
+       "price": 2,
       "name" : "Fairy Tonic"
    },
    {

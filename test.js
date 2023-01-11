@@ -78,6 +78,15 @@ function test_recipe(known) {
         if(stop_on_error) {
             process.exit(1);
         }
+    } else if(known.price !== undefined && r.price != known.price) {
+        console.log(known.name, known.ingredients);
+        if(r.price != known.price) {
+            console.log(`Price is incorrect: returned '${r.price}' != '${known.price}' expected`);
+        }
+        fails += 1;
+        if(stop_on_error) {
+            process.exit(1);
+        }
     } else if(r.hp != known.hp) {
         console.log(known.name, known.ingredients);
         console.log(`HP is incorrect: returned '${r.hp}' != '${known.hp}' expected`);
@@ -152,6 +161,9 @@ function test_recipe(known) {
         }
     } else {
         ok += 1;
+    }
+    if(known.price === undefined) {
+        console.log("Price Missing for ", known.name);
     }
     if(known.img) {
         const img = image_filename(known);
