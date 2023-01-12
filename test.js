@@ -17,6 +17,7 @@ let ok = 0;
 let fails = 0;
 let proof = 0;
 let price = 0;
+let dub = 0;
 
 const EFFECTS = ['LifeMaxUp','ExGutsMaxUp','GutsRecover','ResistCold','DefenseUp', 'AttackUp',
                  'ResistHot', 'ResistElectric', 'Quietness', 'MovingSpeed','Fireproof'];
@@ -53,6 +54,9 @@ function test_recipe(known) {
     //console.log("--------------------------------------------");
     let r = obj.cook(known.ingredients, false);//known.id == 11126);
 
+    if(known.name == "Dubious Food") {
+        dub += 1;
+    }
     if((r.effect && ! EFFECTS.includes(r.effect)) ||
        (known.effect && ! EFFECTS.includes(known.effect)) ) {
         console.log("Error");
@@ -200,6 +204,9 @@ let total = fails + ok;
 let proof_pct = 100 * proof / total;
 
 console.log(`Tests ${total}: Ok: ${ok} Fails: ${fails} Proof: ${proof} (${proof_pct.toFixed(2)}%) Price: ${total-price} / ${total}`);
+console.log(`     Non-Dubious ${total - dub}`)
+console.log(`     Non-Dubious w/o Proof ${total-dub-proof}`)
+console.log(`     Dubious Total: ${dub}`);
 
 
 
