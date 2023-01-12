@@ -4,6 +4,9 @@ import { CookingData, botw_sort } from './bundle.js';
 
 let args = process.argv.slice(2);
 
+if(args.length == 0) {
+    args = ["-h"];
+}
 
 // Command line Arguments
 let opts  = { verbose: false,  json_out: false,  pretty: false,  help: false, items: false };

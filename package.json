@@ -6,6 +6,7 @@
         "bundle": "rollup --config rollup.config.js",
         "compress": "npx uglifyjs --compress < bundle.js > bundle.min.js",
         "test": "rollup --config rollup.config.js && node test.js",
+        "bin": "rollup --config rollup_pot.config.js && echo '#!/usr/bin/env node' > cpot.js && cat potb.js >> cpot.js && chmod +x ./cpot.js",
         "dev": "python -m http.server"
     },
     "author": "savage13@gmail.com",
