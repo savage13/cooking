@@ -2743,6 +2743,8 @@
          "Electric Safflina",
          "Electric Safflina"
       ],
+       "price": 10,
+       "img": "img/Electric_Safflina2.jpg",
       "name" : "Fried Wild Greens",
       "potency" : 2,
       "time" : "05:00"
@@ -2758,6 +2760,8 @@
          "Electric Safflina",
          "Electric Safflina"
       ],
+       "price": 20,
+       "img": "img/Electric_Safflina3.jpg",
       "name" : "Fried Wild Greens",
       "potency" : 3,
       "time" : "07:30"
@@ -2774,6 +2778,8 @@
          "Electric Safflina",
          "Electric Safflina"
       ],
+       "price": 30,
+       "img": "img/Electric_Safflina4.jpg",
       "name" : "Fried Wild Greens",
       "potency" : 4,
       "time" : "10:00"
@@ -2787,6 +2793,8 @@
       "ingredients" : [
          "Fortified Pumpkin"
       ],
+       "price": 10,
+       "img": "img/Fortified_Pumpkin.jpg",
       "name" : "Fried Wild Greens",
       "potency" : 2,
       "time" : "00:50"
@@ -2801,6 +2809,8 @@
          "Fortified Pumpkin",
          "Fortified Pumpkin"
       ],
+       "price": 20,
+       "img": "img/Fortified_Pumpkin2.jpg",
       "name" : "Fried Wild Greens",
       "potency" : 4,
       "time" : "01:40"
@@ -2816,6 +2826,8 @@
          "Fortified Pumpkin",
          "Fortified Pumpkin"
       ],
+       "price": 40,
+       "img": "img/Fortified_Pumpkin3.jpg",
       "name" : "Fried Wild Greens",
       "potency" : 6,
       "time" : "02:30"
@@ -2832,6 +2844,8 @@
          "Fortified Pumpkin",
          "Fortified Pumpkin"
       ],
+       "price": 50,
+       "img": "img/Fortified_Pumpkin4.jpg",
       "name" : "Fried Wild Greens",
       "potency" : 8,
       "time" : "03:20"
@@ -2849,6 +2863,8 @@
          "Fortified Pumpkin",
          "Fortified Pumpkin"
       ],
+       "price": 70,
+       "img": "img/Fortified_Pumpkin5.jpg",
       "name" : "Fried Wild Greens",
       "potency" : 10,
       "time" : "04:10"
@@ -2861,6 +2877,8 @@
       "ingredients" : [
          "Stamella Shroom"
       ],
+       "price": 10,
+       "img": "img/Stamella_Shroom.jpg",
       "name" : "Mushroom Skewer",
       "potency" : 1,
       "stamina" : 0.2
@@ -2874,6 +2892,8 @@
          "Stamella Shroom",
          "Stamella Shroom"
       ],
+       "price": 20,
+       "img": "img/Stamella_Shroom2.jpg",
       "name" : "Mushroom Skewer",
       "potency" : 2,
       "stamina" : 0.4
@@ -2888,6 +2908,8 @@
          "Stamella Shroom",
          "Stamella Shroom"
       ],
+       "price": 40,
+       "img": "img/Stamella_Shroom3.jpg",
       "name" : "Mushroom Skewer",
       "potency" : 3,
       "stamina" : 0.8
@@ -2903,6 +2925,8 @@
          "Stamella Shroom",
          "Stamella Shroom"
       ],
+       "price": 50,
+       "img": "img/Stamella_Shroom4.jpg",
       "name" : "Mushroom Skewer",
       "potency" : 4,
       "stamina" : 1
@@ -2919,6 +2943,8 @@
          "Stamella Shroom",
          "Stamella Shroom"
       ],
+       "price": 70,
+       "img": "img/Stamella_Shroom5.jpg",
       "name" : "Mushroom Skewer",
       "potency" : 5,
       "stamina" : 1.4
@@ -2931,6 +2957,8 @@
       "ingredients" : [
          "Endura Carrot"
       ],
+       "price": 50,
+       "img": "img/Endura_Carrot.jpg",
       "name" : "Fried Wild Greens",
       "potency" : 4,
       "stamina_extra" : 0.4
@@ -2944,6 +2972,8 @@
          "Endura Carrot",
          "Endura Carrot"
       ],
+       "price": 110,
+       "img": "img/Endura_Carrot2.jpg",
       "name" : "Fried Wild Greens",
       "potency" : 8,
       "stamina_extra" : 0.8
@@ -2958,6 +2988,8 @@
          "Endura Carrot",
          "Endura Carrot"
       ],
+       "price": 190,
+       "img": "img/Endura_Carrot3.jpg",
       "name" : "Fried Wild Greens",
       "potency" : 12,
       "stamina_extra" : 1.2
@@ -2973,6 +3005,8 @@
          "Endura Carrot",
          "Endura Carrot"
       ],
+       "price": 290,
+       "img": "img/Endura_Carrot4.jpg",
       "name" : "Fried Wild Greens",
       "potency" : 16,
       "stamina_extra" : 1.6
@@ -2989,6 +3023,8 @@
          "Endura Carrot",
          "Endura Carrot"
       ],
+       "price": 420,
+       "img": "img/Endura_Carrot5.jpg",
       "name" : "Fried Wild Greens",
       "potency" : 20,
       "stamina_extra" : 2
@@ -3003,23 +3039,11 @@
          "Mighty Bananas",
          "Mighty Thistle",
          "Mighty Porgy",
-         "Bladed Rhino Beetle"
-      ],
-      "name" : "Dubious Food"
-   },
-   {
-      "NOTE" : "HP needs to be tested",
-      "hearts" : 2,
-      "hp" : 8,
-      "id" : 5,
-      "ingredients" : [
-         "Razorshroom",
-         "Mighty Bananas",
-         "Mighty Thistle",
-         "Mighty Porgy",
          "Energetic Rhino Beetle"
       ],
-      "name" : "Dubious Food"
+       "price": 2,
+       "img": "img/Energetic_Rhino_Beetle_Mighty_Bananas_Mighty_Porgy_Mighty_Thistle_Razorshroom.jpg",
+       "name" : "Dubious Food"
    },
    {
       "effect" : "AttackUp",
@@ -3034,6 +3058,8 @@
          "Mighty Porgy",
          "Razorclaw Crab"
       ],
+       "price": 100,
+       "img": "img/Mighty_Bananas_Mighty_Porgy_Mighty_Thistle_Razorclaw_Crab_Razorshroom.jpg",
       "name" : "Seafood Skewer",
       "potency" : 10,
       "time" : "04:10"
@@ -3051,6 +3077,8 @@
          "Mighty Porgy",
          "Razorshroom"
       ],
+       "price": 90,
+       "img": "img/Mighty_Bananas_Mighty_Porgy_Mighty_Thistle_Razorshroom2.jpg",
       "name" : "Steamed Fish",
       "potency" : 10,
       "time" : "04:10"
@@ -3087,6 +3115,8 @@
       "ingredients" : [
          "Apple"
       ],
+       "price": 10,
+       "img": "img/Apple.jpg",
       "name" : "Simmered Fruit"
    },
    {
@@ -3222,6 +3252,8 @@
          "Fairy",
          "Fairy"
       ],
+       "price": 2,
+       "img": "img/Fairy2.jpg",
       "name" : "Fairy Tonic"
    },
    {
@@ -3233,6 +3265,8 @@
          "Fairy",
          "Fairy"
       ],
+       "price": 2,
+       "img": "img/Fairy3.jpg",
       "name" : "Fairy Tonic"
    },
    {
@@ -4879,7 +4913,7 @@
          "Mighty Porgy",
          "Dinraal's Scale"
       ],
-       "price": 290,
+       "price": 20,
        "img": "",
       "name" : "Fish Skewer",
       "notes" : "TEST Does a dragon provide an HP Boost? 9 vs 4",
@@ -4896,6 +4930,7 @@
          "Mighty Porgy",
          "Dinraal's Claw"
       ],
+       "price": 20,
       "name" : "Fish Skewer",
       "notes" : "TEST Does a dragon provide an HP Boost? 12 vs 4",
       "potency" : 3,
@@ -4911,6 +4946,7 @@
          "Mighty Porgy",
          "Shard of Dinraal's Fang"
       ],
+       "price": 20,
       "name" : "Fish Skewer",
       "notes" : "TEST Does a dragon provide an HP Boost? 14 vs 4",
       "potency" : 3,
@@ -4926,10 +4962,24 @@
          "Mighty Porgy",
          "Shard of Dinraal's Horn"
       ],
+       "price": 20,
       "name" : "Fish Skewer",
       "notes" : "TEST Does a dragon provide an HP Boost? 19 vs 4",
       "potency" : 3,
       "time" : "30:00"
+   },
+   {
+      "NOTE" : "HP needs to be tested",
+      "hearts" : 2,
+      "hp" : 8,
+      "id" : 5,
+      "ingredients" : [
+         "Razorshroom",
+         "Mighty Bananas",
+         "Mighty Thistle",
+         "Mighty Porgy",
+         "Bladed Rhino Beetle"
+      ],
+      "name" : "Dubious Food"
    }
-
 ]

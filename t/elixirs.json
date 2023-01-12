@@ -8,6 +8,7 @@
         "hearts": 0,
         "potency": 2,
         "level": 1,
+        "price": 60,
         "img": "img/Cold_Darner_Lizalfos_Tail.jpg",
         "time": "05:40"
     },
@@ -20,6 +21,7 @@
         "hearts": 0,
         "potency": 4,
         "level": 1,
+        "price": 70,
         "img": "img/Cold_Darner2_Lizalfos_Tail.jpg",
         "time": "08:10"
     },
@@ -32,6 +34,7 @@
         "hearts": 0,
         "potency": 6,
         "level": 2,
+        "price": 90,
         "img": "img/Cold_Darner3_Lizalfos_Tail.jpg",
         "time": "10:40"
     },
@@ -44,6 +47,7 @@
         "hearts": 0,
         "potency": 8,
         "level": 2,
+        "price": 100,
         "img": "img/Cold_Darner4_Lizalfos_Tail.jpg",
         "time": "13:10"
     },

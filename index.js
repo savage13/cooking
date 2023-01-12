@@ -181,8 +181,13 @@ export class CookingData {
             if(val.effect) {
                 effect.push( val.effect );
             }
-            sell_price += val.sell_price || 0;
-            buy_price += val.buy_price || 0;
+            if(val.cook_low_price) {
+                sell_price += 1;
+                buy_price += 1;
+            } else {
+                sell_price += val.sell_price || 0;
+                buy_price += val.buy_price || 0;
+            }
             //console.log(time, potency, effect);
         }
         hp *= LifeRate;

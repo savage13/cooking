@@ -169,8 +169,10 @@ function test_recipe(known) {
         ok += 1;
     }
     if(known.price === undefined) {
-        console.log("Price Missing for ", known.name);
-        console.log(known.ingredients);
+        if(known.name !== "Dubious Food") {
+            console.log("Price Missing for ", known.name);
+            console.log(known.ingredients);
+        }
         price += 1;
     }
     if(known.img) {
