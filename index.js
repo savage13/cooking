@@ -220,11 +220,11 @@ export class CookingData {
         sell_price = Math.max(sell_price, 2);
 
         if(verbose) {
-            console.log('time boosts', unique(items)
+            console.log('time boosts', items
                         .map(item => this.data[this.inames[item]].time_boost)
                         .filter(isFinite));
         }
-        let time_boost = unique(items)
+        let time_boost = items
             .map(item => this.data[this.inames[item]].time_boost)
             .filter(isFinite)
             .reduce((acc, t0) => { return acc + t0; }, 0);

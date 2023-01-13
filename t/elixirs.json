@@ -102,8 +102,44 @@
         "price": 100,
         "img": "img/Lizalfos_Tail_Warm_Darner4.jpg",
         "time": "13:10"
+    },
+    {
+        "name": "Chilly Elixir",
+        "id": 4,
+        "ingredients": ["Cold Darner","Ice Keese Wing","Ice Keese Wing","Ice Keese Wing", "Lizalfos Tail"],
+        "effect": "ResistHot",
+        "hp": 0,
+        "hearts": 0,
+        "potency": 2,
+        "level": 1,
+        "price": 140,
+        "img": "img/Cold_Darner_Ice_Keese_Wing3_Lizalfos_Tail.jpg",
+        "time": "11:10"
+    },
+    {
+        "name": "Chilly Elixir",
+        "id": 4,
+        "ingredients": ["Cold Darner","Ice Keese Wing","Ice Keese Wing", "Lizalfos Tail"],
+        "effect": "ResistHot",
+        "hp": 0,
+        "hearts": 0,
+        "potency": 2,
+        "level": 1,
+        "price": 100,
+        "img": "img/Cold_Darner_Ice_Keese_Wing2_Lizalfos_Tail.jpg",
+        "time": "09:20"
+    },
+    {
+        "name": "Chilly Elixir",
+        "id": 4,
+        "ingredients": ["Cold Darner","Ice Keese Wing", "Lizalfos Tail"],
+        "effect": "ResistHot",
+        "hp": 0,
+        "hearts": 0,
+        "potency": 2,
+        "level": 1,
+        "price": 80,
+        "img": "img/Cold_Darner_Ice_Keese_Wing_Lizalfos_Tail.jpg",
+        "time": "07:30"
     }
-
-
-    
 ]

@@ -39,7 +39,7 @@ const names = {
     'AttackUp': 'Mighty',
     'DefenseUp': 'Tough',
     'ResistCold': 'Spicy',
-    'ResistHeat': 'Chilly',
+    'ResistHot': 'Chilly',
     'ResistElectric': 'Electro',
     'Fireproof': 'Fireproof',
     'MovingSpeed': 'Hasty',

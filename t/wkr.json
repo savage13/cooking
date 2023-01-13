@@ -8,7 +8,8 @@
       ],
        "price": 2,
        "name" : "Fairy Tonic",
-       "img": "img/Fairy.jpg"
+       "img": "img/Fairy.jpg",
+       "botwr": "price:10"
    },
    {
       "hearts" : 7,
@@ -22,7 +23,8 @@
       ],
        "price": 2,
        "img": "img/Fairy_Summerwing_Butterfly_Wood_Yellow_Chuchu_Jelly.jpg",
-      "name" : "Fairy Tonic"
+       "name" : "Fairy Tonic",
+       "botwr": "price: 30, effect: ResistCold, level 1, time: 04:50"
    },
    {
       "hearts" : 7,
@@ -34,7 +36,8 @@
       ],
        "price": 2,
        "img": "img/Fairy_Summerwing_Butterfly.jpg",
-      "name" : "Fairy Tonic"
+       "name" : "Fairy Tonic",
+       "botwr": "price: 10, hearts: 10, effect: ResistCold, level 1, time: 03:00"
    },
    {
       "hearts" : 7,
@@ -46,7 +49,8 @@
       ],
        "price": 2,
        "img": "img/Fairy_Wood.jpg",
-      "name" : "Fairy Tonic"
+       "name" : "Fairy Tonic",
+       "botwr": "price: 10, hearts: 10"
    },
    {
       "hearts" : 7,
@@ -58,7 +62,8 @@
       ],
        "price": 2,
        "img": "img/Fairy_Yellow_Chuchu_Jelly.jpg",
-      "name" : "Fairy Tonic"
+       "name" : "Fairy Tonic",
+       "botwr": "price: 20, hearts: 10"
    },
    {
       "hearts" : 7,
@@ -71,7 +76,8 @@
       ],
        "price": 2,
        "img": "img/Fairy_Summerwing_Butterfly_Yellow_Chuchu_Jelly.jpg",
-      "name" : "Fairy Tonic"
+       "name" : "Fairy Tonic",
+       "botwr": "price: 30, hearts: 10, effect: ResistCold, level 1, time: 04:50"
    },
    {
       "hearts" : 0.25,
@@ -82,7 +88,8 @@
       ],
        "price": 2,
        "img": "img/Wood.jpg",
-      "name" : "Rock-Hard Food"
+       "name" : "Rock-Hard Food",
+       "botwr": "price: 10"
    },
    {
       "hearts" : 0.25,
@@ -93,7 +100,8 @@
       ],
        "price": 2,
        "img": "img/Topaz.jpg",
-      "name" : "Rock-Hard Food"
+       "name" : "Rock-Hard Food",
+       "botwr": "price: 270"
    },
    {
       "hearts" : 0.25,
@@ -104,7 +112,8 @@
       ],
        "price": 2,
        "img": "img/Opal.jpg",
-      "name" : "Rock-Hard Food"
+       "name" : "Rock-Hard Food",
+       "botwr": "price: 90"
    },
    {
       "hearts" : 0.25,
@@ -115,7 +124,8 @@
       ],
        "price": 2,
        "img": "img/Luminous_Stone.jpg",
-      "name" : "Rock-Hard Food"
+       "name" : "Rock-Hard Food",
+       "botwr": "price: 110"
    },
    {
       "hearts" : 0.25,
@@ -126,7 +136,8 @@
       ],
        "price": 2,
        "img": "img/Amber.jpg",
-      "name" : "Rock-Hard Food"
+       "name" : "Rock-Hard Food",
+       "botwr": "price: 50"
    },
    {
       "hearts" : 0.25,
@@ -137,7 +148,8 @@
       ],
        "price": 2,
        "img": "img/Ruby.jpg",
-      "name" : "Rock-Hard Food"
+       "name" : "Rock-Hard Food",
+       "botwr": "price: 320"
    },
    {
       "hearts" : 0.25,
@@ -148,7 +160,8 @@
       ],
        "price": 2,
        "img": "img/Sapphire.jpg",
-      "name" : "Rock-Hard Food"
+       "name" : "Rock-Hard Food",
+       "botwr": "price: 390"
    },
    {
       "hearts" : 0.25,
@@ -159,7 +172,8 @@
       ],
        "price": 2,
        "img": "img/Diamond.jpg",
-      "name" : "Rock-Hard Food"
+       "name" : "Rock-Hard Food",
+       "botwr": "price: 750"
    },
    {
       "hearts" : 0.25,
@@ -170,7 +184,8 @@
       ],
        "price": 2,
        "img": "img/Flint.jpg",
-      "name" : "Rock-Hard Food"
+       "name" : "Rock-Hard Food",
+       "botwr": "price: 10"
    },
    {
       "hearts" : 0.25,
@@ -182,7 +197,8 @@
       ],
        "price": 2,
        "img": "img/Sapphire_Wood.jpg",
-      "name" : "Rock-Hard Food"
+       "name" : "Rock-Hard Food",
+       "botwr": "price: 400"
    },
    {
       "effect" : "LifeMaxUp",
@@ -199,10 +215,10 @@
        "price": 60,
        "img": "img/Apple_Cane_Sugar_Hearty_Durian_Tabantha_Wheat.jpg",
       "name" : "Fruitcake",
-      "potency" : 16
+       "potency" : 16,
+       "botwr": "price: 40"
    },
    {
-      "NOTES" : "HP Should be 24, I think Fruitcake adds an extra heart or hp += 4",
       "hearts" : 6,
       "hp" : 24,
       "id" : 6,
@@ -214,7 +230,8 @@
       ],
        "price": 40,
        "img": "img/Apple_Cane_Sugar_Palm_Fruit_Tabantha_Wheat.jpg",
-      "name" : "Fruitcake"
+       "name" : "Fruitcake",
+       "botwr": "price: 20, hearts: 5"
    },
    {
       "effect" : "ResistCold",
@@ -230,7 +247,8 @@
        "img": "img/Summerwing_Butterfly_Yellow_Chuchu_Jelly.jpg",
       "name" : "Spicy Elixir",
       "potency" : 1,
-      "time" : "04:20"
+       "time" : "04:20",
+       "botwr": "price: 20"
    },
    {
       "hearts" : 1,
@@ -241,7 +259,8 @@
       ],
        "name" : "Dubious Food",
        "price": 2,
-       "img": "img/Summerwing_Butterfly.jpg"
+       "img": "img/Summerwing_Butterfly.jpg",
+       "botwr": "price: 10, efect: ResistCold, level: 1, time: 2:30"
    },
    {
       "hearts" : 1,
@@ -252,7 +271,8 @@
       ],
        "price": 2,
        "img": "img/Yellow_Chuchu_Jelly.jpg",
-      "name" : "Dubious Food"
+       "name" : "Dubious Food",
+       "botwr": "price: 20"
    },
    {
       "hearts" : 12,
@@ -267,7 +287,8 @@
       ],
        "price": 100,
        "img": "img/Armored_Porgy_Goat_Butter_Hearty_Blueshell_Snail_Hylian_Rice_Rock_Salt.jpg",
-      "name" : "Seafood Paella"
+       "name" : "Seafood Paella",
+       "botwr": "hearts: 10, price: 50"
    },
    {
       "hearts" : 12,
@@ -282,7 +303,8 @@
       ],
        "price": 100,
        "img": "img/Goat_Butter_Hearty_Blueshell_Snail_Hylian_Rice_Mighty_Porgy_Rock_Salt.jpg",
-      "name" : "Seafood Paella"
+       "name" : "Seafood Paella",
+       "botwr": "hearts: 10, price: 50"
    },
    {
       "hearts" : 2,
@@ -295,7 +317,8 @@
       ],
        "price": 30,
        "img": "img/Goron_Spice_Hylian_Rice_Monster_Extract.jpg",
-      "name" : "Monster Curry"
+       "name" : "Monster Curry",
+       "botwr": "price: 20"
    },
    {
       "hearts" : 3,
@@ -309,7 +332,8 @@
       ],
        "price": 40,
        "img": "img/Apple_Goron_Spice_Hylian_Rice_Monster_Extract.jpg",
-      "name" : "Monster Curry"
+       "name" : "Monster Curry",
+       "botwr": "price: 20"
    },
    {
       "hearts" : 2,
@@ -336,7 +360,8 @@
       ],
        "price": 30,
        "img": "img/Cane_Sugar_Goat_Butter_Monster_Extract_Tabantha_Wheat.jpg",
-      "name" : "Monster Cake"
+       "name" : "Monster Cake",
+       "botwr": "price: 20"
    },
    {
       "hearts" : 3,
@@ -350,7 +375,8 @@
       ],
        "price": 30,
        "img": "img/Fresh_Milk_Goat_Butter_Monster_Extract_Tabantha_Wheat.jpg",
-      "name" : "Monster Soup"
+       "name" : "Monster Soup",
+       "botwr": "price: 20"
    },
    {
       "effect" : "DefenseUp",
@@ -367,7 +393,8 @@
        "img": "img/Armored_Porgy_Monster_Extract_Raw_Meat.jpg",
       "name" : "Monster Stew",
       "potency" : 3,
-      "time" : "01:20"
+       "time" : "01:20",
+       "botwr": "price: 40"
    },
    {
       "hearts" : 8,
@@ -381,7 +408,8 @@
       ],
        "price": 50,
        "img": "img/Fresh_Milk_Hearty_Radish_Hydromelon_Voltfruit.jpg",
-      "name" : "Creamy Heart Soup"
+       "name" : "Creamy Heart Soup",
+       "botwr": "price: 30"
    },
    {
       "hearts" : 11,
@@ -396,7 +424,8 @@
        "price": 70,
        "img": "img/Big_Hearty_Radish_Fresh_Milk_Hydromelon_Voltfruit.jpg",
 
-      "name" : "Creamy Heart Soup"
+       "name" : "Creamy Heart Soup",
+       "botwr": "price: 40"
    },
    {
       "effect" : "LifeMaxUp",
@@ -413,7 +442,8 @@
        "price": 60,
        "img": "img/Fresh_Milk_Goat_Butter_Hearty_Blueshell_Snail_Tabantha_Wheat.jpg",
       "name" : "Clam Chowder",
-      "potency" : 12
+       "potency" : 12,
+       "botwr": "price: 40"
    },
    {
       "effect" : "DefenseUp",
@@ -431,7 +461,8 @@
        "img": "img/Fortified_Pumpkin_Fresh_Milk_Goat_Butter_Tabantha_Wheat.jpg",
       "name" : "Pumpkin Stew",
       "potency" : 2,
-      "time" : "04:30"
+       "time" : "04:30",
+       "botwr": "price: 30"
    },
    {
       "hearts" : 9,
@@ -445,7 +476,8 @@
       ],
        "price": 110,
        "img": "img/Fresh_Milk_Goat_Butter_Raw_Whole_Bird_Tabantha_Wheat.jpg",
-      "name" : "Gourmet Meat Stew"
+       "name" : "Gourmet Meat Stew",
+       "botwr": "price: 70"
    },
    {
       "hearts" : 9,
@@ -459,7 +491,8 @@
       ],
        "price": 110,
        "img": "img/Fresh_Milk_Goat_Butter_Raw_Gourmet_Meat_Tabantha_Wheat.jpg",
-      "name" : "Gourmet Meat Stew"
+       "name" : "Gourmet Meat Stew",
+       "botwr": "price: 70"
    },
    {
       "hearts" : 6,
@@ -473,7 +506,8 @@
       ],
        "price": 60,
        "img": "img/Fresh_Milk_Goat_Butter_Raw_Prime_Meat_Tabantha_Wheat.jpg",
-      "name" : "Prime Meat Stew"
+       "name" : "Prime Meat Stew",
+       "botwr": "price: 40"
    },
    {
       "hearts" : 6,
@@ -487,7 +521,8 @@
       ],
        "price": 60,
        "img": "img/Fresh_Milk_Goat_Butter_Raw_Bird_Thigh_Tabantha_Wheat.jpg",
-      "name" : "Prime Meat Stew"
+       "name" : "Prime Meat Stew",
+       "botwr": "price: 40"
    },
    {
       "hearts" : 5,
@@ -501,7 +536,8 @@
       ],
        "price": 40,
        "img": "img/Fresh_Milk_Goat_Butter_Raw_Bird_Drumstick_Tabantha_Wheat.jpg",
-       "name" : "Meat Stew"
+       "name" : "Meat Stew",
+       "botwr": "price: 30"
    },
    {
       "hearts" : 5,
@@ -515,7 +551,8 @@
       ],
        "price": 40,
        "img": "img/Fresh_Milk_Goat_Butter_Raw_Meat_Tabantha_Wheat.jpg",
-      "name" : "Meat Stew"
+       "name" : "Meat Stew",
+       "botwr": "price: 30"
    },
    {
       "hearts" : 8,
@@ -528,7 +565,8 @@
       ],
        "price": 90,
        "img": "img/Goron_Spice_Hylian_Rice_Raw_Gourmet_Meat.jpg",
-      "name" : "Gourmet Meat Curry"
+       "name" : "Gourmet Meat Curry",
+       "botwr": "price: 70"
    },
    {
       "hearts" : 8,
@@ -541,7 +579,8 @@
       ],
        "price": 90,
        "img": "img/Goron_Spice_Hylian_Rice_Raw_Whole_Bird.jpg",
-      "name" : "Gourmet Poultry Curry"
+       "name" : "Gourmet Poultry Curry",
+       "botwr": "price: 70"
    },
    {
       "hearts" : 5,
@@ -554,7 +593,8 @@
       ],
        "price": 50,
        "img": "img/Goron_Spice_Hylian_Rice_Raw_Prime_Meat.jpg",
-      "name" : "Prime Meat Curry"
+      "name" : "Prime Meat Curry",
+       "botwr": "price: 40"
    },
    {
       "hearts" : 5,
@@ -567,7 +607,8 @@
       ],
        "price": 50,
        "img": "img/Goron_Spice_Hylian_Rice_Raw_Bird_Thigh.jpg",
-      "name" : "Prime Poultry Curry"
+      "name" : "Prime Poultry Curry",
+       "botwr": "price: 40"
    },
    {
       "hearts" : 4,
@@ -580,7 +621,8 @@
       ],
        "price": 40,
        "img": "img/Goron_Spice_Hylian_Rice_Raw_Meat.jpg",
-      "name" : "Meat Curry"
+      "name" : "Meat Curry",
+       "botwr": "price: 30"
    },
    {
       "hearts" : 4,
@@ -593,7 +635,8 @@
       ],
        "price": 40,
        "img": "img/Goron_Spice_Hylian_Rice_Raw_Bird_Drumstick.jpg",
-      "name" : "Poultry Curry"
+      "name" : "Poultry Curry",
+       "botwr": "price: 30"
    },
    {
       "effect" : "DefenseUp",
@@ -611,7 +654,8 @@
       "name" : "Seafood Curry",
       "potency" : 3,
        "time" : "03:20",
-       "notes": "CHECK How does Goron Spice contribute to potency?"
+       "notes": "CHECK How does Goron Spice contribute to potency?",
+       "botwr": "price: 30"
    },
    {
       "effect" : "AttackUp",

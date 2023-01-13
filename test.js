@@ -206,9 +206,9 @@ let total = fails + ok;
 let proof_pct = 100 * proof / total;
 
 console.log(`Tests ${total}: Ok: ${ok} Fails: ${fails} Proof: ${proof} (${proof_pct.toFixed(2)}%) Price: ${total-price} / ${total}`);
-console.log(`     Non-Dubious ${total - dub}`)
-console.log(`     Non-Dubious w/o Proof ${total-dub-proof}`)
-console.log(`     Dubious Total: ${dub}`);
+//console.log(`     Non-Dubious ${total - dub}`)
+//console.log(`     Non-Dubious w/o Proof ${total-dub-proof}`)
+//console.log(`     Dubious Total: ${dub}`);
 
 
 
