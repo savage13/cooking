@@ -84,6 +84,7 @@ export class CookingData {
             "Endura Carrot": "Item_PlantGet_Q",
             "Swift Carrot": "Item_PlantGet_M",
             "Silent Princess": "Item_PlantGet_J",
+            "Octo Balloon": "Item_Enemy_57", 
         };
 
         Object.keys(this.names).forEach(key => {

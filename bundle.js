@@ -8834,6 +8834,7 @@ class CookingData {
             "Endura Carrot": "Item_PlantGet_Q",
             "Swift Carrot": "Item_PlantGet_M",
             "Silent Princess": "Item_PlantGet_J",
+            "Octo Balloon": "Item_Enemy_57", 
         };
 
         Object.keys(this.names).forEach(key => {
@@ -8970,7 +8971,7 @@ class CookingData {
                         .map(item => this.data[this.inames[item]].time_boost)
                         .filter(isFinite));
         }
-        let time_boost = items //unique(items)
+        let time_boost = items
             .map(item => this.data[this.inames[item]].time_boost)
             .filter(isFinite)
             .reduce((acc, t0) => { return acc + t0; }, 0);
