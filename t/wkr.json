@@ -3320,6 +3320,8 @@
       "ingredients" : [
          "Shard of Farosh's Horn"
       ],
+       "price": 2,
+       "img": "img/Shard_of_Faroshs_Horn.jpg",
       "name" : "Dubious Food"
    },
    {
@@ -3327,8 +3329,10 @@
       "hp" : 4,
       "id" : 5,
       "ingredients" : [
-         "Shard of Farosh's Horn"
+         "Dinraal's Claw"
       ],
+       "price": 2,
+       "img": "img/Dinraals_Claw.jpg",
       "name" : "Dubious Food"
    },
    {
@@ -3336,17 +3340,10 @@
       "hp" : 4,
       "id" : 5,
       "ingredients" : [
-         "Farosh's Claw"
+         "Dinraal's Scale"
       ],
-      "name" : "Dubious Food"
-   },
-   {
-      "hearts" : 1,
-      "hp" : 4,
-      "id" : 5,
-      "ingredients" : [
-         "Farosh's Scale"
-      ],
+       "price": 2,
+       "img": "img/Dinraals_Scale.jpg",
       "name" : "Dubious Food"
    },
    {
@@ -3358,6 +3355,8 @@
          "Hearty Bass",
          "Lizalfos Tail"
       ],
+       "price": 2,
+       "img": "img/Hearty_Bass_Hearty_Truffle_Lizalfos_Tail.jpg",
       "name" : "Dubious Food"
    },
    {
@@ -3369,6 +3368,8 @@
          "Hyrule Bass",
          "Lizalfos Tail"
       ],
+       "price": 2,
+       "img": "img/Hearty_Blueshell_Snail_Hyrule_Bass_Lizalfos_Tail.jpg",
       "name" : "Dubious Food"
    },
    {
@@ -3380,6 +3381,8 @@
          "Hyrule Bass",
          "Lizalfos Tail"
       ],
+       "price": 2,
+       "img": "img/Hearty_Durian_Hyrule_Bass_Lizalfos_Tail.jpg",
       "name" : "Dubious Food"
    },
    {
@@ -3391,6 +3394,8 @@
          "Hyrule Bass",
          "Lizalfos Tail"
       ],
+       "price": 2,
+       "img": "img/Big_Hearty_Radish_Hyrule_Bass_Lizalfos_Tail.jpg",
       "name" : "Dubious Food"
    },
    {
@@ -3402,6 +3407,8 @@
          "Hyrule Bass",
          "Lizalfos Tail"
       ],
+       "price": 2,
+       "img": "img/Hearty_Radish_Hyrule_Bass_Lizalfos_Tail.jpg",
       "name" : "Dubious Food"
    },
    {
@@ -3413,16 +3420,19 @@
          "Apple",
          "Lizalfos Tail"
       ],
+       "price": 2,
+       "img": "img/Apple_Hearty_Durian_Lizalfos_Tail.jpg",
       "name" : "Dubious Food"
    },
    {
-      "NOTE" : "HP should be 8",
       "hearts" : 4,
       "hp" : 16,
       "id" : 5,
       "ingredients" : [
          "Hearty Lizard"
       ],
+       "price": 2,
+       "img": "img/Hearty_Lizard.jpg",
       "name" : "Dubious Food"
    },
    {
@@ -3435,6 +3445,8 @@
          "Lizalfos Tail",
          "Giant Ancient Core"
       ],
+       "price": 2,
+       "img": "img/Apple_Giant_Ancient_Core_Hearty_Truffle_Lizalfos_Tail.jpg",
       "name" : "Dubious Food"
    },
    {
@@ -3447,6 +3459,8 @@
          "Lizalfos Tail",
          "Wildberry"
       ],
+       "price": 2,
+       "img": "img/Apple_Hearty_Truffle_Lizalfos_Tail_Wildberry.jpg",
       "name" : "Dubious Food"
    },
    {
@@ -3460,6 +3474,8 @@
          "Wildberry",
          "Giant Ancient Core"
       ],
+       "price": 2,
+       "img": "img/Apple_Giant_Ancient_Core_Hearty_Truffle_Lizalfos_Tail_Wildberry.jpg",
       "name" : "Dubious Food"
    },
    {
@@ -3472,6 +3488,8 @@
          "Lizalfos Tail",
          "Hearty Bass"
       ],
+       "price": 2,
+       "img": "img/Apple_Hearty_Bass_Hearty_Truffle_Lizalfos_Tail.jpg",
       "name" : "Dubious Food"
    },
    {
@@ -3485,6 +3503,8 @@
          "Hearty Bass",
          "Giant Ancient Core"
       ],
+       "price": 2,
+       "img": "img/Apple_Giant_Ancient_Core_Hearty_Bass_Hearty_Truffle_Lizalfos_Tail.jpg",
       "name" : "Dubious Food"
    },
    {
@@ -3498,6 +3518,8 @@
          "Hearty Bass",
          "Wildberry"
       ],
+       "price": 2,
+       "img": "img/Apple_Hearty_Bass_Hearty_Truffle_Lizalfos_Tail_Wildberry.jpg",
       "name" : "Dubious Food"
    },
    {
@@ -3509,6 +3531,8 @@
          "Hyrule Bass",
          "Lizalfos Tail"
       ],
+       "price": 2,
+       "img": "img/Big_Hearty_Radish_Hyrule_Bass_Lizalfos_Tail.jpg",
       "name" : "Dubious Food"
    },
    {
@@ -3520,6 +3544,8 @@
          "Apple",
          "Lizalfos Tail"
       ],
+       "price": 2,
+       "img": "img/Apple_Big_Hearty_Radish_Lizalfos_Tail.jpg",
       "name" : "Dubious Food"
    },
    {
@@ -3532,6 +3558,8 @@
          "Lizalfos Tail",
          "Apple"
       ],
+       "price": 2,
+       "img": "img/Apple2_Big_Hearty_Radish_Lizalfos_Tail.jpg",
       "name" : "Dubious Food"
    },
    {

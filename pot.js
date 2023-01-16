@@ -66,7 +66,7 @@ function cook_and_show(arg, opts) {
     const suffix = `${res.price} ${items}`
 
     if(res.effect == 'LifeMaxUp') {
-        console.log(`${res.name}: Hearty yellow-hearts ${res.level} ${suffix}`);
+        console.log(`${res.name}: Hearty ${res.level} ${suffix}`);
     } else if(res.effect == 'ExGutsMaxUp') {
         console.log(`${res.name}: Enduring ${res.stamina_extra} ${suffix}`);
     } else if(res.effect == 'GutsRecover') {
@@ -78,10 +78,20 @@ function cook_and_show(arg, opts) {
     }
 }
 if(args[0] === "-") {
+    let buffer = "";
     process.stdin.on('data', data => {
-
-        const items = data.toString().split(",").map(item => item.trim());
-        cook_and_show(items, opts);
+        //console.error(buffer.length, data.length)
+        buffer += data.toString();
+        let k = buffer.lastIndexOf("\n");
+        const lines = buffer.slice(0,k).split("\n");
+        buffer = buffer.slice(k);
+        for(const line of lines) {
+            if(line.trim().length <= 0) {
+                continue
+            }
+            const items = line.split(",").map(item => item.trim());
+            cook_and_show(items, opts);
+        }
     });
 } else {
     cook_and_show(args, opts);

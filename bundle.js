@@ -8945,7 +8945,9 @@ class CookingData {
         } else {
             effect = 'None';
         }
-
+        if(r.name == 'Elixir' && effect == 'None') {
+            r.name = 'Dubious Food';
+        }
         // https://gamefaqs.gamespot.com/boards/189707-the-legend-of-zelda-breath-of-the-wild/75108593
         // https://gaming.stackexchange.com/questions/302414/what-are-the-most-profitable-meals-and-elixirs-i-can-cook
         // https://github.com/iTNTPiston/botw-recipe/blob/main/dump/find_recipes_simple.py:getPrice()
@@ -9201,12 +9203,20 @@ class Recipe {
         this.hb = hb;
     }
     matches(items, tags, strict, verbose = false) {
+        this.verbose = verbose;
         if(strict) {
+            if(this.verbose) {
+                console.log('init  ',this.name, this.id);
+                console.log('strict mode');
+            }
             if(unique(items).length != 1) {
+                if(this.verbose) {
+                    console.log('Number of unique items != 1');
+                    console.log('   items:', unique(items));
+                }
                 return false;
             }
         }
-        this.verbose = verbose;
         let items_t = [...items];
         let tags_t = [...tags];
         if(this.verbose) {
