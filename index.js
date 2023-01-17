@@ -104,7 +104,8 @@ export class CookingData {
             "Endura Carrot": "Item_PlantGet_Q",
             "Swift Carrot": "Item_PlantGet_M",
             "Silent Princess": "Item_PlantGet_J",
-            "Octo Balloon": "Item_Enemy_57", 
+            "Octo Balloon": "Item_Enemy_57",
+            "Master Sword": "Item_Sword_071",
         };
 
         Object.keys(this.names).forEach(key => {
@@ -115,6 +116,11 @@ export class CookingData {
         Object.keys(prefer).forEach(key => {
             if(key in this.inames) {
                 this.inames[key] = prefer[key];
+            }
+        });
+        Object.keys(this.data).forEach(key => {
+            if(!(key in this.names)) {
+                console.log(`Missing ${key} from data`);
             }
         });
     }
