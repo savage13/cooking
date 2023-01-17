@@ -237,6 +237,7 @@ export class CookingData {
         // https://gaming.stackexchange.com/questions/302414/what-are-the-most-profitable-meals-and-elixirs-i-can-cook
         // https://www.reddit.com/r/zelda/comments/61ccva/botw_cooking_math_complete/
         // https://github.com/iTNTPiston/botw-recipe/blob/main/dump/find_recipes_simple.py:getPrice()
+        // https://zelda.fandom.com/wiki/Cooking
         // Values from Cooking/CookData.yml::System::NNMR
         const PRICE_SCALE = [0, 1.5, 1.8, 2.1, 2.4, 2.8];
         const sp = items.map(item => this.item(item).sell_price);
