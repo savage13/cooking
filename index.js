@@ -6,6 +6,26 @@ import names from './names.json' assert { 'type': 'json' };
 import ctags from './cook_tags.json' assert { 'type': 'json' };
 import effects from './cook_effects.json' assert { 'type': 'json' };
 
+// These should be computed using the CookSpice::BoostSuccessRate
+//   added to the cook_items
+const AlwaysCrit = [
+    "Star Fragment",
+    "Naydra's Scale",
+    "Naydra's Claw",
+    "Shard of Naydra's Fang",
+    "Shard of Naydra's Horn",
+    "Dinraal's Scale",
+    "Dinraal's Claw",
+    "Shard of Dinraal's Fang",
+    "Shard of Dinraal's Horn",
+    "Farosh's Scale",
+    "Farosh's Claw",
+    "Shard of Farosh's Fang",
+    "Shard of Farosh's Horn"
+];
+const CritStamina = 0.4;
+
+
 export class CookingData {
     constructor() {
 
@@ -140,6 +160,17 @@ export class CookingData {
     }
     get_effect(name) {
         return this.effects.find(ef => ef.type == name);
+    }
+
+    cook_hp(items) {
+        let r = this.cook(items, false);
+        // Number of extra hearts is determined from potency
+        //   this converts extra hearts to hp and hp_crit
+        if(r.effect == 'LifeMaxUp') {
+            r.hp = r.level * 4;
+            r.hp_crit = r.level_crit * 4;
+        }
+        return [r.hp, r.hp_crit, r.price];
     }
 
     cook(items, verbose = false) {
@@ -301,6 +332,10 @@ export class CookingData {
             effect: effect,
             hearts: hp / 4,
             price: sell_price,
+            // Crit Cooking
+            hp_crit: hp + 3 * 4,      // Assumes +3 hearts
+            time_crit: time + 5 * 60, // Assumes +05:00 duration
+            level_crit: effect_level + 1,    // Assumes +1 potency tier
         }
 
         const effects = ["MovingSpeed", "AttackUp", "ResistCold", "ResistHot",
@@ -316,23 +351,30 @@ export class CookingData {
             delete out.effect;
             delete out.level;
             delete out.effect_level_name;
+            delete out.time_crit;
+            delete out.level_crit;
         }
         if(out.effect == "LifeMaxUp") {
             delete out.time;
-            //delete out.effect_level;
+            delete out.time_crit;
             delete out.effect_level_name;
+            delete out.hp_crit;
             out.hp = 0;
             out.hearts = 0;
             //out.hearts_extra = Math.floor(out.potency / 4);
             out.level = Math.floor(out.potency / 4);
+            out.level_crit = out.level + 1;
         }
         if(out.effect == 'GutsRecover') {
             const recover = [0.0, 0.2, 0.4, 0.8, 1.0, 1.4, 1.6, 1.8, 2.2, 2.4, 2.8, 3.0]
             potency = Math.min(potency, recover.length-1);
             out.stamina = recover[potency];
+            out.stamina_crit = Math.min(out.stamina + CritStamina, 3.0);
             delete out.time;
+            delete out.time_crit;
             delete out.effect_level_name;
             delete out.level;
+            delete out.level_crit;
         }
         if(out.effect == 'ExGutsMaxUp') {
             const recover = [
@@ -351,9 +393,13 @@ export class CookingData {
             potency = Math.min(20, potency);
             let tmp = recover.filter(v => v.pts <= potency).pop();
             out.stamina_extra = tmp.value;
+            out.stamina_extra_crit = Math.min(out.stamina_extra + CritStamina, 2.0);
+
             delete out.time;
+            delete out.time_crit;
             delete out.effect_level_name;
             delete out.level;
+            delete out.level_crit;
         }
         if(out.name == 'Elixir' && out.effect != "None") {
             const elixirs = {
