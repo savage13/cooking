@@ -165,12 +165,26 @@ export class CookingData {
     cook_hp(items) {
         let r = this.cook(items, false);
         // Number of extra hearts is determined from potency
-        //   this converts extra hearts to hp and hp_crit
+        //   this converts extra yellow hearts to hp and hp_crit
+        let is_hearty = false;
+        let has_crit_item = inter(items, AlwaysCrit).length > 0;
+        let is_crit = false;
+        let has_monster_extract = items.includes('Monster Extract');
         if(r.effect == 'LifeMaxUp') {
             r.hp = r.level * 4;
             r.hp_crit = r.level_crit * 4;
+            is_hearty = true;
+            is_crit = has_crit_item;
         }
-        return [r.hp, r.hp_crit, r.price];
+        if(r.effect === undefined) {
+            is_crit = has_crit_item;
+        }
+        if(is_crit) {
+            r.hp = r.hp_crit;
+        }
+        r.hp_crit = Math.min(r.hp_crit, 120)
+        r.hp = Math.min(r.hp, 120)
+        return [r.hp, r.price, r.hp != r.hp_crit, is_hearty, has_monster_extract];
     }
 
     cook(items, verbose = false) {
@@ -302,7 +316,7 @@ export class CookingData {
         }
         if(r.name == "Fairy Tonic") {
             effect = 'None';
-            sell_price = 2; // CHECK THIS
+            sell_price = 2;
         }
         let potency_level = '';
         let effect_level = 1;
@@ -419,6 +433,12 @@ export class CookingData {
             };
             out.name = elixirs[ out.effect ];
             //delete out.hp; // Not certain about this
+        }
+        if(r.name == "Fairy Tonic" && items.includes("Monster Extract")) {
+            // Using the maximum hp value
+            //   - hp can be either 1 or 40 (=28+12)
+            out.hp = out.hp_crit;
+            out.hearts = out.hp / 4
         }
         return out;
     }
@@ -674,6 +694,7 @@ function dubious_food( hp, items ) {
         hearts: hp/4,
         price: 2,
         items: items,
+        hp_crit: hp,
     }
 }
 function rock_hard_food(n, items) {
@@ -685,7 +706,8 @@ function rock_hard_food(n, items) {
         id: (n == 1) ? SINGLE_ID : MULTI_ID,
         hearts: 0.25,
         price: 2,
-        items: items
+        items: items,
+        hp_crit: 1,
     }
 }
 
