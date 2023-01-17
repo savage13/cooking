@@ -204,6 +204,7 @@ export class CookingData {
         }
         // https://gamefaqs.gamespot.com/boards/189707-the-legend-of-zelda-breath-of-the-wild/75108593
         // https://gaming.stackexchange.com/questions/302414/what-are-the-most-profitable-meals-and-elixirs-i-can-cook
+        // https://www.reddit.com/r/zelda/comments/61ccva/botw_cooking_math_complete/
         // https://github.com/iTNTPiston/botw-recipe/blob/main/dump/find_recipes_simple.py:getPrice()
         // Values from Cooking/CookData.yml::System::NNMR
         const PRICE_SCALE = [0, 1.5, 1.8, 2.1, 2.4, 2.8];
