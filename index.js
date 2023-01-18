@@ -176,6 +176,7 @@ export class CookingData {
         let has_crit_item = inter(items, AlwaysCrit).length > 0;
         let is_crit = false;
         let has_monster_extract = items.includes('Monster Extract');
+        let is_dubious_food = r.name == "Dubious Food";
         if(r.effect == 'LifeMaxUp') {
             r.hp = r.level * 4;
             r.hp_crit = r.level_crit * 4;
@@ -190,7 +191,7 @@ export class CookingData {
         }
         r.hp_crit = Math.min(r.hp_crit, 120)
         r.hp = Math.min(r.hp, 120)
-        return [r.hp, r.price, r.hp != r.hp_crit, is_hearty, has_monster_extract];
+        return [r.hp, r.price, r.hp != r.hp_crit, is_hearty, has_monster_extract && ! is_dubious_food];
     }
 
     cook(items, verbose = false) {
