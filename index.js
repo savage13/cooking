@@ -6,6 +6,8 @@ import NAMES from './names.json' assert { 'type': 'json' };
 import CTAGS from './cook_tags.json' assert { 'type': 'json' };
 import EFFECTS from './cook_effects.json' assert { 'type': 'json' };
 
+const PRICE_SCALE = new Float32Array([0, 1.5, 1.8, 2.1, 2.4, 2.8]);
+
 // These should be computed using the CookSpice::BoostSuccessRate
 //   added to the cook_items
 const AlwaysCrit = [
@@ -267,16 +269,19 @@ export class CookingData {
         // https://github.com/iTNTPiston/botw-recipe/blob/main/dump/find_recipes_simple.py:getPrice()
         // https://zelda.fandom.com/wiki/Cooking
         // Values from Cooking/CookData.yml::System::NNMR
-        const PRICE_SCALE = [0, 1.5, 1.8, 2.1, 2.4, 2.8];
         const sp = items.map(item => this.item(item).sell_price);
         if(verbose) {
             console.log('sell price ',sp, ' scale', PRICE_SCALE[items.length]);
         }
-        sell_price = Math.floor(sell_price * PRICE_SCALE[ items.length ]);
-        const tmp = sell_price;
-        sell_price = Math.ceil(sell_price / 10) * 10;
+        let sp32 = new Float32Array([sell_price])
+        let sp_scale32 = new Float32Array([sp32[0] * PRICE_SCALE[ items.length ]]);
+        sell_price = Math.ceil(Math.floor(sp_scale32) / 10) * 10;
         if(verbose) {
-            console.log('sell price, round, buy',tmp, sell_price, buy_price)
+            console.log('sell price, round, buy',sp_scale32[0], sell_price, buy_price,
+                        sp32[0],
+                        PRICE_SCALE[items.length],
+                        sp32[0] * PRICE_SCALE[items.length],
+                       )
         }
         // Selling price is capped at buying price
         sell_price = Math.min(sell_price, buy_price);
