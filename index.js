@@ -1,10 +1,10 @@
 
 //import fs from "fs";
-import recipes from './cook_recipes.json' assert { 'type': 'json' };
-import data from './cook_items.json' assert { 'type': 'json' };
-import names from './names.json' assert { 'type': 'json' };
-import ctags from './cook_tags.json' assert { 'type': 'json' };
-import effects from './cook_effects.json' assert { 'type': 'json' };
+import RECIPES from './cook_recipes.json' assert { 'type': 'json' };
+import DATA from './cook_items.json' assert { 'type': 'json' };
+import NAMES from './names.json' assert { 'type': 'json' };
+import CTAGS from './cook_tags.json' assert { 'type': 'json' };
+import EFFECTS from './cook_effects.json' assert { 'type': 'json' };
 
 // These should be computed using the CookSpice::BoostSuccessRate
 //   added to the cook_items
@@ -29,14 +29,13 @@ const CritStamina = 0.4;
 export class CookingData {
     constructor() {
 
-        this.recipes = recipes;
-        this.data = data;
-        this.names = names;
-        this.ctags = ctags;
-        this.effects = effects;
+        this.recipes = RECIPES;
+        this.ctags = CTAGS;
+        this.data = this.reduce_tags();
+        this.names = NAMES;
+        this.effects = EFFECTS;
         this.inames = {};
         this.all_recipe = [];
-        this.reduce_tags();
         this.set_proper_names();
         this.create_recipe_list();
         this.threshold = {
@@ -61,7 +60,7 @@ export class CookingData {
                 .filter(([key, value]) => value.tags == tag)
         );
     }
-    
+
     items() {
         return Object.keys(this.inames);
     }
@@ -79,8 +78,10 @@ export class CookingData {
     }
     reduce_tags() {
         // Reduce tags in Items
-        for(const key of Object.keys(this.data)) {
-            let row = this.data[key];
+        let out = {};
+        for(const key of Object.keys(DATA)) {
+            let row = { ... DATA[key] };
+            row.tags = [ ... DATA[key].tags ];
             row.tags = inter(row.tags, this.ctags);
             if(row.tags.length > 1) {
                 console.error('Item has more than 1 cook tag', row.name, key);
@@ -94,7 +95,10 @@ export class CookingData {
             if(row.effect == '' || row.effect == 'None') {
                 row.effect = undefined;
             }
+            out[key] = row;
         }
+        return out;
+        
     }
     set_proper_names() {
         // Convert from UI Name to Internal Name
@@ -148,7 +152,7 @@ export class CookingData {
                 console.log("---------------------------------------------------");
             }
             if(recipe.matches(iname, tags_t, true, verbose)) {
-                return recipe;
+                return recipe.clone();
             }
             i += 1;
         }
@@ -158,7 +162,7 @@ export class CookingData {
                 console.log("---------------------------------------------------");
             }
             if(recipe.matches(iname, tags_t, false, verbose)) {
-                return recipe;
+                return recipe.clone();
             }
             i += 1;
         }
@@ -524,6 +528,23 @@ export function botw_sort(a, b) {
 function inter(a,b) {
     return a.filter(value => b.includes(value));
 }
+function deepCopy(src) {
+  let target = Array.isArray(src) ? [] : {};
+  for (let key in src) {
+    let v = src[key];
+    if (v) {
+      if (typeof v === "object") {
+        target[key] = deepCopy(v);
+      } else {
+        target[key] = v;
+      }
+    } else {
+      target[key] = v;
+    }
+  }
+
+  return target;
+}
 
 class Recipe {
     constructor(name, actors, tags, id, hb) {
@@ -533,6 +554,10 @@ class Recipe {
         this.verbose = false;
         this.id = id;
         this.hb = hb;
+    }
+    clone() {
+        return new Recipe(`${this.name}`, deepCopy(this.actors),
+                   deepCopy(this.tags), this.id, this.hb);
     }
     matches(items, tags, strict, verbose = false) {
         this.verbose = verbose;
