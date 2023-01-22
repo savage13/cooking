@@ -6,7 +6,8 @@ import NAMES from './names.json' assert { 'type': 'json' };
 import CTAGS from './cook_tags.json' assert { 'type': 'json' };
 import EFFECTS from './cook_effects.json' assert { 'type': 'json' };
 
-const PRICE_SCALE = new Float32Array([0, 1.5, 1.8, 2.1, 2.4, 2.8]);
+const PRICE_SCALE = new Float32Array([0, 1.5, 1.8, 2.1, 2.4, 2.8]); // Cooking::CookData::NMMR
+const CRIT_SCALE = [5, 10, 15, 20, 25]; // Cooking::CookData::NMSSR
 
 // These should be computed using the CookSpice::BoostSuccessRate
 //   added to the cook_items
@@ -27,6 +28,9 @@ const AlwaysCrit = [
 ];
 const CritStamina = 0.4;
 
+function array_pick(list) {
+    return list[Math.floor(Math.random() * list.length)];
+}
 
 export class CookingData {
     constructor() {
@@ -55,8 +59,20 @@ export class CookingData {
             'None': [999,999],
         }
     }
-    
+
     items_with_tag(tag) {
+        if(tag == "RoastItem") {
+            return Object.fromEntries(
+                Object.entries(this.data)
+                    .filter(([key, value]) => value.roast_item)
+            );
+        }
+        if(tag == "KeyItem") {
+            return Object.fromEntries(
+                Object.entries(this.data)
+                    .filter(([key, value]) => value.key_item)
+            );
+        }
         return Object.fromEntries(
             Object.entries(this.data)
                 .filter(([key, value]) => value.tags == tag)
@@ -84,7 +100,7 @@ export class CookingData {
         for(const key of Object.keys(DATA)) {
             let row = { ... DATA[key] };
             row.tags = [ ... DATA[key].tags ];
-            row.tags = inter(row.tags, this.ctags);
+            //row.tags = inter(row.tags, this.ctags);
             if(row.tags.length > 1) {
                 console.error('Item has more than 1 cook tag', row.name, key);
                 process.exit(1);
@@ -100,7 +116,6 @@ export class CookingData {
             out[key] = row;
         }
         return out;
-        
     }
     set_proper_names() {
         // Convert from UI Name to Internal Name
@@ -174,6 +189,55 @@ export class CookingData {
         return this.effects.find(ef => ef.type == name);
     }
 
+    /* Do Not Use This, the data structure does not match the current code */
+    pick_boost(result) {
+        const Bonus = Object.freeze({
+            Life:    { name: "Life" },
+            Stamina: { name: "Stamina" },
+            Time:    { name: "Time"},
+        });
+        let bonus = Bonus.Time; // Hearts
+        let effect = this.get_effect(result.effect);
+        let life_recover = this.get_effect("LifeRecover");
+        if(effect) {
+            if(result.effect == "GutsRecover" || result.effect == "ExGutsMaxUp") {
+                if(result.potency >= effect.max){
+                    bonus = Bonus.Life;
+                } else if(result.hp >= life_recover.max) {
+                    bonus = Bonus.Stamina;
+                } else {
+                    bonus = array_pick(["LifeMaxUp", "GutsRecover"]);
+                }
+            } else if (result.effect == "LifeMaxUp") {
+                bonus = bonus.Stamina;
+            } else {
+                if(result.potency < effect.max)  {
+                    if(result.hp > life_recover.max) {
+                        bonus = array_pick([Bonus.Time, Bonus.Stamina]);
+                    } else {
+                        bonus = array_pick([Bonus.Time, Bonus.Stamina, Bonus.Life]);
+                    }
+                } else if (result.hp >= life_recover.max) {
+                    bounus = Bonis.Time;
+                } else {
+                    bonus = array_pick([Bonus.Time, Bonus.Life]);
+                }
+            }
+        }
+        if(bonus == Bonus.Life) {
+            result.hp += life_recover.ssa;
+        } else if(bound == Bouns.Time) {
+            result.time_sec += 300; // seconds
+        } else if(bound == Bouns.Stamina) {
+            if(result.effect) {
+                if(result.potency > 0 && result.potency < 1) {
+                    result.potency = 1;
+                }
+                result.potency += effect.ssa;
+            }
+        }
+    }
+
     cook_hp(items) {
         let r = this.cook(items, false);
         // Number of extra hearts is determined from potency
@@ -233,10 +297,14 @@ export class CookingData {
 
             if(verbose) {
                 console.log('item,hp,potency,time',val.hp, val.potency,
-                            val.time/30, item, this.inames[item])
+                            val.time/30, item, this.inames[item], val.tags)
             }
-            time += (val.time / 30) ;
-            if(item !== "Goron Spice") {
+            if(val.roast_item) {
+                time += 30;
+            } else {
+                time += (val.time / 30) ;
+            }
+            if(val.effect) {
                 potency += val.potency;
             }
             hp += val.hp;
@@ -268,6 +336,14 @@ export class CookingData {
         // https://www.reddit.com/r/zelda/comments/61ccva/botw_cooking_math_complete/
         // https://github.com/iTNTPiston/botw-recipe/blob/main/dump/find_recipes_simple.py:getPrice()
         // https://zelda.fandom.com/wiki/Cooking
+        // BotW CookingMgr decomp
+        // https://decomp.me/scratch/psBRW - cookHandleBoostSuccessInner
+        // https://decomp.me/scratch/ht6nK - cook
+        // https://decomp.me/scratch/0JThT - cookHandleBoostMonsterExtractInner
+        // https://decomp.me/scratch/hbiAr - getCookEffectId
+        // https://decomp.me/scratch/JZJo1 - cookCalcPotencyBoost
+        // https://decomp.me/scratch/nrGeI - cookCalcSpiceBoost
+        //
         // Values from Cooking/CookData.yml::System::NNMR
         const sp = items.map(item => this.item(item).sell_price);
         if(verbose) {
@@ -314,7 +390,19 @@ export class CookingData {
         time += time_boost;
         hp += hp_boost;
 
+        let crits = items.map(item => this.item(item).boost_success_rate);
+        let crit_rate = Math.max(...crits);
+        crit_rate += CRIT_SCALE[ items.length - 1 ];
+        if(verbose) {
+            console.log('crits', crit_rate, crits, CRIT_SCALE[items.length-1]);
+        }
+
         // Hit Point Boost(?); thanks Piston
+        if(verbose) {
+            if(r.hb != 0) {
+                console.log('hp HB', r.hb);
+            }
+        }
         hp += r.hb;
         if(r.name == "Rock-Hard Food") {
             return rock_hard_food( unique(items).length, items );
@@ -353,6 +441,11 @@ export class CookingData {
             potency_level = 'Low';
             effect_level = 1;
         }
+
+        const monster_rng = items.includes("Monster Extract") &&
+              r.name != "Dubious Food" &&
+              r.name != "Rock-Hard Food";
+
         let out = {
             name: r.name,
             id: r.id,
@@ -371,6 +464,8 @@ export class CookingData {
             hp_crit: hp + 3 * 4,      // Assumes +3 hearts
             time_crit: time + 5 * 60, // Assumes +05:00 duration
             level_crit: effect_level + 1,    // Assumes +1 potency tier
+            crit_rate: crit_rate,
+            monster_rng: monster_rng,
         }
 
         const effects = ["MovingSpeed", "AttackUp", "ResistCold", "ResistHot",
@@ -379,6 +474,9 @@ export class CookingData {
             out.time = Math.min(30*60, out.time);
             out.time_sec = out.time;
             out.time = t2ms(out.time_sec);
+            out.time_crit = Math.min(30*60, out.time_crit);
+            out.time_crit_sec = out.time_crit;
+            out.time_crit = t2ms(out.time_crit);
         }
         if(out.effect == 'None') {
             delete out.time;
@@ -451,7 +549,6 @@ export class CookingData {
                 "LifeMaxUp": "Hearty Elixir",
             };
             out.name = elixirs[ out.effect ];
-            //delete out.hp; // Not certain about this
         }
         if(r.name == "Fairy Tonic" && items.includes("Monster Extract")) {
             // Using the maximum hp value
@@ -478,17 +575,17 @@ export function botw_sort(a, b) {
         'Raw Bird Drumstick','Courser Bee Honey','Hylian Rice','Bird Egg', 'Tabantha Wheat',
         'Fresh Milk', 'Acorn', 'Chickaloo Tree Nut', 'Cane Sugar','Goat Butter',
         'Goron Spice', 'Rock Salt','Monster Extract','Star Fragment',
-        
+
         "Dinraal's Scale",
-              "Dinraal's Claw", 
+        "Dinraal's Claw",
         "Shard of Dinraal's Fang",
         "Shard of Dinraal's Horn",
-        
+
         "Naydra's Scale",
         "Naydra's Claw",
         "Shard of Naydra's Fang",
         "Shard of Naydra's Horn",
-        
+
         "Farosh's Scale",
         "Farosh's Claw",
         "Shard of Farosh's Fang",
@@ -505,7 +602,7 @@ export function botw_sort(a, b) {
         'Bladed Rhino Beetle','Rugged Rhino Beetle',
         'Energetic Rhino Beetle','Sunset Firefly','Hot-Footed Frog','Tireless Frog','Hightail Lizard',
         //
-              'Hearty Lizard','Fireproof Lizard','Flint','Amber','Opal',
+        'Hearty Lizard','Fireproof Lizard','Flint','Amber','Opal',
         'Luminous Stone','Topaz','Ruby','Sapphire','Diamond',
         'Bokoblin Horn','Bokoblin Fang','Bokoblin Guts','Moblin Horn','Moblin Fang',
         'Moblin Guts','Lizalfos Horn','Lizalfos Talon','Lizalfos Tail','Icy Lizalfos Tail',
@@ -560,6 +657,7 @@ class Recipe {
         this.id = id;
         this.hb = hb;
     }
+
     clone() {
         return new Recipe(`${this.name}`, deepCopy(this.actors),
                    deepCopy(this.tags), this.id, this.hb);
@@ -758,6 +856,3 @@ function t2ms(t) {
     const ss = s.toString().padStart(2, '0')
     return `${ms}:${ss}`;
 }
-
-
-

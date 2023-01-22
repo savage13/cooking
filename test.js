@@ -11,7 +11,7 @@ const obj = new CookingData;
 
 const test_data = ['t/wkr.json', 't/dubious.json','t/acorns.json',
                    't/elixirs.json','t/quietness.json', 't/other.json',
-                   't/fruitcake.json'];
+                   't/fruitcake.json', 't/ist.json'];
 
 let ok = 0;
 let fails = 0;
@@ -178,7 +178,9 @@ function test_recipe(known) {
     if(known.img) {
         const img = image_filename(known);
         if(img != known.img) {
-            console.log("Image filename inconsistent with naming scheme: ", known.img, img);
+            console.log("Image filename inconsistent with naming scheme: ")
+            console.log(known.img);
+            console.log(img);
         }
         if(fs.existsSync(known.img)) {
             proof += 1;

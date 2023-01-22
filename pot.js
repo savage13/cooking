@@ -94,5 +94,10 @@ if(args[0] === "-") {
         }
     });
 } else {
+    const has_comma = args.some(x => x.includes(","));
+    if(has_comma) {
+        args = args.join(" ").split(",").map(x => x.trim());
+    }
+    
     cook_and_show(args, opts);
 }
