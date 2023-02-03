@@ -456,14 +456,14 @@ export class CookingData {
             time: time,
             potency: potency,
             effect_level_name: potency_level,
-            level: effect_level,
+            level: Math.min(effect_level, 3),
             effect: effect,
             hearts: hp / 4,
             price: sell_price,
             // Crit Cooking
             hp_crit: hp + 3 * 4,      // Assumes +3 hearts
             time_crit: time + 5 * 60, // Assumes +05:00 duration
-            level_crit: effect_level + 1,    // Assumes +1 potency tier
+            level_crit: Math.min(effect_level + 1, 3),    // Assumes +1 potency tier
             crit_rate: crit_rate,
             monster_rng: monster_rng,
         }
