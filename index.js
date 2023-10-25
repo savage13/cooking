@@ -446,6 +446,8 @@ export class CookingData {
               r.name != "Dubious Food" &&
               r.name != "Rock-Hard Food";
 
+        const wmc = price_to_modifier(sell_price)
+
         let out = {
             name: r.name,
             id: r.id,
@@ -466,6 +468,7 @@ export class CookingData {
             level_crit: Math.min(effect_level + 1, 3),    // Assumes +1 potency tier
             crit_rate: crit_rate,
             monster_rng: monster_rng,
+            wmc,
         }
 
         const effects = ["MovingSpeed", "AttackUp", "ResistCold", "ResistHot",
@@ -855,4 +858,21 @@ function t2ms(t) {
     const ms = m.toString().padStart(2, '0')
     const ss = s.toString().padStart(2, '0')
     return `${ms}:${ss}`;
+}
+
+function is_bit_set(value, k) {
+    return (value & ( 1 << k )) != 0;
+}
+
+function price_to_modifier(price) {
+    let out = {};
+    let keys = ['Attack Up','Durability Up',
+                'Critical Hit','Long Throw',
+                'Multi Shot','Zoom','Quick Shot',
+                'Surf Master','Shield Guard Up'];
+    for(let i = 0; i < keys.length; i++) {
+        out[keys[i]] = is_bit_set(price, i) ? 1 : 0;
+    }
+    out['Yellow Modifier'] = is_bit_set(price, 31) ? 1 : 0;
+    return out;
 }
