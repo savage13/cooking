@@ -9,8 +9,8 @@ if(args.length == 0) {
 }
 
 // Command line Arguments
-let opts  = { verbose: false,  json_out: false,  pretty: false,  help: false, items: false };
-let opt_v = { verbose: "-v",   json_out: "-j",   pretty: "-p",   help: "-h",  items: "-i" };
+let opts  = { verbose: false,  json_out: false,  pretty: false,  help: false, items: false , skip: false};
+let opt_v = { verbose: "-v",   json_out: "-j",   pretty: "-p",   help: "-h",  items: "-i" , skip: "-s"};
 for(const [key,val] of Object.entries(opt_v)) {
     opts[key] = args.filter(arg => arg === val).length > 0;
     args = args.filter(arg => arg !== val);
@@ -18,6 +18,7 @@ for(const [key,val] of Object.entries(opt_v)) {
 if(opts.help) {
     console.log("pot.js -pjv args");
     console.log("       -j    json output")
+    console.log("       -s    skip dubious, rock hard and fairy tonic")
     console.log("       -p    pretty json output")
     console.log("       -v    verbose, show internals")
     console.log("       -i    show items")
@@ -52,7 +53,8 @@ function cook_and_show(arg, opts) {
         console.error("Error cooking", arg);
         return
     }
-
+    if(opts.skip && ["Fairy Tonic","Rock-Hard Food", "Dubious Food"].includes(res.name))
+        return
     if(opts.json_out || opts.pretty) {
         if(opts.pretty) {
             console.log(JSON.stringify(res, null, 2));

@@ -126,7 +126,7 @@ export class CookingData {
             "Swift Carrot": "Item_PlantGet_M",
             "Silent Princess": "Item_PlantGet_J",
             "Octo Balloon": "Item_Enemy_57",
-            "Master Sword": "Item_Sword_071",
+            "Master Sword": "Item_Sword_080",
         };
 
         Object.keys(this.names).forEach(key => {
@@ -392,7 +392,7 @@ export class CookingData {
 
         let crits = items.map(item => this.item(item).boost_success_rate);
         let crit_rate = Math.max(...crits);
-        crit_rate += CRIT_SCALE[ items.length - 1 ];
+        crit_rate += CRIT_SCALE[ unique(items).length - 1 ];
         if(verbose) {
             console.log('crits', crit_rate, crits, CRIT_SCALE[items.length-1]);
         }
