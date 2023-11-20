@@ -7483,6 +7483,23 @@ var Obj_DLC_HeroSeal_Zora$1 = {
 	boost_success_rate: 0,
 	key_item: true
 };
+var Item_Roast_OC$1 = {
+	hp: 12,
+	effect: "",
+	potency: 0,
+	time: 900,
+	tags: [
+	],
+	name: "Chemistry Exams",
+	time_boost: 0,
+	hp_boost: 0,
+	sell_price: 38,
+	buy_price: 95,
+	cook_low_price: false,
+	roast_item: true,
+	boost_success_rate: 0,
+	key_item: false
+};
 var DATA = {
 	Item_Roast_51: Item_Roast_51$1,
 	Item_Roast_45: Item_Roast_45$1,
@@ -7774,7 +7791,8 @@ var DATA = {
 	Animal_Fish_F: Animal_Fish_F$1,
 	Item_Roast_48: Item_Roast_48$1,
 	Obj_DRStone_A_01: Obj_DRStone_A_01$1,
-	Obj_DLC_HeroSeal_Zora: Obj_DLC_HeroSeal_Zora$1
+	Obj_DLC_HeroSeal_Zora: Obj_DLC_HeroSeal_Zora$1,
+	Item_Roast_OC: Item_Roast_OC$1
 };
 
 var Animal_Bass = "Bass";
@@ -8271,6 +8289,7 @@ var Item_Roast_50 = "Roasted Endura Carrot";
 var Item_Roast_51 = "Campfire Egg";
 var Item_Roast_52 = "Roasted Tree Nut";
 var Item_Roast_53 = "Toasty Endura Shroom";
+var Item_Roast_OC = "Chemistry Exams";
 var Item_Rupee = "Rupee";
 var Item_StaminaUtuwa = "Stamina Vessel";
 var KeySmall = "Small Key";
@@ -8919,6 +8938,7 @@ var NAMES = {
 	Item_Roast_51: Item_Roast_51,
 	Item_Roast_52: Item_Roast_52,
 	Item_Roast_53: Item_Roast_53,
+	Item_Roast_OC: Item_Roast_OC,
 	Item_Rupee: Item_Rupee,
 	Item_StaminaUtuwa: Item_StaminaUtuwa,
 	KeySmall: KeySmall,
@@ -10015,10 +10035,18 @@ function dubious_food( hp, items ) {
         name: "Dubious Food",
         hp: hp,
         id: ID,
+        time: 0,
+        effect: 'None',
+        potency: 0,
         hearts: hp/4,
         price: 2,
         items: items,
         hp_crit: hp,
+        crit_rate: 0,
+        monster_rng: 0,
+        level_crit: 0,
+        time_crit: 0,
+        wmc: price_to_modifier(2),
     }
 }
 function rock_hard_food(n, items) {
@@ -10032,6 +10060,13 @@ function rock_hard_food(n, items) {
         price: 2,
         items: items,
         hp_crit: 1,
+        time_crit: 0,
+        level_crit: 0,
+        potency: 0,
+        monster_rng: 0,
+        effect: 'None',
+        crit_rate: 0,
+        wmc: price_to_modifier(2),
     }
 }
 

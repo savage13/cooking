@@ -832,10 +832,18 @@ function dubious_food( hp, items ) {
         name: "Dubious Food",
         hp: hp,
         id: ID,
+        time: 0,
+        effect: 'None',
+        potency: 0,
         hearts: hp/4,
         price: 2,
         items: items,
         hp_crit: hp,
+        crit_rate: 0,
+        monster_rng: 0,
+        level_crit: 0,
+        time_crit: 0,
+        wmc: price_to_modifier(2),
     }
 }
 function rock_hard_food(n, items) {
@@ -849,6 +857,13 @@ function rock_hard_food(n, items) {
         price: 2,
         items: items,
         hp_crit: 1,
+        time_crit: 0,
+        level_crit: 0,
+        potency: 0,
+        monster_rng: 0,
+        effect: 'None',
+        crit_rate: 0,
+        wmc: price_to_modifier(2),
     }
 }
 
