@@ -6,7 +6,7 @@
       "min" : 1,
       "ssa" : 2,
       "type": "ExGutsMaxUp",
-      "xtype" : "!u 0xda60b8cd"
+      "xtype" : "!u 0xda60b8cd" // StaminaRecover
    },
    {
       "base_time" : 0,
@@ -15,7 +15,7 @@
       "min" : 1,
       "ssa" : 2,
       "type": "GutsRecover",
-      "xtype" : "!u 0xaeb04704"
+      "xtype" : "!u 0xaeb04704" // GutsPerformance
    },
    {
       "base_time" : 0,
